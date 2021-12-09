@@ -1,8 +1,6 @@
 
 # Decentralized Skilling and Education Protocol
 
-## Authors
-
 ## Current Working Draft Version: 
 0.5.1-draft
 
