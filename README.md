@@ -1,8 +1,6 @@
 
 # Decentralized Skilling and Education Protocol
 
-## Authors
-
 ## Current Working Draft Version: 
 0.5.1-draft
 
@@ -14,7 +12,7 @@
 | DSEP Specification Version       | Beckn Protocol Core Specification Version         |
 |----------------------------------|---------------------------------------------------|
 | 0.5.0 (Genesis Version)          | 0.9.3-draft                                       |
-| 0.5.1-draft (Patch version)      | 0.9.3-draft                                       |
+| 0.5.1-draft (Patch version)      | -                                     |
 | 0.6.0-draft (Next Minor Version) | -                                                 |
 | 1.0.0-draft (Next Major Version) | -                                                 |
 
