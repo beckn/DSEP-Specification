@@ -10,7 +10,7 @@ Draft-01
 DSEP Open Network Architecture Reference
 
 ## Category:
-Retail
+Architecture
 
 ## Status:
 Protocol Draft
