@@ -29,4 +29,4 @@ December 20, 2022 or Date of publication of next draft which ever is earlier
 
 The below diagram shows the high level architecture of the Decentralized Skilling and Education Network created by implementing DSEP Specification
 
-![Architecture](https://github.com/beckn/DSEP-Specification/tree/documentation/docs/images/DSEP-Network-Architecture.png)
+![Architecture](https://github.com/beckn/DSEP-Specification/blob/documentation/docs/images/DSEP-Network-Architecture.png)
