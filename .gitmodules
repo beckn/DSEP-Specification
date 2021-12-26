@@ -1,3 +1,5 @@
 [submodule "core"]
 	path = core
 	url = https://github.com/beckn/protocol-specifications
+[submodule "Submod"]
+	branch = master
