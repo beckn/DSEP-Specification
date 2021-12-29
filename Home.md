@@ -35,4 +35,4 @@ This layer is the user facing layer and form the UI/UX for the end-user.
 
 # Acknowledgments
 
-The DHP specs are extended from the [Beckn protocol](https://becknprotocol.io/). 
+The DSEP specs are extended from the [Beckn protocol](https://becknprotocol.io/). 
