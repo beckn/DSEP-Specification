@@ -1,5 +1,6 @@
 
 # Decentralized Skilling and Education Protocol
+This project provides open interoperable specifcations for creating decentralized skills and education networks. It is an adaptation of beckn protocol core specification with added taxonomies and sample network policies for the skills and education sector.
 
 ## Current Working Draft Version: 
 0.5.1-draft
@@ -18,5 +19,23 @@
 
 ## Introduction
 
-This project provides open interoperable specifcations for creating decentralized skills and education networks. It is an adaptation of beckn protocol core specification with added taxonomies and sample network policies for the skills and education sector.
+The community is currently working on Discovery of Jobs, Training, .. and Proof of Work, Training, ...
+
+The Indian skill development and employment landscape is large, heterogeneous, diversified,  fragmented and complex; which is high on friction and low on outcomes. It inherently has significant challenges such as information asymmetry, high cost of trust verification, lack of discoverability, and portability. A monolithic approach to this would not serve the purpose, rather we need to adopt an ecosystem approach which facilitates innovative solutions.
+
+Hence the need of the hour is a unifying framework which will allow many platforms, applications, service providers, and business models to innovate with the underlying protocols and specifications using a set of configurable, extendable, modular open-source digital building blocks. In such a paradigm, the seamless discovery of opportunities along with trust in transactions would be a key to allowing a frictionless exchange for skill development, deployment & associated supply-chain and enabling services. 
+
+To enable this ‘trusted discovery’, a group of people from different organisations are collaborating and co-creating solutions, open-source specs & software, and much more to drive this whole initiative forward. The members meet regularly every week in community calls to discuss use-cases, draft specifications, implement prototypes, and create innovative solutions. The community is thriving with active participation from members on weekly calls and on chat/discussion forums.
+
+The community is organised into two sub-groups (most members are common across both groups). 
+1. DSEP, which stands for Decentralised Skilling and Education Protocol, will enable the Discovery of content, courses, training, jobs, mentors, scholarships, and more through discovery protocol. 
+2. INCOMS, which stands for Interoperable Credential Object Model Specifications for use in Skilling, Work, and Education domains, will enable Proof of Training, Work, Skill, Reputation, and more through verifiable credentials.
+
+Next steps:
+- Join the community by [filling up this form](https://docs.google.com/forms/d/e/1FAIpQLSexE0GdpRoSSF0DA-SDz0wl4NHrfXHXJ1mzKkSXQYyhhCbe8g/viewform?usp=sf_link)
+- Participate in Working Group Weekly Calls
+- Check out these public GitHub repositories for learning more and engaging with the community: github.com/beckn/DSEP-Specification/discussions and github.com/INCOMS/vc-specs/discussions 
+- Join the Discord channel of both the communities: INCOMS (Sunbird discord.gg/muHqfEkvSy) and DSEP (Beckn discord.gg/pcNc4aFn2x)
+
+You’re invited to Engage with the ecosystem to identify what can be leveraged/contributed, Experiment with the specs for your use cases, and Evolve the same into live implementation for your customers.
 
