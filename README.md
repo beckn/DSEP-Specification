@@ -21,7 +21,7 @@ This project provides open interoperable specifcations for creating decentralize
 
 The community is currently working on Discovery of Jobs, Training, .. and Proof of Work, Training, ...
 
-The Indian skill development and employment landscape is large, heterogeneous, diversified,  fragmented and complex; which is high on friction and low on outcomes. It inherently has significant challenges such as information asymmetry, high cost of trust verification, lack of discoverability, and portability. A monolithic approach to this would not serve the purpose, rather we need to adopt an ecosystem approach which facilitates innovative solutions.
+The skill development, lifelong learning and employment landscape is large, heterogeneous, diversified,  fragmented and complex; which is high on friction and low on outcomes. It inherently has significant challenges such as information asymmetry, high cost of trust verification, lack of discoverability, and portability. A monolithic approach to this would not serve the purpose, rather we need to adopt an ecosystem approach which facilitates innovative solutions.
 
 Hence the need of the hour is a unifying framework which will allow many platforms, applications, service providers, and business models to innovate with the underlying protocols and specifications using a set of configurable, extendable, modular open-source digital building blocks. In such a paradigm, the seamless discovery of opportunities along with trust in transactions would be a key to allowing a frictionless exchange for skill development, deployment & associated supply-chain and enabling services. 
 
