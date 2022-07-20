@@ -2,8 +2,8 @@
 # Decentralized Skilling and Education Protocol
 This project provides open interoperable specifcations for creating decentralized skills and education networks. It is an adaptation of beckn protocol core specification with added taxonomies and sample network policies for the skills and education sector.
 
-## Current Working Draft Version: 
-0.5.1-draft
+## Current Working Draft Branch: 
+draft
 
 ## Versioning Scheme
 [Semantic Version Scheme 2.0.0](https://semver.org/)
