@@ -1,7 +1,7 @@
 openapi: 3.0.0
 info:
-  title: Beckn Core API
-  description: Beckn Core API specification
+  title: Decentralized Skilling and Education Protocol Specification
+  description: Adaptation of beckn protocol for the domain of skilling and education
   version: 0.5.0
 
 security:
@@ -2856,3 +2856,7 @@ components:
           type: string
         registration:
           type: string
+servers:
+  # Added by API Auto Mocking Plugin
+  - description: SwaggerHub API Auto Mocking
+    url: https://virtserver.swaggerhub.com/beckn/dsep/0.5.0
