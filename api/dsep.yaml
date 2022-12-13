@@ -275,7 +275,7 @@ paths:
                               list:
                               - code: family_income
                                 value: '2000000' 
-              Search for scholarships by financial caste criteria:
+              Search for scholarships by caste criteria:
                 value:
                   context:
                     domain: dsep:scholarships
