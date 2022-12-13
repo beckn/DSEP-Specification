@@ -212,6 +212,92 @@ paths:
                         id: '4'
                         descriptor:
                           name: Engineering and Technology
+              Search for scholarships by name:
+                value:
+                  context:
+                    domain: dsep:scholarships
+                    country: IND
+                    city: '*'
+                    action: search
+                    core_version: 1.0.0-draft
+                    bap_id: https://examplebap.io/
+                    bap_uri: https://api.examplebap.io/v0/
+                    bpp_id: https://xyzbpp.com/
+                    bpp_uri: https://api.xyzbpp.com/v0/
+                    message_id: 5ac3dd78-829e-4c7d-9139-a15adbb582cc
+                    timestamp: '2022-12-08T10:00:40.065Z'
+                  message:
+                    intent:
+                      item:
+                        descriptor:
+                          name: Undergraduation scholarship
+              Search for scholarships by gender criteria:
+                value:
+                  context:
+                    domain: dsep:scholarships
+                    country: IND
+                    city: '*'
+                    action: search
+                    core_version: 1.0.0-draft
+                    bap_id: https://examplebap.io/
+                    bap_uri: https://api.examplebap.io/v0/
+                    bpp_id: https://xyzbpp.com/
+                    bpp_uri: https://api.xyzbpp.com/v0/
+                    message_id: 5ac3dd78-829e-4c7d-9139-a15adbb582cc
+                    timestamp: '2022-12-08T10:00:40.065Z'
+                  message:
+                    intent:
+                      fulfillment:
+                        customer:
+                          person:
+                            gender: Female
+              Search for scholarships by financial income criteria:
+                value:
+                  context:
+                    domain: dsep:scholarships
+                    country: IND
+                    city: '*'
+                    action: search
+                    core_version: 1.0.0-draft
+                    bap_id: https://examplebap.io/
+                    bap_uri: https://api.examplebap.io/v0/
+                    bpp_id: https://xyzbpp.com/
+                    bpp_uri: https://api.xyzbpp.com/v0/
+                    message_id: 5ac3dd78-829e-4c7d-9139-a15adbb582cc
+                    timestamp: '2022-12-08T10:00:40.065Z'
+                  message:
+                    intent:
+                      fulfillment:
+                        customer:
+                          person:
+                            tags:
+                            - code: fin_status
+                              list:
+                              - code: family_income
+                                value: '2000000' 
+              Search for scholarships by financial caste criteria:
+                value:
+                  context:
+                    domain: dsep:scholarships
+                    country: IND
+                    city: '*'
+                    action: search
+                    core_version: 1.0.0-draft
+                    bap_id: https://examplebap.io/
+                    bap_uri: https://api.examplebap.io/v0/
+                    bpp_id: https://xyzbpp.com/
+                    bpp_uri: https://api.xyzbpp.com/v0/
+                    message_id: 5ac3dd78-829e-4c7d-9139-a15adbb582cc
+                    timestamp: '2022-12-08T10:00:40.065Z'
+                  message:
+                    intent:
+                      fulfillment:
+                        customer:
+                          person:
+                            tags:
+                            - code: caste_category
+                              list:
+                              - value: SC
       responses:
         '200':
           description: Acknowledgement of message received
@@ -771,6 +857,204 @@ paths:
                       fulfillments:
                       - id: ''
                         type: ONLINE
+              Publish a catalog of scholarships by a scholarship provider:
+                value:
+                  context:
+                    domain: dsep:scholarships
+                    country: IND
+                    city: '*'
+                    action: on_search
+                    core_version: 1.0.0-draft
+                    bap_id: https://examplebap.io/
+                    bap_uri: https://api.examplebap.io/v0/
+                    bpp_id: https://xyzbpp.com/
+                    bpp_uri: https://api.xyzbpp.com/v0/
+                    message_id: 5ac3dd78-829e-4c7d-9139-a15adbb582cc
+                    timestamp: '2022-12-08T10:00:40.065Z'
+                  message:
+                    catalog:
+                      bpp/descriptor:
+                        name: XYZ Education Foundation
+                      bpp/providers:
+                      - id: BX213573733
+                        descriptor:
+                          name: XYZ Education Foundation
+                        categories:
+                        - id: DSEP_CAT_2
+                          descriptor:
+                            name: Post Graduate
+                            code: pg
+                        - id: DSEP_CAT_1
+                          descriptor:
+                            name: Under Graduate
+                            code: ug
+                        fulfillments:
+                        - id: DSEP_FUL_01
+                          type: SCHOLARSHIP
+                          customer:
+                            person:
+                              gender: Female
+                              tags:
+                              - code: academic_qualifications
+                                name: Academic Qualifications
+                                list:
+                                - code: gr
+                                  name: Grade
+                                  value: Grade 12
+                                - code: percentage_grade
+                                  name: Percentage/Grade
+                                  value: '50'
+                                - code: passing_year
+                                  name: Passing Year
+                                  value: '2021'
+                              - code: fin_status
+                                name: Financial Status
+                                list:
+                                - code: family_income
+                                  name: Family Income
+                                  value: '2000000'
+                          contact:
+                            name: Mary G
+                            phone: '9876543210'
+                            email: maryg@xyz.com
+                          start:
+                            time:
+                              timestamp: '2022-12-01'
+                          end:
+                            time:
+                              timestamp: '2022-12-31'
+                        - id: DSEP_FUL_02
+                          type: SCHOLARSHIP
+                          customer:
+                            person:
+                              gender: Female
+                              tags:
+                              - code: academic_qualifications
+                                name: Academic Qualifications
+                                list:
+                                - code: ug
+                                  name: Under Graduation
+                                  value: '*'
+                                - code: percentage_grade
+                                  name: Percentage/Grade
+                                  value: '50'
+                                - code: passing_year
+                                  name: Passing Year
+                                  value: '2021'
+                          contact:
+                            name: Mary G
+                            phone: '9876543210'
+                            email: maryg@xyz.com
+                          start:
+                            time:
+                              timestamp: '2022-12-01'
+                          end:
+                            time:
+                              timestamp: '2022-12-31'
+                        - id: DSEP_FUL_03
+                          type: SCHOLARSHIP
+                          customer:
+                            person:
+                              tags:
+                              - code: academic_qualifications
+                                name: Academic Qualifications
+                                list:
+                                - code: gr
+                                  name: Grade
+                                  value: Grade 12
+                                - code: percentage_grade
+                                  name: Percentage/Grade
+                                  value: '50'
+                                - code: passing_year
+                                  name: Passing Year
+                                  value: '2021'
+                          contact:
+                            name: Mary G
+                            phone: '9876543210'
+                            email: maryg@xyz.com
+                          start:
+                            time:
+                              timestamp: '2022-12-01'
+                          end:
+                            time:
+                              timestamp: '2022-12-20'
+                        - id: DSEP_FUL_04
+                          type: SCHOLARSHIP
+                          customer:
+                            person:
+                              tags:
+                              - code: academic_qualifications
+                                name: Academic Qualifications
+                                list:
+                                - code: ug
+                                  name: Under Graduation
+                                  value: '*'
+                                - code: percentage_grade
+                                  name: Percentage/Grade
+                                  value: '60'
+                                - code: passing_year
+                                  name: Passing Year
+                                  value: '2021'
+                              - code: caste_category
+                                name: Caste Category
+                                list:
+                                - code: SC
+                                  value: SC
+                                - code: ST
+                                  value: ST
+                          contact:
+                            name: Mary G
+                            phone: '9876543210'
+                            email: maryg@xyz.com
+                          start:
+                            time:
+                              timestamp: '2022-12-01'
+                          end:
+                            time:
+                              timestamp: '2022-12-31'
+                        items:
+                        - id: SCM_00420068
+                          descriptor:
+                            name: XYZ Undergraduation scholarship for Economically Backward Female Students
+                            long_desc: XYZ Undergraduation scholarship for Economically Backward Female
+                              Students
+                          price:
+                            currency: INR
+                            value: 30000
+                          category_id: DSEP_CAT_1
+                          fulfillment_id: DSEP_FUL_01
+                          matched: true
+                        - id: SCM_31095975
+                          descriptor:
+                            name: XYZ Post Graduation scholarship for Economically Backward Female Students
+                            long_desc: XYZ Post Graduation scholarship for Economically Backward Female
+                              Students
+                          price:
+                            currency: INR
+                            value: 45000
+                          category_id: DSEP_CAT_2
+                          fulfillment_id: DSEP_FUL_02
+                          matched: true
+                        - id: SCM_63587501
+                          descriptor:
+                            name: XYZ Education Scholarship for Undergraduate Students
+                            long_desc: XYZ Education Scholarship for Undergraduate Students
+                          price:
+                            currency: INR
+                            value: 25000
+                          category_id: DSEP_CAT_1
+                          fulfillment_id: DSEP_FUL_03
+                          matched: true
+                        - id: SCM_12233485
+                          descriptor:
+                            name: XYZ Post Graduation Scholarship for SC & ST Students
+                            long_desc: XYZ Post Graduation Scholarship for SC & ST Students
+                          price:
+                            currency: INR
+                            value: 50000
+                          category_id: DSEP_CAT_2
+                          fulfillment_id: DSEP_FUL_04
+                          matched: true
       responses:
         '200':
           description: Acknowledgement of message received
