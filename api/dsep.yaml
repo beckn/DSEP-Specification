@@ -1726,6 +1726,14 @@ components:
         3d_render:
           type: string
           format: uri
+        language:
+          type: array
+          format: object
+            properties:
+              language:
+                $ref: '#/components/schemas/Language'
+              tags:
+                $ref: '#/components/schemas/Tags'
 
     Dimensions:
       description: Describes the dimensions of a real-world object
