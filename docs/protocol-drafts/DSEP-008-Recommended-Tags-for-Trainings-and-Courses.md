@@ -1,4 +1,4 @@
-# Mentoring and Coaching on DSEP
+# Recommended Tags for Trainings and Courses
 #### DSEP WG Working Draft - December 16, 2022
 
 ## Document Type
