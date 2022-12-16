@@ -132,7 +132,7 @@ No Errata exists as of now
                         "tags": [
                             {
                                 "code" : "skills",
-                                "name" : "Skills",
+                                "name" : "Area of Expertise",
                                 "list" : [
                                     {
                                         "code" : "topic",
@@ -143,6 +143,48 @@ No Errata exists as of now
                                         "value" : "Urology"
                                     }
                                 ]
+                            },
+                            {
+                                "code" : "edu_qualifications",
+                                "name" : "Educational Qualifications",
+                                "list" : [
+                                    {
+                                        "code" : "degree",
+                                        "value" : "MD"
+                                    },
+                                    {
+                                        "code" : "institution",
+                                        "value" : "John Hopkins Universoity"
+                                    }
+                                ]
+                            },
+                            {
+                                "code" : "edu_qualifications",
+                                "name" : "Educational Qualifications",
+                                "list" : [
+                                    {
+                                        "code" : "degree",
+                                        "value" : "MBBS"
+                                    },
+                                    {
+                                        "code" : "institution",
+                                        "value" : "AIIMS"
+                                    }
+                                ]
+                            }
+                        ],
+                        "creds" : [
+                            {
+                                "url" : "<VC URL>",
+                                "id" : ""
+                            },
+                            {
+                                "url" : "<VC URL>",
+                                "id" : ""
+                            },
+                            {
+                                "url" : "<VC URL>",
+                                "id" : ""
                             }
                         ]
                     },
