@@ -233,10 +233,12 @@ paths:
                         descriptor:
                           name: AI basics
                         tags:
-                          Language:
-                          - code: eng
+                        - code: "lang"
+                          name: "Language"
+                          list:
+                          - code: ENG
                             name: "English"
-                          - code: hin
+                          - code: HIN
                             name: "Hindi"
                       fulfillment:
                         type: ONLINE
@@ -833,10 +835,12 @@ paths:
                           fulfillment_id: '1'
                           category_id: '1'
                           tags:
-                            languages:
-                              - code: "eng"
+                          - code: "lang"
+                            name: "Language"
+                            list:
+                              - code: "ENG"
                                 name: 'English'
-                              - code: "hin"
+                              - code: "HIN"
                                 name: 'Hindi'
                         - id: '2'
                           descriptor:
@@ -846,10 +850,12 @@ paths:
                           fulfillment_id: '1'
                           category_id: '1'
                           tags:
-                            languages:
-                              - code: "eng"
+                          - code: "lang"
+                            name: "Language"
+                            list:
+                              - code: "ENG"
                                 name: 'English'
-                              - code: "mal"
+                              - code: "MAL"
                                 name: 'Malayalam'
                       fulfillments:
                       - id: ''
