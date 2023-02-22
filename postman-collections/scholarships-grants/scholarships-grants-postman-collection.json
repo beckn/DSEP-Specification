@@ -1,0 +1,610 @@
+{
+	"info": {
+		"_postman_id": "9c7615c2-0137-4b65-9284-c7ab7724f035",
+		"name": "DSEP-Scholarship Discovery",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "8042669"
+	},
+	"item": [
+		{
+			"name": "Search by Intent - Scholarship Name",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"context\": {\r\n        \"domain\": \"dsep:scholarships\",\r\n        \"country\": \"IND\",\r\n        \"city\": \"*\",\r\n        \"action\": \"search\",\r\n        \"core_version\": \"1.0.0-draft\",\r\n        \"bap_id\": \"http://testbap.com/\",\r\n        \"bap_uri\": \"http://testbap.com/dsep/v0/\",\r\n        \"message_id\": \"5ac3dd78-829e-4c7d-9139-a15adbb582cc\",\r\n        \"transaction_id\": \"d854e8bf-d75f-45dd-a8d1-2e91267c2ea0\",\r\n        \"timestamp\": \"2021-03-23T10:00:40.065Z\"\r\n    },\r\n    \"message\": {\r\n        \"intent\": {\r\n            \"item\": {\r\n                \"descriptor\": {\r\n                    \"name\": \"scholarship for undergraduate\"\r\n                }\r\n            }\r\n        }\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{bpp-url}}/public/search",
+					"host": [
+						"{{bpp-url}}"
+					],
+					"path": [
+						"public",
+						"search"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Search by Intent - Scholarship Name",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"context\": {\r\n    \"domain\": \"dsep:scholarships\",\r\n    \"country\": \"IND\",\r\n    \"city\": \"std:080\",\r\n    \"action\": \"search\",\r\n    \"core_version\": \"0.9.3\",\r\n    \"bap_id\": \"http://localhost:9001/\",\r\n    \"bap_uri\": \"http://localhost:9001/dsep/v0/\",\r\n    \"message_id\": \"5ac3dd78-829e-4c7d-9139-a15adbb582cc\",\r\n    \"timestamp\": \"2021-03-23T10:00:40.065Z\"\r\n  },\r\n  \"message\": {\r\n    \"intent\": {\r\n      \"item\": {\r\n        \"descriptor\": {\r\n          \"name\": \"XYZ Undergraduation scholarship for Economically Backward Female Students\"\r\n        }\r\n      }\r\n    }\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{bpp-url}}/public/search",
+							"host": [
+								"{{bpp-url}}"
+							],
+							"path": [
+								"public",
+								"search"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "391"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 02 Nov 2022 05:57:16 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"context\": {\n        \"domain\": \"dsep:scholarships\",\n        \"country\": \"IND\",\n        \"city\": \"*\",\n        \"action\": \"on_search\",\n        \"core_version\": \"1.0.0-draft\",\n        \"bap_id\": \"http://localhost:9001/\",\n        \"bap_uri\": \"http://localhost:9001/dsep/v0/\",\n        \"bpp_id\": \"protean-dsep-bpp\",\n        \"bpp_uri\": \"http://localhost:8001/public\",\n        \"transaction_id\": \"d854e8bf-d75f-45dd-a8d1-2e91267c2ea0\",\n        \"message_id\": \"5ac3dd78-829e-4c7d-9139-a15adbb582cc\",\n        \"timestamp\": \"2021-03-23T10:00:40.065Z\"\n    },\n    \"message\": {\n        \"ack\": {\n            \"status\": \"ACK\"\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Search by Intent - Get scholarships with gender criteria",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"context\": {\r\n        \"domain\": \"dsep:scholarships\",\r\n        \"country\": \"IND\",\r\n        \"city\": \"*\",\r\n        \"action\": \"search\",\r\n        \"core_version\": \"1.0.0-draft\",\r\n        \"bap_id\": \"http://localhost:9001/\",\r\n        \"bap_uri\": \"http://localhost:9001/dsep/v0/\",\r\n        \"transaction_id\": \"7154b8e2-89bf-4401-9291-f366f8aa96e2\",\r\n        \"message_id\": \"b3090f5b-3dac-4ecd-83fa-10b44603f13e\",\r\n        \"timestamp\": \"2021-03-23T10:00:40.065Z\"\r\n    },\r\n    \"message\": {\r\n        \"intent\": {\r\n            \"fulfillment\": {\r\n                \"customer\": {\r\n                    \"person\": {\r\n                        \"gender\": \"Female\"\r\n                    }\r\n                }\r\n            }\r\n        }\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{bpp-url}}/public/search",
+					"host": [
+						"{{bpp-url}}"
+					],
+					"path": [
+						"public",
+						"search"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Search by Intent - Get scholarships with gender criteria",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"context\": {\r\n        \"domain\": \"dsep:scholarships\",\r\n        \"country\": \"IND\",\r\n        \"city\": \"std:080\",\r\n        \"action\": \"search\",\r\n        \"core_version\": \"0.9.3\",\r\n        \"bap_id\": \"http://localhost:9001/\",\r\n        \"bap_uri\": \"http://localhost:9001/dsep/v0/\",\r\n        \"message_id\": \"5ac3dd78-829e-4c7d-9139-a15adbb582cc\",\r\n        \"timestamp\": \"2021-03-23T10:00:40.065Z\"\r\n    },\r\n    \"message\": {\r\n        \"intent\": {\r\n            \"fulfillment\": {\r\n                \"customer\": {\r\n                    \"person\": {\r\n                        \"gender\": \"Female\"\r\n                    }\r\n                }\r\n            }\r\n        }\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{bpp-url}}/public/search",
+							"host": [
+								"{{bpp-url}}"
+							],
+							"path": [
+								"public",
+								"search"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "388"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 02 Nov 2022 06:01:50 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"context\": {\n        \"domain\": \"dsep:scholarships\",\n        \"country\": \"IND\",\n        \"city\": \"*\",\n        \"action\": \"on_search\",\n        \"core_version\": \"1.0.0-draft\",\n        \"bap_id\": \"http://localhost:9001/\",\n        \"bap_uri\": \"http://localhost:9001/dsep/v0/\",\n        \"bpp_id\": \"protean-dsep-bpp\",\n        \"bpp_uri\": \"http://localhost:8001/public\",\n        \"transaction_id\": \"7154b8e2-89bf-4401-9291-f366f8aa96e2\",\n        \"message_id\": \"b3090f5b-3dac-4ecd-83fa-10b44603f13e\",\n        \"timestamp\": \"2021-03-23T10:00:40.065Z\"\n    },\n    \"message\": {\n        \"ack\": {\n            \"status\": \"ACK\"\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Search by Intent - Get scholarships by financial income criteria",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"context\": {\r\n        \"domain\": \"dsep:scholarships\",\r\n        \"country\": \"IND\",\r\n        \"city\": \"*\",\r\n        \"action\": \"search\",\r\n        \"core_version\": \"1.0.0-draft\",\r\n        \"bap_id\": \"http://localhost:9001/\",\r\n        \"bap_uri\": \"http://localhost:9001/dsep/v0/\",\r\n        \"transaction_id\": \"7154b8e2-89bf-4401-9291-f366f8aa96e3\",\r\n        \"message_id\": \"411de0f2-981c-49e8-8b5c-4394be24f08e\",\r\n        \"timestamp\": \"2021-03-23T10:00:40.065Z\"\r\n    },\r\n    \"message\": {\r\n        \"intent\": {\r\n            \"fulfillment\": {\r\n                \"customer\": {\r\n                    \"person\": {\r\n                        \"tags\": [\r\n                            {\r\n                                \"code\": \"fin_status\",\r\n                                \"list\": [\r\n                                    {\r\n                                        \"code\": \"family_income\",\r\n                                        \"value\": \"2000000\"\r\n                                    }\r\n                                ]\r\n                            }\r\n                        ]\r\n                    }\r\n                }\r\n            }\r\n        }\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{bpp-url}}/public/search",
+					"host": [
+						"{{bpp-url}}"
+					],
+					"path": [
+						"public",
+						"search"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Search by Intent - Get scholarships by financial income criteria",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"context\": {\r\n        \"domain\": \"dsep:scholarships\",\r\n        \"country\": \"IND\",\r\n        \"city\": \"std:080\",\r\n        \"action\": \"search\",\r\n        \"core_version\": \"0.9.3\",\r\n        \"bap_id\": \"http://localhost:9001/\",\r\n        \"bap_uri\": \"http://localhost:9001/dsep/v0/\",\r\n        \"message_id\": \"5ac3dd78-829e-4c7d-9139-a15adbb582cc\",\r\n        \"timestamp\": \"2021-03-23T10:00:40.065Z\"\r\n    },\r\n    \"message\": {\r\n        \"intent\": {\r\n            \"fulfillment\": {\r\n                \"customer\": {\r\n                    \"person\": {\r\n                        \"tags\": [\r\n                            {\r\n                                \"code\": \"fin_status\",\r\n                                \"list\": [\r\n                                    {\r\n                                        \"code\": \"family_income\",\r\n                                        \"value\": \"2000000\"\r\n                                    }\r\n                                ]\r\n                            }\r\n                        ]\r\n                    }\r\n                }\r\n            }\r\n        }\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{bpp-url}}/public/search",
+							"host": [
+								"{{bpp-url}}"
+							],
+							"path": [
+								"public",
+								"search"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "391"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 02 Nov 2022 06:03:20 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"context\": {\n        \"domain\": \"dsep:scholarships\",\n        \"country\": \"IND\",\n        \"city\": \"*\",\n        \"action\": \"on_search\",\n        \"core_version\": \"1.0.0-draft\",\n        \"bap_id\": \"http://localhost:9001/\",\n        \"bap_uri\": \"http://localhost:9001/dsep/v0/\",\n        \"bpp_id\": \"protean-dsep-bpp\",\n        \"bpp_uri\": \"http://localhost:8001/public\",\n        \"transaction_id\": \"7154b8e2-89bf-4401-9291-f366f8aa96e2\",\n        \"message_id\": \"411de0f2-981c-49e8-8b5c-4394be24f08e\",\n        \"timestamp\": \"2021-03-23T10:00:40.065Z\"\n    },\n    \"message\": {\n        \"ack\": {\n            \"status\": \"ACK\"\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Search by Intent - Get scholarships by caste criteria",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"context\": {\r\n        \"domain\": \"dsep:scholarships\",\r\n        \"country\": \"IND\",\r\n        \"city\": \"*\",\r\n        \"action\": \"search\",\r\n        \"core_version\": \"1.0.0-draft\",\r\n        \"bap_id\": \"http://localhost:9001/\",\r\n        \"bap_uri\": \"http://localhost:9001/dsep/v0/\",\r\n        \"transaction_id\": \"6afb7420-7564-4fca-8513-d9dd243acd60\",\r\n        \"message_id\": \"944fc4e2-b6ff-4a54-96c1-e41bef4224e9\",\r\n        \"timestamp\": \"2021-03-23T10:00:40.065Z\"\r\n    },\r\n    \"message\": {\r\n        \"intent\": {\r\n            \"fulfillment\": {\r\n                \"customer\": {\r\n                    \"person\": {\r\n                        \"tags\": [\r\n                            {\r\n                                \"code\": \"caste_category\",\r\n                                \"list\": [\r\n                                    {\r\n                                        \"value\": \"SC\"\r\n                                    }\r\n                                ]\r\n                            }\r\n                        ]\r\n                    }\r\n                }\r\n            }\r\n        }\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{bpp-url}}/public/search",
+					"host": [
+						"{{bpp-url}}"
+					],
+					"path": [
+						"public",
+						"search"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Search by Intent - Get scholarships by caste criteria",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"context\": {\r\n        \"domain\": \"dsep:scholarships\",\r\n        \"country\": \"IND\",\r\n        \"city\": \"std:080\",\r\n        \"action\": \"search\",\r\n        \"core_version\": \"0.9.3\",\r\n        \"bap_id\": \"http://localhost:9001/\",\r\n        \"bap_uri\": \"http://localhost:9001/dsep/v0/\",\r\n        \"message_id\": \"5ac3dd78-829e-4c7d-9139-a15adbb582cc\",\r\n        \"timestamp\": \"2021-03-23T10:00:40.065Z\"\r\n    },\r\n    \"message\": {\r\n        \"intent\": {\r\n            \"fulfillment\": {\r\n                \"customer\": {\r\n                    \"person\": {\r\n                        \"tags\": [\r\n                            {\r\n                                \"code\": \"caste_category\",\r\n                                \"list\": [\r\n                                    {\r\n                                        \"value\": \"SC\"\r\n                                    }\r\n                                ]\r\n                            }\r\n                        ]\r\n                    }\r\n                }\r\n            }\r\n        }\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{bpp-url}}/public/search",
+							"host": [
+								"{{bpp-url}}"
+							],
+							"path": [
+								"public",
+								"search"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "391"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 02 Nov 2022 06:03:37 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"context\": {\n        \"domain\": \"dsep:scholarships\",\n        \"country\": \"IND\",\n        \"city\": \"*\",\n        \"action\": \"on_search\",\n        \"core_version\": \"1.0.0-draft\",\n        \"bap_id\": \"http://localhost:9001/\",\n        \"bap_uri\": \"http://localhost:9001/dsep/v0/\",\n        \"bpp_id\": \"protean-dsep-bpp\",\n        \"bpp_uri\": \"http://localhost:8001/public\",\n        \"transaction_id\": \"6afb7420-7564-4fca-8513-d9dd243acd60\",\n        \"message_id\": \"944fc4e2-b6ff-4a54-96c1-e41bef4224e9\",\n        \"timestamp\": \"2021-03-23T10:00:40.065Z\"\n    },\n    \"message\": {\n        \"ack\": {\n            \"status\": \"ACK\"\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "select",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"context\": {\r\n        \"domain\": \"dsep:scholarships\",\r\n        \"country\": \"IND\",\r\n        \"city\": \"*\",\r\n        \"action\": \"init\",\r\n        \"core_version\": \"1.0.0-draft\",\r\n        \"bap_id\": \"http://example-bap.com/\",\r\n        \"bap_uri\": \"http://example-bap.com/dsep/v0/\",\r\n        \"bpp_id\": \"{{bpp-url}}\",\r\n        \"bpp_uri\": \"{{bpp-url}}/public/\",\r\n        \"transaction_id\": \"d854e8bf-d75f-45dd-a8d1-2e91267c2ea0\",\r\n        \"message_id\": \"26185207-311b-4168-b604-384d24c87ac7\",\r\n        \"timestamp\": \"2023-01-24T12:02:40.065Z\"\r\n    },\r\n    \"message\": {\r\n        \"order\": {\r\n            \"provider\": {\r\n                \"id\": \"ZQU31169990\",\r\n                \"category_id\": \"PROV_CAT_1\",\r\n                \"descriptor\": {\r\n                    \"name\": \"XYZ Education Foundation\"\r\n                },\r\n                \"fulfillments\": [\r\n                    {\r\n                        \"id\": \"DSEP_FUL_01\",\r\n                        \"type\": \"SCHOLARSHIP\",\r\n                        \"customer\": {\r\n                            \"person\": {\r\n                                \"id\": \"candidate_101\",\r\n                                \"name\": \"Jane D\",\r\n                                \"gender\": \"Female\",\r\n                                \"tags\": [\r\n                                    {\r\n                                        \"code\": \"academic_qualifications\",\r\n                                        \"name\": \"Academic Qualifications\",\r\n                                        \"list\": [\r\n                                            {\r\n                                                \"code\": \"gr\",\r\n                                                \"name\": \"Grade\",\r\n                                                \"value\": \"Grade 12\"\r\n                                            },\r\n                                            {\r\n                                                \"code\": \"percentage_grade\",\r\n                                                \"name\": \"Percentage/Grade\",\r\n                                                \"value\": \"62\"\r\n                                            },\r\n                                            {\r\n                                                \"code\": \"passing_year\",\r\n                                                \"name\": \"Passing Year\",\r\n                                                \"value\": \"2022\"\r\n                                            }\r\n                                        ]\r\n                                    },\r\n                                    {\r\n                                        \"code\": \"current_education\",\r\n                                        \"name\": \"Current Education\",\r\n                                        \"list\": [\r\n                                            {\r\n                                                \"code\": \"ug\",\r\n                                                \"name\": \"Under Graduate\",\r\n                                                \"value\": \"BSc IT\"\r\n                                            },\r\n                                            {\r\n                                                \"code\": \"academic_year\",\r\n                                                \"name\": \"Academic Year\",\r\n                                                \"value\": \"2022-2023\"\r\n                                            }\r\n                                        ]\r\n                                    },\r\n                                    {\r\n                                        \"code\": \"fin_status\",\r\n                                        \"list\": [\r\n                                            {\r\n                                                \"code\": \"family_income\",\r\n                                                \"name\": \"Family Income\",\r\n                                                \"value\": \"500000\"\r\n                                            }\r\n                                        ],\r\n                                        \"name\": \"Financial Status\"\r\n                                    }\r\n                                ]\r\n                            },\r\n                            \"contact\": {\r\n                                \"address\": {\r\n                                    \"full\": \"AB apartment|Mumbai|Maharashtra\",\r\n                                    \"format\": \"addressLine1|city|state\"\r\n                                }\r\n                            }\r\n                        }\r\n                    }\r\n                ],\r\n                \"items\": [\r\n                    {\r\n                        \"id\": \"SCM_58741444\",\r\n                        \"descriptor\": {\r\n                            \"name\": \"XYZ Undergraduation scholarship for Economically Backward Female Students\",\r\n                            \"long_desc\": \"XYZ Undergraduation scholarship for Economically Backward Female Students\"\r\n                        },\r\n                        \"price\": {\r\n                            \"currency\": \"INR\",\r\n                            \"value\": 30000\r\n                        },\r\n                        \"category_id\": \"DSEP_CAT_2\",\r\n                        \"fulfillment_id\": \"DSEP_FUL_01\"\r\n                    }\r\n                ]\r\n            }\r\n        }\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{bpp-url}}/public/init",
+					"host": [
+						"{{bpp-url}}"
+					],
+					"path": [
+						"public",
+						"init"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "init",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"context\": {\r\n        \"domain\": \"dsep:scholarships\",\r\n        \"country\": \"IND\",\r\n        \"city\": \"*\",\r\n        \"action\": \"init\",\r\n        \"core_version\": \"1.0.0-draft\",\r\n        \"bap_id\": \"http://example-bap.com/\",\r\n        \"bap_uri\": \"http://example-bap.com/dsep/v0/\",\r\n        \"bpp_id\": \"{{bpp-url}}\",\r\n        \"bpp_uri\": \"{{bpp-url}}/public/\",\r\n        \"transaction_id\": \"d854e8bf-d75f-45dd-a8d1-2e91267c2ea0\",\r\n        \"message_id\": \"26185207-311b-4168-b604-384d24c87ac7\",\r\n        \"timestamp\": \"2023-01-24T12:02:40.065Z\"\r\n    },\r\n    \"message\": {\r\n        \"order\": {\r\n            \"provider\": {\r\n                \"id\": \"ZQU31169990\",\r\n                \"category_id\": \"PROV_CAT_1\",\r\n                \"descriptor\": {\r\n                    \"name\": \"XYZ Education Foundation\"\r\n                },\r\n                \"fulfillments\": [\r\n                    {\r\n                        \"id\": \"DSEP_FUL_01\",\r\n                        \"type\": \"SCHOLARSHIP\",\r\n                        \"customer\": {\r\n                            \"person\": {\r\n                                \"id\": \"candidate_101\",\r\n                                \"name\": \"Jane D\",\r\n                                \"gender\": \"Female\",\r\n                                \"tags\": [\r\n                                    {\r\n                                        \"code\": \"academic_qualifications\",\r\n                                        \"name\": \"Academic Qualifications\",\r\n                                        \"list\": [\r\n                                            {\r\n                                                \"code\": \"gr\",\r\n                                                \"name\": \"Grade\",\r\n                                                \"value\": \"Grade 12\"\r\n                                            },\r\n                                            {\r\n                                                \"code\": \"percentage_grade\",\r\n                                                \"name\": \"Percentage/Grade\",\r\n                                                \"value\": \"62\"\r\n                                            },\r\n                                            {\r\n                                                \"code\": \"passing_year\",\r\n                                                \"name\": \"Passing Year\",\r\n                                                \"value\": \"2022\"\r\n                                            }\r\n                                        ]\r\n                                    },\r\n                                    {\r\n                                        \"code\": \"current_education\",\r\n                                        \"name\": \"Current Education\",\r\n                                        \"list\": [\r\n                                            {\r\n                                                \"code\": \"ug\",\r\n                                                \"name\": \"Under Graduate\",\r\n                                                \"value\": \"BSc IT\"\r\n                                            },\r\n                                            {\r\n                                                \"code\": \"academic_year\",\r\n                                                \"name\": \"Academic Year\",\r\n                                                \"value\": \"2022-2023\"\r\n                                            }\r\n                                        ]\r\n                                    },\r\n                                    {\r\n                                        \"code\": \"fin_status\",\r\n                                        \"list\": [\r\n                                            {\r\n                                                \"code\": \"family_income\",\r\n                                                \"name\": \"Family Income\",\r\n                                                \"value\": \"500000\"\r\n                                            }\r\n                                        ],\r\n                                        \"name\": \"Financial Status\"\r\n                                    }\r\n                                ]\r\n                            },\r\n                            \"contact\": {\r\n                                \"address\": {\r\n                                    \"full\": \"AB apartment|Mumbai|Maharashtra\",\r\n                                    \"format\": \"addressLine1|city|state\"\r\n                                }\r\n                            }\r\n                        }\r\n                    }\r\n                ],\r\n                \"items\": [\r\n                    {\r\n                        \"id\": \"SCM_58741444\",\r\n                        \"descriptor\": {\r\n                            \"name\": \"XYZ Undergraduation scholarship for Economically Backward Female Students\",\r\n                            \"long_desc\": \"XYZ Undergraduation scholarship for Economically Backward Female Students\"\r\n                        },\r\n                        \"price\": {\r\n                            \"currency\": \"INR\",\r\n                            \"value\": 30000\r\n                        },\r\n                        \"category_id\": \"DSEP_CAT_2\",\r\n                        \"fulfillment_id\": \"DSEP_FUL_01\"\r\n                    }\r\n                ]\r\n            }\r\n        }\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{bpp-url}}/public/init",
+					"host": [
+						"{{bpp-url}}"
+					],
+					"path": [
+						"public",
+						"init"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "confirm",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"context\": {\r\n        \"domain\": \"dsep:scholarships\",\r\n        \"country\": \"IND\",\r\n        \"city\": \"*\",\r\n        \"action\": \"confirm\",\r\n        \"core_version\": \"1.0.0-draft\",\r\n        \"bap_id\": \"http://example-bap.com/\",\r\n        \"bap_uri\": \"http://example-bap.com/dsep/v0/\",\r\n        \"bpp_id\": \"{{bpp-url}}\",\r\n        \"bpp_uri\": \"{{bpp-url}}/public/\",\r\n        \"transaction_id\": \"d854e8bf-d75f-45dd-a8d1-2e91267c2ea0\",\r\n        \"message_id\": \"7125df47-5fe6-4db6-953e-7018763edd6e\",\r\n        \"timestamp\": \"2023-01-24T12:42:40.065Z\"\r\n    },\r\n    \"message\": {\r\n        \"order\": {\r\n            \"id\": \"APP_17713156\",\r\n            \"provider\": {\r\n                \"id\": \"ZQU31169990\",\r\n                \"descriptor\": {\r\n                    \"name\": \"XYZ Education Foundation\"\r\n                },\r\n                \"fulfillments\": [\r\n                    {\r\n                        \"id\": \"DSEP_FUL_01\",\r\n                        \"type\": \"SCHOLARSHIP\",\r\n                        \"state\": {\r\n                            \"descriptor\": {\r\n                                \"code\": \"INIT\",\r\n                                \"short_desc\": \"Application initiated.\"\r\n                            },\r\n                            \"updated_at\": \"Tue Jan 24 07:04:44 UTC 2023\",\r\n                            \"updated_by\": \"candidate_101\"\r\n                        },\r\n                        \"customer\": {\r\n                            \"person\": {\r\n                                \"id\": \"candidate_101\",\r\n                                \"name\": \"Jane D\",\r\n                                \"gender\": \"Female\",\r\n                                \"tags\": [\r\n                                    {\r\n                                        \"code\": \"academic_qualifications\",\r\n                                        \"name\": \"Academic Qualifications\",\r\n                                        \"list\": [\r\n                                            {\r\n                                                \"code\": \"gr\",\r\n                                                \"name\": \"Grade\",\r\n                                                \"value\": \"Grade 12\"\r\n                                            },\r\n                                            {\r\n                                                \"code\": \"percentage_grade\",\r\n                                                \"name\": \"Percentage/Grade\",\r\n                                                \"value\": \"62\"\r\n                                            },\r\n                                            {\r\n                                                \"code\": \"passing_year\",\r\n                                                \"name\": \"Passing Year\",\r\n                                                \"value\": \"2022\"\r\n                                            }\r\n                                        ]\r\n                                    },\r\n                                    {\r\n                                        \"code\": \"current_education\",\r\n                                        \"name\": \"Current Education\",\r\n                                        \"list\": [\r\n                                            {\r\n                                                \"code\": \"ug\",\r\n                                                \"name\": \"Under Graduate\",\r\n                                                \"value\": \"BSc IT\"\r\n                                            },\r\n                                            {\r\n                                                \"code\": \"academic_year\",\r\n                                                \"name\": \"Academic Year\",\r\n                                                \"value\": \"2022-2023\"\r\n                                            }\r\n                                        ]\r\n                                    },\r\n                                    {\r\n                                        \"code\": \"fin_status\",\r\n                                        \"name\": \"Financial Status\",\r\n                                        \"list\": [\r\n                                            {\r\n                                                \"code\": \"family_income\",\r\n                                                \"name\": \"Family Income\",\r\n                                                \"value\": \"500000\"\r\n                                            }\r\n                                        ]\r\n                                    }\r\n                                ]\r\n                            },\r\n                            \"contact\": {\r\n                                \"address\": {\r\n                                    \"full\": \"AB apartment|Mumbai|Maharashtra\",\r\n                                    \"format\": \"addressLine1|city|state\"\r\n                                }\r\n                            }\r\n                        }\r\n                    }\r\n                ],\r\n                \"items\": [\r\n                    {\r\n                        \"id\": \"SCM_58741444\",\r\n                        \"descriptor\": {\r\n                            \"name\": \"XYZ Undergraduation scholarship for Economically Backward Female Students\"\r\n                        },\r\n                        \"price\": {\r\n                            \"currency\": \"INR\",\r\n                            \"value\": \"30000\"\r\n                        },\r\n                        \"xinput_required\": {\r\n                            \"xinput\": {\r\n                                \"form\": {\r\n                                    \"url\": \"https://proteanrc.centralindia.cloudapp.azure.com/dsep-bpp-1/public/getForm/APP_17713156/8cf0a3bab3f046f48f21259da89e02a9\",\r\n                                    \"mime_type\": \"text/html\",\r\n                                    \"submission_id\": \"SP7xOdO513Wgh7q\"\r\n                                }\r\n                            }\r\n                        }\r\n                    }\r\n                ]\r\n            }\r\n        }\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{bpp-url}}/public/confirm",
+					"host": [
+						"{{bpp-url}}"
+					],
+					"path": [
+						"public",
+						"confirm"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "status",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"context\": {\r\n        \"domain\": \"dsep:scholarships\",\r\n        \"country\": \"IND\",\r\n        \"city\": \"*\",\r\n        \"action\": \"status\",\r\n        \"core_version\": \"1.0.0-draft\",\r\n        \"bap_id\": \"http://example-bap.com/\",\r\n        \"bap_uri\": \"http://example-bap.com/dsep/v0/\",\r\n        \"bpp_id\": \"{{bpp-url}}\",\r\n        \"bpp_uri\": \"{{bpp-url}}/public/\",\r\n        \"transaction_id\": \"d854e8bf-d75f-45dd-a8d1-2e91267c2ea0\",\r\n        \"message_id\": \"43c0a879-b84f-489b-8c87-40791cc3ad2c\",\r\n        \"timestamp\": \"2023-01-24T12:45:40.065Z\"\r\n    },\r\n    \"message\": {\r\n        \"order_id\": \"APP_17713156\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{bpp-url}}/public/status",
+					"host": [
+						"{{bpp-url}}"
+					],
+					"path": [
+						"public",
+						"status"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
