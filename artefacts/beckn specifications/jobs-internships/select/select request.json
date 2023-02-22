@@ -1,0 +1,23 @@
+{
+    "context": {
+        "domain": "dsep:jobs",
+        "action": "select",
+        "version": "1.0.0",
+        "bap_id": "dsep-protocol.becknprotocol.io",
+        "bap_uri": "https://dsep-protocol-network.becknprotocol.io/",
+        "bpp_id": "affinidi.com.bpp",
+        "bpp_uri": "https://6vs8xnx5i7.execute-api.ap-south-1.amazonaws.com/dsep",
+        "transaction_id": "a9aaecca-10b7-4d19-b640-b047a7c62195",
+         "message_id": "$89bdae17-9942-40c8-869a-5bd413356407",
+        "timestamp": "2022-10-11T09:55:41.161Z"
+    },
+    "message": {
+        "order": {
+            "items": [
+                {
+                    "id": "0253719F295521CED39EC9C2F3C8DCDE"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "context": {
+        "domain": "dsep:scholarships",
+        "location": {
+            "city": {
+                "name": "Bangalore",
+                "code": "std:080"
+            },
+            "country": {
+                "name": "India",
+                "code": "IND"
+            }
+        },
+        "action": "search",
+        "version": "1.0.0",
+        "bap_id": "dsep-protocol.becknprotocol.io",
+        "bap_uri": "https://dsep-protocol-network.becknprotocol.io/",
+        "transaction_id": "edea17fa-b5c4-48c9-86dd-1b80dda67d37",
+        "message_id": "4618752a-c502-4503-bd75-635622ea8aff",
+        "timestamp": "2023-02-18T17:00:40.065Z",
+        "ttl": "PT10M"
+    },
+    "message": {
+        "intent": {
+            "item": {
+                "descriptor": {
+                    "name": "scholarship for undergraduate"
+                }
+            }
+        }
+    }
+}
