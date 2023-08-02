@@ -1,10 +1,14 @@
 {
     "context": {
         "domain": "dsep:jobs",
-        "country": "IND",
-        "city": "std:080",
+        "location": {
+            "country": {
+                "name": "India",
+                "code": "IND"
+            }
+        },
         "action": "on_search",
-        "core_version": "1.0.0",
+        "version": "1.0.0",
         "bap_id": "dsep-protocol.becknprotocol.io",
         "bap_uri": "https://dsep-protocol-network.becknprotocol.io/",
         "bpp_id": "affinidi.com.bpp",
