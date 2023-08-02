@@ -14,13 +14,9 @@
         "intent": {
             "item": [
                 {
-                    "descriptor": {
-                        "name": "Developer"
-                    },
                     "tags": [
                         {
-                            "code": "skills",
-                            "name": "",
+                            "code": "req-skills",
                             "list": [
                                 {
                                     "code": "flutter"
