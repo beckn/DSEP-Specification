@@ -1,0 +1,19 @@
+{
+  "context": {
+    "domain": "dsep:mentoring",
+    "action": "on_rating",
+    "bap_id": "dsep-protocol.becknprotocol.io",
+    "bap_uri": "https://dsep-protocol-network.becknprotocol.io/",
+    "bpp_id": "dev.elevate-apis.shikshalokam.org/bpp",
+    "bpp_uri": "https://dev.elevate-apis.shikshalokam.org/bpp",
+    "timestamp": "2022-12-15T15:38:16.226Z",
+    "message_id": "64109204-bdff-4af6-a76b-5a33f8aa8675",
+    "version": "1.0.0",
+    "ttl": "PT10M",
+    "transaction_id": "bdb5ba09-2241-4f00-b434-73466cd06228"
+  },
+  "message": {
+    "rating_ack": true,
+    "feedback_ack": false
+  }
+}
