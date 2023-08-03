@@ -11,18 +11,28 @@
         "code": "IND"
       }
     },
-    "action": "status",
+    "action": "update",
+    "timestamp": "2023-02-18T17:15:25.385Z",
     "version": "1.0.0",
     "bap_id": "dsep-protocol.becknprotocol.io",
     "bap_uri": "https://dsep-protocol-network.becknprotocol.io/",
     "bpp_id": "https://proteanrc.centralindia.cloudapp.azure.com/dsep-bpp-1",
     "bpp_uri": "https://proteanrc.centralindia.cloudapp.azure.com/dsep-bpp-1/public",
     "transaction_id": "edea17fa-b5c4-48c9-86dd-1b80dda67d37",
-    "message_id": "444904a1-ddfc-4db2-b854-5067900dee5f",
-    "timestamp": "2023-02-17T17:20:40.065Z",
-    "ttl": "PT10M"
+    "message_id": "49ab0adb-1444-4b02-9e79-736e27b7cb2a"
   },
   "message": {
-    "order_id": "APP_53280729"
+    "update_target": "order.fulfillments[0].contact",
+    "order": {
+      "fulfillments": [
+        {
+          "contact": {
+            "phone": "998842423",
+            "email": "maryofficial@xyz.com"
+          }
+        }
+      ],
+      "id": "a9aaecca-10b7-4d19-b640-b047a7c621961676906777032"
+    }
   }
 }

@@ -2,7 +2,7 @@
   "context": {
     "domain": "dsep:jobs",
     "version": "1.0.0",
-    "action": "status",
+    "action": "update",
     "bap_id": "dsep-protocol.becknprotocol.io",
     "bap_uri": "https://dsep-protocol-network.becknprotocol.io/",
     "location": {
@@ -19,6 +19,18 @@
     "timestamp": "2023-02-23T08:09:02.172Z"
   },
   "message": {
-    "order_id": "1677140405881"
+    "update_target": "order.fulfillments[0].customer.person.name",
+    "order": {
+      "fulfillments": [
+        {
+          "customer": {
+            "person": {
+              "name": "James Smith"
+            }
+          }
+        }
+      ],
+      "id": "a9aaecca-10b7-4d19-b640-b047a7c621961676906777032"
+    }
   }
 }
