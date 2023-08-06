@@ -1,0 +1,36 @@
+{
+    "context": {
+      "domain": "dsep:courses",
+      "version": "1.0.0",
+      "action": "track",
+      "bap_id": "dsep-protocol.becknprotocol.io",
+      "bap_uri": "https://dsep-protocol-network.becknprotocol.io/",
+      "bpp_id": "bpp.dsep.samagra.io",
+      "bpp_uri": "https://bpp.dsep.samagra.io",
+      "transaction_id": "a9aaecca-10b7-4d19-b640-b047a7c62196",
+      "message_id": "af5480c0-3e8d-42c1-8385-acab7def1c51",
+      "ttl": "PT10M",
+      "timestamp": "2023-02-20T15:26:16.949Z"
+    },
+    "responses": [
+      {
+        "context": {
+          "domain": "dsep:courses",
+          "version": "1.0.0",
+          "action": "on_track",
+          "bap_id": "dsep-protocol.becknprotocol.io",
+          "bap_uri": "https://dsep-protocol-network.becknprotocol.io/",
+          "bpp_id": "bpp.dsep.samagra.io",
+          "bpp_uri": "https://bpp.dsep.samagra.io",
+          "transaction_id": "a9aaecca-10b7-4d19-b640-b047a7c62196",
+          "message_id": "af5480c0-3e8d-42c1-8385-acab7def1c51",
+          "ttl": "PT10M",
+          "timestamp": "2023-02-20T15:26:16.949Z"
+        },
+        "message": {
+          "url": "https://courses-training-network/order/8912389bdfdnads",
+          "status": "active"
+        }
+      }
+    ]
+  }

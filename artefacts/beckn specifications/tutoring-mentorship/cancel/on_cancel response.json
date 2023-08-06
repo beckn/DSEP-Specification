@@ -1,0 +1,252 @@
+{
+    "context": {
+        "domain": "dsep:mentoring",
+        "version": "1.0.0",
+        "action": "cancel",
+        "bap_id": "dsep-protocol.becknprotocol.io",
+        "bap_uri": "https://dsep-protocol-network.becknprotocol.io/",
+        "bpp_id": "dev.elevate-apis.shikshalokam.org/bpp",
+        "bpp_uri": "https://dev.elevate-apis.shikshalokam.org/bpp",
+        "transaction_id": "bdb5ba09-2241-4f00-b434-73466cd06228",
+        "message_id": "2b749cba-1219-4878-a5c6-ad0c6488fe5d",
+        "ttl": "PT10M",
+        "timestamp": "2023-02-22T12:21:30.170Z"
+    },
+    "responses": [
+        {
+            "context": {
+                "domain": "dsep:mentoring",
+                "action": "on_cancel",
+                "bap_id": "dsep-protocol.becknprotocol.io",
+                "bap_uri": "https://dsep-protocol-network.becknprotocol.io/",
+                "bpp_id": "dev.elevate-apis.shikshalokam.org/bpp",
+                "bpp_uri": "https://dev.elevate-apis.shikshalokam.org/bpp",
+                "timestamp": "2023-02-22T12:21:30.354Z",
+                "ttl": "PT10M",
+                "version": "1.0.0",
+                "message_id": "2b749cba-1219-4878-a5c6-ad0c6488fe5d",
+                "transaction_id": "bdb5ba09-2241-4f00-b434-73466cd06228"
+            },
+            "message": {
+                "order": {
+                    "id": "3159f713-120e-4e7e-beae-6a638fb5df55",
+                    "state": "Cancelled",
+                    "type": "DEFAULT",
+                    "provider": {
+                        "categories": [
+                            {
+                                "id": "Infrastructure Management",
+                                "descriptor": {
+                                    "code": "Infrastructure Management",
+                                    "name": "Infrastructure Management"
+                                }
+                            }
+                        ],
+                        "id": "63d93aea62820fd9e6be9d1b",
+                        "descriptor": {
+                            "code": "org7",
+                            "name": "ShikshalokamSeven",
+                            "short_desc": "ShikshalokamOrgSeven"
+                        },
+                        "items": [
+                            {
+                                "quantity": {
+                                    "available": {
+                                        "count": 5
+                                    },
+                                    "allocated": {
+                                        "count": 10
+                                    }
+                                },
+                                "price": {
+                                    "value": "0"
+                                },
+                                "id": "63f1ebc423df082856936510",
+                                "category_ids": [
+                                    "Infrastructure-Management"
+                                ],
+                                "descriptor": {
+                                    "images": [
+                                        {
+                                            "url": "https://loremflickr.com/640/480/abstract?random=fttu1nidzj"
+                                        }
+                                    ],
+                                    "code": "Class Room Management Level Tags Test 1",
+                                    "name": "Class Room Management Level Tags Test 1",
+                                    "short_desc": "A level Tags Test 1 session on class room management for state schools and colleges.",
+                                    "long_desc": "A level Tags Test 1 session on class room management for state schools and colleges."
+                                },
+                                "fulfillment_ids": [
+                                    "3f8fb3a3-f018-40e6-9b96-8b7bbd5df965"
+                                ],
+                                "tags": [
+                                    {
+                                        "display": true,
+                                        "descriptor": {
+                                            "code": "recommended_for",
+                                            "name": "recommended_for"
+                                        },
+                                        "list": [
+                                            {
+                                                "descriptor": {
+                                                    "code": "deo",
+                                                    "name": "District education officer"
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "display": true,
+                                        "descriptor": {
+                                            "code": "about_mentor",
+                                            "name": "About Mentor"
+                                        },
+                                        "list": [
+                                            {
+                                                "descriptor": {
+                                                    "code": "about_mentor",
+                                                    "name": "This mentor has spent their entire career working in their field, developing a deep understanding of its complexities and nuances. They are a natural teacher, and take great pleasure in helping others develop their own expertise. Whether you're looking for guidance on a specific project or simply need someone to bounce ideas off of, this mentor is always available and ready to lend a helping hand."
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "display": true,
+                                        "descriptor": {
+                                            "code": "professional_experience",
+                                            "name": "Professional Experience"
+                                        },
+                                        "list": [
+                                            {
+                                                "descriptor": {
+                                                    "code": "professional_experience",
+                                                    "name": "Lead Developer | Technical Advisor - NexGen Innovations"
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "display": true,
+                                        "descriptor": {
+                                            "code": "qualification",
+                                            "name": "Qualification"
+                                        },
+                                        "list": [
+                                            {
+                                                "descriptor": {
+                                                    "code": "qualification",
+                                                    "name": "M.Tech from IIT Kharagpur"
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "display": true,
+                                        "descriptor": {
+                                            "code": "experience",
+                                            "name": "Experience"
+                                        },
+                                        "list": [
+                                            {
+                                                "descriptor": {
+                                                    "code": "experience",
+                                                    "name": "29 Years"
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "display": true,
+                                        "descriptor": {
+                                            "code": "total_meetings",
+                                            "name": "Total Meetings"
+                                        },
+                                        "list": [
+                                            {
+                                                "descriptor": {
+                                                    "code": "total_meetings",
+                                                    "name": "112+"
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "display": true,
+                                        "descriptor": {
+                                            "code": "specialist_in",
+                                            "name": "Specialist In"
+                                        },
+                                        "list": [
+                                            {
+                                                "descriptor": {
+                                                    "code": "specialist_in",
+                                                    "name": "Mobile App Development"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ],
+                        "fulfillments": [
+                            {
+                                "language": [
+                                    "English"
+                                ],
+                                "id": "3f8fb3a3-f018-40e6-9b96-8b7bbd5df965",
+                                "time": {
+                                    "range": {
+                                        "start": "2023-02-19T23:23:16",
+                                        "end": "2023-02-20T01:23:16"
+                                    },
+                                    "label": "Session Timing"
+                                },
+                                "type": "ONLINE",
+                                "tags": [
+                                    {
+                                        "descriptor": {
+                                            "code": "status",
+                                            "name": "status"
+                                        },
+                                        "list": [
+                                            {
+                                                "descriptor": {
+                                                    "code": "Cancelled",
+                                                    "name": "Cancelled",
+                                                    "reason": "Mentor had to cancel!"
+                                                }
+                                            }
+                                        ],
+                                        "display": true
+                                    },
+                                    {
+                                        "descriptor": {
+                                            "code": "timeZone",
+                                            "name": "timeZone"
+                                        },
+                                        "list": [
+                                            {
+                                                "descriptor": {
+                                                    "code": "Asia/Calcutta",
+                                                    "name": "Asia/Calcutta"
+                                                }
+                                            }
+                                        ],
+                                        "display": true
+                                    }
+                                ],
+                                "agent": {
+                                    "person": {
+                                        "name": "joffin Mentor Fourteen",
+                                        "id": "63f0ceac62820fd9e6be9e9b"
+                                    }
+                                },
+                                "tracking": false
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    ]
+}
