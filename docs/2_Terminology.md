@@ -17,13 +17,11 @@ Below is a glossary of terms frequently used in the DSEP ecosystem. These terms 
 |                   | Industry                    | The sector of the economy to which a job belongs (e.g., healthcare, technology, retail).         |
 |                   | Location                    | The geographical area where the job is located.                                                  |
 |                   | Experience Level            | The amount of work experience required or preferred (e.g., entry-level, mid-level, senior-level).|
-
 | **Sorting Terms**   |                             |                                                                                                 |
 |                   | Date Posted                 | Sorting jobs based on when they were published.                                                  |
 |                   | Relevance                   | Sorting jobs based on how closely they match search criteria.                                    |
 |                   | Salary Estimate             | Sorting jobs based on the estimated salary range.                                                |
 |                   | Company Rating              | Sorting jobs based on employer reviews and ratings.                                              |
-
 | **Filtering Terms** |                             |                                                                                                 |
 |                   | Full-Time/Part-Time         | Filters jobs based on the number of working hours.                                               |
 |                   | Remote                      | Filters jobs that allow you to work from a location other than the office.                      |
@@ -33,7 +31,6 @@ Below is a glossary of terms frequently used in the DSEP ecosystem. These terms 
 |                   | Freelance                   | Filters jobs that are project-based and not tied to a single employer.                          |
 |                   | Direct Employer/Recruitment Agency | Filters jobs based on whether they are posted directly by the employer or through a recruitment agency. |
 |                   | Benefits                    | Filters jobs that offer specific benefits like health insurance, retirement plans, etc.         |
-
 | **Descriptive Terms** |                           |                                                                                                 |
 |                   | Job Description             | A detailed outline of the roles, responsibilities, and qualifications for a job.                |
 |                   | Qualifications              | The education, skills, and experience required for a job.                                       |
@@ -59,13 +56,11 @@ Below is a glossary of terms frequently used in the DSEP ecosystem. These terms 
 |                      | Industry                    | The sector of the economy to which the internship belongs (e.g., healthcare, technology, retail).|
 |                      | Location                    | The geographical area where the internship is located.                                           |
 |                      | Experience Level            | The amount of work or academic experience required or preferred (e.g., freshman, sophomore, junior, senior).|
-
 | **Sorting Terms**    |                             |                                                                                                 |
 |                      | Date Posted                 | Sorting internships based on when they were published.                                          |
 |                      | Relevance                   | Sorting internships based on how closely they match search criteria.                            |
 |                      | Duration                    | Sorting internships based on the length of the internship period.                               |
 |                      | Company Rating              | Sorting internships based on employer reviews and ratings.                                       |
-
 | **Filtering Terms**  |                             |                                                                                                 |
 |                      | Paid/Unpaid                 | Filters internships based on whether they are paid or unpaid.                                   |
 |                      | Remote                      | Filters internships that allow you to work from a location other than the office.               |
@@ -73,7 +68,6 @@ Below is a glossary of terms frequently used in the DSEP ecosystem. These terms 
 |                      | Academic Credit             | Filters internships that offer academic credit.                                                 |
 |                      | Seasonal                    | Filters internships that are offered during a specific season (e.g., summer, winter).            |
 |                      | Direct Employer/Recruitment Agency | Filters internships based on whether they are posted directly by the employer or through a recruitment agency. |
-
 | **Descriptive Terms**|                             |                                                                                                 |
 |                      | Internship Description      | A detailed outline of the roles, responsibilities, and qualifications for the internship.       |
 |                      | Qualifications              | The education, skills, and experience preferred for the internship.                              |
@@ -97,13 +91,11 @@ Below is a glossary of terms frequently used in the DSEP ecosystem. These terms 
 |                    | Subject Area        | The academic or professional field to which the course or training belongs.                      |
 |                    | Instructor          | The person or organization responsible for delivering the course or training.                    |
 |                    | Platform            | The medium through which the course is offered (e.g., online, in-person, hybrid).                |
-
 | **Sorting Terms**  |                     |                                                                                                 |
 |                    | Date Added          | Sorting courses or training based on when they were added to the catalog.                        |
 |                    | Popularity          | Sorting courses or training based on the number of enrollments or reviews.                       |
 |                    | Duration            | Sorting courses or training based on the length of the program.                                  |
 |                    | Rating              | Sorting courses or training based on user or expert reviews and ratings.                         |
-
 | **Filtering Terms**|                     |                                                                                                 |
 |                    | Free/Paid           | Filters courses or training based on whether they are free or require payment.                   |
 |                    | Beginner/Intermediate/Advanced | Filters courses or training based on the level of expertise required.                         |
@@ -113,7 +105,6 @@ Below is a glossary of terms frequently used in the DSEP ecosystem. These terms 
 |                    | Prerequisites      | Filters courses that require certain qualifications or prior courses.                           |
 |                    | Accreditation      | Filters courses that are accredited by educational or professional organizations.               |
 |                    | Accessibility Features | Filters courses that offer features like subtitles, sign language interpreters, or screen reader compatibility. |
-
 | **Descriptive Terms** |                  |                                                                                                 |
 |                       | Course Description| A detailed outline of the course content, objectives, and what learners can expect to gain.      |
 |                       | Syllabus          | A breakdown of topics, readings, and assignments for each session or week of the course.         |
@@ -135,13 +126,11 @@ Below is a glossary of terms frequently used in the DSEP ecosystem. These terms 
 |                    | Subject Area        | The academic or professional field to which the service belongs.                                 |
 |                    | Provider            | The person or organization responsible for delivering the service.                               |
 |                    | Platform            | The medium through which the service is offered (e.g., online, in-person, hybrid).               |
-
 | **Sorting Terms**  |                     |                                                                                                 |
 |                    | Date Added          | Sorting services based on when they were added to the catalog.                                   |
 |                    | Popularity          | Sorting services based on the number of enrollments or reviews.                                  |
 |                    | Duration            | Sorting services based on the length of the program or session.                                  |
 |                    | Rating              | Sorting services based on user or expert reviews and ratings.                                    |
-
 | **Filtering Terms**|                     |                                                                                                 |
 |                    | Free/Paid           | Filters services based on whether they are free or require payment.                              |
 |                    | Beginner/Intermediate/Advanced | Filters services based on the level of expertise required or targeted.                        |
@@ -150,7 +139,6 @@ Below is a glossary of terms frequently used in the DSEP ecosystem. These terms 
 |                    | Self-Paced/Scheduled | Filters services based on whether they are self-paced or require attendance at scheduled times. |
 |                    | Group/One-on-One   | Filters services based on whether they are offered in a group setting or one-on-one.             |
 |                    | Accessibility Features | Filters services that offer features like subtitles, sign language interpreters, or screen reader compatibility. |
-
 | **Descriptive Terms** |                  |                                                                                                 |
 |                       | Service Description | A detailed outline of what the service entails, objectives, and what learners can expect to gain.|
 |                       | Syllabus/Agenda   | A breakdown of topics, readings, and assignments for each session or week of the service, if applicable.|
@@ -172,19 +160,16 @@ Below is a glossary of terms frequently used in the DSEP ecosystem. These terms 
 |                    | Field of Study         | The academic or professional field to which the scholarship or grant is applicable.              |
 |                    | Funding Organization   | The organization or institution responsible for providing the scholarship or grant.              |
 |                    | Geographical Eligibility | The geographical area where applicants must reside to be eligible for the scholarship or grant.  |
-
 | **Sorting Terms**  |                        |                                                                                                 |
 |                    | Deadline               | Sorting scholarships or grants based on the application deadline.                                |
 |                    | Award Amount           | Sorting scholarships or grants based on the amount of money awarded.                             |
 |                    | Popularity             | Sorting scholarships or grants based on the number of applications or views.                     |
-
 | **Filtering Terms**|                        |                                                                                                 |
 |                    | Need-Based/Merit-Based | Filters scholarships or grants based on the criteria for awarding them, such as financial need or academic merit.|
 |                    | Undergraduate/Postgraduate | Filters scholarships or grants based on the level of study they are intended for.              |
 |                    | Renewable/Non-Renewable | Filters scholarships or grants based on whether they can be renewed for multiple years.         |
 |                    | Application Method     | Filters scholarships or grants based on how to apply (e.g., online, mail, in-person).           |
 |                    | Citizenship Requirements | Filters scholarships or grants based on citizenship or residency requirements.                 |
-
 | **Descriptive Terms** |                     |                                                                                                 |
 |                       | Award Description   | A detailed outline of what the scholarship or grant entails, including objectives and what recipients can expect to gain.|
 |                       | Eligibility Criteria | The qualifications or conditions that applicants must meet to be eligible for the scholarship or grant.|
