@@ -1,15 +1,4 @@
-{
-    "context": {
-        "domain": "dsep:courses",
-        "version": "1.0.0",
-        "action": "search",
-        "bap_id": "dsep-protocol.becknprotocol.io",
-        "bap_uri": "https://dsep-protocol-network.becknprotocol.io/",
-        "transaction_id": "a9aaecca-10b7-4d19-b640-b047a7c62196",
-        "message_id": "7db91181-718f-4720-83de-88e36e9f854e",
-        "ttl": "PT10M",
-        "timestamp": "2023-02-22T10:30:18.145Z"
-    },
+// Below is a sample set of responses from multiple providers
     "responses": [
         {
             "context": {
