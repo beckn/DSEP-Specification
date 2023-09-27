@@ -1,0 +1,23 @@
+{
+  "context": {
+    "domain": "onest:courses",
+    "action": "support",
+    "version": "1.1.0",
+    "bap_id": "onest.becknprotocol.io",
+    "bap_uri": "https://onest-network.becknprotocol.io/",
+    "transaction_id": "a9aaecca-10b7-4d19-b640-b047a7c62196",
+    "message_id": "$bb579fb8-cb82-4824-be12-fcbc405b6608",
+    "timestamp": "2022-12-12T09:55:41.161Z",
+    "ttl": "PT10M",
+    "bpp_id": "infosys.springboard.io",
+    "bpp_uri": "https://infosys.springboard.io"
+  },
+  "message": {
+    "support": {
+      "ref_id": "d4975df5",
+      "callback_phone": "+91 9988776543",
+      "phone": "+91 9988776543",
+      "email": "manjunath@gmail.com"
+    }
+  }
+}
