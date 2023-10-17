@@ -1,0 +1,141 @@
+{
+    "context": {
+        "domain": "dsep:scholarships",
+        "location": {
+            "city": {
+                "name": "Bangalore",
+                "code": "std:080"
+            },
+            "country": {
+                "name": "India",
+                "code": "IND"
+            }
+        },
+        "action": "on_select",
+        "timestamp": "2023-08-02T09:12:12.680Z",
+        "ttl": "PT10M",
+        "version": "1.1.0",
+        "bap_id": "ps-bap-network.becknprotocol.io",
+        "bap_uri": "https://ps-bap-network.becknprotocol.io/",
+        "bpp_id": "beckn-sandbox-bpp.becknprotocol.io",
+        "bpp_uri": "https://sandbox-bpp-network.becknprotocol.io/",
+        "transaction_id": "a9aaecca-10b7-4d19-b640-022723112309",
+        "message_id": "6114a3e5-acb0-4c99-b017-0ead5e894bad"
+    },
+    "message": {
+        "order": {
+            "type": "DEFAULT",
+            "provider": {
+                "id": "BX213573733",
+                "descriptor": {
+                    "name": "XYZ Education Foundation",
+                    "short_desc" : "Short Description about the Foundation",
+                    "images": [
+                        {
+                            "url" : "url of the image of the provider"
+                        }
+                    ]
+                },
+                "rateable": false
+            },
+            "items": [
+                {
+                    "id": "SCM_63587501",
+                    "descriptor": {
+                        "name": "XYZ Education Scholarship for Undergraduate Students",
+                        "short_desc": "XYZ Education Scholarship for Undergraduate Students"
+                    },
+                    "price": {
+                        "currency": "INR",
+                        "value": "Upto RS.1000 per year"
+                    },
+                    "rateable": false,
+                    "tags": [
+                        {
+                            "display": true,
+                            "descriptor": {
+                                "code": "edu_qual",
+                                "name": "Academic Eligibility"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "gr",
+                                        "name": "Grade"
+                                    },
+                                    "value": "Grade 12",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "percentage_grade",
+                                        "name": "Percentage/Grade"
+                                    },
+                                    "value": ">= 50",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "passing_year",
+                                        "name": "Passing Year"
+                                    },
+                                    "value": "2021",
+                                    "display": false
+                                }
+                            ]
+                        },
+                        {
+                            "display": true,
+                            "descriptor": {
+                                "code": "benefits",
+                                "name": "Benefits"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "scholarship-amount",
+                                        "name": "Scholarship Amount"
+                                    },
+                                    "value": "Upto Rs.25000 per year",
+                                    "display": true
+                                }
+                            ]
+                        }
+                    ],
+                    "category_ids": ["DSEP_CAT_1"]
+                }
+            ],
+            "fulfillments": [
+                {
+                    "id": "DSEP_FUL_63587501",
+                    "type": "SCHOLARSHIP",
+                    "tracking": false,
+                    "contact": {
+                        "phone": "9876543210",
+                        "email": "maryg@xyz.com"
+                    },
+                    "stops": [
+                        {
+                            "type": "APPLICATION-START",
+                            "time": {
+                                "timestamp": "2022-09-01T00:00:00.000Z"
+                            }
+                        },
+                        {
+                            "type": "APPLICATION-END",
+                            "time": {
+                                "timestamp": "2022-10-31T00:00:00.000Z"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
+
+
+
+
+
+

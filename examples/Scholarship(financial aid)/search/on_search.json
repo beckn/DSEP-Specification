@@ -1,0 +1,116 @@
+{
+    "context": {
+        "domain": "dsep:scholarships",
+        "location": {
+            "city": {
+                "name": "Bangalore",
+                "code": "std:080"
+            },
+            "country": {
+                "name": "India",
+                "code": "IND"
+            }
+        },
+        "action": "on_search",
+        "timestamp": "2023-08-02T07:21:58.448Z",
+        "ttl": "PT10M",
+        "version": "1.1.0",
+        "bap_id": "ps-bap-network.becknprotocol.io",
+        "bap_uri": "https://ps-bap-network.becknprotocol.io/",
+        "bpp_id": "beckn-sandbox-bpp.becknprotocol.io",
+        "bpp_uri": "https://sandbox-bpp-network.becknprotocol.io/",
+        "transaction_id": "a9aaecca-10b7-4d19-b640-b047a7c60008",
+        "message_id": "f6a7d7ea-a23e-4419-b07e-a3412fdffecf"
+    },
+    "message": {
+        "catalog": {
+            "descriptor": {
+                "name": "Protean DSEP Scholarships and Grants BPP Platform"
+            },
+            "providers": [
+                {
+                    "id": "BX213573733",
+                    "descriptor": {
+                        "name": "XYZ Education Foundation",
+                        "short_desc" : "Short Description about the Foundation",
+                        "images": [
+                            {
+                                "url" : "url of the image of the provider"
+                            }
+                        ]
+                    },
+                    "categories": [
+                        {
+                            "id": "DSEP_CAT_1",
+                            "descriptor": {
+                                "code": "ug",
+                                "name": "Under Graduate"
+                            }
+                        }
+                    ],
+                    "fulfillments": [
+                        {
+                            "id": "DSEP_FUL_63587501",
+                            "type": "SCHOLARSHIP",
+                            "tracking": false,
+                            "contact": {
+                                "phone": "9876543210",
+                                "email": "maryg@xyz.com"
+                            },
+                            "stops": [
+                                {
+                                    "type": "APPLICATION-START",
+                                    "time": {
+                                        "timestamp": "2022-09-01T00:00:00.000Z"
+                                    }
+                                },
+                                {
+                                    "type": "APPLICATION-END",
+                                    "time": {
+                                        "timestamp": "2022-10-31T00:00:00.000Z"
+                                    }
+                                }
+                            ]
+                        }
+                    ],
+                    "items": [
+                        {
+                            "id": "SCM_63587501",
+                            "descriptor": {
+                                "name": "XYZ Education Scholarship for Undergraduate Students",
+                                "long_desc": "XYZ Education Scholarship for Undergraduate Students"
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "Upto RS.1000 per year"
+                            },
+                            "rateable": false,
+                            "tags": [
+                                {
+                                    "display": true,
+                                    "descriptor": {
+                                        "code": "benefits",
+                                        "name": "Benefits"
+                                    },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "scholarship-amount",
+                                                "name": "Scholarship Amount"
+                                            },
+                                            "value": "Upto Rs.25000 per year",
+                                            "display": true
+                                        }
+                                    ]
+                                }
+                            ],
+                            "category_ids": ["DSEP_CAT_1"],
+                            "fulfillment_ids": ["DSEP_FUL_63587501"]
+                        }
+                    ],
+                    "rateable": false
+                }
+            ]
+        }
+    }
+}
