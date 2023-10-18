@@ -1,6 +1,6 @@
 **Domain:** Financial Support
 
-**Use case:** Vidyasarathi is a platform for applying to various scholarships provided by corporates and namma yatri as seeker platform will help the user to avail scholarships through its platform.
+**Use case:** Vidyasarathi is a platform for applying to various scholarships provided by corporates and Namma Yatri as seeker platform will help the user to avail scholarships through its platform.
 
 **Flow Diagram:**
 
