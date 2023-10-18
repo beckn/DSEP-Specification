@@ -4,7 +4,7 @@
 
 **Flow Diagram:**
 
-![financial support flow diagram](../assets/financial-support-flow.jpeg)
+![financial support flow diagram](../assets/financial-support-flow.jpeg?raw=true)
 
 **Flow Explaination:** 
 
