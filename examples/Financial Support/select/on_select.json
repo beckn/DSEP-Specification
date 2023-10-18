@@ -24,7 +24,6 @@
     },
     "message": {
         "order": {
-            "type": "DEFAULT",
             "provider": {
                 "id": "BX213573733",
                 "descriptor": {
@@ -110,9 +109,13 @@
                     "id": "DSEP_FUL_63587501",
                     "type": "SCHOLARSHIP",
                     "tracking": false,
-                    "contact": {
-                        "phone": "9876543210",
-                        "email": "maryg@xyz.com"
+                    "agent" : {
+                        "person" : {
+                            "name" : "Ekstep Foundation SPoc"
+                        },
+                        "contact" : {
+                            "email" : "ekstepsupport@ekstep.com"
+                        }
                     },
                     "stops": [
                         {
@@ -129,7 +132,36 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "quote" :{
+                "price" : {
+                    "currency" : "INR",
+                    "value" : "250000"
+                },
+                "breakup":[
+                    {
+                        "title": "Tution fee",
+                        "price" : {
+                            "currency" : "INR",
+                            "value" : "150000"
+                        }
+                    },
+                    {
+                        "title": "Hostel fee",
+                        "price" : {
+                            "currency" : "INR",
+                            "value" : "50000"
+                        }
+                    },
+                    {
+                        "title": "Books",
+                        "price" : {
+                            "currency" : "INR",
+                            "value" : "50000"
+                        }
+                    }
+                ]
+            }
         }
     }
 }

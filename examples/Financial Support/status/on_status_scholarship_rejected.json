@@ -11,7 +11,7 @@
                 "code": "IND"
             }
         },
-        "action": "on_init",
+        "action": "on_status",
         "version": "1.1.0",
         "bap_id": "ps-bap-network.becknprotocol.io",
         "bap_uri": "https://ps-bap-network.becknprotocol.io/",
@@ -24,6 +24,7 @@
     },
     "message": {
         "order": {
+            "id": "12424kh",
             "provider": {
                 "id": "471",
                 "descriptor": {
@@ -47,35 +48,6 @@
                     "price": {
                         "currency": "INR",
                         "value": "Upto RS.1000 per year"
-                    },
-                    "xinput": {
-                        "required": true,
-                        "head": {
-                            "descriptor": {
-                                "name": "Application Form"
-                            },
-                            "index": {
-                                "min": 0,
-                                "cur": 0,
-                                "max": 2
-                            },
-                            "headings": [
-                                "Personal Details",
-                                "Educational Details",
-                                "Financial Information"
-                            ]
-                        },
-                        "form": {
-                            "mime_type": "text/html",
-                            "url": "https://6vs8xnx5i7.vidyasaarathi.co.in/loans-kyc/xinput/formid/a23f2fdfbbb8ac402bfd54f",
-                            "resubmit": false,
-                            "auth": {
-                                "descriptor": {
-                                    "code": "jwt"
-                                },
-                                "value": "eyJhbGciOiJIUzI.eyJzdWIiOiIxMjM0NTY3O.SflKxwRJSMeKKF2QT4"
-                            }
-                        }
                     },
                     "rateable": false,
                     "tags": [
@@ -250,9 +222,6 @@
                             ]
                         }
                     ],
-                    "category_ids": [
-                        "VSP_CAT_4"
-                    ],
                     "fulfillment_ids": [
                         "VSP_FUL_1113"
                     ]
@@ -277,15 +246,22 @@
                 {
                     "state" : {
                         "descriptor" : {
-                            "code": "APPLICATION-STARTED"
-                        }
+                            "code": "SCHOLARSHIP-REJECTED",
+                            "name" : "Application Rejected",
+                            "short_desc" : "Application is rejected due to inappropriate Informaion"
+                        },
+                        "updated_at" : "2023-02-06T09:55:41.161Z"
                     },
                     "id": "VSP_FUL_1113",
                     "type": "SCHOLARSHIP",
                     "tracking": false,
-                    "contact": {
-                        "phone": "9876543210",
-                        "email": "maryg@xyz.com"
+                    "agent" : {
+                        "person" : {
+                            "name" : "Ekstep Foundation SPoc"
+                        },
+                        "contact" : {
+                            "email" : "ekstepsupport@ekstep.com"
+                        }
                     },
                     "customer": {
                         "id": "aadhaar:798677675565",
@@ -315,13 +291,66 @@
                     ]
                 }
             ],
-            "payment" : [
+            "cancellation_terms" : [
                 {
-                    "bank_code": "IFSC_Code_Of_the_bank",
-                    "bank_account_number" :"121212121212",
-                    "bank_account_name" : "Account Holder Name"
+                    "cancellation_fee" : {
+                        "amount" : {
+                            "currency" : "INR",
+                            "value" : "Penalty upto 5,00,000 INR"
+                        }
+                    }
                 }
-            ]
+
+            ],
+            "docs": [
+                {
+                    "descriptor":{
+                        "name" :"Application Details",
+                        "short_desc" : "To open this document, enter the password sent to your email mayan****@***.com"
+                    },
+                    "url" : "https://link-to-the-document.com",
+                    "mime_type" : "application/pdf"
+                }
+            ],
+            "payments" : [
+                {
+                    "params" :{
+                        "bank_code": "IFSC_Code_Of_the_bank",
+                        "bank_account_number" :"121212121212",
+                        "bank_account_name" : "Account Holder Name"
+                    }
+                   
+                }
+            ],
+            "quote" :{
+                "price" : {
+                    "currency" : "INR",
+                    "value" : "250000"
+                },
+                "breakup":[
+                    {
+                        "title": "Tution fee",
+                        "price" : {
+                            "currency" : "INR",
+                            "value" : "150000"
+                        }
+                    },
+                    {
+                        "title": "Hostel fee",
+                        "price" : {
+                            "currency" : "INR",
+                            "value" : "50000"
+                        }
+                    },
+                    {
+                        "title": "Books",
+                        "price" : {
+                            "currency" : "INR",
+                            "value" : "50000"
+                        }
+                    }
+                ]
+            }
         }
     }
 }
