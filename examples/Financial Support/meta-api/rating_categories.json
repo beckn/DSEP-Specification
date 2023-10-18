@@ -11,7 +11,7 @@
                 "code": "IND"
             }
         },
-        "action": "update",
+        "action": "rating_categories",
         "version": "1.1.0",
         "bap_id": "ps-bap-network.becknprotocol.io",
         "bap_uri": "https://ps-bap-network.becknprotocol.io/",
@@ -23,25 +23,10 @@
         "ttl": "PT10M"
     },
     "message": {
-        "order": {
-            "id": "12424kh",
-            "fulfillments": [
-                {
-                    "customer": {
-                        "id": "aadhaar:798677675565",
-                        "person": {
-                            "name": "Jane Doe",
-                            "age": "13",
-                            "gender": "female"
-                        },
-                        "contact": {
-                            "phone": "+91-8858150042",
-                            "email": "jane.doe@example.com"
-                        }
-                    }
-                }
-            ]
-        },
-        "update_target": "order.fulfillments[0].customer"
+        "rating_categories" : [
+            "Item",
+            "provider",
+            "Order"
+        ]
     }
 }

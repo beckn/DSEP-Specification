@@ -11,7 +11,7 @@
                 "code": "IND"
             }
         },
-        "action": "on_status",
+        "action": "on_update",
         "version": "1.1.0",
         "bap_id": "ps-bap-network.becknprotocol.io",
         "bap_uri": "https://ps-bap-network.becknprotocol.io/",
@@ -246,8 +246,8 @@
                 {
                     "state" : {
                         "descriptor" : {
-                            "code": "SCHOLARSHIP-TRANSFERRED",
-                            "name" : "Scholarship tranferred"
+                            "code": "SCHOLARSHIP-DISBURSED",
+                            "name" : "Scholarship disbursed"
                         },
                         "updated_at" : "2023-02-06T09:55:41.161Z"
                     },
@@ -314,10 +314,14 @@
             "payments" : [
                 {
                     "params" :{
+                        "transaction_id" : "KKIB197197397942",
+                        "amount" : "250000",
+                        "currency" : "INR",
                         "bank_code": "IFSC_Code_Of_the_bank",
                         "bank_account_number" :"121212121212",
                         "bank_account_name" : "Account Holder Name"
-                    }
+                    },
+                    "status" : "PAID"
                    
                 }
             ],
