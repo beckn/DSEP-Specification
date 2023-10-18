@@ -3,7 +3,7 @@ Vidyasarathi is a platform for applying to various scholarships provided by corp
 
 ### Flow Diagram:
 
-![financial support flow diagram](./docs/assets/financial-support-flow.jpeg?raw=true)
+![financial support flow diagram](../assets/financial-support-flow.jpeg?raw=true)
 
 ### Flow Explaination:
 
