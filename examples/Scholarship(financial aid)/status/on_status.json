@@ -325,6 +325,13 @@
                     "url" : "https://link-to-the-document.com",
                     "mime_type" : "application/pdf"
                 }
+            ],
+            "payment" : [
+                {
+                    "bank_code": "IFSC_Code_Of_the_bank",
+                    "bank_account_number" :"121212121212",
+                    "bank_account_name" : "Account Holder Name"
+                }
             ]
         }
     }
