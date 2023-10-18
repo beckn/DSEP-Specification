@@ -1,12 +1,11 @@
-**Domain:** Financial Support
+### Use case:
+Vidyasarathi is a platform for applying to various scholarships provided by corporates and Namma Yatri as seeker platform will help the user to avail scholarships through its platform.
 
-**Use case:** Vidyasarathi is a platform for applying to various scholarships provided by corporates and Namma Yatri as seeker platform will help the user to avail scholarships through its platform.
-
-**Flow Diagram:**
+### Flow Diagram:
 
 ![financial support flow diagram](./docs/assets/financial-support-flow.jpeg?raw=true)
 
-**Flow Explaination:** 
+### Flow Explaination:
 
 1. The driver sees the “Benefits” menu in the bottom tray of the app. He selects “Benefits” and can see various options on the page. This page has a section for *Insurance* and other benefits at the top, followed by the “Scholarships” section with different scholarships for children under it.
    1. **search API -** Request is made with filter like scholarship name, gender etc.
