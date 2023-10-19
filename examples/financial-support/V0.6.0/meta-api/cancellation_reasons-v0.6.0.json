@@ -1,0 +1,43 @@
+{
+    "context": {
+        "domain": "dsep:scholarships",
+        "location": {
+            "city": {
+                "name": "Bangalore",
+                "code": "std:080"
+            },
+            "country": {
+                "name": "India",
+                "code": "IND"
+            }
+        },
+        "action": "cancellation_reason",
+        "version": "0.6.0",
+        "bap_id": "ps-bap-network.becknprotocol.io",
+        "bap_uri": "https://ps-bap-network.becknprotocol.io/",
+        "bpp_id": "beckn-sandbox-bpp.becknprotocol.io",
+        "bpp_uri": "https://sandbox-bpp-network.becknprotocol.io/",
+        "transaction_id": "a9aaecca-10b7-4d19-b640-022723112309",
+        "message_id": "a9aaecca-10b7-4d19-b640-b047a7c60009",
+        "timestamp": "2023-02-06T09:55:41.161Z",
+        "ttl": "PT10M"
+    },
+    "message" :{
+        "cancellation_reason": [
+            {
+                "id" : "1",
+                "descriptor" : {
+                    "name" : "Got Another Scholarship",
+                    "short_desc" :"Got another scholarship"
+                }
+            },
+            {
+                "id" : "2",
+                "descriptor" : {
+                    "name" : "Scholarship not needed",
+                    "short_desc" :"Scholarship not needed anymore"
+                }
+            }
+        ]
+    }
+}
