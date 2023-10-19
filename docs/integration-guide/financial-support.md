@@ -45,8 +45,8 @@ Vidyasarathi is a platform for applying to various scholarships provided by corp
         },
         "action": "search",
         "version": "1.1.0",
-        "bap_id": "vidyasaarathi.io",
-        "bap_uri": "https://vidyasaarathi.io/",
+        "bap_id": "nammayatri.io",
+        "bap_uri": "https://nammayatri.io/",
         "transaction_id": "a9aaecca-10b7-4d19-b640-022723112309",
         "message_id": "a9aaecca-10b7-4d19-b640-b047a7c60009",
         "timestamp": "2023-02-06T09:55:41.161Z",
@@ -82,8 +82,8 @@ Vidyasarathi is a platform for applying to various scholarships provided by corp
         },
         "action": "search",
         "version": "1.1.0",
-        "bap_id": "vidyasaarathi.io",
-        "bap_uri": "https://vidyasaarathi.io/",
+        "bap_id": "nammayatri.io",
+        "bap_uri": "https://nammayatri.io/",
         "transaction_id": "a9aaecca-10b7-4d19-b640-022723112309",
         "message_id": "a9aaecca-10b7-4d19-b640-b047a7c60009",
         "timestamp": "2023-02-06T09:55:41.161Z",
@@ -117,8 +117,8 @@ Vidyasarathi is a platform for applying to various scholarships provided by corp
         },
         "action": "search",
         "version": "1.1.0",
-        "bap_id": "vidyasaarathi.io",
-        "bap_uri": "https://vidyasaarathi.io/",
+        "bap_id": "nammayatri.io",
+        "bap_uri": "https://nammayatri.io/",
         "transaction_id": "a9aaecca-10b7-4d19-b640-022723112309",
         "message_id": "a9aaecca-10b7-4d19-b640-b047a7c60009",
         "timestamp": "2023-02-06T09:55:41.161Z",
@@ -126,14 +126,10 @@ Vidyasarathi is a platform for applying to various scholarships provided by corp
     },
    "message": {
       "intent": {
-         "provider": {
-            "categories": [
-               {
-                  "descriptor": {
-                     "code": "scholarship for undergraduate"
-                  }
-               }
-            ]
+         "item": {
+            "descriptor": {
+               "name": "scholarship for undergraduate"
+            }
          },
          "fulfillment": {
             "customer": {
@@ -165,10 +161,10 @@ Vidyasarathi is a platform for applying to various scholarships provided by corp
       "timestamp": "2023-08-02T07:21:58.448Z",
       "ttl": "PT10M",
       "version": "1.1.0",
-      "bap_id": "vidyasaarathi.io",
-      "bap_uri": "https://vidyasaarathi.io/",,
-      "bpp_id": "nammayatri.io",
-      "bpp_uri": "https://nammayatri.io/",
+      "bap_id": "nammayatri.io",
+      "bap_uri": "https://nammayatri.io/",
+      "bpp_id": "vidyasarathi.io",
+      "bpp_uri": "https://vidyasarathi.io/",
       "transaction_id": "a9aaecca-10b7-4d19-b640-b047a7c60008",
       "message_id": "f6a7d7ea-a23e-4419-b07e-a3412fdffecf"
    },
@@ -284,67 +280,71 @@ Vidyasarathi is a platform for applying to various scholarships provided by corp
       "timestamp": "2023-08-02T07:21:58.448Z",
       "ttl": "PT10M",
       "version": "1.1.0",
-      "bap_id": "vidyasaarathi.io",
-      "bap_uri": "https://vidyasaarathi.io/",,
-      "bpp_id": "nammayatri.io",
-      "bpp_uri": "https://nammayatri.io/",
+      "bap_id": "nammayatri.io",
+      "bap_uri": "https://nammayatri.io/",
+      "bpp_id": "vidyasarathi.io",
+      "bpp_uri": "https://vidyasarathi.io/",
       "transaction_id": "a9aaecca-10b7-4d19-b640-b047a7c60008",
       "message_id": "f6a7d7ea-a23e-4419-b07e-a3412fdffecf"
    },
-    "message": {
-        "order": {
-            "items": [
-                {
-                    "id": "SCM_63587501"
-                }
-            ],
-            "provider": {
-                "id": "BX213573733"
+   "message": {
+      "order": {
+         "items": [
+            {
+               "id": "SCM_63587501"
+            }
+         ],
+         "provider": {
+            "id": "BX213573733"
+         },
+         "billing": {
+            "name": "Manjunath",
+            "organization": {
+               "descriptor": {
+                  "name": "Namma Yatri",
+                  "code": "nammayatri.in"
+               },
+               "contact": {
+                  "phone": "+91-8888888888",
+                  "email": "scholarships@nammayatri.in"
+               }
             },
-            "billing": {
-                "name": "Manjunath",
-                "organization": {
-                    "descriptor": {
-                        "name": "Namma Yatri",
-                        "code": "nammayatri.in"
-                    },
-                    "contact": {
-                        "phone": "+91-8888888888",
-                        "email": "scholarships@nammayatri.in"
-                    }
-                },
-                "address": "No 27, XYZ Lane, etc",
-                "phone": "+91-9999999999"
-            },
-            "fulfillments": [
-                {
-                    "customer": {
-                        "id": "aadhaar:798677675565",
-                        "person": {
-                            "name": "Jane Doe",
-                            "age": "13",
-                            "gender": "female"
-                        },
-                        "contact": {
-                            "phone": "+91-9123456789",
-                            "email": "jane.doe@example.com"
-                        }
-                    }
-                }
-            ],
-            "payment" : [
-                {
-                    "bank_code": "IFSC_Code_Of_the_bank",
-                    "bank_account_number" :"121212121212",
-                    "bank_account_name" : "Account Holder Name"
-                }
-            ]
+            "address": "No 27, XYZ Lane, etc",
+            "phone": "+91-9999999999"
+         },
+         "fulfillments": [
+            {
+               "customer": {
+                  "id": "aadhaar:798677675565",
+                  "person": {
+                     "name": "Jane Doe",
+                     "age": "13",
+                     "gender": "female"
+                  },
+                  "contact": {
+                     "phone": "+91-9663088848",
+                     "email": "jane.doe@example.com"
+                  }
+               }
+            }
+         ],
+         "payments" : [
+            {
+               "params" :{
+                  "bank_code": "IFSC_Code_Of_the_bank",
+                  "bank_account_number" :"121212121212",
+                  "bank_account_name" : "Account Holder Name"
+               }
 
-        }
-    }
+            }
+         ]
+
+      }
+   }
 }
 ```
 **on\_init API:**
+step 1: 
 ```json
 {
    "context": {
@@ -363,10 +363,376 @@ Vidyasarathi is a platform for applying to various scholarships provided by corp
       "timestamp": "2023-08-02T07:21:58.448Z",
       "ttl": "PT10M",
       "version": "1.1.0",
-      "bap_id": "vidyasaarathi.io",
-      "bap_uri": "https://vidyasaarathi.io/",,
-      "bpp_id": "nammayatri.io",
-      "bpp_uri": "https://nammayatri.io/",
+      "bap_id": "nammayatri.io",
+      "bap_uri": "https://nammayatri.io/",
+      "bpp_id": "vidyasarathi.io",
+      "bpp_uri": "https://vidyasarathi.io/",
+      "transaction_id": "a9aaecca-10b7-4d19-b640-b047a7c60008",
+      "message_id": "f6a7d7ea-a23e-4419-b07e-a3412fdffecf"
+   },
+   "message": {
+      "order": {
+         "provider": {
+            "id": "471",
+            "descriptor": {
+               "name": "XYZ Education Foundation",
+               "short_desc" : "Short Description about the Foundation",
+               "images": [
+                  {
+                     "url" : "url of the image of the provider"
+                  }
+               ]
+            },
+            "rateable": false
+         },
+         "items": [
+            {
+               "id": "SCM_63587501",
+               "descriptor": {
+                  "name": "XYZ Education Scholarship for Undergraduate Students",
+                  "long_desc": "XYZ Education Scholarship for Undergraduate Students"
+               },
+               "price": {
+                  "currency": "INR",
+                  "value": "Upto RS.1000 per year"
+               },
+               "xinput": {
+                  "required": true,
+                  "head": {
+                     "descriptor": {
+                        "name": "Application Form"
+                     },
+                     "index": {
+                        "min": 0,
+                        "cur": 0,
+                        "max": 3
+                     },
+                     "headings": [
+                        "Personal Details",
+                        "Educational Details",
+                        "Financial Information",
+                        "Review & Submit"
+                     ]
+                  },
+                  "form": {
+                     "mime_type": "text/html",
+                     "url": "https://6vs8xnx5i7.vidyasaarathi.co.in/loans-kyc/xinput/formid/a23f2fdfbbb8ac402bfd54f",
+                     "resubmit": false,
+                     "auth": {
+                        "descriptor": {
+                           "code": "jwt"
+                        },
+                        "value": "eyJhbGciOiJIUzI.eyJzdWIiOiIxMjM0NTY3O.SflKxwRJSMeKKF2QT4"
+                     }
+                  }
+               },
+               "rateable": false,
+               "tags": [
+                  {
+                     "display": true,
+                     "descriptor": {
+                        "code": "eligibility-criteria",
+                        "name": "Eligibility Criteria"
+                     },
+                     "list": [
+                        {
+                           "descriptor": {
+                              "code": "course_category_criteria",
+                              "name": "Course Category Criteria"
+                           },
+                           "value": "SC",
+                           "display": true
+                        },
+                        {
+                           "descriptor": {
+                              "code": "course_category_criteria",
+                              "name": "Course Category Criteria"
+                           },
+                           "value": "ST",
+                           "display": true
+                        },
+                        {
+                           "descriptor": {
+                              "code": "course_category_criteria",
+                              "name": "Course Category Criteria"
+                           },
+                           "value": "OB",
+                           "display": true
+                        },
+                        {
+                           "descriptor": {
+                              "code": "course_category_criteria",
+                              "name": "Course Category Criteria"
+                           },
+                           "value": "NT",
+                           "display": true
+                        },
+                        {
+                           "descriptor": {
+                              "code": "gender_criteria",
+                              "name": "Gender Criteria"
+                           },
+                           "value": "ALL",
+                           "display": true
+                        },
+                        {
+                           "descriptor": {
+                              "code": "city_criteria",
+                              "name": "City Criteria"
+                           },
+                           "value": "Thane",
+                           "display": true
+                        },
+                        {
+                           "descriptor": {
+                              "code": "city_criteria",
+                              "name": "City Criteria"
+                           },
+                           "value": "Nagpur",
+                           "display": true
+                        },
+                        {
+                           "descriptor": {
+                              "code": "city_criteria",
+                              "name": "City Criteria"
+                           },
+                           "value": "Yavatmal",
+                           "display": true
+                        },
+                        {
+                           "descriptor": {
+                              "code": "city_criteria",
+                              "name": "City Criteria"
+                           },
+                           "value": "Ahmed Nagar",
+                           "display": true
+                        },
+                        {
+                           "descriptor": {
+                              "code": "city_criteria",
+                              "name": "City Criteria"
+                           },
+                           "value": "Solapur",
+                           "display": true
+                        },
+                        {
+                           "descriptor": {
+                              "code": "city_criteria",
+                              "name": "City Criteria"
+                           },
+                           "value": "Pune",
+                           "display": true
+                        },
+                        {
+                           "descriptor": {
+                              "code": "state_criteria",
+                              "name": "State Criteria"
+                           },
+                           "value": "MAHARASHTRA",
+                           "display": true
+                        },
+                        {
+                           "descriptor": {
+                              "code": "qualification_criteria",
+                              "name": "Qualification Criteria"
+                           },
+                           "value": "Class 10|Min. score=50|Max. score=null",
+                           "display": true
+                        },
+                        {
+                           "descriptor": {
+                              "code": "qualification_criteria",
+                              "name": "Qualification Criteria"
+                           },
+                           "value": "Class 12|Min. score=60|Max. score=null",
+                           "display": true
+                        },
+                        {
+                           "descriptor": {
+                              "code": "financial_income_criteria",
+                              "name": "Financial Income Criteria"
+                           },
+                           "value": "Max Family Income - Rs.500000.00",
+                           "display": true
+                        },
+                        {
+                           "descriptor": {
+                              "code": "financial_year",
+                              "name": "Financial Year"
+                           },
+                           "value": "2023-2024",
+                           "display": true
+                        },
+                        {
+                           "descriptor": {
+                              "code": "certificate_instructions",
+                              "name": "Certificate Instructions"
+                           },
+                           "value": "ZMT Education 15JUL23",
+                           "display": true
+                        }
+                     ]
+                  },
+                  {
+                     "display": true,
+                     "descriptor": {
+                        "code": "additional_info",
+                        "name": "Additional Info"
+                     },
+                     "list": [
+                        {
+                           "descriptor": {
+                              "code": "faq",
+                              "name": "Frequently Asked Questions"
+                           },
+                           "value": "ZMT Education 15JUL23",
+                           "display": true
+                        },
+                        {
+                           "descriptor": {
+                              "code": "terms_conditions",
+                              "name": "Terms and Conditions"
+                           },
+                           "value": "ZMT Education 15JUL23",
+                           "display": true
+                        }
+                     ]
+                  }
+               ],
+               "fulfillment_ids": [
+                  "VSP_FUL_1113"
+               ]
+            }
+         ],
+         "billing": {
+            "name": "Manjunath",
+            "organization": {
+               "descriptor": {
+                  "name": "Namma Yatri",
+                  "code": "nammayatri.in"
+               },
+               "contact": {
+                  "phone": "+91-8888888888",
+                  "email": "scholarships@nammayatri.in"
+               }
+            },
+            "address": "No 27, XYZ Lane, etc",
+            "phone": "+91-9999999999"
+         },
+         "fulfillments": [
+            {
+               "state" : {
+                  "descriptor" : {
+                     "code": "APPLICATION-STARTED",
+                     "name" : "Application started"
+                  },
+                  "updated_at" : "2023-02-06T09:55:41.161Z"
+               },
+               "id": "VSP_FUL_1113",
+               "type": "SCHOLARSHIP",
+               "tracking": false,
+               "agent" : {
+                  "person" : {
+                     "name" : "Ekstep Foundation SPoc"
+                  },
+                  "contact" : {
+                     "email" : "ekstepsupport@ekstep.com"
+                  }
+               },
+               "customer": {
+                  "id": "aadhaar:798677675565",
+                  "person": {
+                     "name": "Jane Doe",
+                     "age": "13",
+                     "gender": "female"
+                  },
+                  "contact": {
+                     "phone": "+91-9663088848",
+                     "email": "jane.doe@example.com"
+                  }
+               },
+               "stops": [
+                  {
+                     "type": "APPLICATION-START",
+                     "time": {
+                        "timestamp": "2023-07-14T18:30:00.000Z"
+                     }
+                  },
+                  {
+                     "type": "APPLICATION-END",
+                     "time": {
+                        "timestamp": "2025-07-13T18:30:00.000Z"
+                     }
+                  }
+               ]
+            }
+         ],
+         "payments" : [
+            {
+               "params" :{
+                  "bank_code": "IFSC_Code_Of_the_bank",
+                  "bank_account_number" :"121212121212",
+                  "bank_account_name" : "Account Holder Name"
+               }
+
+            }
+         ],
+         "quote" :{
+            "price" : {
+               "currency" : "INR",
+               "value" : "250000"
+            },
+            "breakup":[
+               {
+                  "title": "Tution fee",
+                  "price" : {
+                     "currency" : "INR",
+                     "value" : "150000"
+                  }
+               },
+               {
+                  "title": "Hostel fee",
+                  "price" : {
+                     "currency" : "INR",
+                     "value" : "50000"
+                  }
+               },
+               {
+                  "title": "Books",
+                  "price" : {
+                     "currency" : "INR",
+                     "value" : "50000"
+                  }
+               }
+            ]
+         }
+      }
+   }
+}
+```
+step 2:
+```json
+{
+   "context": {
+      "domain": "onest:financial-support",
+      "location": {
+         "city": {
+            "name": "Bangalore",
+            "code": "std:080"
+         },
+         "country": {
+            "name": "India",
+            "code": "IND"
+         }
+      },
+      "action": "on_init",
+      "timestamp": "2023-08-02T07:21:58.448Z",
+      "ttl": "PT10M",
+      "version": "1.1.0",
+      "bap_id": "nammayatri.io",
+      "bap_uri": "https://nammayatri.io/",
+      "bpp_id": "vidyasarathi.io",
+      "bpp_uri": "https://vidyasarathi.io/",
       "transaction_id": "a9aaecca-10b7-4d19-b640-b047a7c60008",
       "message_id": "f6a7d7ea-a23e-4419-b07e-a3412fdffecf"
    },
@@ -404,13 +770,14 @@ Vidyasarathi is a platform for applying to various scholarships provided by corp
                             },
                             "index": {
                                 "min": 0,
-                                "cur": 0,
-                                "max": 2
+                                "cur": 1,
+                                "max": 3
                             },
                             "headings": [
                                 "Personal Details",
                                 "Educational Details",
-                                "Financial Information"
+                                "Financial Information",
+                                "Review & Submit"
                             ]
                         },
                         "form": {
@@ -598,9 +965,6 @@ Vidyasarathi is a platform for applying to various scholarships provided by corp
                             ]
                         }
                     ],
-                    "category_ids": [
-                        "VSP_CAT_4"
-                    ],
                     "fulfillment_ids": [
                         "VSP_FUL_1113"
                     ]
@@ -625,15 +989,21 @@ Vidyasarathi is a platform for applying to various scholarships provided by corp
                 {
                     "state" : {
                         "descriptor" : {
-                            "code": "APPLICATION-STARTED"
-                        }
+                            "code": "APPLICATION-STARTED",
+                            "name" : "Application started"
+                        },
+                        "updated_at" : "2023-02-06T09:55:41.161Z"
                     },
                     "id": "VSP_FUL_1113",
                     "type": "SCHOLARSHIP",
                     "tracking": false,
-                    "contact": {
-                        "phone": "9876543210",
-                        "email": "maryg@xyz.com"
+                    "agent" : {
+                        "person" : {
+                            "name" : "Ekstep Foundation SPoc"
+                        },
+                        "contact" : {
+                            "email" : "ekstepsupport@ekstep.com"
+                        }
                     },
                     "customer": {
                         "id": "aadhaar:798677675565",
@@ -663,13 +1033,1124 @@ Vidyasarathi is a platform for applying to various scholarships provided by corp
                     ]
                 }
             ],
-            "payment" : [
+            "payments" : [
                 {
-                    "bank_code": "IFSC_Code_Of_the_bank",
-                    "bank_account_number" :"121212121212",
-                    "bank_account_name" : "Account Holder Name"
+                    "params" :{
+                        "bank_code": "IFSC_Code_Of_the_bank",
+                        "bank_account_number" :"121212121212",
+                        "bank_account_name" : "Account Holder Name"
+                    }
+
                 }
-            ]
+            ],
+            "quote" :{
+                "price" : {
+                    "currency" : "INR",
+                    "value" : "250000"
+                },
+                "breakup":[
+                    {
+                        "title": "Tution fee",
+                        "price" : {
+                            "currency" : "INR",
+                            "value" : "150000"
+                        }
+                    },
+                    {
+                        "title": "Hostel fee",
+                        "price" : {
+                            "currency" : "INR",
+                            "value" : "50000"
+                        }
+                    },
+                    {
+                        "title": "Books",
+                        "price" : {
+                            "currency" : "INR",
+                            "value" : "50000"
+                        }
+                    }
+                ]
+            } 
+        }
+    }
+}
+```
+step 3:
+```json
+{
+   "context": {
+      "domain": "onest:financial-support",
+      "location": {
+         "city": {
+            "name": "Bangalore",
+            "code": "std:080"
+         },
+         "country": {
+            "name": "India",
+            "code": "IND"
+         }
+      },
+      "action": "on_init",
+      "timestamp": "2023-08-02T07:21:58.448Z",
+      "ttl": "PT10M",
+      "version": "1.1.0",
+      "bap_id": "nammayatri.io",
+      "bap_uri": "https://nammayatri.io/",
+      "bpp_id": "vidyasarathi.io",
+      "bpp_uri": "https://vidyasarathi.io/",
+      "transaction_id": "a9aaecca-10b7-4d19-b640-b047a7c60008",
+      "message_id": "f6a7d7ea-a23e-4419-b07e-a3412fdffecf"
+   },
+    "message": {
+        "order": {
+            "provider": {
+                "id": "471",
+                "descriptor": {
+                    "name": "XYZ Education Foundation",
+                    "short_desc" : "Short Description about the Foundation",
+                    "images": [
+                        {
+                            "url" : "url of the image of the provider"
+                        }
+                    ]
+                },
+                "rateable": false
+            },
+            "items": [
+                {
+                    "id": "SCM_63587501",
+                    "descriptor": {
+                        "name": "XYZ Education Scholarship for Undergraduate Students",
+                        "long_desc": "XYZ Education Scholarship for Undergraduate Students"
+                    },
+                    "price": {
+                        "currency": "INR",
+                        "value": "Upto RS.1000 per year"
+                    },
+                    "xinput": {
+                        "required": true,
+                        "head": {
+                            "descriptor": {
+                                "name": "Application Form"
+                            },
+                            "index": {
+                                "min": 0,
+                                "cur": 2,
+                                "max": 3
+                            },
+                            "headings": [
+                                "Personal Details",
+                                "Educational Details",
+                                "Financial Information",
+                                "Review & Submit"
+                            ]
+                        },
+                        "form": {
+                            "mime_type": "text/html",
+                            "url": "https://6vs8xnx5i7.vidyasaarathi.co.in/loans-kyc/xinput/formid/a23f2fdfbbb8ac402bfd54f",
+                            "resubmit": false,
+                            "auth": {
+                                "descriptor": {
+                                    "code": "jwt"
+                                },
+                                "value": "eyJhbGciOiJIUzI.eyJzdWIiOiIxMjM0NTY3O.SflKxwRJSMeKKF2QT4"
+                            }
+                        }
+                    },
+                    "rateable": false,
+                    "tags": [
+                        {
+                            "display": true,
+                            "descriptor": {
+                                "code": "eligibility-criteria",
+                                "name": "Eligibility Criteria"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "course_category_criteria",
+                                        "name": "Course Category Criteria"
+                                    },
+                                    "value": "SC",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "course_category_criteria",
+                                        "name": "Course Category Criteria"
+                                    },
+                                    "value": "ST",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "course_category_criteria",
+                                        "name": "Course Category Criteria"
+                                    },
+                                    "value": "OB",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "course_category_criteria",
+                                        "name": "Course Category Criteria"
+                                    },
+                                    "value": "NT",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "gender_criteria",
+                                        "name": "Gender Criteria"
+                                    },
+                                    "value": "ALL",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "city_criteria",
+                                        "name": "City Criteria"
+                                    },
+                                    "value": "Thane",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "city_criteria",
+                                        "name": "City Criteria"
+                                    },
+                                    "value": "Nagpur",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "city_criteria",
+                                        "name": "City Criteria"
+                                    },
+                                    "value": "Yavatmal",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "city_criteria",
+                                        "name": "City Criteria"
+                                    },
+                                    "value": "Ahmed Nagar",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "city_criteria",
+                                        "name": "City Criteria"
+                                    },
+                                    "value": "Solapur",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "city_criteria",
+                                        "name": "City Criteria"
+                                    },
+                                    "value": "Pune",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "state_criteria",
+                                        "name": "State Criteria"
+                                    },
+                                    "value": "MAHARASHTRA",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "qualification_criteria",
+                                        "name": "Qualification Criteria"
+                                    },
+                                    "value": "Class 10|Min. score=50|Max. score=null",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "qualification_criteria",
+                                        "name": "Qualification Criteria"
+                                    },
+                                    "value": "Class 12|Min. score=60|Max. score=null",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "financial_income_criteria",
+                                        "name": "Financial Income Criteria"
+                                    },
+                                    "value": "Max Family Income - Rs.500000.00",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "financial_year",
+                                        "name": "Financial Year"
+                                    },
+                                    "value": "2023-2024",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "certificate_instructions",
+                                        "name": "Certificate Instructions"
+                                    },
+                                    "value": "ZMT Education 15JUL23",
+                                    "display": true
+                                }
+                            ]
+                        },
+                        {
+                            "display": true,
+                            "descriptor": {
+                                "code": "additional_info",
+                                "name": "Additional Info"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "faq",
+                                        "name": "Frequently Asked Questions"
+                                    },
+                                    "value": "ZMT Education 15JUL23",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "terms_conditions",
+                                        "name": "Terms and Conditions"
+                                    },
+                                    "value": "ZMT Education 15JUL23",
+                                    "display": true
+                                }
+                            ]
+                        }
+                    ],
+                    "fulfillment_ids": [
+                        "VSP_FUL_1113"
+                    ]
+                }
+            ],
+            "billing": {
+                "name": "Manjunath",
+                "organization": {
+                    "descriptor": {
+                        "name": "Namma Yatri",
+                        "code": "nammayatri.in"
+                    },
+                    "contact": {
+                        "phone": "+91-8888888888",
+                        "email": "scholarships@nammayatri.in"
+                    }
+                },
+                "address": "No 27, XYZ Lane, etc",
+                "phone": "+91-9999999999"
+            },
+            "fulfillments": [
+                {
+                    "state" : {
+                        "descriptor" : {
+                            "code": "APPLICATION-STARTED",
+                            "name" : "Application started"
+                        },
+                        "updated_at" : "2023-02-06T09:55:41.161Z"
+                    },
+                    "id": "VSP_FUL_1113",
+                    "type": "SCHOLARSHIP",
+                    "tracking": false,
+                    "agent" : {
+                        "person" : {
+                            "name" : "Ekstep Foundation SPoc"
+                        },
+                        "contact" : {
+                            "email" : "ekstepsupport@ekstep.com"
+                        }
+                    },
+                    "customer": {
+                        "id": "aadhaar:798677675565",
+                        "person": {
+                            "name": "Jane Doe",
+                            "age": "13",
+                            "gender": "female"
+                        },
+                        "contact": {
+                            "phone": "+91-9663088848",
+                            "email": "jane.doe@example.com"
+                        }
+                    },
+                    "stops": [
+                        {
+                            "type": "APPLICATION-START",
+                            "time": {
+                                "timestamp": "2023-07-14T18:30:00.000Z"
+                            }
+                        },
+                        {
+                            "type": "APPLICATION-END",
+                            "time": {
+                                "timestamp": "2025-07-13T18:30:00.000Z"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "payments" : [
+                {
+                    "params" :{
+                        "bank_code": "IFSC_Code_Of_the_bank",
+                        "bank_account_number" :"121212121212",
+                        "bank_account_name" : "Account Holder Name"
+                    }
+
+                }
+            ],
+            "quote" :{
+                "price" : {
+                    "currency" : "INR",
+                    "value" : "250000"
+                },
+                "breakup":[
+                    {
+                        "title": "Tution fee",
+                        "price" : {
+                            "currency" : "INR",
+                            "value" : "150000"
+                        }
+                    },
+                    {
+                        "title": "Hostel fee",
+                        "price" : {
+                            "currency" : "INR",
+                            "value" : "50000"
+                        }
+                    },
+                    {
+                        "title": "Books",
+                        "price" : {
+                            "currency" : "INR",
+                            "value" : "50000"
+                        }
+                    }
+                ]
+            } 
+        }
+    }
+}
+```
+step 4:
+```json
+{
+   "context": {
+      "domain": "onest:financial-support",
+      "location": {
+         "city": {
+            "name": "Bangalore",
+            "code": "std:080"
+         },
+         "country": {
+            "name": "India",
+            "code": "IND"
+         }
+      },
+      "action": "on_init",
+      "timestamp": "2023-08-02T07:21:58.448Z",
+      "ttl": "PT10M",
+      "version": "1.1.0",
+      "bap_id": "nammayatri.io",
+      "bap_uri": "https://nammayatri.io/",
+      "bpp_id": "vidyasarathi.io",
+      "bpp_uri": "https://vidyasarathi.io/",
+      "transaction_id": "a9aaecca-10b7-4d19-b640-b047a7c60008",
+      "message_id": "f6a7d7ea-a23e-4419-b07e-a3412fdffecf"
+   },
+    "message": {
+        "order": {
+            "provider": {
+                "id": "471",
+                "descriptor": {
+                    "name": "XYZ Education Foundation",
+                    "short_desc" : "Short Description about the Foundation",
+                    "images": [
+                        {
+                            "url" : "url of the image of the provider"
+                        }
+                    ]
+                },
+                "rateable": false
+            },
+            "items": [
+                {
+                    "id": "SCM_63587501",
+                    "descriptor": {
+                        "name": "XYZ Education Scholarship for Undergraduate Students",
+                        "long_desc": "XYZ Education Scholarship for Undergraduate Students"
+                    },
+                    "price": {
+                        "currency": "INR",
+                        "value": "Upto RS.1000 per year"
+                    },
+                    "xinput": {
+                        "required": true,
+                        "head": {
+                            "descriptor": {
+                                "name": "Application Form"
+                            },
+                            "index": {
+                                "min": 0,
+                                "cur": 3,
+                                "max": 3
+                            },
+                            "headings": [
+                                "Personal Details",
+                                "Educational Details",
+                                "Financial Information",
+                                "Review & Submit"
+                            ]
+                        },
+                        "form": {
+                            "mime_type": "text/html",
+                            "url": "https://6vs8xnx5i7.vidyasaarathi.co.in/loans-kyc/xinput/formid/a23f2fdfbbb8ac402bfd54f",
+                            "resubmit": false,
+                            "auth": {
+                                "descriptor": {
+                                    "code": "jwt"
+                                },
+                                "value": "eyJhbGciOiJIUzI.eyJzdWIiOiIxMjM0NTY3O.SflKxwRJSMeKKF2QT4"
+                            }
+                        }
+                    },
+                    "rateable": false,
+                    "tags": [
+                        {
+                            "display": true,
+                            "descriptor": {
+                                "code": "eligibility-criteria",
+                                "name": "Eligibility Criteria"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "course_category_criteria",
+                                        "name": "Course Category Criteria"
+                                    },
+                                    "value": "SC",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "course_category_criteria",
+                                        "name": "Course Category Criteria"
+                                    },
+                                    "value": "ST",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "course_category_criteria",
+                                        "name": "Course Category Criteria"
+                                    },
+                                    "value": "OB",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "course_category_criteria",
+                                        "name": "Course Category Criteria"
+                                    },
+                                    "value": "NT",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "gender_criteria",
+                                        "name": "Gender Criteria"
+                                    },
+                                    "value": "ALL",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "city_criteria",
+                                        "name": "City Criteria"
+                                    },
+                                    "value": "Thane",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "city_criteria",
+                                        "name": "City Criteria"
+                                    },
+                                    "value": "Nagpur",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "city_criteria",
+                                        "name": "City Criteria"
+                                    },
+                                    "value": "Yavatmal",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "city_criteria",
+                                        "name": "City Criteria"
+                                    },
+                                    "value": "Ahmed Nagar",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "city_criteria",
+                                        "name": "City Criteria"
+                                    },
+                                    "value": "Solapur",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "city_criteria",
+                                        "name": "City Criteria"
+                                    },
+                                    "value": "Pune",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "state_criteria",
+                                        "name": "State Criteria"
+                                    },
+                                    "value": "MAHARASHTRA",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "qualification_criteria",
+                                        "name": "Qualification Criteria"
+                                    },
+                                    "value": "Class 10|Min. score=50|Max. score=null",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "qualification_criteria",
+                                        "name": "Qualification Criteria"
+                                    },
+                                    "value": "Class 12|Min. score=60|Max. score=null",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "financial_income_criteria",
+                                        "name": "Financial Income Criteria"
+                                    },
+                                    "value": "Max Family Income - Rs.500000.00",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "financial_year",
+                                        "name": "Financial Year"
+                                    },
+                                    "value": "2023-2024",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "certificate_instructions",
+                                        "name": "Certificate Instructions"
+                                    },
+                                    "value": "ZMT Education 15JUL23",
+                                    "display": true
+                                }
+                            ]
+                        },
+                        {
+                            "display": true,
+                            "descriptor": {
+                                "code": "additional_info",
+                                "name": "Additional Info"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "faq",
+                                        "name": "Frequently Asked Questions"
+                                    },
+                                    "value": "ZMT Education 15JUL23",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "terms_conditions",
+                                        "name": "Terms and Conditions"
+                                    },
+                                    "value": "ZMT Education 15JUL23",
+                                    "display": true
+                                }
+                            ]
+                        }
+                    ],
+                    "fulfillment_ids": [
+                        "VSP_FUL_1113"
+                    ]
+                }
+            ],
+            "billing": {
+                "name": "Manjunath",
+                "organization": {
+                    "descriptor": {
+                        "name": "Namma Yatri",
+                        "code": "nammayatri.in"
+                    },
+                    "contact": {
+                        "phone": "+91-8888888888",
+                        "email": "scholarships@nammayatri.in"
+                    }
+                },
+                "address": "No 27, XYZ Lane, etc",
+                "phone": "+91-9999999999"
+            },
+            "fulfillments": [
+                {
+                    "state" : {
+                        "descriptor" : {
+                            "code": "APPLICATION-STARTED",
+                            "name" : "Application started"
+                        },
+                        "updated_at" : "2023-02-06T09:55:41.161Z"
+                    },
+                    "id": "VSP_FUL_1113",
+                    "type": "SCHOLARSHIP",
+                    "tracking": false,
+                    "agent" : {
+                        "person" : {
+                            "name" : "Ekstep Foundation SPoc"
+                        },
+                        "contact" : {
+                            "email" : "ekstepsupport@ekstep.com"
+                        }
+                    },
+                    "customer": {
+                        "id": "aadhaar:798677675565",
+                        "person": {
+                            "name": "Jane Doe",
+                            "age": "13",
+                            "gender": "female"
+                        },
+                        "contact": {
+                            "phone": "+91-9663088848",
+                            "email": "jane.doe@example.com"
+                        }
+                    },
+                    "stops": [
+                        {
+                            "type": "APPLICATION-START",
+                            "time": {
+                                "timestamp": "2023-07-14T18:30:00.000Z"
+                            }
+                        },
+                        {
+                            "type": "APPLICATION-END",
+                            "time": {
+                                "timestamp": "2025-07-13T18:30:00.000Z"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "payments" : [
+                {
+                    "params" :{
+                        "bank_code": "IFSC_Code_Of_the_bank",
+                        "bank_account_number" :"121212121212",
+                        "bank_account_name" : "Account Holder Name"
+                    }
+
+                }
+            ],
+            "quote" :{
+                "price" : {
+                    "currency" : "INR",
+                    "value" : "250000"
+                },
+                "breakup":[
+                    {
+                        "title": "Tution fee",
+                        "price" : {
+                            "currency" : "INR",
+                            "value" : "150000"
+                        }
+                    },
+                    {
+                        "title": "Hostel fee",
+                        "price" : {
+                            "currency" : "INR",
+                            "value" : "50000"
+                        }
+                    },
+                    {
+                        "title": "Books",
+                        "price" : {
+                            "currency" : "INR",
+                            "value" : "50000"
+                        }
+                    }
+                ]
+            } 
+        }
+    }
+}
+```
+step 5:
+```json
+{
+   "context": {
+      "domain": "onest:financial-support",
+      "location": {
+         "city": {
+            "name": "Bangalore",
+            "code": "std:080"
+         },
+         "country": {
+            "name": "India",
+            "code": "IND"
+         }
+      },
+      "action": "on_init",
+      "timestamp": "2023-08-02T07:21:58.448Z",
+      "ttl": "PT10M",
+      "version": "1.1.0",
+      "bap_id": "nammayatri.io",
+      "bap_uri": "https://nammayatri.io/",
+      "bpp_id": "vidyasarathi.io",
+      "bpp_uri": "https://vidyasarathi.io/",
+      "transaction_id": "a9aaecca-10b7-4d19-b640-b047a7c60008",
+      "message_id": "f6a7d7ea-a23e-4419-b07e-a3412fdffecf"
+   },
+    "message": {
+        "order": {
+            "provider": {
+                "id": "471",
+                "descriptor": {
+                    "name": "XYZ Education Foundation",
+                    "short_desc" : "Short Description about the Foundation",
+                    "images": [
+                        {
+                            "url" : "url of the image of the provider"
+                        }
+                    ]
+                },
+                "rateable": false
+            },
+            "items": [
+                {
+                    "id": "SCM_63587501",
+                    "descriptor": {
+                        "name": "XYZ Education Scholarship for Undergraduate Students",
+                        "long_desc": "XYZ Education Scholarship for Undergraduate Students"
+                    },
+                    "price": {
+                        "currency": "INR",
+                        "value": "Upto RS.1000 per year"
+                    },
+                    "rateable": false,
+                    "tags": [
+                        {
+                            "display": true,
+                            "descriptor": {
+                                "code": "eligibility-criteria",
+                                "name": "Eligibility Criteria"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "course_category_criteria",
+                                        "name": "Course Category Criteria"
+                                    },
+                                    "value": "SC",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "course_category_criteria",
+                                        "name": "Course Category Criteria"
+                                    },
+                                    "value": "ST",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "course_category_criteria",
+                                        "name": "Course Category Criteria"
+                                    },
+                                    "value": "OB",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "course_category_criteria",
+                                        "name": "Course Category Criteria"
+                                    },
+                                    "value": "NT",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "gender_criteria",
+                                        "name": "Gender Criteria"
+                                    },
+                                    "value": "ALL",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "city_criteria",
+                                        "name": "City Criteria"
+                                    },
+                                    "value": "Thane",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "city_criteria",
+                                        "name": "City Criteria"
+                                    },
+                                    "value": "Nagpur",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "city_criteria",
+                                        "name": "City Criteria"
+                                    },
+                                    "value": "Yavatmal",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "city_criteria",
+                                        "name": "City Criteria"
+                                    },
+                                    "value": "Ahmed Nagar",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "city_criteria",
+                                        "name": "City Criteria"
+                                    },
+                                    "value": "Solapur",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "city_criteria",
+                                        "name": "City Criteria"
+                                    },
+                                    "value": "Pune",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "state_criteria",
+                                        "name": "State Criteria"
+                                    },
+                                    "value": "MAHARASHTRA",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "qualification_criteria",
+                                        "name": "Qualification Criteria"
+                                    },
+                                    "value": "Class 10|Min. score=50|Max. score=null",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "qualification_criteria",
+                                        "name": "Qualification Criteria"
+                                    },
+                                    "value": "Class 12|Min. score=60|Max. score=null",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "financial_income_criteria",
+                                        "name": "Financial Income Criteria"
+                                    },
+                                    "value": "Max Family Income - Rs.500000.00",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "financial_year",
+                                        "name": "Financial Year"
+                                    },
+                                    "value": "2023-2024",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "certificate_instructions",
+                                        "name": "Certificate Instructions"
+                                    },
+                                    "value": "ZMT Education 15JUL23",
+                                    "display": true
+                                }
+                            ]
+                        },
+                        {
+                            "display": true,
+                            "descriptor": {
+                                "code": "additional_info",
+                                "name": "Additional Info"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "faq",
+                                        "name": "Frequently Asked Questions"
+                                    },
+                                    "value": "ZMT Education 15JUL23",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "terms_conditions",
+                                        "name": "Terms and Conditions"
+                                    },
+                                    "value": "ZMT Education 15JUL23",
+                                    "display": true
+                                }
+                            ]
+                        }
+                    ],
+                    "fulfillment_ids": [
+                        "VSP_FUL_1113"
+                    ]
+                }
+            ],
+            "billing": {
+                "name": "Manjunath",
+                "organization": {
+                    "descriptor": {
+                        "name": "Namma Yatri",
+                        "code": "nammayatri.in"
+                    },
+                    "contact": {
+                        "phone": "+91-8888888888",
+                        "email": "scholarships@nammayatri.in"
+                    }
+                },
+                "address": "No 27, XYZ Lane, etc",
+                "phone": "+91-9999999999"
+            },
+            "fulfillments": [
+                {
+                    "state" : {
+                        "descriptor" : {
+                            "code": "APPLICATION-COMPLETED",
+                            "name" : "Application Completed"
+                        },
+                        "updated_at" : "2023-02-06T09:55:41.161Z"
+                    },
+                    "id": "VSP_FUL_1113",
+                    "type": "SCHOLARSHIP",
+                    "tracking": false,
+                    "agent" : {
+                        "person" : {
+                            "name" : "Ekstep Foundation SPoc"
+                        },
+                        "contact" : {
+                            "email" : "ekstepsupport@ekstep.com"
+                        }
+                    },
+                    "customer": {
+                        "id": "aadhaar:798677675565",
+                        "person": {
+                            "name": "Jane Doe",
+                            "age": "13",
+                            "gender": "female"
+                        },
+                        "contact": {
+                            "phone": "+91-9663088848",
+                            "email": "jane.doe@example.com"
+                        }
+                    },
+                    "stops": [
+                        {
+                            "type": "APPLICATION-START",
+                            "time": {
+                                "timestamp": "2023-07-14T18:30:00.000Z"
+                            }
+                        },
+                        {
+                            "type": "APPLICATION-END",
+                            "time": {
+                                "timestamp": "2025-07-13T18:30:00.000Z"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "cancellation_terms" : [
+                {
+                    "cancellation_fee" : {
+                        "amount" : {
+                            "currency" : "INR",
+                            "value" : "Penalty upto 5,00,000 INR"
+                        }
+                    }
+                }
+
+            ],
+            "payments" : [
+                {
+                    "params" :{
+                        "bank_code": "IFSC_Code_Of_the_bank",
+                        "bank_account_number" :"121212121212",
+                        "bank_account_name" : "Account Holder Name"
+                    }
+
+                }
+            ],
+            "quote" :{
+                "price" : {
+                    "currency" : "INR",
+                    "value" : "250000"
+                },
+                "breakup":[
+                    {
+                        "title": "Tution fee",
+                        "price" : {
+                            "currency" : "INR",
+                            "value" : "150000"
+                        }
+                    },
+                    {
+                        "title": "Hostel fee",
+                        "price" : {
+                            "currency" : "INR",
+                            "value" : "50000"
+                        }
+                    },
+                    {
+                        "title": "Books",
+                        "price" : {
+                            "currency" : "INR",
+                            "value" : "50000"
+                        }
+                    }
+                ]
+            } 
         }
     }
 }
@@ -693,63 +2174,65 @@ Vidyasarathi is a platform for applying to various scholarships provided by corp
       "timestamp": "2023-08-02T07:21:58.448Z",
       "ttl": "PT10M",
       "version": "1.1.0",
-      "bap_id": "vidyasaarathi.io",
-      "bap_uri": "https://vidyasaarathi.io/",,
-      "bpp_id": "nammayatri.io",
-      "bpp_uri": "https://nammayatri.io/",
+      "bap_id": "nammayatri.io",
+      "bap_uri": "https://nammayatri.io/",
+      "bpp_id": "vidyasarathi.io",
+      "bpp_uri": "https://vidyasarathi.io/",
       "transaction_id": "a9aaecca-10b7-4d19-b640-b047a7c60008",
       "message_id": "f6a7d7ea-a23e-4419-b07e-a3412fdffecf"
    },
-    "message": {
-        "order": {
-            "items": [
-                {
-                    "id": "SCM_63587501"
-                }
-            ],
-            "provider": {
-                "id": "BX213573733"
+   "message": {
+      "order": {
+         "items": [
+            {
+               "id": "SCM_63587501"
+            }
+         ],
+         "provider": {
+            "id": "BX213573733"
+         },
+         "billing": {
+            "name": "Manjunath",
+            "organization": {
+               "descriptor": {
+                  "name": "Namma Yatri",
+                  "code": "nammayatri.in"
+               },
+               "contact": {
+                  "phone": "+91-8888888888",
+                  "email": "scholarships@nammayatri.in"
+               }
             },
-            "billing": {
-                "name": "Manjunath",
-                "organization": {
-                    "descriptor": {
-                        "name": "Namma Yatri",
-                        "code": "nammayatri.in"
-                    },
-                    "contact": {
-                        "phone": "+91-8888888888",
-                        "email": "scholarships@nammayatri.in"
-                    }
-                },
-                "address": "No 27, XYZ Lane, etc",
-                "phone": "+91-9999999999"
-            },
-            "fulfillments": [
-                {
-                    "customer": {
-                        "id": "aadhaar:798677675565",
-                        "person": {
-                            "name": "Jane Doe",
-                            "age": "13",
-                            "gender": "female"
-                        },
-                        "contact": {
-                            "phone": "+91-9663088848",
-                            "email": "jane.doe@example.com"
-                        }
-                    }
-                }
-            ],
-            "payment" : [
-                {
-                    "bank_code": "IFSC_Code_Of_the_bank",
-                    "bank_account_number" :"121212121212",
-                    "bank_account_name" : "Account Holder Name"
-                }
-            ]
-        }
-    }
+            "address": "No 27, XYZ Lane, etc",
+            "phone": "+91-9999999999"
+         },
+         "fulfillments": [
+            {
+               "customer": {
+                  "id": "aadhaar:798677675565",
+                  "person": {
+                     "name": "Jane Doe",
+                     "age": "13",
+                     "gender": "female"
+                  },
+                  "contact": {
+                     "phone": "+91-9663088848",
+                     "email": "jane.doe@example.com"
+                  }
+               }
+            }
+         ],
+         "payment" : [
+            {
+               "params" :{
+                  "bank_code": "IFSC_Code_Of_the_bank",
+                  "bank_account_number" :"121212121212",
+                  "bank_account_name" : "Account Holder Name"
+               }
+            }
+         ]
+      }
+   }
 }
 ```
 1. **on\_confirm API:**
@@ -771,10 +2254,463 @@ Vidyasarathi is a platform for applying to various scholarships provided by corp
       "timestamp": "2023-08-02T07:21:58.448Z",
       "ttl": "PT10M",
       "version": "1.1.0",
-      "bap_id": "vidyasaarathi.io",
-      "bap_uri": "https://vidyasaarathi.io/",,
-      "bpp_id": "nammayatri.io",
-      "bpp_uri": "https://nammayatri.io/",
+      "bap_id": "nammayatri.io",
+      "bap_uri": "https://nammayatri.io/",
+      "bpp_id": "vidyasarathi.io",
+      "bpp_uri": "https://vidyasarathi.io/",
+      "transaction_id": "a9aaecca-10b7-4d19-b640-b047a7c60008",
+      "message_id": "f6a7d7ea-a23e-4419-b07e-a3412fdffecf"
+   },
+   "message": {
+      "order": {
+         "id": "12424kh",
+         "provider": {
+            "id": "471",
+            "descriptor": {
+               "name": "XYZ Education Foundation",
+               "short_desc" : "Short Description about the Foundation",
+               "images": [
+                  {
+                     "url" : "url of the image of the provider"
+                  }
+               ]
+            },
+            "rateable": false
+         },
+         "items": [
+            {
+               "id": "SCM_63587501",
+               "descriptor": {
+                  "name": "XYZ Education Scholarship for Undergraduate Students",
+                  "long_desc": "XYZ Education Scholarship for Undergraduate Students"
+               },
+               "price": {
+                  "currency": "INR",
+                  "value": "Upto RS.1000 per year"
+               },
+               "rateable": false,
+               "tags": [
+                  {
+                     "display": true,
+                     "descriptor": {
+                        "code": "eligibility-criteria",
+                        "name": "Eligibility Criteria"
+                     },
+                     "list": [
+                        {
+                           "descriptor": {
+                              "code": "course_category_criteria",
+                              "name": "Course Category Criteria"
+                           },
+                           "value": "SC",
+                           "display": true
+                        },
+                        {
+                           "descriptor": {
+                              "code": "course_category_criteria",
+                              "name": "Course Category Criteria"
+                           },
+                           "value": "ST",
+                           "display": true
+                        },
+                        {
+                           "descriptor": {
+                              "code": "course_category_criteria",
+                              "name": "Course Category Criteria"
+                           },
+                           "value": "OB",
+                           "display": true
+                        },
+                        {
+                           "descriptor": {
+                              "code": "course_category_criteria",
+                              "name": "Course Category Criteria"
+                           },
+                           "value": "NT",
+                           "display": true
+                        },
+                        {
+                           "descriptor": {
+                              "code": "gender_criteria",
+                              "name": "Gender Criteria"
+                           },
+                           "value": "ALL",
+                           "display": true
+                        },
+                        {
+                           "descriptor": {
+                              "code": "city_criteria",
+                              "name": "City Criteria"
+                           },
+                           "value": "Thane",
+                           "display": true
+                        },
+                        {
+                           "descriptor": {
+                              "code": "city_criteria",
+                              "name": "City Criteria"
+                           },
+                           "value": "Nagpur",
+                           "display": true
+                        },
+                        {
+                           "descriptor": {
+                              "code": "city_criteria",
+                              "name": "City Criteria"
+                           },
+                           "value": "Yavatmal",
+                           "display": true
+                        },
+                        {
+                           "descriptor": {
+                              "code": "city_criteria",
+                              "name": "City Criteria"
+                           },
+                           "value": "Ahmed Nagar",
+                           "display": true
+                        },
+                        {
+                           "descriptor": {
+                              "code": "city_criteria",
+                              "name": "City Criteria"
+                           },
+                           "value": "Solapur",
+                           "display": true
+                        },
+                        {
+                           "descriptor": {
+                              "code": "city_criteria",
+                              "name": "City Criteria"
+                           },
+                           "value": "Pune",
+                           "display": true
+                        },
+                        {
+                           "descriptor": {
+                              "code": "state_criteria",
+                              "name": "State Criteria"
+                           },
+                           "value": "MAHARASHTRA",
+                           "display": true
+                        },
+                        {
+                           "descriptor": {
+                              "code": "qualification_criteria",
+                              "name": "Qualification Criteria"
+                           },
+                           "value": "Class 10|Min. score=50|Max. score=null",
+                           "display": true
+                        },
+                        {
+                           "descriptor": {
+                              "code": "qualification_criteria",
+                              "name": "Qualification Criteria"
+                           },
+                           "value": "Class 12|Min. score=60|Max. score=null",
+                           "display": true
+                        },
+                        {
+                           "descriptor": {
+                              "code": "financial_income_criteria",
+                              "name": "Financial Income Criteria"
+                           },
+                           "value": "Max Family Income - Rs.500000.00",
+                           "display": true
+                        },
+                        {
+                           "descriptor": {
+                              "code": "financial_year",
+                              "name": "Financial Year"
+                           },
+                           "value": "2023-2024",
+                           "display": true
+                        },
+                        {
+                           "descriptor": {
+                              "code": "certificate_instructions",
+                              "name": "Certificate Instructions"
+                           },
+                           "value": "ZMT Education 15JUL23",
+                           "display": true
+                        }
+                     ]
+                  },
+                  {
+                     "display": true,
+                     "descriptor": {
+                        "code": "additional_info",
+                        "name": "Additional Info"
+                     },
+                     "list": [
+                        {
+                           "descriptor": {
+                              "code": "faq",
+                              "name": "Frequently Asked Questions"
+                           },
+                           "value": "ZMT Education 15JUL23",
+                           "display": true
+                        },
+                        {
+                           "descriptor": {
+                              "code": "terms_conditions",
+                              "name": "Terms and Conditions"
+                           },
+                           "value": "ZMT Education 15JUL23",
+                           "display": true
+                        }
+                     ]
+                  }
+               ],
+               "fulfillment_ids": [
+                  "VSP_FUL_1113"
+               ]
+            }
+         ],
+         "billing": {
+            "name": "Manjunath",
+            "organization": {
+               "descriptor": {
+                  "name": "Namma Yatri",
+                  "code": "nammayatri.in"
+               },
+               "contact": {
+                  "phone": "+91-8888888888",
+                  "email": "scholarships@nammayatri.in"
+               }
+            },
+            "address": "No 27, XYZ Lane, etc",
+            "phone": "+91-9999999999"
+         },
+         "fulfillments": [
+            {
+               "state" : {
+                  "descriptor" : {
+                     "code": "APPLICATION-SUBMITTED",
+                     "name" : "Application Submitted"
+                  },
+                  "updated_at" : "2023-02-06T09:55:41.161Z"
+               },
+               "id": "VSP_FUL_1113",
+               "type": "SCHOLARSHIP",
+               "tracking": false,
+               "agent" : {
+                  "person" : {
+                     "name" : "Ekstep Foundation SPoc"
+                  },
+                  "contact" : {
+                     "email" : "ekstepsupport@ekstep.com"
+                  }
+               },
+               "customer": {
+                  "id": "aadhaar:798677675565",
+                  "person": {
+                     "name": "Jane Doe",
+                     "age": "13",
+                     "gender": "female"
+                  },
+                  "contact": {
+                     "phone": "+91-9663088848",
+                     "email": "jane.doe@example.com"
+                  }
+               },
+               "stops": [
+                  {
+                     "type": "APPLICATION-START",
+                     "time": {
+                        "timestamp": "2023-07-14T18:30:00.000Z"
+                     }
+                  },
+                  {
+                     "type": "APPLICATION-END",
+                     "time": {
+                        "timestamp": "2025-07-13T18:30:00.000Z"
+                     }
+                  }
+               ]
+            }
+         ],
+         "cancellation_terms" : [
+            {
+               "cancellation_fee" : {
+                  "amount" : {
+                     "currency" : "INR",
+                     "value" : "Penalty upto 5,00,000 INR"
+                  }
+               }
+            }
+
+         ],
+         "docs": [
+            {
+               "descriptor":{
+                  "name" :"Application Details",
+                  "short_desc" : "To open this document, enter the password sent to your email mayan****@***.com"
+               },
+               "url" : "https://link-to-the-document.com",
+               "mime_type" : "application/pdf"
+            }
+         ],
+         "payments" : [
+            {
+               "params" :{
+                  "bank_code": "IFSC_Code_Of_the_bank",
+                  "bank_account_number" :"121212121212",
+                  "bank_account_name" : "Account Holder Name"
+               }
+
+            }
+         ],
+         "quote" :{
+            "price" : {
+               "currency" : "INR",
+               "value" : "250000"
+            },
+            "breakup":[
+               {
+                  "title": "Tution fee",
+                  "price" : {
+                     "currency" : "INR",
+                     "value" : "150000"
+                  }
+               },
+               {
+                  "title": "Hostel fee",
+                  "price" : {
+                     "currency" : "INR",
+                     "value" : "50000"
+                  }
+               },
+               {
+                  "title": "Books",
+                  "price" : {
+                     "currency" : "INR",
+                     "value" : "50000"
+                  }
+               }
+            ]
+         }
+      }
+   }
+}
+```
+**update API:**
+**Update bank details:**
+```json
+{
+   "context": {
+      "domain": "onest:financial-support",
+      "location": {
+         "city": {
+            "name": "Bangalore",
+            "code": "std:080"
+         },
+         "country": {
+            "name": "India",
+            "code": "IND"
+         }
+      },
+      "action": "update",
+      "timestamp": "2023-08-02T07:21:58.448Z",
+      "ttl": "PT10M",
+      "version": "1.1.0",
+      "bpp_id": "vidyasaarathi.io",
+      "bpp_uri": "https://vidyasaarathi.io/",
+      "bap_id": "nammayatri.io",
+      "bap_uri": "https://nammayatri.io/",
+      "transaction_id": "a9aaecca-10b7-4d19-b640-b047a7c60008",
+      "message_id": "f6a7d7ea-a23e-4419-b07e-a3412fdffecf"
+   },
+    "message": {
+        "order": {
+            "id": "12424kh",
+            "payments" : [
+                {
+                    "params" :{
+                        "bank_code": "IFSC_Code_Of_the_bank",
+                        "bank_account_number" :"121212121212",
+                        "bank_account_name" : "Account Holder Name"
+                    }
+
+                }
+            ]
+        },
+        "update_target": "order.payments.params.bank_account_number"
+    }
+}
+```
+**Update student details:**
+```json
+{
+   "context": {
+      "domain": "onest:financial-support",
+      "location": {
+         "city": {
+            "name": "Bangalore",
+            "code": "std:080"
+         },
+         "country": {
+            "name": "India",
+            "code": "IND"
+         }
+      },
+      "action": "update",
+      "timestamp": "2023-08-02T07:21:58.448Z",
+      "ttl": "PT10M",
+      "version": "1.1.0",
+      "bpp_id": "vidyasaarathi.io",
+      "bpp_uri": "https://vidyasaarathi.io/",
+      "bap_id": "nammayatri.io",
+      "bap_uri": "https://nammayatri.io/",
+      "transaction_id": "a9aaecca-10b7-4d19-b640-b047a7c60008",
+      "message_id": "f6a7d7ea-a23e-4419-b07e-a3412fdffecf"
+   },
+    "message": {
+        "order": {
+            "id": "12424kh",
+            "fulfillments": [
+                {
+                    "customer": {
+                        "id": "aadhaar:798677675565",
+                        "person": {
+                            "name": "Jane Doe",
+                            "age": "13",
+                            "gender": "female"
+                        },
+                        "contact": {
+                            "phone": "+91-8858150042",
+                            "email": "jane.doe@example.com"
+                        }
+                    }
+                }
+            ]
+        },
+        "update_target": "order.fulfillments[0].customer"
+    }
+}
+```
+**on_update API:**
+```json
+{
+   "context": {
+      "domain": "onest:financial-support",
+      "location": {
+         "city": {
+            "name": "Bangalore",
+            "code": "std:080"
+         },
+         "country": {
+            "name": "India",
+            "code": "IND"
+         }
+      },
+      "action": "on_update",
+      "timestamp": "2023-08-02T07:21:58.448Z",
+      "ttl": "PT10M",
+      "version": "1.1.0",
+      "bpp_id": "vidyasaarathi.io",
+      "bpp_uri": "https://vidyasaarathi.io/",
+      "bap_id": "nammayatri.io",
+      "bap_uri": "https://nammayatri.io/",
       "transaction_id": "a9aaecca-10b7-4d19-b640-b047a7c60008",
       "message_id": "f6a7d7ea-a23e-4419-b07e-a3412fdffecf"
    },
@@ -804,35 +2740,6 @@ Vidyasarathi is a platform for applying to various scholarships provided by corp
                     "price": {
                         "currency": "INR",
                         "value": "Upto RS.1000 per year"
-                    },
-                    "xinput": {
-                        "required": true,
-                        "head": {
-                            "descriptor": {
-                                "name": "Application Form"
-                            },
-                            "index": {
-                                "min": 0,
-                                "cur": 0,
-                                "max": 2
-                            },
-                            "headings": [
-                                "Personal Details",
-                                "Educational Details",
-                                "Financial Information"
-                            ]
-                        },
-                        "form": {
-                            "mime_type": "text/html",
-                            "url": "https://6vs8xnx5i7.vidyasaarathi.co.in/loans-kyc/xinput/formid/a23f2fdfbbb8ac402bfd54f",
-                            "resubmit": false,
-                            "auth": {
-                                "descriptor": {
-                                    "code": "jwt"
-                                },
-                                "value": "eyJhbGciOiJIUzI.eyJzdWIiOiIxMjM0NTY3O.SflKxwRJSMeKKF2QT4"
-                            }
-                        }
                     },
                     "rateable": false,
                     "tags": [
@@ -1007,9 +2914,6 @@ Vidyasarathi is a platform for applying to various scholarships provided by corp
                             ]
                         }
                     ],
-                    "category_ids": [
-                        "VSP_CAT_4"
-                    ],
                     "fulfillment_ids": [
                         "VSP_FUL_1113"
                     ]
@@ -1034,15 +2938,21 @@ Vidyasarathi is a platform for applying to various scholarships provided by corp
                 {
                     "state" : {
                         "descriptor" : {
-                            "code": "APPLICATION-SUBMITTED"
-                        }
+                            "code": "BANK-ACCOUNT-UPDATED",
+                            "name" : "Bank details updated"
+                        },
+                        "updated_at" : "2023-02-06T09:55:41.161Z"
                     },
                     "id": "VSP_FUL_1113",
                     "type": "SCHOLARSHIP",
                     "tracking": false,
-                    "contact": {
-                        "phone": "9876543210",
-                        "email": "maryg@xyz.com"
+                    "agent" : {
+                        "person" : {
+                            "name" : "Ekstep Foundation SPoc"
+                        },
+                        "contact" : {
+                            "email" : "ekstepsupport@ekstep.com"
+                        }
                     },
                     "customer": {
                         "id": "aadhaar:798677675565",
@@ -1072,6 +2982,17 @@ Vidyasarathi is a platform for applying to various scholarships provided by corp
                     ]
                 }
             ],
+            "cancellation_terms" : [
+                {
+                    "cancellation_fee" : {
+                        "amount" : {
+                            "currency" : "INR",
+                            "value" : "Penalty upto 5,00,000 INR"
+                        }
+                    }
+                }
+
+            ],
             "docs": [
                 {
                     "descriptor":{
@@ -1082,13 +3003,792 @@ Vidyasarathi is a platform for applying to various scholarships provided by corp
                     "mime_type" : "application/pdf"
                 }
             ],
-            "payment" : [
+            "payments" : [
                 {
-                    "bank_code": "IFSC_Code_Of_the_bank",
-                    "bank_account_number" :"121212121212",
-                    "bank_account_name" : "Account Holder Name"
+                    "params" :{
+                        "bank_code": "IFSC_Code_Of_the_bank",
+                        "bank_account_number" :"121212121212",
+                        "bank_account_name" : "Account Holder Name"
+                    }
+
                 }
-            ]
+            ],
+            "quote" :{
+                "price" : {
+                    "currency" : "INR",
+                    "value" : "250000"
+                },
+                "breakup":[
+                    {
+                        "title": "Tution fee",
+                        "price" : {
+                            "currency" : "INR",
+                            "value" : "150000"
+                        }
+                    },
+                    {
+                        "title": "Hostel fee",
+                        "price" : {
+                            "currency" : "INR",
+                            "value" : "50000"
+                        }
+                    },
+                    {
+                        "title": "Books",
+                        "price" : {
+                            "currency" : "INR",
+                            "value" : "50000"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}
+```
+**on\_update scholarship disbursed:**
+```json
+{
+   "context": {
+      "domain": "onest:financial-support",
+      "location": {
+         "city": {
+            "name": "Bangalore",
+            "code": "std:080"
+         },
+         "country": {
+            "name": "India",
+            "code": "IND"
+         }
+      },
+      "action": "on_update",
+      "timestamp": "2023-08-02T07:21:58.448Z",
+      "ttl": "PT10M",
+      "version": "1.1.0",
+      "bpp_id": "vidyasaarathi.io",
+      "bpp_uri": "https://vidyasaarathi.io/",
+      "bap_id": "nammayatri.io",
+      "bap_uri": "https://nammayatri.io/",
+      "transaction_id": "a9aaecca-10b7-4d19-b640-b047a7c60008",
+      "message_id": "f6a7d7ea-a23e-4419-b07e-a3412fdffecf"
+   },
+    "message": {
+        "order": {
+            "id": "12424kh",
+            "provider": {
+                "id": "471",
+                "descriptor": {
+                    "name": "XYZ Education Foundation",
+                    "short_desc" : "Short Description about the Foundation",
+                    "images": [
+                        {
+                            "url" : "url of the image of the provider"
+                        }
+                    ]
+                },
+                "rateable": false
+            },
+            "items": [
+                {
+                    "id": "SCM_63587501",
+                    "descriptor": {
+                        "name": "XYZ Education Scholarship for Undergraduate Students",
+                        "long_desc": "XYZ Education Scholarship for Undergraduate Students"
+                    },
+                    "price": {
+                        "currency": "INR",
+                        "value": "Upto RS.1000 per year"
+                    },
+                    "rateable": false,
+                    "tags": [
+                        {
+                            "display": true,
+                            "descriptor": {
+                                "code": "eligibility-criteria",
+                                "name": "Eligibility Criteria"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "course_category_criteria",
+                                        "name": "Course Category Criteria"
+                                    },
+                                    "value": "SC",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "course_category_criteria",
+                                        "name": "Course Category Criteria"
+                                    },
+                                    "value": "ST",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "course_category_criteria",
+                                        "name": "Course Category Criteria"
+                                    },
+                                    "value": "OB",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "course_category_criteria",
+                                        "name": "Course Category Criteria"
+                                    },
+                                    "value": "NT",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "gender_criteria",
+                                        "name": "Gender Criteria"
+                                    },
+                                    "value": "ALL",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "city_criteria",
+                                        "name": "City Criteria"
+                                    },
+                                    "value": "Thane",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "city_criteria",
+                                        "name": "City Criteria"
+                                    },
+                                    "value": "Nagpur",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "city_criteria",
+                                        "name": "City Criteria"
+                                    },
+                                    "value": "Yavatmal",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "city_criteria",
+                                        "name": "City Criteria"
+                                    },
+                                    "value": "Ahmed Nagar",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "city_criteria",
+                                        "name": "City Criteria"
+                                    },
+                                    "value": "Solapur",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "city_criteria",
+                                        "name": "City Criteria"
+                                    },
+                                    "value": "Pune",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "state_criteria",
+                                        "name": "State Criteria"
+                                    },
+                                    "value": "MAHARASHTRA",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "qualification_criteria",
+                                        "name": "Qualification Criteria"
+                                    },
+                                    "value": "Class 10|Min. score=50|Max. score=null",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "qualification_criteria",
+                                        "name": "Qualification Criteria"
+                                    },
+                                    "value": "Class 12|Min. score=60|Max. score=null",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "financial_income_criteria",
+                                        "name": "Financial Income Criteria"
+                                    },
+                                    "value": "Max Family Income - Rs.500000.00",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "financial_year",
+                                        "name": "Financial Year"
+                                    },
+                                    "value": "2023-2024",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "certificate_instructions",
+                                        "name": "Certificate Instructions"
+                                    },
+                                    "value": "ZMT Education 15JUL23",
+                                    "display": true
+                                }
+                            ]
+                        },
+                        {
+                            "display": true,
+                            "descriptor": {
+                                "code": "additional_info",
+                                "name": "Additional Info"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "faq",
+                                        "name": "Frequently Asked Questions"
+                                    },
+                                    "value": "ZMT Education 15JUL23",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "terms_conditions",
+                                        "name": "Terms and Conditions"
+                                    },
+                                    "value": "ZMT Education 15JUL23",
+                                    "display": true
+                                }
+                            ]
+                        }
+                    ],
+                    "fulfillment_ids": [
+                        "VSP_FUL_1113"
+                    ]
+                }
+            ],
+            "billing": {
+                "name": "Manjunath",
+                "organization": {
+                    "descriptor": {
+                        "name": "Namma Yatri",
+                        "code": "nammayatri.in"
+                    },
+                    "contact": {
+                        "phone": "+91-8888888888",
+                        "email": "scholarships@nammayatri.in"
+                    }
+                },
+                "address": "No 27, XYZ Lane, etc",
+                "phone": "+91-9999999999"
+            },
+            "fulfillments": [
+                {
+                    "state" : {
+                        "descriptor" : {
+                            "code": "SCHOLARSHIP-DISBURSED",
+                            "name" : "Scholarship disbursed"
+                        },
+                        "updated_at" : "2023-02-06T09:55:41.161Z"
+                    },
+                    "id": "VSP_FUL_1113",
+                    "type": "SCHOLARSHIP",
+                    "tracking": false,
+                    "agent" : {
+                        "person" : {
+                            "name" : "Ekstep Foundation SPoc"
+                        },
+                        "contact" : {
+                            "email" : "ekstepsupport@ekstep.com"
+                        }
+                    },
+                    "customer": {
+                        "id": "aadhaar:798677675565",
+                        "person": {
+                            "name": "Jane Doe",
+                            "age": "13",
+                            "gender": "female"
+                        },
+                        "contact": {
+                            "phone": "+91-9663088848",
+                            "email": "jane.doe@example.com"
+                        }
+                    },
+                    "stops": [
+                        {
+                            "type": "APPLICATION-START",
+                            "time": {
+                                "timestamp": "2023-07-14T18:30:00.000Z"
+                            }
+                        },
+                        {
+                            "type": "APPLICATION-END",
+                            "time": {
+                                "timestamp": "2025-07-13T18:30:00.000Z"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "cancellation_terms" : [
+                {
+                    "cancellation_fee" : {
+                        "amount" : {
+                            "currency" : "INR",
+                            "value" : "Penalty upto 5,00,000 INR"
+                        }
+                    }
+                }
+
+            ],
+            "docs": [
+                {
+                    "descriptor":{
+                        "name" :"Application Details",
+                        "short_desc" : "To open this document, enter the password sent to your email mayan****@***.com"
+                    },
+                    "url" : "https://link-to-the-document.com",
+                    "mime_type" : "application/pdf"
+                }
+            ],
+            "payments" : [
+                {
+                    "params" :{
+                        "transaction_id" : "KKIB197197397942",
+                        "amount" : "250000",
+                        "currency" : "INR",
+                        "bank_code": "IFSC_Code_Of_the_bank",
+                        "bank_account_number" :"121212121212",
+                        "bank_account_name" : "Account Holder Name"
+                    },
+                    "status" : "PAID"
+
+                }
+            ],
+            "quote" :{
+                "price" : {
+                    "currency" : "INR",
+                    "value" : "250000"
+                },
+                "breakup":[
+                    {
+                        "title": "Tution fee",
+                        "price" : {
+                            "currency" : "INR",
+                            "value" : "150000"
+                        }
+                    },
+                    {
+                        "title": "Hostel fee",
+                        "price" : {
+                            "currency" : "INR",
+                            "value" : "50000"
+                        }
+                    },
+                    {
+                        "title": "Books",
+                        "price" : {
+                            "currency" : "INR",
+                            "value" : "50000"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}
+```
+**on\_update additional details required:**
+```json
+{
+   "context": {
+      "domain": "onest:financial-support",
+      "location": {
+         "city": {
+            "name": "Bangalore",
+            "code": "std:080"
+         },
+         "country": {
+            "name": "India",
+            "code": "IND"
+         }
+      },
+      "action": "on_update",
+      "timestamp": "2023-08-02T07:21:58.448Z",
+      "ttl": "PT10M",
+      "version": "1.1.0",
+      "bpp_id": "vidyasaarathi.io",
+      "bpp_uri": "https://vidyasaarathi.io/",
+      "bap_id": "nammayatri.io",
+      "bap_uri": "https://nammayatri.io/",
+      "transaction_id": "a9aaecca-10b7-4d19-b640-b047a7c60008",
+      "message_id": "f6a7d7ea-a23e-4419-b07e-a3412fdffecf"
+   },
+    "message": {
+        "order": {
+            "id": "12424kh",
+            "provider": {
+                "id": "471",
+                "descriptor": {
+                    "name": "XYZ Education Foundation",
+                    "short_desc" : "Short Description about the Foundation",
+                    "images": [
+                        {
+                            "url" : "url of the image of the provider"
+                        }
+                    ]
+                },
+                "rateable": false
+            },
+            "items": [
+                {
+                    "id": "SCM_63587501",
+                    "descriptor": {
+                        "name": "XYZ Education Scholarship for Undergraduate Students",
+                        "long_desc": "XYZ Education Scholarship for Undergraduate Students"
+                    },
+                    "price": {
+                        "currency": "INR",
+                        "value": "Upto RS.1000 per year"
+                    },
+                    "rateable": false,
+                    "tags": [
+                        {
+                            "display": true,
+                            "descriptor": {
+                                "code": "eligibility-criteria",
+                                "name": "Eligibility Criteria"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "course_category_criteria",
+                                        "name": "Course Category Criteria"
+                                    },
+                                    "value": "SC",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "course_category_criteria",
+                                        "name": "Course Category Criteria"
+                                    },
+                                    "value": "ST",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "course_category_criteria",
+                                        "name": "Course Category Criteria"
+                                    },
+                                    "value": "OB",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "course_category_criteria",
+                                        "name": "Course Category Criteria"
+                                    },
+                                    "value": "NT",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "gender_criteria",
+                                        "name": "Gender Criteria"
+                                    },
+                                    "value": "ALL",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "city_criteria",
+                                        "name": "City Criteria"
+                                    },
+                                    "value": "Thane",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "city_criteria",
+                                        "name": "City Criteria"
+                                    },
+                                    "value": "Nagpur",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "city_criteria",
+                                        "name": "City Criteria"
+                                    },
+                                    "value": "Yavatmal",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "city_criteria",
+                                        "name": "City Criteria"
+                                    },
+                                    "value": "Ahmed Nagar",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "city_criteria",
+                                        "name": "City Criteria"
+                                    },
+                                    "value": "Solapur",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "city_criteria",
+                                        "name": "City Criteria"
+                                    },
+                                    "value": "Pune",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "state_criteria",
+                                        "name": "State Criteria"
+                                    },
+                                    "value": "MAHARASHTRA",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "qualification_criteria",
+                                        "name": "Qualification Criteria"
+                                    },
+                                    "value": "Class 10|Min. score=50|Max. score=null",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "qualification_criteria",
+                                        "name": "Qualification Criteria"
+                                    },
+                                    "value": "Class 12|Min. score=60|Max. score=null",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "financial_income_criteria",
+                                        "name": "Financial Income Criteria"
+                                    },
+                                    "value": "Max Family Income - Rs.500000.00",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "financial_year",
+                                        "name": "Financial Year"
+                                    },
+                                    "value": "2023-2024",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "certificate_instructions",
+                                        "name": "Certificate Instructions"
+                                    },
+                                    "value": "ZMT Education 15JUL23",
+                                    "display": true
+                                }
+                            ]
+                        },
+                        {
+                            "display": true,
+                            "descriptor": {
+                                "code": "additional_info",
+                                "name": "Additional Info"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "faq",
+                                        "name": "Frequently Asked Questions"
+                                    },
+                                    "value": "ZMT Education 15JUL23",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "terms_conditions",
+                                        "name": "Terms and Conditions"
+                                    },
+                                    "value": "ZMT Education 15JUL23",
+                                    "display": true
+                                }
+                            ]
+                        }
+                    ],
+                    "fulfillment_ids": [
+                        "VSP_FUL_1113"
+                    ]
+                }
+            ],
+            "billing": {
+                "name": "Manjunath",
+                "organization": {
+                    "descriptor": {
+                        "name": "Namma Yatri",
+                        "code": "nammayatri.in"
+                    },
+                    "contact": {
+                        "phone": "+91-8888888888",
+                        "email": "scholarships@nammayatri.in"
+                    }
+                },
+                "address": "No 27, XYZ Lane, etc",
+                "phone": "+91-9999999999"
+            },
+            "fulfillments": [
+                {
+                    "state" : {
+                        "descriptor" : {
+                            "code": "ADDITIONAL-DETAILS-REQUIRED",
+                            "name" : "Additional details required"
+                        },
+                        "updated_at" : "2023-02-06T09:55:41.161Z"
+                    },
+                    "id": "VSP_FUL_1113",
+                    "type": "SCHOLARSHIP",
+                    "tracking": false,
+                    "agent" : {
+                        "person" : {
+                            "name" : "Ekstep Foundation SPoc"
+                        },
+                        "contact" : {
+                            "email" : "ekstepsupport@ekstep.com"
+                        }
+                    },
+                    "customer": {
+                        "id": "aadhaar:798677675565",
+                        "person": {
+                            "name": "Jane Doe",
+                            "age": "13",
+                            "gender": "female"
+                        },
+                        "contact": {
+                            "phone": "+91-9663088848",
+                            "email": "jane.doe@example.com"
+                        }
+                    },
+                    "stops": [
+                        {
+                            "type": "APPLICATION-START",
+                            "time": {
+                                "timestamp": "2023-07-14T18:30:00.000Z"
+                            }
+                        },
+                        {
+                            "type": "APPLICATION-END",
+                            "time": {
+                                "timestamp": "2025-07-13T18:30:00.000Z"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "xinput": {
+                "required": true,
+                "head": {
+                    "descriptor": {
+                        "name": "Additional Information Required"
+                    },
+                    "index": {
+                        "min": 0,
+                        "cur": 0,
+                        "max": 0
+                    },
+                    "headings": [
+                        "Additional Details"
+                    ]
+                },
+                "form": {
+                    "mime_type": "text/html",
+                    "url": "https://6vs8xnx5i7.vidyasaarathi.co.in/loans-kyc/xinput/formid/a23f2fdfbbb8ac402bfd54f",
+                    "resubmit": false,
+                    "auth": {
+                        "descriptor": {
+                            "code": "jwt"
+                        },
+                        "value": "eyJhbGciOiJIUzI.eyJzdWIiOiIxMjM0NTY3O.SflKxwRJSMeKKF2QT4"
+                    }
+                }
+            },
+            "cancellation_terms" : [
+                {
+                    "cancellation_fee" : {
+                        "amount" : {
+                            "currency" : "INR",
+                            "value" : "Penalty upto 5,00,000 INR"
+                        }
+                    }
+                }
+
+            ],
+            "docs": [
+                {
+                    "descriptor":{
+                        "name" :"Application Details",
+                        "short_desc" : "To open this document, enter the password sent to your email mayan****@***.com"
+                    },
+                    "url" : "https://link-to-the-document.com",
+                    "mime_type" : "application/pdf"
+                }
+            ],
+            "payments" : [
+                {
+                    "params" :{
+                        "bank_code": "IFSC_Code_Of_the_bank",
+                        "bank_account_number" :"121212121212",
+                        "bank_account_name" : "Account Holder Name"
+                    }
+
+                }
+            ],
+            "quote" :{
+                "price" : {
+                    "currency" : "INR",
+                    "value" : "250000"
+                },
+                "breakup":[
+                    {
+                        "title": "Tution fee",
+                        "price" : {
+                            "currency" : "INR",
+                            "value" : "150000"
+                        }
+                    },
+                    {
+                        "title": "Hostel fee",
+                        "price" : {
+                            "currency" : "INR",
+                            "value" : "50000"
+                        }
+                    },
+                    {
+                        "title": "Books",
+                        "price" : {
+                            "currency" : "INR",
+                            "value" : "50000"
+                        }
+                    }
+                ]
+            }
         }
     }
 }
@@ -1112,10 +3812,10 @@ Vidyasarathi is a platform for applying to various scholarships provided by corp
       "timestamp": "2023-08-02T07:21:58.448Z",
       "ttl": "PT10M",
       "version": "1.1.0",
-      "bap_id": "vidyasaarathi.io",
-      "bap_uri": "https://vidyasaarathi.io/",,
-      "bpp_id": "nammayatri.io",
-      "bpp_uri": "https://nammayatri.io/",
+      "bap_id": "nammayatri.io",
+      "bap_uri": "https://nammayatri.io/",
+      "bpp_id": "vidyasarathi.io",
+      "bpp_uri": "https://vidyasarathi.io/",
       "transaction_id": "a9aaecca-10b7-4d19-b640-b047a7c60008",
       "message_id": "f6a7d7ea-a23e-4419-b07e-a3412fdffecf"
    },
@@ -1125,6 +3825,7 @@ Vidyasarathi is a platform for applying to various scholarships provided by corp
 }
 ```
 **on\_status API:**
+**Scholarship Approved:**
 ```json
 {
    "context": {
@@ -1143,14 +3844,373 @@ Vidyasarathi is a platform for applying to various scholarships provided by corp
       "timestamp": "2023-08-02T07:21:58.448Z",
       "ttl": "PT10M",
       "version": "1.1.0",
-      "bap_id": "vidyasaarathi.io",
-      "bap_uri": "https://vidyasaarathi.io/",,
-      "bpp_id": "nammayatri.io",
-      "bpp_uri": "https://nammayatri.io/",
+      "bap_id": "nammayatri.io",
+      "bap_uri": "https://nammayatri.io/",
+      "bpp_id": "vidyasarathi.io",
+      "bpp_uri": "https://vidyasarathi.io/",
       "transaction_id": "a9aaecca-10b7-4d19-b640-b047a7c60008",
       "message_id": "f6a7d7ea-a23e-4419-b07e-a3412fdffecf"
    },
-    "message": {
+   "message": {
+      "order": {
+         "id": "12424kh",
+         "provider": {
+            "id": "471",
+            "descriptor": {
+               "name": "XYZ Education Foundation",
+               "short_desc" : "Short Description about the Foundation",
+               "images": [
+                  {
+                     "url" : "url of the image of the provider"
+                  }
+               ]
+            },
+            "rateable": false
+         },
+         "items": [
+            {
+               "id": "SCM_63587501",
+               "descriptor": {
+                  "name": "XYZ Education Scholarship for Undergraduate Students",
+                  "long_desc": "XYZ Education Scholarship for Undergraduate Students"
+               },
+               "price": {
+                  "currency": "INR",
+                  "value": "Upto RS.1000 per year"
+               },
+               "rateable": false,
+               "tags": [
+                  {
+                     "display": true,
+                     "descriptor": {
+                        "code": "eligibility-criteria",
+                        "name": "Eligibility Criteria"
+                     },
+                     "list": [
+                        {
+                           "descriptor": {
+                              "code": "course_category_criteria",
+                              "name": "Course Category Criteria"
+                           },
+                           "value": "SC",
+                           "display": true
+                        },
+                        {
+                           "descriptor": {
+                              "code": "course_category_criteria",
+                              "name": "Course Category Criteria"
+                           },
+                           "value": "ST",
+                           "display": true
+                        },
+                        {
+                           "descriptor": {
+                              "code": "course_category_criteria",
+                              "name": "Course Category Criteria"
+                           },
+                           "value": "OB",
+                           "display": true
+                        },
+                        {
+                           "descriptor": {
+                              "code": "course_category_criteria",
+                              "name": "Course Category Criteria"
+                           },
+                           "value": "NT",
+                           "display": true
+                        },
+                        {
+                           "descriptor": {
+                              "code": "gender_criteria",
+                              "name": "Gender Criteria"
+                           },
+                           "value": "ALL",
+                           "display": true
+                        },
+                        {
+                           "descriptor": {
+                              "code": "city_criteria",
+                              "name": "City Criteria"
+                           },
+                           "value": "Thane",
+                           "display": true
+                        },
+                        {
+                           "descriptor": {
+                              "code": "city_criteria",
+                              "name": "City Criteria"
+                           },
+                           "value": "Nagpur",
+                           "display": true
+                        },
+                        {
+                           "descriptor": {
+                              "code": "city_criteria",
+                              "name": "City Criteria"
+                           },
+                           "value": "Yavatmal",
+                           "display": true
+                        },
+                        {
+                           "descriptor": {
+                              "code": "city_criteria",
+                              "name": "City Criteria"
+                           },
+                           "value": "Ahmed Nagar",
+                           "display": true
+                        },
+                        {
+                           "descriptor": {
+                              "code": "city_criteria",
+                              "name": "City Criteria"
+                           },
+                           "value": "Solapur",
+                           "display": true
+                        },
+                        {
+                           "descriptor": {
+                              "code": "city_criteria",
+                              "name": "City Criteria"
+                           },
+                           "value": "Pune",
+                           "display": true
+                        },
+                        {
+                           "descriptor": {
+                              "code": "state_criteria",
+                              "name": "State Criteria"
+                           },
+                           "value": "MAHARASHTRA",
+                           "display": true
+                        },
+                        {
+                           "descriptor": {
+                              "code": "qualification_criteria",
+                              "name": "Qualification Criteria"
+                           },
+                           "value": "Class 10|Min. score=50|Max. score=null",
+                           "display": true
+                        },
+                        {
+                           "descriptor": {
+                              "code": "qualification_criteria",
+                              "name": "Qualification Criteria"
+                           },
+                           "value": "Class 12|Min. score=60|Max. score=null",
+                           "display": true
+                        },
+                        {
+                           "descriptor": {
+                              "code": "financial_income_criteria",
+                              "name": "Financial Income Criteria"
+                           },
+                           "value": "Max Family Income - Rs.500000.00",
+                           "display": true
+                        },
+                        {
+                           "descriptor": {
+                              "code": "financial_year",
+                              "name": "Financial Year"
+                           },
+                           "value": "2023-2024",
+                           "display": true
+                        },
+                        {
+                           "descriptor": {
+                              "code": "certificate_instructions",
+                              "name": "Certificate Instructions"
+                           },
+                           "value": "ZMT Education 15JUL23",
+                           "display": true
+                        }
+                     ]
+                  },
+                  {
+                     "display": true,
+                     "descriptor": {
+                        "code": "additional_info",
+                        "name": "Additional Info"
+                     },
+                     "list": [
+                        {
+                           "descriptor": {
+                              "code": "faq",
+                              "name": "Frequently Asked Questions"
+                           },
+                           "value": "ZMT Education 15JUL23",
+                           "display": true
+                        },
+                        {
+                           "descriptor": {
+                              "code": "terms_conditions",
+                              "name": "Terms and Conditions"
+                           },
+                           "value": "ZMT Education 15JUL23",
+                           "display": true
+                        }
+                     ]
+                  }
+               ],
+               "fulfillment_ids": [
+                  "VSP_FUL_1113"
+               ]
+            }
+         ],
+         "billing": {
+            "name": "Manjunath",
+            "organization": {
+               "descriptor": {
+                  "name": "Namma Yatri",
+                  "code": "nammayatri.in"
+               },
+               "contact": {
+                  "phone": "+91-8888888888",
+                  "email": "scholarships@nammayatri.in"
+               }
+            },
+            "address": "No 27, XYZ Lane, etc",
+            "phone": "+91-9999999999"
+         },
+         "fulfillments": [
+            {
+               "state" : {
+                  "descriptor" : {
+                     "code": "SCHOLARSHIP-APPROVED",
+                     "name" : "Application Submitted"
+                  },
+                  "updated_at" : "2023-02-06T09:55:41.161Z"
+               },
+               "id": "VSP_FUL_1113",
+               "type": "SCHOLARSHIP",
+               "tracking": false,
+               "agent" : {
+                  "person" : {
+                     "name" : "Ekstep Foundation SPoc"
+                  },
+                  "contact" : {
+                     "email" : "ekstepsupport@ekstep.com"
+                  }
+               },
+               "customer": {
+                  "id": "aadhaar:798677675565",
+                  "person": {
+                     "name": "Jane Doe",
+                     "age": "13",
+                     "gender": "female"
+                  },
+                  "contact": {
+                     "phone": "+91-9663088848",
+                     "email": "jane.doe@example.com"
+                  }
+               },
+               "stops": [
+                  {
+                     "type": "APPLICATION-START",
+                     "time": {
+                        "timestamp": "2023-07-14T18:30:00.000Z"
+                     }
+                  },
+                  {
+                     "type": "APPLICATION-END",
+                     "time": {
+                        "timestamp": "2025-07-13T18:30:00.000Z"
+                     }
+                  }
+               ]
+            }
+         ],
+         "cancellation_terms" : [
+            {
+               "cancellation_fee" : {
+                  "amount" : {
+                     "currency" : "INR",
+                     "value" : "Penalty upto 5,00,000 INR"
+                  }
+               }
+            }
+
+         ],
+         "docs": [
+            {
+               "descriptor":{
+                  "name" :"Application Details",
+                  "short_desc" : "To open this document, enter the password sent to your email mayan****@***.com"
+               },
+               "url" : "https://link-to-the-document.com",
+               "mime_type" : "application/pdf"
+            }
+         ],
+         "payments" : [
+            {
+               "params" :{
+                  "bank_code": "IFSC_Code_Of_the_bank",
+                  "bank_account_number" :"121212121212",
+                  "bank_account_name" : "Account Holder Name"
+               }
+
+            }
+         ],
+         "quote" :{
+            "price" : {
+               "currency" : "INR",
+               "value" : "250000"
+            },
+            "breakup":[
+               {
+                  "title": "Tution fee",
+                  "price" : {
+                     "currency" : "INR",
+                     "value" : "150000"
+                  }
+               },
+               {
+                  "title": "Hostel fee",
+                  "price" : {
+                     "currency" : "INR",
+                     "value" : "50000"
+                  }
+               },
+               {
+                  "title": "Books",
+                  "price" : {
+                     "currency" : "INR",
+                     "value" : "50000"
+                  }
+               }
+            ]
+         }
+      }
+   }
+}
+```
+
+**Scholarship Rejected:**
+```json
+{
+   "context": {
+      "domain": "onest:financial-support",
+      "location": {
+         "city": {
+            "name": "Bangalore",
+            "code": "std:080"
+         },
+         "country": {
+            "name": "India",
+            "code": "IND"
+         }
+      },
+      "action": "on_status",
+      "timestamp": "2023-08-02T07:21:58.448Z",
+      "ttl": "PT10M",
+      "version": "1.1.0",
+      "bap_id": "nammayatri.io",
+      "bap_uri": "https://nammayatri.io/",
+      "bpp_id": "vidyasarathi.io",
+      "bpp_uri": "https://vidyasarathi.io/",
+      "transaction_id": "a9aaecca-10b7-4d19-b640-b047a7c60008",
+      "message_id": "f6a7d7ea-a23e-4419-b07e-a3412fdffecf"
+   },
+   "message": {
         "order": {
             "id": "12424kh",
             "provider": {
@@ -1176,35 +4236,6 @@ Vidyasarathi is a platform for applying to various scholarships provided by corp
                     "price": {
                         "currency": "INR",
                         "value": "Upto RS.1000 per year"
-                    },
-                    "xinput": {
-                        "required": true,
-                        "head": {
-                            "descriptor": {
-                                "name": "Application Form"
-                            },
-                            "index": {
-                                "min": 0,
-                                "cur": 0,
-                                "max": 2
-                            },
-                            "headings": [
-                                "Personal Details",
-                                "Educational Details",
-                                "Financial Information"
-                            ]
-                        },
-                        "form": {
-                            "mime_type": "text/html",
-                            "url": "https://6vs8xnx5i7.vidyasaarathi.co.in/loans-kyc/xinput/formid/a23f2fdfbbb8ac402bfd54f",
-                            "resubmit": false,
-                            "auth": {
-                                "descriptor": {
-                                    "code": "jwt"
-                                },
-                                "value": "eyJhbGciOiJIUzI.eyJzdWIiOiIxMjM0NTY3O.SflKxwRJSMeKKF2QT4"
-                            }
-                        }
                     },
                     "rateable": false,
                     "tags": [
@@ -1379,9 +4410,6 @@ Vidyasarathi is a platform for applying to various scholarships provided by corp
                             ]
                         }
                     ],
-                    "category_ids": [
-                        "VSP_CAT_4"
-                    ],
                     "fulfillment_ids": [
                         "VSP_FUL_1113"
                     ]
@@ -1406,15 +4434,22 @@ Vidyasarathi is a platform for applying to various scholarships provided by corp
                 {
                     "state" : {
                         "descriptor" : {
-                            "code": "SCHOLARSHIP APPROVED"
-                        }
+                            "code": "SCHOLARSHIP-REJECTED",
+                            "name" : "Application Rejected",
+                            "short_desc" : "Application is rejected due to inappropriate Informaion"
+                        },
+                        "updated_at" : "2023-02-06T09:55:41.161Z"
                     },
                     "id": "VSP_FUL_1113",
                     "type": "SCHOLARSHIP",
                     "tracking": false,
-                    "contact": {
-                        "phone": "9876543210",
-                        "email": "maryg@xyz.com"
+                    "agent" : {
+                        "person" : {
+                            "name" : "Ekstep Foundation SPoc"
+                        },
+                        "contact" : {
+                            "email" : "ekstepsupport@ekstep.com"
+                        }
                     },
                     "customer": {
                         "id": "aadhaar:798677675565",
@@ -1444,6 +4479,17 @@ Vidyasarathi is a platform for applying to various scholarships provided by corp
                     ]
                 }
             ],
+            "cancellation_terms" : [
+                {
+                    "cancellation_fee" : {
+                        "amount" : {
+                            "currency" : "INR",
+                            "value" : "Penalty upto 5,00,000 INR"
+                        }
+                    }
+                }
+
+            ],
             "docs": [
                 {
                     "descriptor":{
@@ -1454,13 +4500,45 @@ Vidyasarathi is a platform for applying to various scholarships provided by corp
                     "mime_type" : "application/pdf"
                 }
             ],
-            "payment" : [
+            "payments" : [
                 {
-                    "bank_code": "IFSC_Code_Of_the_bank",
-                    "bank_account_number" :"121212121212",
-                    "bank_account_name" : "Account Holder Name"
+                    "params" :{
+                        "bank_code": "IFSC_Code_Of_the_bank",
+                        "bank_account_number" :"121212121212",
+                        "bank_account_name" : "Account Holder Name"
+                    }
+
                 }
-            ]
+            ],
+            "quote" :{
+                "price" : {
+                    "currency" : "INR",
+                    "value" : "250000"
+                },
+                "breakup":[
+                    {
+                        "title": "Tution fee",
+                        "price" : {
+                            "currency" : "INR",
+                            "value" : "150000"
+                        }
+                    },
+                    {
+                        "title": "Hostel fee",
+                        "price" : {
+                            "currency" : "INR",
+                            "value" : "50000"
+                        }
+                    },
+                    {
+                        "title": "Books",
+                        "price" : {
+                            "currency" : "INR",
+                            "value" : "50000"
+                        }
+                    }
+                ]
+            }
         }
     }
 }
