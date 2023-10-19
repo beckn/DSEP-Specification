@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Scholarship Application Form</title>
+    </head>
+    <body>
+        <h2> Scholarship Application Form </h2>
+        <form action="${submitURL}" method="post">
+            <label for="student_name">Student Name*</label>
+            <input type="text" id="student_name" name="student_name" required /><br /><br />
+			<label for="father_name">Father Name*</label>
+            <input type="text" id="father_name" name="father_name" required /><br /><br />
+			<label for="phone_number">Phone Number*</label>
+            <input type="text" id="phone_number" name="phone_number" maxlength=10 required /><br /><br />
+			<label for="class">Class*</label>
+            <input type="text" id="class" name="class" required /><br /><br />
+			<label for="school_name">School Name*</label>
+            <input type="text" id="school_name" name="school_name" required /><br /><br />	
+			<label for="marksheet_doc_url">Proof of Previous Marksheet (Document URL)*</label>
+            <input type="text" id="marksheet_doc_url" name="marksheet_doc_url" required /><br /><br />
+			<label for="id_doc_url">Proof of Student ID (Document URL)*</label>
+            <input type="text" id="id_doc_url" name="id_doc_url" required /><br /><br />
+			<label for="benef_bank_acc_num">Beneficiary Account Number*</label>
+            <input type="text" id="benef_bank_acc_num" name="benef_bank_acc_num" required /><br /><br />
+			<label for="benef_name">Beneficiary Name*</label>
+            <input type="text" id="benef_name" name="benef_name" required /><br /><br />
+			<label for="ifsc_code">IFSC Code*</label>
+            <input type="text" id="ifsc_code" name="ifsc_code" required /><br /><br />
+            <input type="hidden" id="nonce" name="nonce" value="${nonceVal}" />
+        </form>
+    </body>
+</html>
