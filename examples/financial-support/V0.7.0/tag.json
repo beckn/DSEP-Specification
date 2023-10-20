@@ -3,7 +3,7 @@
         {
             "display": true,
             "descriptor": {
-                "code": "eligibility-criteria",
+                "code": "eligibility_criteria",
                 "name": "Eligibility Criteria"
             },
             "list": [
@@ -99,7 +99,7 @@
         {
             "display": true,
             "descriptor": {
-                "code": "document-required",
+                "code": "document_required",
                 "name": "Document Required"
             },
             "list": [
