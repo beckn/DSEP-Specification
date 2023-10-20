@@ -1,0 +1,176 @@
+{ 
+    "tags": [
+        {
+            "display": true,
+            "descriptor": {
+                "code": "eligibility-criteria",
+                "name": "Eligibility Criteria"
+            },
+            "list": [
+                {
+                    "descriptor": {
+                        "code": "social_class_criteria",
+                        "name": "Social Class Criteria"
+                    },
+                    "list": [
+                        {
+                            "value" : "SC"
+                        },
+                        {
+                            "value" : "ST"
+                        },
+                        {
+                            "value" : "OBC"
+                        }
+
+                    ],
+                    "display": true
+                },
+                {
+                    "descriptor": {
+                        "code": "gender_criteria",
+                        "name": "Gender Criteria"
+                    },
+                    "list": [
+                        {
+                            "value" : "Female"
+                        },
+                        {
+                            "value" : "Transgender"
+                        }
+                    ],
+                    "display": true
+                },
+                {
+                    "descriptor": {
+                        "code": "city_criteria",
+                        "name": "City Criteria"
+                    },
+                    "list": [
+                        {
+                            "value" : "Pune"
+                        },
+                        {
+                            "value" : "Thane"
+                        }
+                    ],
+                    "display": true
+                },
+                {
+                    "descriptor": {
+                        "code": "state_criteria",
+                        "name": "State Criteria"
+                    },
+                    "list": [
+                        {
+                            "value" : "MAHARASHTRA"
+                        },
+                        {
+                            "value" : "Thane"
+                        }
+                    ],
+                    "display": true
+                },
+                {
+                    "descriptor": {
+                        "code": "qualification_criteria",
+                        "name": "Qualification Criteria"
+                    },
+                    "list": [
+                        {
+                            "value" : "Class 10|Min. score=50|Max. score=null"
+                        },
+                        {
+                            "value" : "Class 12|Min. score=60|Max. score=null"
+                        }
+                    ],
+                    "display": true
+                },
+                {
+                    "descriptor": {
+                        "code": "financial_income_criteria",
+                        "name": "Financial Income Criteria"
+                    },
+                    "value": "Max Family Income - Rs.500000.00",
+                    "display": true
+                }
+            ]
+        },
+        {
+            "display": true,
+            "descriptor": {
+                "code": "document-required",
+                "name": "Document Required"
+            },
+            "list": [
+                {
+                    "value" : "10th Marksheet"
+                },
+                {
+                    "value" : "Aadhar Card of the Student"
+                },
+                {
+                    "value" : "Aadhar Card of the Parent"
+                },
+                {
+                    "value" : "Pan Card of the Parent"
+                }
+            ]
+        },
+        {
+            "display": true,
+            "descriptor": {
+                "code": "additional_info",
+                "name": "Additional Information"
+            },
+            "list": [
+                {
+                    "descriptor": {
+                        "code": "faq",
+                        "name": "Frequently Asked Questions"
+                    },
+                    "list": [
+                        {
+                            "descriptor": {
+                                "code": "faq1",
+                                "name": "What is the selection process for this scholarship program?"
+                            },
+                            "value" : "The selection of scholars for the ‘SBIF Asha Scholarship Program for School Students 2023’ will be made on the basis of their academic merit and financial background",
+                            "display": true
+                        },
+                        {
+                            "descriptor": {
+                                "code": "faq2",
+                                "name": "If selected for this program, how will I receive the scholarship fund?"
+                            },
+                            "value" : "Upon selection, the scholarship amount will be directly transferred into the bank account of the scholars.",
+                            "display": true
+                        },
+                        {
+                            "descriptor": {
+                                "code": "faq3",
+                                "name": "Will I get this scholarship for subsequent years of studies?"
+                            },
+                            "value" : "No. This is a one-time scholarship for students studying in Classes 6 to 12.",
+                            "display": true
+                        }
+
+                    ],
+                    "display": true
+                },
+                {
+                    "descriptor": {
+                        "code": "terms_conditions",
+                        "name": "Terms and Conditions"
+                    },
+                    "value": "Lorem epsum terms and condition content",
+                    "display": true
+                }
+            ]
+        }
+    ]
+}
+
+                
+                
+                
