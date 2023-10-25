@@ -1,0 +1,23 @@
+[
+    {
+        "descriptor": {
+            "name": "What is the selection process for this scholarship program?"
+        },
+        "value" : "The selection of scholars for the ‘SBIF Asha Scholarship Program for School Students 2023’ will be made on the basis of their academic merit and financial background",
+        "display": true
+    },
+    {
+        "descriptor": {
+            "name": "If selected for this program, how will I receive the scholarship fund?"
+        },
+        "value" : "Upon selection, the scholarship amount will be directly transferred into the bank account of the scholars.",
+        "display": true
+    },
+    {
+        "descriptor": {
+            "name": "Will I get this scholarship for subsequent years of studies?"
+        },
+        "value" : "No. This is a one-time scholarship for students studying in Classes 6 to 12.",
+        "display": true
+    }
+]
