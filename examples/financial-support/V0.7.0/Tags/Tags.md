@@ -22,5 +22,8 @@ The Tag schema contains a key-value pair containing the actual extended metadata
 ## Examples of Additional Information Tag Group:
 | Example Name `(groups/[index]/list[index].descriptor.name)` | Example Code `groups/[index]/list[index].descriptor.code` | Description                                                                                            |
 |-----------------------------------------|---------------------------------------|--------------------------------------------------------------------------------------------------------|
-| Frequently Asked Questions's URL | faq-url                                | Contains the URL of the Frequently asked questions in beckn standarized format which is given [here](./faq.json) |
+| Frequently Asked Questions's URL | faq-url                                | Contains the URL of the Frequently asked questions in beckn standarized format which is given [here](./Faqs.json) |
 | Terms and Conditions's URL | tnc-url                                | Contains the URL of the Terms and conditions. |
+
+## Contributing to the Tags:
+To Contribute to Tag Groups, contributor are requested to submit a PR with updated Tags.json file to the `draft` branch.
