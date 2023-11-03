@@ -1,0 +1,206 @@
+{
+    "context": {
+        "domain": "dsep:scholarships",
+        "version": "1.0.0",
+        "action": "search",
+        "bap_id": "dsep-protocol.becknprotocol.io",
+        "bap_uri": "https://dsep-protocol-network.becknprotocol.io/",
+        "location": {
+            "city": {
+                "name": "Bangalore",
+                "code": "std:080"
+            },
+            "country": {
+                "name": "India",
+                "code": "IND"
+            }
+        },
+        "transaction_id": "7154b8e2-89bf-4401-9291-f366f8aa96e2",
+        "message_id": "4a943deb-facb-4fbf-b5e3-904dc8a81898",
+        "ttl": "PT10M",
+        "timestamp": "2023-02-22T12:46:07.869Z"
+    },
+    "responses": [
+        {
+            "context": {
+                "domain": "dsep:scholarships",
+                "location": {
+                    "city": {
+                        "name": "Bangalore",
+                        "code": "std:080"
+                    },
+                    "country": {
+                        "name": "India",
+                        "code": "IND"
+                    }
+                },
+                "action": "on_search",
+                "timestamp": "2023-02-22T12:46:07.992Z",
+                "ttl": "PT10M",
+                "version": "1.0.0",
+                "bap_id": "dsep-protocol.becknprotocol.io",
+                "bap_uri": "https://dsep-protocol-network.becknprotocol.io/",
+                "bpp_id": "https://proteanrc.centralindia.cloudapp.azure.com/dsep-bpp-1",
+                "bpp_uri": "https://proteanrc.centralindia.cloudapp.azure.com/dsep-bpp-1/public",
+                "transaction_id": "7154b8e2-89bf-4401-9291-f366f8aa96e2",
+                "message_id": "4a943deb-facb-4fbf-b5e3-904dc8a81898"
+            },
+            "message": {
+                "catalog": {
+                    "descriptor": {
+                        "name": "Protean DSEP Scholarships and Grants BPP Platform"
+                    },
+                    "providers": [
+                        {
+                            "id": "ZQU31169990",
+                            "descriptor": {
+                                "name": "XYZ Education Foundation"
+                            },
+                            "categories": [
+                                {
+                                    "id": "DSEP_CAT_3",
+                                    "descriptor": {
+                                        "code": "pg",
+                                        "name": "Post Graduate"
+                                    }
+                                },
+                                {
+                                    "id": "DSEP_CAT_2",
+                                    "descriptor": {
+                                        "code": "ug",
+                                        "name": "Undergraduate"
+                                    }
+                                }
+                            ],
+                            "fulfillments": [
+                                {
+                                    "id": "DSEP_FUL_58741444",
+                                    "type": "SCHOLARSHIP",
+                                    "tracking": false,
+                                    "contact": {
+                                        "phone": "9876543210",
+                                        "email": "maryg@xyz.com"
+                                    },
+                                    "stops": [
+                                        {
+                                            "type": "APPLICATION-START",
+                                            "time": {
+                                                "timestamp": "2023-01-01T00:00:00.000Z"
+                                            }
+                                        },
+                                        {
+                                            "type": "APPLICATION-END",
+                                            "time": {
+                                                "timestamp": "2023-03-31T00:00:00.000Z"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "DSEP_FUL_70413991",
+                                    "type": "SCHOLARSHIP",
+                                    "tracking": false,
+                                    "contact": {
+                                        "phone": "9876543210",
+                                        "email": "maryg@xyz.com"
+                                    },
+                                    "stops": [
+                                        {
+                                            "type": "APPLICATION-START",
+                                            "time": {
+                                                "timestamp": "2023-01-20T00:00:00.000Z"
+                                            }
+                                        },
+                                        {
+                                            "type": "APPLICATION-END",
+                                            "time": {
+                                                "timestamp": "2023-03-31T00:00:00.000Z"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ],
+                            "items": [
+                                {
+                                    "id": "SCM_58741444",
+                                    "descriptor": {
+                                        "name": "XYZ Undergraduation scholarship for Economically Backward Female Students",
+                                        "long_desc": "XYZ Undergraduation scholarship for Economically Backward Female Students"
+                                    },
+                                    "price": {
+                                        "currency": "INR",
+                                        "value": "30000"
+                                    },
+                                    "rateable": false,
+                                    "tags": [
+                                        {
+                                            "display": true,
+                                            "descriptor": {
+                                                "code": "benefits",
+                                                "name": "Benefits"
+                                            },
+                                            "list": [
+                                                {
+                                                    "descriptor": {
+                                                        "code": "scholarship-amount",
+                                                        "name": "Scholarship Amount"
+                                                    },
+                                                    "value": "Upto Rs.30000 per year",
+                                                    "display": true
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "category_ids": [
+                                        "DSEP_CAT_2"
+                                    ],
+                                    "fulfillment_ids": [
+                                        "DSEP_FUL_58741444"
+                                    ]
+                                },
+                                {
+                                    "id": "SCM_70413991",
+                                    "descriptor": {
+                                        "name": "XYZ Post Graduation scholarship for Economically Backward Female Students",
+                                        "long_desc": "XYZ Post Graduation scholarship for Economically Backward Female Students"
+                                    },
+                                    "price": {
+                                        "currency": "INR",
+                                        "value": "45000"
+                                    },
+                                    "rateable": false,
+                                    "tags": [
+                                        {
+                                            "display": true,
+                                            "descriptor": {
+                                                "code": "benefits",
+                                                "name": "Benefits"
+                                            },
+                                            "list": [
+                                                {
+                                                    "descriptor": {
+                                                        "code": "scholarship-amount",
+                                                        "name": "Scholarship Amount"
+                                                    },
+                                                    "value": "Upto Rs.45000 per year",
+                                                    "display": true
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "category_ids": [
+                                        "DSEP_CAT_3"
+                                    ],
+                                    "fulfillment_ids": [
+                                        "DSEP_FUL_70413991"
+                                    ]
+                                }
+                            ],
+                            "rateable": false
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}
