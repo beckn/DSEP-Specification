@@ -35,6 +35,23 @@
                         }
                     ]
                 },
+                "locations" : [
+                    {
+                        "id" : "L1",
+                        "city" :"Pune",
+                        "state" : "Maharastra"
+                    },
+                    {
+                        "id" : "L2",
+                        "city" :"Thane",
+                        "state" : "Maharastra"
+                    },
+                    {
+                        "id" : "L3",
+                        "city" :"Lucknow",
+                        "state" : "Uttar Pradesh"
+                    }
+                ],
                 "rateable": false
             },
             "items": [
@@ -48,59 +65,129 @@
                         "currency": "INR",
                         "value": "Upto RS.1000 per year"
                     },
+                    "time" : {
+                        "label" : "Start  & End date of the Application",
+                        "range" : {
+                            "start" : "2022-09-01T00:00:00.000Z",
+                            "end" : "2022-10-31T00:00:00.000Z"
+                        }
+                    },
                     "rateable": false,
                     "tags": [
                         {
                             "display": true,
                             "descriptor": {
-                                "code": "edu_qual",
+                                "code": "soc-elg",
+                                "name": "Social Eligibility"
+                            },
+                            "list": [
+                                {
+                                    "value" : "SC"
+                                },
+                                {
+                                    "value" : "ST"
+                                },
+                                {
+                                    "value" : "OBC"
+                                }]
+                        },
+                        {
+                            "display": true,
+                            "descriptor": {
+                                "code": "gen-elg",
+                                "name": "Gender Eligibility"
+                            },
+                            "list": [
+                                {
+                                    "value" : "Female"
+                                },
+                                {
+                                    "value" : "Transgender"
+                                }]
+                        },
+                        {
+                            "display": true,
+                            "descriptor": {
+                                "code": "fin-elg",
+                                "name": "Financial Eligibility"
+                            },
+                            "list": [
+                                {
+                                    "value" : "Max Family Income - Rs.500000.00"
+                                }] 
+                            
+                        },
+                        {
+                            "display": true,
+                            "descriptor": {
+                                "code": "acad-elg",
                                 "name": "Academic Eligibility"
                             },
                             "list": [
                                 {
                                     "descriptor": {
-                                        "code": "gr",
-                                        "name": "Grade"
+                                        "code": "class",
+                                        "name": "Class"
                                     },
-                                    "value": "Grade 12",
-                                    "display": true
+                                    "value": "12th"
                                 },
                                 {
                                     "descriptor": {
-                                        "code": "percentage_grade",
-                                        "name": "Percentage/Grade"
+                                        "code": "percentage",
+                                        "name": "Percentage"
                                     },
-                                    "value": ">= 50",
-                                    "display": true
+                                    "value": ">= 50"
+                                }
+
+                            ] 
+                            
+                        },
+                        {
+                            "display": true,
+                            "descriptor": {
+                                "code": "docs-reqd",
+                                "name": "Documents Required"
+                            },
+                            "list": [
+                                {
+                                    "value" : "10th Marksheet"
                                 },
                                 {
-                                    "descriptor": {
-                                        "code": "passing_year",
-                                        "name": "Passing Year"
-                                    },
-                                    "value": "2021",
-                                    "display": false
+                                    "value" : "Aadhar Card of the Student"
+                                },
+                                {
+                                    "value" : "Aadhar Card of the Parent"
+                                },
+                                {
+                                    "value" : "Pan Card of the Parent"
                                 }
                             ]
                         },
                         {
                             "display": true,
                             "descriptor": {
-                                "code": "benefits",
-                                "name": "Benefits"
+                                "code": "add-info",
+                                "name": "Additional Information"
                             },
                             "list": [
                                 {
                                     "descriptor": {
-                                        "code": "scholarship-amount",
-                                        "name": "Scholarship Amount"
+                                        "code": "faq-url",
+                                        "name": "Frequently Asked Questions's URL"
                                     },
-                                    "value": "Upto Rs.25000 per year",
-                                    "display": true
+                                    "value" : "https://www.xyz-scholarship.com/faq" 
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "tnc-url",
+                                        "name": "Terms and Conditions's URL"
+                                    },
+                                    "value": "https://www.xyz-scholarship.com/tnc"
                                 }
                             ]
                         }
                     ],
+                    "location_ids": ["L1","L2"],
                     "category_ids": ["DSEP_CAT_1"]
                 }
             ],
@@ -116,21 +203,7 @@
                         "contact" : {
                             "email" : "ekstepsupport@ekstep.com"
                         }
-                    },
-                    "stops": [
-                        {
-                            "type": "APPLICATION-START",
-                            "time": {
-                                "timestamp": "2022-09-01T00:00:00.000Z"
-                            }
-                        },
-                        {
-                            "type": "APPLICATION-END",
-                            "time": {
-                                "timestamp": "2022-10-31T00:00:00.000Z"
-                            }
-                        }
-                    ]
+                    }
                 }
             ],
             "quote" :{

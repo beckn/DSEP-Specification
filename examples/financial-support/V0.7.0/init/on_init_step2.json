@@ -48,6 +48,13 @@
                         "currency": "INR",
                         "value": "Upto RS.1000 per year"
                     },
+                    "time" : {
+                        "label" : "Start  & End date of the Application",
+                        "range" : {
+                            "start" : "2022-09-01T00:00:00.000Z",
+                            "end" : "2022-10-31T00:00:00.000Z"
+                        }
+                    },
                     "xinput": {
                         "required": true,
                         "head": {
@@ -83,174 +90,117 @@
                         {
                             "display": true,
                             "descriptor": {
-                                "code": "eligibility-criteria",
-                                "name": "Eligibility Criteria"
+                                "code": "soc-elg",
+                                "name": "Social Eligibility"
+                            },
+                            "list": [
+                                {
+                                    "value" : "SC"
+                                },
+                                {
+                                    "value" : "ST"
+                                },
+                                {
+                                    "value" : "OBC"
+                                }]
+                        },
+                        {
+                            "display": true,
+                            "descriptor": {
+                                "code": "gen-elg",
+                                "name": "Gender Eligibility"
+                            },
+                            "list": [
+                                {
+                                    "value" : "Female"
+                                },
+                                {
+                                    "value" : "Transgender"
+                                }]
+                        },
+                        {
+                            "display": true,
+                            "descriptor": {
+                                "code": "fin-elg",
+                                "name": "Financial Eligibility"
+                            },
+                            "list": [
+                                {
+                                    "value" : "Max Family Income - Rs.500000.00"
+                                }] 
+                            
+                        },
+                        {
+                            "display": true,
+                            "descriptor": {
+                                "code": "acad-elg",
+                                "name": "Academic Eligibility"
                             },
                             "list": [
                                 {
                                     "descriptor": {
-                                        "code": "course_category_criteria",
-                                        "name": "Course Category Criteria"
+                                        "code": "class",
+                                        "name": "Class"
                                     },
-                                    "value": "SC",
-                                    "display": true
+                                    "value": "12th"
                                 },
                                 {
                                     "descriptor": {
-                                        "code": "course_category_criteria",
-                                        "name": "Course Category Criteria"
+                                        "code": "percentage",
+                                        "name": "Percentage"
                                     },
-                                    "value": "ST",
-                                    "display": true
+                                    "value": ">= 50"
+                                }
+
+                            ] 
+                            
+                        },
+                        {
+                            "display": true,
+                            "descriptor": {
+                                "code": "docs-reqd",
+                                "name": "Documents Required"
+                            },
+                            "list": [
+                                {
+                                    "value" : "10th Marksheet"
                                 },
                                 {
-                                    "descriptor": {
-                                        "code": "course_category_criteria",
-                                        "name": "Course Category Criteria"
-                                    },
-                                    "value": "OB",
-                                    "display": true
+                                    "value" : "Aadhar Card of the Student"
                                 },
                                 {
-                                    "descriptor": {
-                                        "code": "course_category_criteria",
-                                        "name": "Course Category Criteria"
-                                    },
-                                    "value": "NT",
-                                    "display": true
+                                    "value" : "Aadhar Card of the Parent"
                                 },
                                 {
-                                    "descriptor": {
-                                        "code": "gender_criteria",
-                                        "name": "Gender Criteria"
-                                    },
-                                    "value": "ALL",
-                                    "display": true
-                                },
-                                {
-                                    "descriptor": {
-                                        "code": "city_criteria",
-                                        "name": "City Criteria"
-                                    },
-                                    "value": "Thane",
-                                    "display": true
-                                },
-                                {
-                                    "descriptor": {
-                                        "code": "city_criteria",
-                                        "name": "City Criteria"
-                                    },
-                                    "value": "Nagpur",
-                                    "display": true
-                                },
-                                {
-                                    "descriptor": {
-                                        "code": "city_criteria",
-                                        "name": "City Criteria"
-                                    },
-                                    "value": "Yavatmal",
-                                    "display": true
-                                },
-                                {
-                                    "descriptor": {
-                                        "code": "city_criteria",
-                                        "name": "City Criteria"
-                                    },
-                                    "value": "Ahmed Nagar",
-                                    "display": true
-                                },
-                                {
-                                    "descriptor": {
-                                        "code": "city_criteria",
-                                        "name": "City Criteria"
-                                    },
-                                    "value": "Solapur",
-                                    "display": true
-                                },
-                                {
-                                    "descriptor": {
-                                        "code": "city_criteria",
-                                        "name": "City Criteria"
-                                    },
-                                    "value": "Pune",
-                                    "display": true
-                                },
-                                {
-                                    "descriptor": {
-                                        "code": "state_criteria",
-                                        "name": "State Criteria"
-                                    },
-                                    "value": "MAHARASHTRA",
-                                    "display": true
-                                },
-                                {
-                                    "descriptor": {
-                                        "code": "qualification_criteria",
-                                        "name": "Qualification Criteria"
-                                    },
-                                    "value": "Class 10|Min. score=50|Max. score=null",
-                                    "display": true
-                                },
-                                {
-                                    "descriptor": {
-                                        "code": "qualification_criteria",
-                                        "name": "Qualification Criteria"
-                                    },
-                                    "value": "Class 12|Min. score=60|Max. score=null",
-                                    "display": true
-                                },
-                                {
-                                    "descriptor": {
-                                        "code": "financial_income_criteria",
-                                        "name": "Financial Income Criteria"
-                                    },
-                                    "value": "Max Family Income - Rs.500000.00",
-                                    "display": true
-                                },
-                                {
-                                    "descriptor": {
-                                        "code": "financial_year",
-                                        "name": "Financial Year"
-                                    },
-                                    "value": "2023-2024",
-                                    "display": true
-                                },
-                                {
-                                    "descriptor": {
-                                        "code": "certificate_instructions",
-                                        "name": "Certificate Instructions"
-                                    },
-                                    "value": "ZMT Education 15JUL23",
-                                    "display": true
+                                    "value" : "Pan Card of the Parent"
                                 }
                             ]
                         },
                         {
                             "display": true,
                             "descriptor": {
-                                "code": "additional_info",
-                                "name": "Additional Info"
+                                "code": "add-info",
+                                "name": "Additional Information"
                             },
                             "list": [
                                 {
                                     "descriptor": {
-                                        "code": "faq",
-                                        "name": "Frequently Asked Questions"
+                                        "code": "faq-url",
+                                        "name": "Frequently Asked Questions's URL"
                                     },
-                                    "value": "ZMT Education 15JUL23",
-                                    "display": true
+                                    "value" : "https://www.xyz-scholarship.com/faq" 
                                 },
                                 {
                                     "descriptor": {
-                                        "code": "terms_conditions",
-                                        "name": "Terms and Conditions"
+                                        "code": "tnc-url",
+                                        "name": "Terms and Conditions's URL"
                                     },
-                                    "value": "ZMT Education 15JUL23",
-                                    "display": true
+                                    "value": "https://www.xyz-scholarship.com/tnc"
                                 }
                             ]
                         }
                     ],
+                    "location_ids": ["L1","L2"],
                     "fulfillment_ids": [
                         "VSP_FUL_1113"
                     ]
@@ -302,21 +252,7 @@
                             "phone": "+91-9663088848",
                             "email": "jane.doe@example.com"
                         }
-                    },
-                    "stops": [
-                        {
-                            "type": "APPLICATION-START",
-                            "time": {
-                                "timestamp": "2023-07-14T18:30:00.000Z"
-                            }
-                        },
-                        {
-                            "type": "APPLICATION-END",
-                            "time": {
-                                "timestamp": "2025-07-13T18:30:00.000Z"
-                            }
-                        }
-                    ]
+                    }
                 }
             ],
             "payments" : [

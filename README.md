@@ -14,8 +14,9 @@ draft
 |----------------------------------|---------------------------------------------------|
 | 0.5.0 (Genesis Version)          | 0.9.3-draft                                       |
 | 0.5.1-draft (Patch version)      | -                                     |
-| 0.6.0-draft (Next Minor Version) | -                                                 |
-| 1.0.0-draft (Next Major Version) | -                                                 |
+| 0.6.0-draft (Next Minor Version) | 1.1.0-draft                                                 |
+| 0.7.0-draft (Next Major Version) | 1.1.0-draft                                                 |
+| 0.8.0-draft (Next Major Version) | -                                                 |
 
 ## Introduction
 
