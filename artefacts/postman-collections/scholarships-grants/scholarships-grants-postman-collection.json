@@ -1,0 +1,671 @@
+{
+	"info": {
+		"_postman_id": "ed686d15-e2de-41cf-946d-4797fa97ec42",
+		"name": "DSEP-Scholarship Discovery II - Protocol  Server Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "8042669"
+	},
+	"item": [
+		{
+			"name": "Search by Intent - Scholarship Name",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"context\": {\r\n        \"domain\": \"dsep:scholarships\",\r\n        \"location\": {\r\n            \"city\": {\r\n                \"name\": \"Bangalore\",\r\n                \"code\": \"std:080\"\r\n            },\r\n            \"country\": {\r\n                \"name\": \"India\",\r\n                \"code\": \"IND\"\r\n            }\r\n        },\r\n        \"action\": \"search\",\r\n        \"version\": \"1.0.0\",\r\n        \"bap_id\": \"dsep-protocol.becknprotocol.io\",\r\n        \"bap_uri\": \"https://dsep-protocol-network.becknprotocol.io/\",\r\n        \"transaction_id\": \"edea17fa-b5c4-48c9-86dd-1b80dda67d37\",\r\n        \"message_id\": \"4618752a-c502-4503-bd75-635622ea8aff\",\r\n        \"timestamp\": \"2023-02-18T17:00:40.065Z\",\r\n        \"ttl\": \"PT10M\"\r\n    },\r\n    \"message\": {\r\n        \"intent\": {\r\n            \"item\": {\r\n                \"descriptor\": {\r\n                    \"name\": \"scholarship for undergraduate\"\r\n                }\r\n            }\r\n        }\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{bpp-url}}/search",
+					"host": [
+						"{{bpp-url}}"
+					],
+					"path": [
+						"search"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Search by Intent - Scholarship Name",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"context\": {\r\n        \"domain\": \"dsep:scholarships\",\r\n        \"location\": {\r\n            \"city\": {\r\n                \"name\": \"Bangalore\",\r\n                \"code\": \"std:080\"\r\n            },\r\n            \"country\": {\r\n                \"name\": \"India\",\r\n                \"code\": \"IND\"\r\n            }\r\n        },\r\n        \"action\": \"search\",\r\n        \"version\": \"1.0.0\",\r\n        \"bap_id\": \"dsep-protocol.becknprotocol.io\",\r\n        \"bap_uri\": \"https://dsep-protocol-network.becknprotocol.io/\",\r\n        \"transaction_id\": \"edea17fa-b5c4-48c9-86dd-1b80dda67d37\",\r\n        \"message_id\": \"4618752a-c502-4503-bd75-635622ea8aff\",\r\n        \"timestamp\": \"2023-02-18T17:00:40.065Z\",\r\n        \"ttl\": \"PT10M\"\r\n    },\r\n    \"message\": {\r\n        \"intent\": {\r\n            \"item\": {\r\n                \"descriptor\": {\r\n                    \"name\": \"scholarship for undergraduate\"\r\n                }\r\n            }\r\n        }\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{bpp-url}}/search",
+							"host": [
+								"{{bpp-url}}"
+							],
+							"path": [
+								"search"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.18.0 (Ubuntu)"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 18 Feb 2023 12:23:45 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2146"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"862-SurvzDOYVL3/1EybEqhF0SpFdnA\""
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"context\": {\n        \"domain\": \"dsep:scholarships\",\n        \"version\": \"1.0.0\",\n        \"action\": \"search\",\n        \"bap_id\": \"dsep-protocol.becknprotocol.io\",\n        \"bap_uri\": \"https://dsep-protocol-network.becknprotocol.io/\",\n        \"location\": {\n            \"city\": {\n                \"name\": \"Bangalore\",\n                \"code\": \"std:080\"\n            },\n            \"country\": {\n                \"name\": \"India\",\n                \"code\": \"IND\"\n            }\n        },\n        \"transaction_id\": \"edea17fa-b5c4-48c9-86dd-1b80dda67d37\",\n        \"message_id\": \"4039c64a-957b-47ab-9ee7-757981faadb3\",\n        \"ttl\": \"PT10M\",\n        \"timestamp\": \"2023-02-18T12:23:35.557Z\"\n    },\n    \"responses\": [\n        {\n            \"context\": {\n                \"domain\": \"dsep:scholarships\",\n                \"location\": {\n                    \"city\": {\n                        \"name\": \"Bangalore\",\n                        \"code\": \"std:080\"\n                    },\n                    \"country\": {\n                        \"name\": \"India\",\n                        \"code\": \"IND\"\n                    }\n                },\n                \"action\": \"on_search\",\n                \"timestamp\": \"2023-02-18T12:23:36.835Z\",\n                \"ttl\": \"PT10M\",\n                \"version\": \"1.0.0\",\n                \"bap_id\": \"dsep-protocol.becknprotocol.io\",\n                \"bap_uri\": \"https://dsep-protocol-network.becknprotocol.io/\",\n                \"bpp_id\": \"https://proteanrc.centralindia.cloudapp.azure.com/dsep-bpp-1\",\n                \"bpp_uri\": \"https://proteanrc.centralindia.cloudapp.azure.com/dsep-bpp-1/public\",\n                \"transaction_id\": \"edea17fa-b5c4-48c9-86dd-1b80dda67d37\",\n                \"message_id\": \"4039c64a-957b-47ab-9ee7-757981faadb3\"\n            },\n            \"message\": {\n                \"catalog\": {\n                    \"descriptor\": {\n                        \"name\": \"Protean DSEP Scholarships and Grants BPP Platform\"\n                    },\n                    \"providers\": [\n                        {\n                            \"id\": \"ZQU31169990\",\n                            \"descriptor\": {\n                                \"name\": \"XYZ Education Foundation\"\n                            },\n                            \"categories\": [\n                                {\n                                    \"id\": \"DSEP_CAT_2\",\n                                    \"descriptor\": {\n                                        \"code\": \"ug\",\n                                        \"name\": \"Undergraduate\"\n                                    }\n                                }\n                            ],\n                            \"fulfillments\": [\n                                {\n                                    \"id\": \"DSEP_FUL_55274212\",\n                                    \"type\": \"SCHOLARSHIP\",\n                                    \"tracking\": false,\n                                    \"contact\": {\n                                        \"phone\": \"9876543210\",\n                                        \"email\": \"maryg@xyz.com\"\n                                    },\n                                    \"stops\": [\n                                        {\n                                            \"type\": \"APPLICATION-START\",\n                                            \"time\": {\n                                                \"timestamp\": \"2023-01-01T00:00:00.000Z\"\n                                            }\n                                        },\n                                        {\n                                            \"type\": \"APPLICATION-END\",\n                                            \"time\": {\n                                                \"timestamp\": \"2023-03-31T00:00:00.000Z\"\n                                            }\n                                        }\n                                    ]\n                                }\n                            ],\n                            \"items\": [\n                                {\n                                    \"id\": \"SCM_55274212\",\n                                    \"descriptor\": {\n                                        \"name\": \"XYZ Education Scholarship for Undergraduate Students\",\n                                        \"long_desc\": \"XYZ Education Scholarship for Undergraduate Students\"\n                                    },\n                                    \"price\": {\n                                        \"currency\": \"INR\",\n                                        \"value\": \"25000\"\n                                    },\n                                    \"rateable\": false,\n                                    \"tags\": [\n                                        {\n                                            \"display\": true,\n                                            \"descriptor\": {\n                                                \"code\": \"benefits\",\n                                                \"name\": \"Benefits\"\n                                            },\n                                            \"list\": [\n                                                {\n                                                    \"descriptor\": {\n                                                        \"code\": \"scholarship-amount\",\n                                                        \"name\": \"Scholarship Amount\"\n                                                    },\n                                                    \"value\": \"Upto Rs.25000 per year\",\n                                                    \"display\": true\n                                                }\n                                            ]\n                                        }\n                                    ],\n                                    \"category_ids\": [\n                                        \"DSEP_CAT_2\"\n                                    ],\n                                    \"fulfillment_ids\": [\n                                        \"DSEP_FUL_55274212\"\n                                    ]\n                                }\n                            ],\n                            \"rateable\": false\n                        }\n                    ]\n                }\n            }\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Search by Intent - Get scholarships with gender criteria",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"context\": {\r\n        \"domain\": \"dsep:scholarships\",\r\n        \"location\": {\r\n            \"city\": {\r\n                \"name\": \"Bangalore\",\r\n                \"code\": \"std:080\"\r\n            },\r\n            \"country\": {\r\n                \"name\": \"India\",\r\n                \"code\": \"IND\"\r\n            }\r\n        },\r\n        \"action\": \"search\",\r\n        \"version\": \"1.0.0\",\r\n        \"bap_id\": \"dsep-protocol.becknprotocol.io\",\r\n        \"bap_uri\": \"https://dsep-protocol-network.becknprotocol.io/\",\r\n        \"transaction_id\": \"7154b8e2-89bf-4401-9291-f366f8aa96e2\",\r\n        \"message_id\": \"b3090f5b-3dac-4ecd-83fa-10b44603f13e\",\r\n        \"timestamp\": \"2023-02-16T10:00:40.065Z\",\r\n        \"ttl\": \"PT10M\"\r\n    },\r\n    \"message\": {\r\n        \"intent\": {\r\n            \"fulfillment\": {\r\n                \"customer\": {\r\n                    \"person\": {\r\n                        \"gender\": \"Female\"\r\n                    }\r\n                }\r\n            }\r\n        }\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://dsep-protocol-client.becknprotocol.io/search",
+					"protocol": "https",
+					"host": [
+						"dsep-protocol-client",
+						"becknprotocol",
+						"io"
+					],
+					"path": [
+						"search"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Search by Intent - Get scholarships with gender criteria",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"context\": {\r\n        \"domain\": \"dsep:scholarships\",\r\n        \"location\": {\r\n            \"city\": {\r\n                \"name\": \"Bangalore\",\r\n                \"code\": \"std:080\"\r\n            },\r\n            \"country\": {\r\n                \"name\": \"India\",\r\n                \"code\": \"IND\"\r\n            }\r\n        },\r\n        \"action\": \"search\",\r\n        \"version\": \"1.0.0\",\r\n        \"bap_id\": \"dsep-protocol.becknprotocol.io\",\r\n        \"bap_uri\": \"https://dsep-protocol-network.becknprotocol.io/\",\r\n        \"transaction_id\": \"7154b8e2-89bf-4401-9291-f366f8aa96e2\",\r\n        \"message_id\": \"b3090f5b-3dac-4ecd-83fa-10b44603f13e\",\r\n        \"timestamp\": \"2023-02-16T10:00:40.065Z\",\r\n        \"ttl\": \"PT10M\"\r\n    },\r\n    \"message\": {\r\n        \"intent\": {\r\n            \"fulfillment\": {\r\n                \"customer\": {\r\n                    \"person\": {\r\n                        \"gender\": \"Female\"\r\n                    }\r\n                }\r\n            }\r\n        }\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{bpp-url}}/search",
+							"host": [
+								"{{bpp-url}}"
+							],
+							"path": [
+								"search"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.18.0 (Ubuntu)"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 18 Feb 2023 13:20:28 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "3087"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"c0f-T1szIjqRhm3ft0RhrYAN5tKc2Xk\""
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"context\": {\n        \"domain\": \"dsep:scholarships\",\n        \"version\": \"1.0.0\",\n        \"action\": \"search\",\n        \"bap_id\": \"dsep-protocol.becknprotocol.io\",\n        \"bap_uri\": \"https://dsep-protocol-network.becknprotocol.io/\",\n        \"location\": {\n            \"city\": {\n                \"name\": \"Bangalore\",\n                \"code\": \"std:080\"\n            },\n            \"country\": {\n                \"name\": \"India\",\n                \"code\": \"IND\"\n            }\n        },\n        \"transaction_id\": \"7154b8e2-89bf-4401-9291-f366f8aa96e2\",\n        \"message_id\": \"40187bd7-b984-4f70-817f-d5a3b34817f3\",\n        \"ttl\": \"PT10M\",\n        \"timestamp\": \"2023-02-18T13:20:18.701Z\"\n    },\n    \"responses\": [\n        {\n            \"context\": {\n                \"domain\": \"dsep:scholarships\",\n                \"location\": {\n                    \"city\": {\n                        \"name\": \"Bangalore\",\n                        \"code\": \"std:080\"\n                    },\n                    \"country\": {\n                        \"name\": \"India\",\n                        \"code\": \"IND\"\n                    }\n                },\n                \"action\": \"on_search\",\n                \"timestamp\": \"2023-02-18T13:20:19.218Z\",\n                \"ttl\": \"PT10M\",\n                \"version\": \"1.0.0\",\n                \"bap_id\": \"dsep-protocol.becknprotocol.io\",\n                \"bap_uri\": \"https://dsep-protocol-network.becknprotocol.io/\",\n                \"bpp_id\": \"https://proteanrc.centralindia.cloudapp.azure.com/dsep-bpp-1\",\n                \"bpp_uri\": \"https://proteanrc.centralindia.cloudapp.azure.com/dsep-bpp-1/public\",\n                \"transaction_id\": \"7154b8e2-89bf-4401-9291-f366f8aa96e2\",\n                \"message_id\": \"40187bd7-b984-4f70-817f-d5a3b34817f3\"\n            },\n            \"message\": {\n                \"catalog\": {\n                    \"descriptor\": {\n                        \"name\": \"Protean DSEP Scholarships and Grants BPP Platform\"\n                    },\n                    \"providers\": [\n                        {\n                            \"id\": \"ZQU31169990\",\n                            \"descriptor\": {\n                                \"name\": \"XYZ Education Foundation\"\n                            },\n                            \"categories\": [\n                                {\n                                    \"id\": \"DSEP_CAT_3\",\n                                    \"descriptor\": {\n                                        \"code\": \"pg\",\n                                        \"name\": \"Post Graduate\"\n                                    }\n                                },\n                                {\n                                    \"id\": \"DSEP_CAT_2\",\n                                    \"descriptor\": {\n                                        \"code\": \"ug\",\n                                        \"name\": \"Undergraduate\"\n                                    }\n                                }\n                            ],\n                            \"fulfillments\": [\n                                {\n                                    \"id\": \"DSEP_FUL_58741444\",\n                                    \"type\": \"SCHOLARSHIP\",\n                                    \"tracking\": false,\n                                    \"contact\": {\n                                        \"phone\": \"9876543210\",\n                                        \"email\": \"maryg@xyz.com\"\n                                    },\n                                    \"stops\": [\n                                        {\n                                            \"type\": \"APPLICATION-START\",\n                                            \"time\": {\n                                                \"timestamp\": \"2023-01-01T00:00:00.000Z\"\n                                            }\n                                        },\n                                        {\n                                            \"type\": \"APPLICATION-END\",\n                                            \"time\": {\n                                                \"timestamp\": \"2023-03-31T00:00:00.000Z\"\n                                            }\n                                        }\n                                    ]\n                                },\n                                {\n                                    \"id\": \"DSEP_FUL_70413991\",\n                                    \"type\": \"SCHOLARSHIP\",\n                                    \"tracking\": false,\n                                    \"contact\": {\n                                        \"phone\": \"9876543210\",\n                                        \"email\": \"maryg@xyz.com\"\n                                    },\n                                    \"stops\": [\n                                        {\n                                            \"type\": \"APPLICATION-START\",\n                                            \"time\": {\n                                                \"timestamp\": \"2023-01-20T00:00:00.000Z\"\n                                            }\n                                        },\n                                        {\n                                            \"type\": \"APPLICATION-END\",\n                                            \"time\": {\n                                                \"timestamp\": \"2023-03-31T00:00:00.000Z\"\n                                            }\n                                        }\n                                    ]\n                                }\n                            ],\n                            \"items\": [\n                                {\n                                    \"id\": \"SCM_58741444\",\n                                    \"descriptor\": {\n                                        \"name\": \"XYZ Undergraduation scholarship for Economically Backward Female Students\",\n                                        \"long_desc\": \"XYZ Undergraduation scholarship for Economically Backward Female Students\"\n                                    },\n                                    \"price\": {\n                                        \"currency\": \"INR\",\n                                        \"value\": \"30000\"\n                                    },\n                                    \"rateable\": false,\n                                    \"tags\": [\n                                        {\n                                            \"display\": true,\n                                            \"descriptor\": {\n                                                \"code\": \"benefits\",\n                                                \"name\": \"Benefits\"\n                                            },\n                                            \"list\": [\n                                                {\n                                                    \"descriptor\": {\n                                                        \"code\": \"scholarship-amount\",\n                                                        \"name\": \"Scholarship Amount\"\n                                                    },\n                                                    \"value\": \"Upto Rs.30000 per year\",\n                                                    \"display\": true\n                                                }\n                                            ]\n                                        }\n                                    ],\n                                    \"category_ids\": [\n                                        \"DSEP_CAT_2\"\n                                    ],\n                                    \"fulfillment_ids\": [\n                                        \"DSEP_FUL_58741444\"\n                                    ]\n                                },\n                                {\n                                    \"id\": \"SCM_70413991\",\n                                    \"descriptor\": {\n                                        \"name\": \"XYZ Post Graduation scholarship for Economically Backward Female Students\",\n                                        \"long_desc\": \"XYZ Post Graduation scholarship for Economically Backward Female Students\"\n                                    },\n                                    \"price\": {\n                                        \"currency\": \"INR\",\n                                        \"value\": \"45000\"\n                                    },\n                                    \"rateable\": false,\n                                    \"tags\": [\n                                        {\n                                            \"display\": true,\n                                            \"descriptor\": {\n                                                \"code\": \"benefits\",\n                                                \"name\": \"Benefits\"\n                                            },\n                                            \"list\": [\n                                                {\n                                                    \"descriptor\": {\n                                                        \"code\": \"scholarship-amount\",\n                                                        \"name\": \"Scholarship Amount\"\n                                                    },\n                                                    \"value\": \"Upto Rs.45000 per year\",\n                                                    \"display\": true\n                                                }\n                                            ]\n                                        }\n                                    ],\n                                    \"category_ids\": [\n                                        \"DSEP_CAT_3\"\n                                    ],\n                                    \"fulfillment_ids\": [\n                                        \"DSEP_FUL_70413991\"\n                                    ]\n                                }\n                            ],\n                            \"rateable\": false\n                        }\n                    ]\n                }\n            }\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Search by Intent - Get scholarships with gender criteria and course category",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"context\": {\r\n        \"domain\": \"dsep:scholarships\",\r\n        \"location\": {\r\n            \"city\": {\r\n                \"name\": \"Bangalore\",\r\n                \"code\": \"std:080\"\r\n            },\r\n            \"country\": {\r\n                \"name\": \"India\",\r\n                \"code\": \"IND\"\r\n            }\r\n        },\r\n        \"action\": \"search\",\r\n        \"version\": \"1.0.0\",\r\n        \"bap_id\": \"dsep-protocol.becknprotocol.io\",\r\n        \"bap_uri\": \"https://dsep-protocol-network.becknprotocol.io/\",\r\n        \"transaction_id\": \"1c529aaa-890d-4d27-bda5-15ee2c3b6c4b\",\r\n        \"message_id\": \"5ac3dd78-829e-4c7d-9139-a15adbb582ca\",\r\n        \"timestamp\": \"2023-01-30T17:00:40.065Z\",\r\n        \"ttl\": \"PT10M\"\r\n    },\r\n    \"message\": {\r\n        \"intent\": {\r\n            \"provider\": {\r\n                \"categories\": [\r\n                    {\r\n                        \"descriptor\": {\r\n                            \"code\": \"ug\"\r\n                        }\r\n                    }\r\n                ]\r\n            },\r\n            \"fulfillment\": {\r\n                \"customer\": {\r\n                    \"person\": {\r\n                        \"gender\": \"Female\"\r\n                    }\r\n                }\r\n            }\r\n        }\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://dsep-protocol-client.becknprotocol.io/search",
+					"protocol": "https",
+					"host": [
+						"dsep-protocol-client",
+						"becknprotocol",
+						"io"
+					],
+					"path": [
+						"search"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Search by Intent - Get scholarships with gender criteria and course category",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"context\": {\r\n        \"domain\": \"dsep:scholarships\",\r\n        \"location\": {\r\n            \"city\": {\r\n                \"name\": \"Bangalore\",\r\n                \"code\": \"std:080\"\r\n            },\r\n            \"country\": {\r\n                \"name\": \"India\",\r\n                \"code\": \"IND\"\r\n            }\r\n        },\r\n        \"action\": \"search\",\r\n        \"version\": \"1.0.0\",\r\n        \"bap_id\": \"dsep-protocol.becknprotocol.io\",\r\n        \"bap_uri\": \"https://dsep-protocol-network.becknprotocol.io/\",\r\n        \"transaction_id\": \"1c529aaa-890d-4d27-bda5-15ee2c3b6c4b\",\r\n        \"message_id\": \"5ac3dd78-829e-4c7d-9139-a15adbb582ca\",\r\n        \"timestamp\": \"2023-01-30T17:00:40.065Z\",\r\n        \"ttl\": \"PT10M\"\r\n    },\r\n    \"message\": {\r\n        \"intent\": {\r\n            \"provider\": {\r\n                \"categories\": [\r\n                    {\r\n                        \"descriptor\": {\r\n                            \"code\": \"ug\"\r\n                        }\r\n                    }\r\n                ]\r\n            },\r\n            \"fulfillment\": {\r\n                \"customer\": {\r\n                    \"person\": {\r\n                        \"gender\": \"Female\"\r\n                    }\r\n                }\r\n            }\r\n        }\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{bpp-url}}/search",
+							"host": [
+								"{{bpp-url}}"
+							],
+							"path": [
+								"search"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.18.0 (Ubuntu)"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 18 Feb 2023 13:21:03 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2188"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"88c-+SJzNP9ggmjjtWXNPYhgN+FQAH8\""
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"context\": {\n        \"domain\": \"dsep:scholarships\",\n        \"version\": \"1.0.0\",\n        \"action\": \"search\",\n        \"bap_id\": \"dsep-protocol.becknprotocol.io\",\n        \"bap_uri\": \"https://dsep-protocol-network.becknprotocol.io/\",\n        \"location\": {\n            \"city\": {\n                \"name\": \"Bangalore\",\n                \"code\": \"std:080\"\n            },\n            \"country\": {\n                \"name\": \"India\",\n                \"code\": \"IND\"\n            }\n        },\n        \"transaction_id\": \"1c529aaa-890d-4d27-bda5-15ee2c3b6c4b\",\n        \"message_id\": \"1c3a0d52-3495-497a-8e5d-cb2a66dd9574\",\n        \"ttl\": \"PT10M\",\n        \"timestamp\": \"2023-02-18T13:20:53.362Z\"\n    },\n    \"responses\": [\n        {\n            \"context\": {\n                \"domain\": \"dsep:scholarships\",\n                \"location\": {\n                    \"city\": {\n                        \"name\": \"Bangalore\",\n                        \"code\": \"std:080\"\n                    },\n                    \"country\": {\n                        \"name\": \"India\",\n                        \"code\": \"IND\"\n                    }\n                },\n                \"action\": \"on_search\",\n                \"timestamp\": \"2023-02-18T13:20:53.522Z\",\n                \"ttl\": \"PT10M\",\n                \"version\": \"1.0.0\",\n                \"bap_id\": \"dsep-protocol.becknprotocol.io\",\n                \"bap_uri\": \"https://dsep-protocol-network.becknprotocol.io/\",\n                \"bpp_id\": \"https://proteanrc.centralindia.cloudapp.azure.com/dsep-bpp-1\",\n                \"bpp_uri\": \"https://proteanrc.centralindia.cloudapp.azure.com/dsep-bpp-1/public\",\n                \"transaction_id\": \"1c529aaa-890d-4d27-bda5-15ee2c3b6c4b\",\n                \"message_id\": \"1c3a0d52-3495-497a-8e5d-cb2a66dd9574\"\n            },\n            \"message\": {\n                \"catalog\": {\n                    \"descriptor\": {\n                        \"name\": \"Protean DSEP Scholarships and Grants BPP Platform\"\n                    },\n                    \"providers\": [\n                        {\n                            \"id\": \"ZQU31169990\",\n                            \"descriptor\": {\n                                \"name\": \"XYZ Education Foundation\"\n                            },\n                            \"categories\": [\n                                {\n                                    \"id\": \"DSEP_CAT_2\",\n                                    \"descriptor\": {\n                                        \"code\": \"ug\",\n                                        \"name\": \"Undergraduate\"\n                                    }\n                                }\n                            ],\n                            \"fulfillments\": [\n                                {\n                                    \"id\": \"DSEP_FUL_58741444\",\n                                    \"type\": \"SCHOLARSHIP\",\n                                    \"tracking\": false,\n                                    \"contact\": {\n                                        \"phone\": \"9876543210\",\n                                        \"email\": \"maryg@xyz.com\"\n                                    },\n                                    \"stops\": [\n                                        {\n                                            \"type\": \"APPLICATION-START\",\n                                            \"time\": {\n                                                \"timestamp\": \"2023-01-01T00:00:00.000Z\"\n                                            }\n                                        },\n                                        {\n                                            \"type\": \"APPLICATION-END\",\n                                            \"time\": {\n                                                \"timestamp\": \"2023-03-31T00:00:00.000Z\"\n                                            }\n                                        }\n                                    ]\n                                }\n                            ],\n                            \"items\": [\n                                {\n                                    \"id\": \"SCM_58741444\",\n                                    \"descriptor\": {\n                                        \"name\": \"XYZ Undergraduation scholarship for Economically Backward Female Students\",\n                                        \"long_desc\": \"XYZ Undergraduation scholarship for Economically Backward Female Students\"\n                                    },\n                                    \"price\": {\n                                        \"currency\": \"INR\",\n                                        \"value\": \"30000\"\n                                    },\n                                    \"rateable\": false,\n                                    \"tags\": [\n                                        {\n                                            \"display\": true,\n                                            \"descriptor\": {\n                                                \"code\": \"benefits\",\n                                                \"name\": \"Benefits\"\n                                            },\n                                            \"list\": [\n                                                {\n                                                    \"descriptor\": {\n                                                        \"code\": \"scholarship-amount\",\n                                                        \"name\": \"Scholarship Amount\"\n                                                    },\n                                                    \"value\": \"Upto Rs.30000 per year\",\n                                                    \"display\": true\n                                                }\n                                            ]\n                                        }\n                                    ],\n                                    \"category_ids\": [\n                                        \"DSEP_CAT_2\"\n                                    ],\n                                    \"fulfillment_ids\": [\n                                        \"DSEP_FUL_58741444\"\n                                    ]\n                                }\n                            ],\n                            \"rateable\": false\n                        }\n                    ]\n                }\n            }\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "select",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"context\": {\r\n        \"domain\": \"dsep:scholarships\",\r\n        \"location\": {\r\n            \"city\": {\r\n                \"name\": \"Bangalore\",\r\n                \"code\": \"std:080\"\r\n            },\r\n            \"country\": {\r\n                \"name\": \"India\",\r\n                \"code\": \"IND\"\r\n            }\r\n        },\r\n        \"action\": \"select\",\r\n        \"version\": \"1.0.0\",\r\n        \"bap_id\": \"dsep-protocol.becknprotocol.io\",\r\n        \"bap_uri\": \"https://dsep-protocol-network.becknprotocol.io/\",\r\n        \"bpp_id\": \"https://proteanrc.centralindia.cloudapp.azure.com/dsep-bpp-1\",\r\n        \"bpp_uri\": \"https://proteanrc.centralindia.cloudapp.azure.com/dsep-bpp-1/public\",\r\n        \"transaction_id\": \"edea17fa-b5c4-48c9-86dd-1b80dda67d37\",\r\n        \"message_id\": \"bad8d430-c1da-431e-b2a0-9c95051fc96d\",\r\n        \"timestamp\": \"2023-02-18T17:09:40.065Z\"\r\n    },\r\n    \"message\": {\r\n        \"order\": {\r\n            \"provider\": {\r\n                \"id\": \"ZQU31169990\"\r\n            },\r\n            \"fulfillments\": [\r\n                {\r\n                    \"id\": \"DSEP_FUL_55274212\"\r\n                }\r\n            ],\r\n            \"items\": [\r\n                {\r\n                    \"id\": \"SCM_55274212\"\r\n                }\r\n            ]\r\n        }\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{bpp-url}}/select",
+					"host": [
+						"{{bpp-url}}"
+					],
+					"path": [
+						"select"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "select",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"context\": {\r\n        \"domain\": \"dsep:scholarships\",\r\n        \"location\": {\r\n            \"city\": {\r\n                \"name\": \"Bangalore\",\r\n                \"code\": \"std:080\"\r\n            },\r\n            \"country\": {\r\n                \"name\": \"India\",\r\n                \"code\": \"IND\"\r\n            }\r\n        },\r\n        \"action\": \"select\",\r\n        \"version\": \"1.0.0\",\r\n        \"bap_id\": \"dsep-protocol.becknprotocol.io\",\r\n        \"bap_uri\": \"https://dsep-protocol-network.becknprotocol.io/\",\r\n        \"bpp_id\": \"https://proteanrc.centralindia.cloudapp.azure.com/dsep-bpp-1\",\r\n        \"bpp_uri\": \"https://proteanrc.centralindia.cloudapp.azure.com/dsep-bpp-1/public\",\r\n        \"transaction_id\": \"edea17fa-b5c4-48c9-86dd-1b80dda67d37\",\r\n        \"message_id\": \"bad8d430-c1da-431e-b2a0-9c95051fc96d\",\r\n        \"timestamp\": \"2023-02-18T17:09:40.065Z\"\r\n    },\r\n    \"message\": {\r\n        \"order\": {\r\n            \"provider\": {\r\n                \"id\": \"ZQU31169990\"\r\n            },\r\n            \"fulfillments\": [\r\n                {\r\n                    \"id\": \"DSEP_FUL_55274212\"\r\n                }\r\n            ],\r\n            \"items\": [\r\n                {\r\n                    \"id\": \"SCM_55274212\"\r\n                }\r\n            ]\r\n        }\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{bpp-url}}/select",
+							"host": [
+								"{{bpp-url}}"
+							],
+							"path": [
+								"select"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.18.0 (Ubuntu)"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 18 Feb 2023 12:25:09 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2725"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"aa5-77IRgQV52Tt/h/NCrKQZYt3Hp9w\""
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"context\": {\n        \"domain\": \"dsep:scholarships\",\n        \"version\": \"1.0.0\",\n        \"action\": \"select\",\n        \"bap_id\": \"dsep-protocol.becknprotocol.io\",\n        \"bap_uri\": \"https://dsep-protocol-network.becknprotocol.io/\",\n        \"location\": {\n            \"city\": {\n                \"name\": \"Bangalore\",\n                \"code\": \"std:080\"\n            },\n            \"country\": {\n                \"name\": \"India\",\n                \"code\": \"IND\"\n            }\n        },\n        \"bpp_id\": \"https://proteanrc.centralindia.cloudapp.azure.com/dsep-bpp-1\",\n        \"bpp_uri\": \"https://proteanrc.centralindia.cloudapp.azure.com/dsep-bpp-1/public\",\n        \"transaction_id\": \"edea17fa-b5c4-48c9-86dd-1b80dda67d37\",\n        \"message_id\": \"615eaa59-322e-46b3-8cea-d0fc2b4230bc\",\n        \"ttl\": \"PT10M\",\n        \"timestamp\": \"2023-02-18T12:24:59.060Z\"\n    },\n    \"responses\": [\n        {\n            \"context\": {\n                \"domain\": \"dsep:scholarships\",\n                \"location\": {\n                    \"city\": {\n                        \"name\": \"Bangalore\",\n                        \"code\": \"std:080\"\n                    },\n                    \"country\": {\n                        \"name\": \"India\",\n                        \"code\": \"IND\"\n                    }\n                },\n                \"action\": \"on_select\",\n                \"timestamp\": \"2023-02-18T12:24:59.468Z\",\n                \"ttl\": \"PT10M\",\n                \"version\": \"1.0.0\",\n                \"bap_id\": \"dsep-protocol.becknprotocol.io\",\n                \"bap_uri\": \"https://dsep-protocol-network.becknprotocol.io/\",\n                \"bpp_id\": \"https://proteanrc.centralindia.cloudapp.azure.com/dsep-bpp-1\",\n                \"bpp_uri\": \"https://proteanrc.centralindia.cloudapp.azure.com/dsep-bpp-1/public\",\n                \"transaction_id\": \"edea17fa-b5c4-48c9-86dd-1b80dda67d37\",\n                \"message_id\": \"615eaa59-322e-46b3-8cea-d0fc2b4230bc\"\n            },\n            \"message\": {\n                \"order\": {\n                    \"type\": \"DEFAULT\",\n                    \"provider\": {\n                        \"id\": \"ZQU31169990\",\n                        \"descriptor\": {\n                            \"name\": \"XYZ Education Foundation\",\n                            \"short_desc\": \"XYZ Education Foundation\"\n                        },\n                        \"rateable\": false\n                    },\n                    \"items\": [\n                        {\n                            \"id\": \"SCM_55274212\",\n                            \"descriptor\": {\n                                \"name\": \"XYZ Education Scholarship for Undergraduate Students\",\n                                \"short_desc\": \"XYZ Education Scholarship for Undergraduate Students\"\n                            },\n                            \"price\": {\n                                \"currency\": \"INR\",\n                                \"value\": \"25000\"\n                            },\n                            \"xinput\": {\n                                \"required\": true,\n                                \"form\": {\n                                    \"url\": \"https://proteanrc.centralindia.cloudapp.azure.com/dsep-bpp-1/public/getForm/edea17fa-b5c4-48c9-86dd-1b80dda67d37/2a8b6441d63245bc97f70aaef8e70c75\",\n                                    \"mime_type\": \"text/html\"\n                                }\n                            },\n                            \"rateable\": false,\n                            \"tags\": [\n                                {\n                                    \"display\": true,\n                                    \"descriptor\": {\n                                        \"code\": \"edu_qual\",\n                                        \"name\": \"Academic Eligibility\"\n                                    },\n                                    \"list\": [\n                                        {\n                                            \"descriptor\": {\n                                                \"code\": \"gr\",\n                                                \"name\": \"Grade\"\n                                            },\n                                            \"value\": \"Grade 12\",\n                                            \"display\": true\n                                        },\n                                        {\n                                            \"descriptor\": {\n                                                \"code\": \"percentage_grade\",\n                                                \"name\": \"Percentage/Grade\"\n                                            },\n                                            \"value\": \">= 50\",\n                                            \"display\": true\n                                        },\n                                        {\n                                            \"descriptor\": {\n                                                \"code\": \"passing_year\",\n                                                \"name\": \"Passing Year\"\n                                            },\n                                            \"value\": \"2022\",\n                                            \"display\": false\n                                        }\n                                    ]\n                                },\n                                {\n                                    \"display\": true,\n                                    \"descriptor\": {\n                                        \"code\": \"benefits\",\n                                        \"name\": \"Benefits\"\n                                    },\n                                    \"list\": [\n                                        {\n                                            \"descriptor\": {\n                                                \"code\": \"scholarship-amount\",\n                                                \"name\": \"Scholarship Amount\"\n                                            },\n                                            \"value\": \"Upto Rs.25000 per year\",\n                                            \"display\": true\n                                        }\n                                    ]\n                                }\n                            ],\n                            \"category_ids\": [\n                                \"DSEP_CAT_2\"\n                            ]\n                        }\n                    ],\n                    \"fulfillments\": [\n                        {\n                            \"id\": \"DSEP_FUL_55274212\",\n                            \"type\": \"SCHOLARSHIP\",\n                            \"tracking\": false,\n                            \"contact\": {\n                                \"phone\": \"9876543210\",\n                                \"email\": \"maryg@xyz.com\"\n                            },\n                            \"stops\": [\n                                {\n                                    \"type\": \"APPLICATION-START\",\n                                    \"time\": {\n                                        \"timestamp\": \"2023-01-01T00:00:00.000Z\"\n                                    }\n                                },\n                                {\n                                    \"type\": \"APPLICATION-END\",\n                                    \"time\": {\n                                        \"timestamp\": \"2023-03-31T00:00:00.000Z\"\n                                    }\n                                }\n                            ]\n                        }\n                    ]\n                }\n            }\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "init",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"context\": {\r\n        \"domain\": \"dsep:scholarships\",\r\n        \"location\": {\r\n            \"city\": {\r\n                \"name\": \"Bangalore\",\r\n                \"code\": \"std:080\"\r\n            },\r\n            \"country\": {\r\n                \"name\": \"India\",\r\n                \"code\": \"IND\"\r\n            }\r\n        },\r\n        \"action\": \"init\",\r\n        \"timestamp\": \"2023-02-18T17:10:48.817Z\",\r\n        \"version\": \"1.0.0\",\r\n        \"bap_id\": \"dsep-protocol.becknprotocol.io\",\r\n        \"bap_uri\": \"https://dsep-protocol-network.becknprotocol.io/\",\r\n        \"bpp_id\": \"https://proteanrc.centralindia.cloudapp.azure.com/dsep-bpp-1\",\r\n        \"bpp_uri\": \"https://proteanrc.centralindia.cloudapp.azure.com/dsep-bpp-1/public\",\r\n        \"transaction_id\": \"edea17fa-b5c4-48c9-86dd-1b80dda67d37\",\r\n        \"message_id\": \"b5f3be7c-6fb6-452a-abd7-45ab27ce339b\"\r\n    },\r\n    \"message\": {\r\n        \"order\": {\r\n            \"type\": \"DEFAULT\",\r\n            \"provider\": {\r\n                \"id\": \"ZQU31169990\",\r\n                \"descriptor\": {\r\n                    \"name\": \"XYZ Education Foundation\",\r\n                    \"short_desc\": \"XYZ Education Foundation\"\r\n                },\r\n                \"rateable\": false\r\n            },\r\n            \"items\": [\r\n                {\r\n                    \"id\": \"SCM_55274212\",\r\n                    \"descriptor\": {\r\n                        \"name\": \"XYZ Education Scholarship for Undergraduate Students\",\r\n                        \"short_desc\": \"XYZ Education Scholarship for Undergraduate Students\"\r\n                    },\r\n                    \"price\": {\r\n                        \"currency\": \"INR\",\r\n                        \"value\": \"25000\"\r\n                    },\r\n                    \"xinput\": {\r\n                        \"required\": true,\r\n                        \"form\": {\r\n                            \"url\": \"https://proteanrc.centralindia.cloudapp.azure.com/dsep-bpp-1/public/getForm/edea17fa-b5c4-48c9-86dd-1b80dda67d37/2a8b6441d63245bc97f70aaef8e70c75\",\r\n                            \"mime_type\": \"text/html\",\r\n                            \"data\": {\r\n                                \"name\": \"Rashmi G\",\r\n                                \"phone\": \"49867487\",\r\n                                \"address\": \"Mumbai\",\r\n                                \"needOfScholarship\": \"higher education\",\r\n                                \"docUrl\": \"http://abc.co/docs\"\r\n                            },\r\n                            \"submission_id\": \"74100a21-a8ab-4700-802d-ff600aec265e\"\r\n                        }\r\n                    },\r\n                    \"rateable\": false,\r\n                    \"tags\": [\r\n                        {\r\n                            \"display\": true,\r\n                            \"descriptor\": {\r\n                                \"code\": \"edu_qual\",\r\n                                \"name\": \"Academic Eligibility\"\r\n                            },\r\n                            \"list\": [\r\n                                {\r\n                                    \"descriptor\": {\r\n                                        \"code\": \"gr\",\r\n                                        \"name\": \"Grade\"\r\n                                    },\r\n                                    \"value\": \"Grade 12\",\r\n                                    \"display\": true\r\n                                },\r\n                                {\r\n                                    \"descriptor\": {\r\n                                        \"code\": \"percentage_grade\",\r\n                                        \"name\": \"Percentage/Grade\"\r\n                                    },\r\n                                    \"value\": \">= 50\",\r\n                                    \"display\": true\r\n                                },\r\n                                {\r\n                                    \"descriptor\": {\r\n                                        \"code\": \"passing_year\",\r\n                                        \"name\": \"Passing Year\"\r\n                                    },\r\n                                    \"value\": \"2022\",\r\n                                    \"display\": false\r\n                                }\r\n                            ]\r\n                        },\r\n                        {\r\n                            \"display\": true,\r\n                            \"descriptor\": {\r\n                                \"code\": \"benefits\",\r\n                                \"name\": \"Benefits\"\r\n                            },\r\n                            \"list\": [\r\n                                {\r\n                                    \"descriptor\": {\r\n                                        \"code\": \"scholarship-amount\",\r\n                                        \"name\": \"Scholarship Amount\"\r\n                                    },\r\n                                    \"value\": \"Upto Rs.25000 per year\",\r\n                                    \"display\": true\r\n                                }\r\n                            ]\r\n                        }\r\n                    ],\r\n                    \"category_ids\": [\r\n                        \"DSEP_CAT_2\"\r\n                    ]\r\n                }\r\n            ],\r\n            \"fulfillments\": [\r\n                {\r\n                    \"id\": \"DSEP_FUL_55274212\",\r\n                    \"type\": \"SCHOLARSHIP\",\r\n                    \"tracking\": false,\r\n                    \"contact\": {\r\n                        \"phone\": \"9876543210\",\r\n                        \"email\": \"maryg@xyz.com\"\r\n                    },\r\n                    \"stops\": [\r\n                        {\r\n                            \"type\": \"APPLICATION-START\",\r\n                            \"time\": {\r\n                                \"timestamp\": \"2023-01-01T00:00:00.000Z\"\r\n                            }\r\n                        },\r\n                        {\r\n                            \"type\": \"APPLICATION-END\",\r\n                            \"time\": {\r\n                                \"timestamp\": \"2023-03-31T00:00:00.000Z\"\r\n                            }\r\n                        }\r\n                    ]\r\n                }\r\n            ]\r\n        }\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{bpp-url}}/init",
+					"host": [
+						"{{bpp-url}}"
+					],
+					"path": [
+						"init"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "init",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"context\": {\r\n        \"domain\": \"dsep:scholarships\",\r\n        \"location\": {\r\n            \"city\": {\r\n                \"name\": \"Bangalore\",\r\n                \"code\": \"std:080\"\r\n            },\r\n            \"country\": {\r\n                \"name\": \"India\",\r\n                \"code\": \"IND\"\r\n            }\r\n        },\r\n        \"action\": \"init\",\r\n        \"timestamp\": \"2023-02-18T17:10:48.817Z\",\r\n        \"version\": \"1.0.0\",\r\n        \"bap_id\": \"dsep-protocol.becknprotocol.io\",\r\n        \"bap_uri\": \"https://dsep-protocol-network.becknprotocol.io/\",\r\n        \"bpp_id\": \"https://proteanrc.centralindia.cloudapp.azure.com/dsep-bpp-1\",\r\n        \"bpp_uri\": \"https://proteanrc.centralindia.cloudapp.azure.com/dsep-bpp-1/public\",\r\n        \"transaction_id\": \"edea17fa-b5c4-48c9-86dd-1b80dda67d37\",\r\n        \"message_id\": \"b5f3be7c-6fb6-452a-abd7-45ab27ce339b\"\r\n    },\r\n    \"message\": {\r\n        \"order\": {\r\n            \"type\": \"DEFAULT\",\r\n            \"provider\": {\r\n                \"id\": \"ZQU31169990\",\r\n                \"descriptor\": {\r\n                    \"name\": \"XYZ Education Foundation\",\r\n                    \"short_desc\": \"XYZ Education Foundation\"\r\n                },\r\n                \"rateable\": false\r\n            },\r\n            \"items\": [\r\n                {\r\n                    \"id\": \"SCM_55274212\",\r\n                    \"descriptor\": {\r\n                        \"name\": \"XYZ Education Scholarship for Undergraduate Students\",\r\n                        \"short_desc\": \"XYZ Education Scholarship for Undergraduate Students\"\r\n                    },\r\n                    \"price\": {\r\n                        \"currency\": \"INR\",\r\n                        \"value\": \"25000\"\r\n                    },\r\n                    \"xinput\": {\r\n                        \"required\": true,\r\n                        \"form\": {\r\n                            \"url\": \"https://proteanrc.centralindia.cloudapp.azure.com/dsep-bpp-1/public/getForm/edea17fa-b5c4-48c9-86dd-1b80dda67d37/2a8b6441d63245bc97f70aaef8e70c75\",\r\n                            \"mime_type\": \"text/html\",\r\n                            \"data\": {\r\n                                \"name\": \"Rashmi G\",\r\n                                \"phone\": \"49867487\",\r\n                                \"address\": \"Mumbai\",\r\n                                \"needOfScholarship\": \"higher education\",\r\n                                \"docUrl\": \"http://abc.co/docs\"\r\n                            },\r\n                            \"submission_id\": \"74100a21-a8ab-4700-802d-ff600aec265e\"\r\n                        }\r\n                    },\r\n                    \"rateable\": false,\r\n                    \"tags\": [\r\n                        {\r\n                            \"display\": true,\r\n                            \"descriptor\": {\r\n                                \"code\": \"edu_qual\",\r\n                                \"name\": \"Academic Eligibility\"\r\n                            },\r\n                            \"list\": [\r\n                                {\r\n                                    \"descriptor\": {\r\n                                        \"code\": \"gr\",\r\n                                        \"name\": \"Grade\"\r\n                                    },\r\n                                    \"value\": \"Grade 12\",\r\n                                    \"display\": true\r\n                                },\r\n                                {\r\n                                    \"descriptor\": {\r\n                                        \"code\": \"percentage_grade\",\r\n                                        \"name\": \"Percentage/Grade\"\r\n                                    },\r\n                                    \"value\": \">= 50\",\r\n                                    \"display\": true\r\n                                },\r\n                                {\r\n                                    \"descriptor\": {\r\n                                        \"code\": \"passing_year\",\r\n                                        \"name\": \"Passing Year\"\r\n                                    },\r\n                                    \"value\": \"2022\",\r\n                                    \"display\": false\r\n                                }\r\n                            ]\r\n                        },\r\n                        {\r\n                            \"display\": true,\r\n                            \"descriptor\": {\r\n                                \"code\": \"benefits\",\r\n                                \"name\": \"Benefits\"\r\n                            },\r\n                            \"list\": [\r\n                                {\r\n                                    \"descriptor\": {\r\n                                        \"code\": \"scholarship-amount\",\r\n                                        \"name\": \"Scholarship Amount\"\r\n                                    },\r\n                                    \"value\": \"Upto Rs.25000 per year\",\r\n                                    \"display\": true\r\n                                }\r\n                            ]\r\n                        }\r\n                    ],\r\n                    \"category_ids\": [\r\n                        \"DSEP_CAT_2\"\r\n                    ]\r\n                }\r\n            ],\r\n            \"fulfillments\": [\r\n                {\r\n                    \"id\": \"DSEP_FUL_55274212\",\r\n                    \"type\": \"SCHOLARSHIP\",\r\n                    \"tracking\": false,\r\n                    \"contact\": {\r\n                        \"phone\": \"9876543210\",\r\n                        \"email\": \"maryg@xyz.com\"\r\n                    },\r\n                    \"stops\": [\r\n                        {\r\n                            \"type\": \"APPLICATION-START\",\r\n                            \"time\": {\r\n                                \"timestamp\": \"2023-01-01T00:00:00.000Z\"\r\n                            }\r\n                        },\r\n                        {\r\n                            \"type\": \"APPLICATION-END\",\r\n                            \"time\": {\r\n                                \"timestamp\": \"2023-03-31T00:00:00.000Z\"\r\n                            }\r\n                        }\r\n                    ]\r\n                }\r\n            ]\r\n        }\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{bpp-url}}/init",
+							"host": [
+								"{{bpp-url}}"
+							],
+							"path": [
+								"init"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.18.0 (Ubuntu)"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 18 Feb 2023 12:29:19 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2910"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"b5e-CNbGWxuFgBdNS3/O/CXct7dKEHA\""
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"context\": {\n        \"domain\": \"dsep:scholarships\",\n        \"version\": \"1.0.0\",\n        \"action\": \"init\",\n        \"bap_id\": \"dsep-protocol.becknprotocol.io\",\n        \"bap_uri\": \"https://dsep-protocol-network.becknprotocol.io/\",\n        \"location\": {\n            \"city\": {\n                \"name\": \"Bangalore\",\n                \"code\": \"std:080\"\n            },\n            \"country\": {\n                \"name\": \"India\",\n                \"code\": \"IND\"\n            }\n        },\n        \"bpp_id\": \"https://proteanrc.centralindia.cloudapp.azure.com/dsep-bpp-1\",\n        \"bpp_uri\": \"https://proteanrc.centralindia.cloudapp.azure.com/dsep-bpp-1/public\",\n        \"transaction_id\": \"edea17fa-b5c4-48c9-86dd-1b80dda67d37\",\n        \"message_id\": \"8256f584-3d99-44b0-9397-b52a4d596cea\",\n        \"ttl\": \"PT10M\",\n        \"timestamp\": \"2023-02-18T12:29:09.648Z\"\n    },\n    \"responses\": [\n        {\n            \"context\": {\n                \"domain\": \"dsep:scholarships\",\n                \"location\": {\n                    \"city\": {\n                        \"name\": \"Bangalore\",\n                        \"code\": \"std:080\"\n                    },\n                    \"country\": {\n                        \"name\": \"India\",\n                        \"code\": \"IND\"\n                    }\n                },\n                \"action\": \"on_init\",\n                \"timestamp\": \"2023-02-18T12:29:09.787Z\",\n                \"ttl\": \"PT10M\",\n                \"version\": \"1.0.0\",\n                \"bap_id\": \"dsep-protocol.becknprotocol.io\",\n                \"bap_uri\": \"https://dsep-protocol-network.becknprotocol.io/\",\n                \"bpp_id\": \"https://proteanrc.centralindia.cloudapp.azure.com/dsep-bpp-1\",\n                \"bpp_uri\": \"https://proteanrc.centralindia.cloudapp.azure.com/dsep-bpp-1/public\",\n                \"transaction_id\": \"edea17fa-b5c4-48c9-86dd-1b80dda67d37\",\n                \"message_id\": \"8256f584-3d99-44b0-9397-b52a4d596cea\"\n            },\n            \"message\": {\n                \"order\": {\n                    \"type\": \"DEFAULT\",\n                    \"provider\": {\n                        \"id\": \"ZQU31169990\",\n                        \"descriptor\": {\n                            \"name\": \"XYZ Education Foundation\",\n                            \"short_desc\": \"XYZ Education Foundation\"\n                        },\n                        \"rateable\": false\n                    },\n                    \"items\": [\n                        {\n                            \"id\": \"SCM_55274212\",\n                            \"descriptor\": {\n                                \"name\": \"XYZ Education Scholarship for Undergraduate Students\",\n                                \"short_desc\": \"XYZ Education Scholarship for Undergraduate Students\"\n                            },\n                            \"price\": {\n                                \"currency\": \"INR\",\n                                \"value\": \"25000\"\n                            },\n                            \"xinput\": {\n                                \"required\": true,\n                                \"form\": {\n                                    \"url\": \"https://proteanrc.centralindia.cloudapp.azure.com/dsep-bpp-1/public/getForm/edea17fa-b5c4-48c9-86dd-1b80dda67d37/2a8b6441d63245bc97f70aaef8e70c75\",\n                                    \"data\": {\n                                        \"name\": \"Rashmi G\",\n                                        \"phone\": \"49867487\",\n                                        \"address\": \"Mumbai\",\n                                        \"needOfScholarship\": \"higher education\",\n                                        \"docUrl\": \"http://abc.co/docs\"\n                                    },\n                                    \"mime_type\": \"text/html\",\n                                    \"submission_id\": \"74100a21-a8ab-4700-802d-ff600aec265e\"\n                                }\n                            },\n                            \"rateable\": false,\n                            \"tags\": [\n                                {\n                                    \"display\": true,\n                                    \"descriptor\": {\n                                        \"code\": \"edu_qual\",\n                                        \"name\": \"Academic Eligibility\"\n                                    },\n                                    \"list\": [\n                                        {\n                                            \"descriptor\": {\n                                                \"code\": \"gr\",\n                                                \"name\": \"Grade\"\n                                            },\n                                            \"value\": \"Grade 12\",\n                                            \"display\": true\n                                        },\n                                        {\n                                            \"descriptor\": {\n                                                \"code\": \"percentage_grade\",\n                                                \"name\": \"Percentage/Grade\"\n                                            },\n                                            \"value\": \">= 50\",\n                                            \"display\": true\n                                        },\n                                        {\n                                            \"descriptor\": {\n                                                \"code\": \"passing_year\",\n                                                \"name\": \"Passing Year\"\n                                            },\n                                            \"value\": \"2022\",\n                                            \"display\": false\n                                        }\n                                    ]\n                                },\n                                {\n                                    \"display\": true,\n                                    \"descriptor\": {\n                                        \"code\": \"benefits\",\n                                        \"name\": \"Benefits\"\n                                    },\n                                    \"list\": [\n                                        {\n                                            \"descriptor\": {\n                                                \"code\": \"scholarship-amount\",\n                                                \"name\": \"Scholarship Amount\"\n                                            },\n                                            \"value\": \"Upto Rs.25000 per year\",\n                                            \"display\": true\n                                        }\n                                    ]\n                                }\n                            ],\n                            \"category_ids\": [\n                                \"DSEP_CAT_2\"\n                            ]\n                        }\n                    ],\n                    \"fulfillments\": [\n                        {\n                            \"id\": \"DSEP_FUL_55274212\",\n                            \"type\": \"SCHOLARSHIP\",\n                            \"tracking\": false,\n                            \"contact\": {\n                                \"phone\": \"9876543210\",\n                                \"email\": \"maryg@xyz.com\"\n                            },\n                            \"stops\": [\n                                {\n                                    \"type\": \"APPLICATION-START\",\n                                    \"time\": {\n                                        \"timestamp\": \"2023-01-01T00:00:00.000Z\"\n                                    }\n                                },\n                                {\n                                    \"type\": \"APPLICATION-END\",\n                                    \"time\": {\n                                        \"timestamp\": \"2023-03-31T00:00:00.000Z\"\n                                    }\n                                }\n                            ]\n                        }\n                    ]\n                }\n            }\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "confirm",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"context\": {\r\n        \"domain\": \"dsep:scholarships\",\r\n        \"location\": {\r\n            \"city\": {\r\n                \"name\": \"Bangalore\",\r\n                \"code\": \"std:080\"\r\n            },\r\n            \"country\": {\r\n                \"name\": \"India\",\r\n                \"code\": \"IND\"\r\n            }\r\n        },\r\n        \"action\": \"confirm\",\r\n        \"timestamp\": \"2023-02-18T17:15:25.385Z\",\r\n        \"version\": \"1.0.0\",\r\n        \"bap_id\": \"dsep-protocol.becknprotocol.io\",\r\n        \"bap_uri\": \"https://dsep-protocol-network.becknprotocol.io/\",\r\n        \"bpp_id\": \"https://proteanrc.centralindia.cloudapp.azure.com/dsep-bpp-1\",\r\n        \"bpp_uri\": \"https://proteanrc.centralindia.cloudapp.azure.com/dsep-bpp-1/public\",\r\n        \"transaction_id\": \"edea17fa-b5c4-48c9-86dd-1b80dda67d37\",\r\n        \"message_id\": \"49ab0adb-1444-4b02-9e79-736e27b7cb2a\"\r\n    },\r\n    \"message\": {\r\n        \"order\": {\r\n            \"type\": \"DEFAULT\",\r\n            \"provider\": {\r\n                \"id\": \"ZQU31169990\",\r\n                \"descriptor\": {\r\n                    \"name\": \"XYZ Education Foundation\",\r\n                    \"short_desc\": \"XYZ Education Foundation\"\r\n                },\r\n                \"rateable\": false\r\n            },\r\n            \"items\": [\r\n                {\r\n                    \"id\": \"SCM_55274212\",\r\n                    \"descriptor\": {\r\n                        \"name\": \"XYZ Education Scholarship for Undergraduate Students\",\r\n                        \"short_desc\": \"XYZ Education Scholarship for Undergraduate Students\"\r\n                    },\r\n                    \"price\": {\r\n                        \"currency\": \"INR\",\r\n                        \"value\": \"25000\"\r\n                    },\r\n                    \"xinput\": {\r\n                        \"required\": true,\r\n                        \"form\": {\r\n                            \"url\": \"https://proteanrc.centralindia.cloudapp.azure.com/dsep-bpp-1/public/getForm/edea17fa-b5c4-48c9-86dd-1b80dda67d37/2a8b6441d63245bc97f70aaef8e70c75\",\r\n                            \"data\": {\r\n                                \"name\": \"Rashmi G\",\r\n                                \"phone\": \"49867487\",\r\n                                \"address\": \"Mumbai\",\r\n                                \"needOfScholarship\": \"higher education\",\r\n                                \"docUrl\": \"http://abc.co/docs\"\r\n                            },\r\n                            \"mime_type\": \"text/html\",\r\n                            \"submission_id\": \"74100a21-a8ab-4700-802d-ff600aec265e\"\r\n                        }\r\n                    },\r\n                    \"rateable\": false,\r\n                    \"tags\": [\r\n                        {\r\n                            \"display\": true,\r\n                            \"descriptor\": {\r\n                                \"code\": \"edu_qual\",\r\n                                \"name\": \"Academic Eligibility\"\r\n                            },\r\n                            \"list\": [\r\n                                {\r\n                                    \"descriptor\": {\r\n                                        \"code\": \"gr\",\r\n                                        \"name\": \"Grade\"\r\n                                    },\r\n                                    \"value\": \"Grade 12\",\r\n                                    \"display\": true\r\n                                },\r\n                                {\r\n                                    \"descriptor\": {\r\n                                        \"code\": \"percentage_grade\",\r\n                                        \"name\": \"Percentage/Grade\"\r\n                                    },\r\n                                    \"value\": \">= 50\",\r\n                                    \"display\": true\r\n                                },\r\n                                {\r\n                                    \"descriptor\": {\r\n                                        \"code\": \"passing_year\",\r\n                                        \"name\": \"Passing Year\"\r\n                                    },\r\n                                    \"value\": \"2022\",\r\n                                    \"display\": false\r\n                                }\r\n                            ]\r\n                        },\r\n                        {\r\n                            \"display\": true,\r\n                            \"descriptor\": {\r\n                                \"code\": \"benefits\",\r\n                                \"name\": \"Benefits\"\r\n                            },\r\n                            \"list\": [\r\n                                {\r\n                                    \"descriptor\": {\r\n                                        \"code\": \"scholarship-amount\",\r\n                                        \"name\": \"Scholarship Amount\"\r\n                                    },\r\n                                    \"value\": \"Upto Rs.25000 per year\",\r\n                                    \"display\": true\r\n                                }\r\n                            ]\r\n                        }\r\n                    ],\r\n                    \"category_ids\": [\r\n                        \"DSEP_CAT_2\"\r\n                    ]\r\n                }\r\n            ],\r\n            \"fulfillments\": [\r\n                {\r\n                    \"id\": \"DSEP_FUL_55274212\",\r\n                    \"type\": \"SCHOLARSHIP\",\r\n                    \"tracking\": false,\r\n                    \"contact\": {\r\n                        \"phone\": \"9876543210\",\r\n                        \"email\": \"maryg@xyz.com\"\r\n                    },\r\n                    \"stops\": [\r\n                        {\r\n                            \"type\": \"APPLICATION-START\",\r\n                            \"time\": {\r\n                                \"timestamp\": \"2023-01-01T00:00:00.000Z\"\r\n                            }\r\n                        },\r\n                        {\r\n                            \"type\": \"APPLICATION-END\",\r\n                            \"time\": {\r\n                                \"timestamp\": \"2023-03-31T00:00:00.000Z\"\r\n                            }\r\n                        }\r\n                    ]\r\n                }\r\n            ]\r\n        }\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{bpp-url}}/confirm",
+					"host": [
+						"{{bpp-url}}"
+					],
+					"path": [
+						"confirm"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "confirm",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"context\": {\r\n        \"domain\": \"dsep:scholarships\",\r\n        \"location\": {\r\n            \"city\": {\r\n                \"name\": \"Bangalore\",\r\n                \"code\": \"std:080\"\r\n            },\r\n            \"country\": {\r\n                \"name\": \"India\",\r\n                \"code\": \"IND\"\r\n            }\r\n        },\r\n        \"action\": \"confirm\",\r\n        \"timestamp\": \"2023-02-18T17:15:25.385Z\",\r\n        \"version\": \"1.0.0\",\r\n        \"bap_id\": \"dsep-protocol.becknprotocol.io\",\r\n        \"bap_uri\": \"https://dsep-protocol-network.becknprotocol.io/\",\r\n        \"bpp_id\": \"https://proteanrc.centralindia.cloudapp.azure.com/dsep-bpp-1\",\r\n        \"bpp_uri\": \"https://proteanrc.centralindia.cloudapp.azure.com/dsep-bpp-1/public\",\r\n        \"transaction_id\": \"edea17fa-b5c4-48c9-86dd-1b80dda67d37\",\r\n        \"message_id\": \"49ab0adb-1444-4b02-9e79-736e27b7cb2a\"\r\n    },\r\n    \"message\": {\r\n        \"order\": {\r\n            \"type\": \"DEFAULT\",\r\n            \"provider\": {\r\n                \"id\": \"ZQU31169990\",\r\n                \"descriptor\": {\r\n                    \"name\": \"XYZ Education Foundation\",\r\n                    \"short_desc\": \"XYZ Education Foundation\"\r\n                },\r\n                \"rateable\": false\r\n            },\r\n            \"items\": [\r\n                {\r\n                    \"id\": \"SCM_55274212\",\r\n                    \"descriptor\": {\r\n                        \"name\": \"XYZ Education Scholarship for Undergraduate Students\",\r\n                        \"short_desc\": \"XYZ Education Scholarship for Undergraduate Students\"\r\n                    },\r\n                    \"price\": {\r\n                        \"currency\": \"INR\",\r\n                        \"value\": \"25000\"\r\n                    },\r\n                    \"xinput\": {\r\n                        \"required\": true,\r\n                        \"form\": {\r\n                            \"url\": \"https://proteanrc.centralindia.cloudapp.azure.com/dsep-bpp-1/public/getForm/edea17fa-b5c4-48c9-86dd-1b80dda67d37/2a8b6441d63245bc97f70aaef8e70c75\",\r\n                            \"data\": {\r\n                                \"name\": \"Rashmi G\",\r\n                                \"phone\": \"49867487\",\r\n                                \"address\": \"Mumbai\",\r\n                                \"needOfScholarship\": \"higher education\",\r\n                                \"docUrl\": \"http://abc.co/docs\"\r\n                            },\r\n                            \"mime_type\": \"text/html\",\r\n                            \"submission_id\": \"74100a21-a8ab-4700-802d-ff600aec265e\"\r\n                        }\r\n                    },\r\n                    \"rateable\": false,\r\n                    \"tags\": [\r\n                        {\r\n                            \"display\": true,\r\n                            \"descriptor\": {\r\n                                \"code\": \"edu_qual\",\r\n                                \"name\": \"Academic Eligibility\"\r\n                            },\r\n                            \"list\": [\r\n                                {\r\n                                    \"descriptor\": {\r\n                                        \"code\": \"gr\",\r\n                                        \"name\": \"Grade\"\r\n                                    },\r\n                                    \"value\": \"Grade 12\",\r\n                                    \"display\": true\r\n                                },\r\n                                {\r\n                                    \"descriptor\": {\r\n                                        \"code\": \"percentage_grade\",\r\n                                        \"name\": \"Percentage/Grade\"\r\n                                    },\r\n                                    \"value\": \">= 50\",\r\n                                    \"display\": true\r\n                                },\r\n                                {\r\n                                    \"descriptor\": {\r\n                                        \"code\": \"passing_year\",\r\n                                        \"name\": \"Passing Year\"\r\n                                    },\r\n                                    \"value\": \"2022\",\r\n                                    \"display\": false\r\n                                }\r\n                            ]\r\n                        },\r\n                        {\r\n                            \"display\": true,\r\n                            \"descriptor\": {\r\n                                \"code\": \"benefits\",\r\n                                \"name\": \"Benefits\"\r\n                            },\r\n                            \"list\": [\r\n                                {\r\n                                    \"descriptor\": {\r\n                                        \"code\": \"scholarship-amount\",\r\n                                        \"name\": \"Scholarship Amount\"\r\n                                    },\r\n                                    \"value\": \"Upto Rs.25000 per year\",\r\n                                    \"display\": true\r\n                                }\r\n                            ]\r\n                        }\r\n                    ],\r\n                    \"category_ids\": [\r\n                        \"DSEP_CAT_2\"\r\n                    ]\r\n                }\r\n            ],\r\n            \"fulfillments\": [\r\n                {\r\n                    \"id\": \"DSEP_FUL_55274212\",\r\n                    \"type\": \"SCHOLARSHIP\",\r\n                    \"tracking\": false,\r\n                    \"contact\": {\r\n                        \"phone\": \"9876543210\",\r\n                        \"email\": \"maryg@xyz.com\"\r\n                    },\r\n                    \"stops\": [\r\n                        {\r\n                            \"type\": \"APPLICATION-START\",\r\n                            \"time\": {\r\n                                \"timestamp\": \"2023-01-01T00:00:00.000Z\"\r\n                            }\r\n                        },\r\n                        {\r\n                            \"type\": \"APPLICATION-END\",\r\n                            \"time\": {\r\n                                \"timestamp\": \"2023-03-31T00:00:00.000Z\"\r\n                            }\r\n                        }\r\n                    ]\r\n                }\r\n            ]\r\n        }\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{bpp-url}}/confirm",
+							"host": [
+								"{{bpp-url}}"
+							],
+							"path": [
+								"confirm"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.18.0 (Ubuntu)"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 18 Feb 2023 13:18:52 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2954"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"b8a-C1jcFFOI9833I1Z98tSamqS/d9M\""
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"context\": {\n        \"domain\": \"dsep:scholarships\",\n        \"version\": \"1.0.0\",\n        \"action\": \"confirm\",\n        \"bap_id\": \"dsep-protocol.becknprotocol.io\",\n        \"bap_uri\": \"https://dsep-protocol-network.becknprotocol.io/\",\n        \"location\": {\n            \"city\": {\n                \"name\": \"Bangalore\",\n                \"code\": \"std:080\"\n            },\n            \"country\": {\n                \"name\": \"India\",\n                \"code\": \"IND\"\n            }\n        },\n        \"bpp_id\": \"https://proteanrc.centralindia.cloudapp.azure.com/dsep-bpp-1\",\n        \"bpp_uri\": \"https://proteanrc.centralindia.cloudapp.azure.com/dsep-bpp-1/public\",\n        \"transaction_id\": \"edea17fa-b5c4-48c9-86dd-1b80dda67d37\",\n        \"message_id\": \"5ae15284-2371-4240-a4dd-2f44dd1e09b1\",\n        \"ttl\": \"PT10M\",\n        \"timestamp\": \"2023-02-18T13:18:42.352Z\"\n    },\n    \"responses\": [\n        {\n            \"context\": {\n                \"domain\": \"dsep:scholarships\",\n                \"location\": {\n                    \"city\": {\n                        \"name\": \"Bangalore\",\n                        \"code\": \"std:080\"\n                    },\n                    \"country\": {\n                        \"name\": \"India\",\n                        \"code\": \"IND\"\n                    }\n                },\n                \"action\": \"on_confirm\",\n                \"timestamp\": \"2023-02-18T13:18:43.748Z\",\n                \"ttl\": \"PT10M\",\n                \"version\": \"1.0.0\",\n                \"bap_id\": \"dsep-protocol.becknprotocol.io\",\n                \"bap_uri\": \"https://dsep-protocol-network.becknprotocol.io/\",\n                \"bpp_id\": \"https://proteanrc.centralindia.cloudapp.azure.com/dsep-bpp-1\",\n                \"bpp_uri\": \"https://proteanrc.centralindia.cloudapp.azure.com/dsep-bpp-1/public\",\n                \"transaction_id\": \"edea17fa-b5c4-48c9-86dd-1b80dda67d37\",\n                \"message_id\": \"5ae15284-2371-4240-a4dd-2f44dd1e09b1\"\n            },\n            \"message\": {\n                \"order\": {\n                    \"id\": \"APP_53280729\",\n                    \"status\": \"ACTIVE\",\n                    \"type\": \"DEFAULT\",\n                    \"provider\": {\n                        \"id\": \"ZQU31169990\",\n                        \"descriptor\": {\n                            \"name\": \"XYZ Education Foundation\",\n                            \"short_desc\": \"XYZ Education Foundation\"\n                        },\n                        \"rateable\": false\n                    },\n                    \"items\": [\n                        {\n                            \"id\": \"SCM_55274212\",\n                            \"descriptor\": {\n                                \"name\": \"XYZ Education Scholarship for Undergraduate Students\",\n                                \"short_desc\": \"XYZ Education Scholarship for Undergraduate Students\"\n                            },\n                            \"price\": {\n                                \"currency\": \"INR\",\n                                \"value\": \"25000\"\n                            },\n                            \"xinput\": {\n                                \"required\": true,\n                                \"form\": {\n                                    \"url\": \"https://proteanrc.centralindia.cloudapp.azure.com/dsep-bpp-1/public/getForm/edea17fa-b5c4-48c9-86dd-1b80dda67d37/2a8b6441d63245bc97f70aaef8e70c75\",\n                                    \"data\": {\n                                        \"name\": \"Rashmi G\",\n                                        \"phone\": \"49867487\",\n                                        \"address\": \"Mumbai\",\n                                        \"needOfScholarship\": \"higher education\",\n                                        \"docUrl\": \"http://abc.co/docs\"\n                                    },\n                                    \"mime_type\": \"text/html\",\n                                    \"submission_id\": \"74100a21-a8ab-4700-802d-ff600aec265e\"\n                                }\n                            },\n                            \"rateable\": false,\n                            \"tags\": [\n                                {\n                                    \"display\": true,\n                                    \"descriptor\": {\n                                        \"code\": \"edu_qual\",\n                                        \"name\": \"Academic Eligibility\"\n                                    },\n                                    \"list\": [\n                                        {\n                                            \"descriptor\": {\n                                                \"code\": \"gr\",\n                                                \"name\": \"Grade\"\n                                            },\n                                            \"value\": \"Grade 12\",\n                                            \"display\": true\n                                        },\n                                        {\n                                            \"descriptor\": {\n                                                \"code\": \"percentage_grade\",\n                                                \"name\": \"Percentage/Grade\"\n                                            },\n                                            \"value\": \">= 50\",\n                                            \"display\": true\n                                        },\n                                        {\n                                            \"descriptor\": {\n                                                \"code\": \"passing_year\",\n                                                \"name\": \"Passing Year\"\n                                            },\n                                            \"value\": \"2022\",\n                                            \"display\": false\n                                        }\n                                    ]\n                                },\n                                {\n                                    \"display\": true,\n                                    \"descriptor\": {\n                                        \"code\": \"benefits\",\n                                        \"name\": \"Benefits\"\n                                    },\n                                    \"list\": [\n                                        {\n                                            \"descriptor\": {\n                                                \"code\": \"scholarship-amount\",\n                                                \"name\": \"Scholarship Amount\"\n                                            },\n                                            \"value\": \"Upto Rs.25000 per year\",\n                                            \"display\": true\n                                        }\n                                    ]\n                                }\n                            ],\n                            \"category_ids\": [\n                                \"DSEP_CAT_2\"\n                            ]\n                        }\n                    ],\n                    \"fulfillments\": [\n                        {\n                            \"id\": \"DSEP_FUL_55274212\",\n                            \"type\": \"SCHOLARSHIP\",\n                            \"tracking\": false,\n                            \"contact\": {\n                                \"phone\": \"9876543210\",\n                                \"email\": \"maryg@xyz.com\"\n                            },\n                            \"stops\": [\n                                {\n                                    \"type\": \"APPLICATION-START\",\n                                    \"time\": {\n                                        \"timestamp\": \"2023-01-01T00:00:00.000Z\"\n                                    }\n                                },\n                                {\n                                    \"type\": \"APPLICATION-END\",\n                                    \"time\": {\n                                        \"timestamp\": \"2023-03-31T00:00:00.000Z\"\n                                    }\n                                }\n                            ]\n                        }\n                    ]\n                }\n            }\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "status",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"context\": {\r\n        \"domain\": \"dsep:scholarships\",\r\n        \"location\": {\r\n            \"city\": {\r\n                \"name\": \"Bangalore\",\r\n                \"code\": \"std:080\"\r\n            },\r\n            \"country\": {\r\n                \"name\": \"India\",\r\n                \"code\": \"IND\"\r\n            }\r\n        },\r\n        \"action\": \"status\",\r\n        \"version\": \"1.0.0\",\r\n        \"bap_id\": \"dsep-protocol.becknprotocol.io\",\r\n        \"bap_uri\": \"https://dsep-protocol-network.becknprotocol.io/\",\r\n        \"bpp_id\": \"https://proteanrc.centralindia.cloudapp.azure.com/dsep-bpp-1\",\r\n        \"bpp_uri\": \"https://proteanrc.centralindia.cloudapp.azure.com/dsep-bpp-1/public\",\r\n        \"transaction_id\": \"edea17fa-b5c4-48c9-86dd-1b80dda67d37\",\r\n        \"message_id\": \"444904a1-ddfc-4db2-b854-5067900dee5f\",\r\n        \"timestamp\": \"2023-02-17T17:20:40.065Z\",\r\n        \"ttl\": \"PT10M\"\r\n    },\r\n    \"message\": {\r\n        \"order_id\": \"APP_53280729\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{bpp-url}}/status",
+					"host": [
+						"{{bpp-url}}"
+					],
+					"path": [
+						"status"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "status",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"context\": {\r\n        \"domain\": \"dsep:scholarships\",\r\n        \"location\": {\r\n            \"city\": {\r\n                \"name\": \"Bangalore\",\r\n                \"code\": \"std:080\"\r\n            },\r\n            \"country\": {\r\n                \"name\": \"India\",\r\n                \"code\": \"IND\"\r\n            }\r\n        },\r\n        \"action\": \"status\",\r\n        \"version\": \"1.0.0\",\r\n        \"bap_id\": \"dsep-protocol.becknprotocol.io\",\r\n        \"bap_uri\": \"https://dsep-protocol-network.becknprotocol.io/\",\r\n        \"bpp_id\": \"https://proteanrc.centralindia.cloudapp.azure.com/dsep-bpp-1\",\r\n        \"bpp_uri\": \"https://proteanrc.centralindia.cloudapp.azure.com/dsep-bpp-1/public\",\r\n        \"transaction_id\": \"edea17fa-b5c4-48c9-86dd-1b80dda67d37\",\r\n        \"message_id\": \"444904a1-ddfc-4db2-b854-5067900dee5f\",\r\n        \"timestamp\": \"2023-02-17T17:20:40.065Z\",\r\n        \"ttl\": \"PT10M\"\r\n    },\r\n    \"message\": {\r\n        \"order_id\": \"APP_53280729\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{bpp-url}}/status",
+							"host": [
+								"{{bpp-url}}"
+							],
+							"path": [
+								"status"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.18.0 (Ubuntu)"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 18 Feb 2023 13:19:51 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2919"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"b67-Fkw8Ccpf+aV3SDy4Axsyby9wE+0\""
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"context\": {\n        \"domain\": \"dsep:scholarships\",\n        \"version\": \"1.0.0\",\n        \"action\": \"status\",\n        \"bap_id\": \"dsep-protocol.becknprotocol.io\",\n        \"bap_uri\": \"https://dsep-protocol-network.becknprotocol.io/\",\n        \"location\": {\n            \"city\": {\n                \"name\": \"Bangalore\",\n                \"code\": \"std:080\"\n            },\n            \"country\": {\n                \"name\": \"India\",\n                \"code\": \"IND\"\n            }\n        },\n        \"bpp_id\": \"https://proteanrc.centralindia.cloudapp.azure.com/dsep-bpp-1\",\n        \"bpp_uri\": \"https://proteanrc.centralindia.cloudapp.azure.com/dsep-bpp-1/public\",\n        \"transaction_id\": \"edea17fa-b5c4-48c9-86dd-1b80dda67d37\",\n        \"message_id\": \"f01b7f6f-90a9-448c-a695-8e0b8a5436cf\",\n        \"ttl\": \"PT10M\",\n        \"timestamp\": \"2023-02-18T13:19:41.181Z\"\n    },\n    \"responses\": [\n        {\n            \"context\": {\n                \"domain\": \"dsep:scholarships\",\n                \"location\": {\n                    \"city\": {\n                        \"name\": \"Bangalore\",\n                        \"code\": \"std:080\"\n                    },\n                    \"country\": {\n                        \"name\": \"India\",\n                        \"code\": \"IND\"\n                    }\n                },\n                \"action\": \"on_status\",\n                \"timestamp\": \"2023-02-18T13:19:41.289Z\",\n                \"ttl\": \"PT10M\",\n                \"version\": \"1.0.0\",\n                \"bap_id\": \"dsep-protocol.becknprotocol.io\",\n                \"bap_uri\": \"https://dsep-protocol-network.becknprotocol.io/\",\n                \"bpp_id\": \"https://proteanrc.centralindia.cloudapp.azure.com/dsep-bpp-1\",\n                \"bpp_uri\": \"https://proteanrc.centralindia.cloudapp.azure.com/dsep-bpp-1/public\",\n                \"transaction_id\": \"edea17fa-b5c4-48c9-86dd-1b80dda67d37\",\n                \"message_id\": \"f01b7f6f-90a9-448c-a695-8e0b8a5436cf\"\n            },\n            \"message\": {\n                \"order\": {\n                    \"id\": \"APP_53280729\",\n                    \"status\": \"ACTIVE\",\n                    \"provider\": {\n                        \"id\": \"ZQU31169990\",\n                        \"descriptor\": {\n                            \"name\": \"XYZ Education Foundation\",\n                            \"short_desc\": \"XYZ Education Foundation\"\n                        },\n                        \"rateable\": false\n                    },\n                    \"items\": [\n                        {\n                            \"id\": \"SCM_55274212\",\n                            \"descriptor\": {\n                                \"name\": \"XYZ Education Scholarship for Undergraduate Students\",\n                                \"short_desc\": \"XYZ Education Scholarship for Undergraduate Students\"\n                            },\n                            \"price\": {\n                                \"currency\": \"INR\",\n                                \"value\": \"25000\"\n                            },\n                            \"xinput\": {\n                                \"required\": true,\n                                \"form\": {\n                                    \"url\": \"https://proteanrc.centralindia.cloudapp.azure.com/dsep-bpp-1/public/getForm/edea17fa-b5c4-48c9-86dd-1b80dda67d37/2a8b6441d63245bc97f70aaef8e70c75\",\n                                    \"data\": \"{\\\"name\\\":\\\"Rashmi G\\\",\\\"phone\\\":\\\"49867487\\\",\\\"address\\\":\\\"Mumbai\\\",\\\"needOfScholarship\\\":\\\"higher education\\\",\\\"docUrl\\\":\\\"http://abc.co/docs\\\"}\",\n                                    \"mime_type\": \"text/html\"\n                                }\n                            },\n                            \"rateable\": false,\n                            \"tags\": [\n                                {\n                                    \"display\": true,\n                                    \"descriptor\": {\n                                        \"code\": \"edu_qual\",\n                                        \"name\": \"Academic Eligibility\"\n                                    },\n                                    \"list\": [\n                                        {\n                                            \"descriptor\": {\n                                                \"code\": \"gr\",\n                                                \"name\": \"Grade\"\n                                            },\n                                            \"value\": \"Grade 12\",\n                                            \"display\": true\n                                        },\n                                        {\n                                            \"descriptor\": {\n                                                \"code\": \"percentage_grade\",\n                                                \"name\": \"Percentage/Grade\"\n                                            },\n                                            \"value\": \">= 50\",\n                                            \"display\": true\n                                        },\n                                        {\n                                            \"descriptor\": {\n                                                \"code\": \"passing_year\",\n                                                \"name\": \"Passing Year\"\n                                            },\n                                            \"value\": \"2022\",\n                                            \"display\": false\n                                        }\n                                    ]\n                                },\n                                {\n                                    \"display\": true,\n                                    \"descriptor\": {\n                                        \"code\": \"benefits\",\n                                        \"name\": \"Benefits\"\n                                    },\n                                    \"list\": [\n                                        {\n                                            \"descriptor\": {\n                                                \"code\": \"scholarship-amount\",\n                                                \"name\": \"Scholarship Amount\"\n                                            },\n                                            \"value\": \"Upto Rs.25000 per year\",\n                                            \"display\": true\n                                        }\n                                    ]\n                                }\n                            ],\n                            \"category_ids\": [\n                                \"DSEP_CAT_2\"\n                            ]\n                        }\n                    ],\n                    \"fulfillments\": [\n                        {\n                            \"id\": \"DSEP_FUL_55274212\",\n                            \"type\": \"SCHOLARSHIP\",\n                            \"tracking\": false,\n                            \"contact\": {\n                                \"phone\": \"9876543210\",\n                                \"email\": \"maryg@xyz.com\"\n                            },\n                            \"stops\": [\n                                {\n                                    \"type\": \"APPLICATION-START\",\n                                    \"time\": {\n                                        \"timestamp\": \"2023-01-01T00:00:00.000Z\"\n                                    }\n                                },\n                                {\n                                    \"type\": \"APPLICATION-END\",\n                                    \"time\": {\n                                        \"timestamp\": \"2023-03-31T00:00:00.000Z\"\n                                    }\n                                }\n                            ]\n                        }\n                    ],\n                    \"type\": \"DEFAULT\"\n                }\n            }\n        }\n    ]\n}"
+				}
+			]
+		}
+	]
+}

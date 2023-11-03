@@ -1,0 +1,33 @@
+{
+    "context": {
+        "domain": "dsep:courses",
+        "version": "1.0.0",
+        "action": "confirm",
+        "bap_id": "dsep-protocol.becknprotocol.io",
+        "bap_uri": "https://dsep-protocol-network.becknprotocol.io/",
+        "bpp_id": "bpp.dsep.samagra.io",
+        "bpp_uri": "https://bpp.dsep.samagra.io",
+        "transaction_id": "a9aaecca-10b7-4d19-b640-b047a7c62196",
+        "message_id": "4dc0f577-89f7-4fdb-b7e6-8e08767473f0",
+        "ttl": "PT10M",
+        "timestamp": "2023-02-15T15:18:33.777Z"
+    },
+    "message": {
+        "order": {
+            "items": [
+                {
+                    "id": "Q291cnNlTGlzdDovbmQyX2NlYzIzX2NzMDI="
+                }
+            ],
+            "fulfillments": [
+                {
+                    "customer": {
+                        "person": {
+                            "name": "John Doe"
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "context": {
+        "domain": "dsep:courses",
+        "transaction_id": "a9aaecca-10b7-4d19-b640-b047a7c62196",
+        "message_id": "$bb579fb8-cb82-4824-be12-fcbc405b6608",
+        "action": "search",
+        "timestamp": "2022-12-15T05:23:03.443Z",
+        "version": "1.0.0",
+        "bap_uri": "https://dsep-protocol-network.becknprotocol.io/",
+        "bap_id": "dsep-protocol.becknprotocol.io",
+        "ttl": "PT10M"
+    },
+    "message": {
+        "intent": {
+            "item": {
+                "descriptor": {
+                    "name": "Prof Kannan Moudgalya"
+                }
+            }
+        }
+    }
+}

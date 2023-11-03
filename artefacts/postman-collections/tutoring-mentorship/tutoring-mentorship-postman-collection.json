@@ -1,0 +1,258 @@
+{
+	"info": {
+		"_postman_id": "74ab91e6-62c8-4a3a-a7a0-534383ca6806",
+		"name": "Tutoring and Mentorship",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "8042669"
+	},
+	"item": [
+		{
+			"name": "Search By Session Title",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"context\": {\n        \"domain\": \"dsep:mentoring\",\n        \"action\": \"search\",\n        \"bap_id\": \"https://dev.elevate-apis.shikshalokam.org/bap\",\n        \"bap_uri\": \"https://dev.elevate-apis.shikshalokam.org/bap\",\n        \"timestamp\": \"2022-12-15T15:38:16.226Z\",\n        \"message_id\": \"64109204-bdff-4af6-a76b-5a33f8aa8675\",\n        \"version\": \"1.0.0\",\n        \"ttl\": \"PT10M\",\n        \"transaction_id\": \"bdb5ba09-2241-4f00-b434-73466cd06228\"\n    },\n    \"message\": {\n        \"intent\": {\n            \"item\": {\n                \"descriptor\": {\n                    \"name\": \"Management\"\n                }\n            }\n        }\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://dev.elevate-apis.shikshalokam.org/bpp/search",
+					"protocol": "https",
+					"host": [
+						"dev",
+						"elevate-apis",
+						"shikshalokam",
+						"org"
+					],
+					"path": [
+						"bpp",
+						"search"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search By Mentor Name",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"context\": {\n        \"domain\": \"dsep:mentoring\",\n        \"action\": \"search\",\n        \"bap_id\": \"https://dev.elevate-apis.shikshalokam.org/bap\",\n        \"bap_uri\": \"https://dev.elevate-apis.shikshalokam.org/bap\",\n        \"timestamp\": \"2022-12-15T15:38:16.226Z\",\n        \"message_id\": \"64109204-bdff-4af6-a76b-5a33f8aa8675\",\n        \"version\": \"1.0.0\",\n        \"ttl\": \"PT10M\",\n        \"transaction_id\": \"bdb5ba09-2241-4f00-b434-73466cd06228\"\n    },\n    \"message\": {\n        \"intent\": {\n            \"agent\": {\n                \"person\": {\n                    \"name\": \"Twelve\"\n                }\n            }\n        }\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://dev.elevate-apis.shikshalokam.org/bpp/search",
+					"protocol": "https",
+					"host": [
+						"dev",
+						"elevate-apis",
+						"shikshalokam",
+						"org"
+					],
+					"path": [
+						"bpp",
+						"search"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Select",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"context\": {\n        \"domain\": \"dsep:mentoring\",\n        \"action\": \"select\",\n        \"bap_id\": \"https://dev.elevate-apis.shikshalokam.org/bap\",\n        \"bap_uri\": \"https://dev.elevate-apis.shikshalokam.org/bap\",\n        \"timestamp\": \"2022-12-15T15:38:16.226Z\",\n        \"message_id\": \"64109204-bdff-4af6-a76b-5a33f8aa8675\",\n        \"version\": \"1.0.0\",\n        \"ttl\": \"PT10M\",\n        \"transaction_id\": \"bdb5ba09-2241-4f00-b434-73466cd06228\"\n    },\n    \"message\": {\n        \"order\": {\n            \"item\": {\n                \"id\": \"63e6065223df082856936335\"\n            }\n        }\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://dev.elevate-apis.shikshalokam.org/bpp/select",
+					"protocol": "https",
+					"host": [
+						"dev",
+						"elevate-apis",
+						"shikshalokam",
+						"org"
+					],
+					"path": [
+						"bpp",
+						"select"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Init",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"context\": {\n        \"domain\": \"dsep:mentoring\",\n        \"action\": \"search\",\n        \"bap_id\": \"https://dev.elevate-apis.shikshalokam.org/bap\",\n        \"bap_uri\": \"https://dev.elevate-apis.shikshalokam.org/bap\",\n        \"timestamp\": \"2022-12-15T15:38:16.226Z\",\n        \"message_id\": \"64109204-bdff-4af6-a76b-5a33f8aa8675\",\n        \"version\": \"1.0.0\",\n        \"ttl\": \"PT10M\",\n        \"transaction_id\": \"bdb5ba09-2241-4f00-b434-73466cd06228\"\n    },\n    \"message\": {\n        \"order\": {\n            \"items\": [\n                {\n                    \"id\": \"63d1049327f9038b3b11b8b5\"\n                }\n            ],\n            \"fulfillments\": [\n                {\n                    \"id\": \"b9aab677-ccf1-406b-b354-869fafa95793\"\n                }\n            ],\n            \"billing\": {\n                \"name\": \"Van Bode III\",\n                \"phone\": \"881-311-2951 x01508\",\n                \"email\": \"Sonny_Auer@yahoo.com\",\n                \"time\": {\n                    \"timezone\": \"IST\"\n                }\n            }\n        }\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://dev.elevate-apis.shikshalokam.org/bpp/init",
+					"protocol": "https",
+					"host": [
+						"dev",
+						"elevate-apis",
+						"shikshalokam",
+						"org"
+					],
+					"path": [
+						"bpp",
+						"init"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Confirm",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"context\": {\n        \"domain\": \"dsep:mentoring\",\n        \"action\": \"search\",\n        \"bap_id\": \"https://dev.elevate-apis.shikshalokam.org/bap\",\n        \"bap_uri\": \"https://dev.elevate-apis.shikshalokam.org/bap\",\n        \"timestamp\": \"2022-12-15T15:38:16.226Z\",\n        \"message_id\": \"64109204-bdff-4af6-a76b-5a33f8aa8675\",\n        \"version\": \"1.0.0\",\n        \"ttl\": \"PT10M\",\n        \"transaction_id\": \"bdb5ba09-2241-4f00-b434-73466cd06228\"\n    },\n    \"message\": {\n        \"order\": {\n            \"items\": [\n                {\n                    \"id\": \"63e6065223df082856936335\"\n                }\n            ],\n            \"fulfillments\": [\n                {\n                    \"id\": \"2494098b-a2e8-4d29-8791-1b708c458cb5\"\n                }\n            ],\n            \"billing\": {\n                \"name\": \"Van Bode III\",\n                \"phone\": \"881-311-2951 x01508\",\n                \"email\": \"Sonny_Auer12888102@yahoo.com\",\n                \"time\": {\n                    \"timezone\": \"IST\"\n                }\n            }\n        }\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://dev.elevate-apis.shikshalokam.org/bpp/confirm",
+					"protocol": "https",
+					"host": [
+						"dev",
+						"elevate-apis",
+						"shikshalokam",
+						"org"
+					],
+					"path": [
+						"bpp",
+						"confirm"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Status",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"context\": {\n        \"domain\": \"dsep:mentoring\",\n        \"action\": \"status\",\n        \"bap_id\": \"https://dev.elevate-apis.shikshalokam.org/bap\",\n        \"bap_uri\": \"https://dev.elevate-apis.shikshalokam.org/bap\",\n        \"timestamp\": \"2022-12-15T15:38:16.226Z\",\n        \"message_id\": \"64109204-bdff-4af6-a76b-5a33f8aa8675\",\n        \"version\": \"1.0.0\",\n        \"ttl\": \"PT10M\",\n        \"transaction_id\": \"bdb5ba09-2241-4f00-b434-73466cd06228\"\n    },\n    \"message\": {\n        \"order\": {\n            \"id\": \"91406011-d11d-4bef-8438-9620ecc846da\"\n        }\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://dev.elevate-apis.shikshalokam.org/bpp/status",
+					"protocol": "https",
+					"host": [
+						"dev",
+						"elevate-apis",
+						"shikshalokam",
+						"org"
+					],
+					"path": [
+						"bpp",
+						"status"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cancel With Reason Id",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"context\": {\n        \"domain\": \"dsep:mentoring\",\n        \"action\": \"cancel\",\n        \"bap_id\": \"https://dev.elevate-apis.shikshalokam.org/bap\",\n        \"bap_uri\": \"https://dev.elevate-apis.shikshalokam.org/bap\",\n        \"timestamp\": \"2022-12-15T15:38:16.226Z\",\n        \"message_id\": \"64109204-bdff-4af6-a76b-5a33f8aa8675\",\n        \"version\": \"1.0.0\",\n        \"ttl\": \"PT10M\",\n        \"transaction_id\": \"bdb5ba09-2241-4f00-b434-73466cd06228\"\n    },\n    \"message\": {\n        \"order\": {\n            \"id\": \"d3164817-f977-467e-a7f4-72acc0c35da1\",\n            \"cancellation_reason_id\":12\n        }\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://dev.elevate-apis.shikshalokam.org/bpp/cancel",
+					"protocol": "https",
+					"host": [
+						"dev",
+						"elevate-apis",
+						"shikshalokam",
+						"org"
+					],
+					"path": [
+						"bpp",
+						"cancel"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cancel With Reason Description",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"context\": {\n        \"domain\": \"dsep:mentoring\",\n        \"action\": \"cancel\",\n        \"bap_id\": \"https://dev.elevate-apis.shikshalokam.org/bap\",\n        \"bap_uri\": \"https://dev.elevate-apis.shikshalokam.org/bap\",\n        \"timestamp\": \"2022-12-15T15:38:16.226Z\",\n        \"message_id\": \"64109204-bdff-4af6-a76b-5a33f8aa8675\",\n        \"version\": \"1.0.0\",\n        \"ttl\": \"PT10M\",\n        \"transaction_id\": \"bdb5ba09-2241-4f00-b434-73466cd06228\"\n    },\n    \"message\": {\n        \"order\": {\n            \"id\": \"83fc9f5a-4c93-43de-afc2-f6ccfb444d75\",\n            \"descriptor\":{\n                \"name\":\"This timing isn't convenient for me anymore\"\n            }\n        }\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://dev.elevate-apis.shikshalokam.org/bpp/cancel",
+					"protocol": "https",
+					"host": [
+						"dev",
+						"elevate-apis",
+						"shikshalokam",
+						"org"
+					],
+					"path": [
+						"bpp",
+						"cancel"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
