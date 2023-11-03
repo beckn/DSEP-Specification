@@ -14,4 +14,5 @@ This version of the specification covers the following categories of Skilling & 
 
 The following Skilling & Education services are _out of scope_ of this version 
 
-1. **Place holder Services**: Services to be placed here which are out of scope for DSEP.
+1. **Volunteering**: Discovery and Booking of Volunteers.
+1. **Institution Management**: Managing School Catalogues, courses, classrooms etc.
