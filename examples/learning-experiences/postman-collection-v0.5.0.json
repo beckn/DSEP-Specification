@@ -1,1 +1,433 @@
-
+{
+  "info": {
+    "_postman_id": "c48a0489-b5a1-4583-9c85-6bc8361e9aa5",
+    "name": "ONEST Learning Experiences",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "24455291"
+  },
+  "item": [
+    {
+      "name": "Learning Experiences",
+      "item": [
+        {
+          "name": "Search",
+          "item": [
+            {
+              "name": "Search with item",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"context\": {\n        \"domain\": \"{{onest_learning_experiences}}\",\n        \"action\": \"search\",\n       \"version\": \"{{core_version}}\",\n        \"bap_id\": \"{{bap_id}}\",\n        \"bap_uri\": \"{{bap_uri}}\",\n        \"location\": {\n            \"city\": {\n                \"name\": \"Bangalore\",\n                \"code\": \"std:080\"\n            },\n            \"country\": {\n                \"name\": \"India\",\n                \"code\": \"IND\"\n            }\n        },\n        \"transaction_id\": \"a9aaecca-10b7-4d19-b640-b047a7c62196\",\n        \"message_id\": \"0d30bfbf-87b8-43d2-8f95-36ebb9a24fd6\",\n        \"ttl\": \"PT10M\",\n        \"timestamp\": \"2023-02-15T15:14:30.560Z\"\n    },\n    \"message\": {\n        \"intent\": {\n            \"item\": {\n                \"descriptor\": {\n                    \"name\": \"javascript courses\"\n                }\n            }\n        }\n    }\n}"
+                },
+                "url": {
+                  "raw": "{{base_url}}/search",
+                  "host": ["{{base_url}}"],
+                  "path": ["search"]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Search with location",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"context\": {\n        \"domain\": \"{{onest_learning_experiences}}\",\n        \"action\": \"search\",\n        \"version\": \"{{core_version}}\",\n        \"bap_id\": \"{{bap_id}}\",\n        \"bap_uri\": \"{{bap_uri}}\",\n        \"location\": {\n            \"city\": {\n                \"name\": \"Bangalore\",\n                \"code\": \"std:080\"\n            },\n            \"country\": {\n                \"name\": \"India\",\n                \"code\": \"IND\"\n            }\n        },\n        \"transaction_id\": \"a9aaecca-10b7-4d19-b640-b047a7c62196\",\n        \"message_id\": \"0d30bfbf-87b8-43d2-8f95-36ebb9a24fd6\",\n        \"ttl\": \"PT10M\",\n        \"timestamp\": \"2023-02-15T15:14:30.560Z\"\n    },\n    \"message\": {\n        \"intent\": {\n            \"location\": {\n                \"id\": \"1\",\n                \"city\": {\n                    \"name\": \"Delhi\"\n                }\n            }\n        }\n    }\n}"
+                },
+                "url": {
+                  "raw": "{{base_url}}/search",
+                  "host": ["{{base_url}}"],
+                  "path": ["search"]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Search with Category",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"context\": {\n        \"domain\": \"{{onest_learning_experiences}}\",\n        \"action\": \"search\",\n       \"version\": \"{{core_version}}\",\n        \"bap_id\": \"{{bap_id}}\",\n        \"bap_uri\": \"{{bap_uri}}\",\n        \"location\": {\n            \"city\": {\n                \"name\": \"Bangalore\",\n                \"code\": \"std:080\"\n            },\n            \"country\": {\n                \"name\": \"India\",\n                \"code\": \"IND\"\n            }\n        },\n        \"transaction_id\": \"a9aaecca-10b7-4d19-b640-b047a7c62196\",\n        \"message_id\": \"0d30bfbf-87b8-43d2-8f95-36ebb9a24fd6\",\n        \"ttl\": \"PT10M\",\n        \"timestamp\": \"2023-02-15T15:14:30.560Z\"\n    },\n    \"message\": {\n        \"intent\": {\n            \"category\": {\n                \"descriptor\": {\n                    \"name\": \"SCHOOL\"\n                }\n            }\n        }\n    }\n}"
+                },
+                "url": {
+                  "raw": "{{base_url}}/search",
+                  "host": ["{{base_url}}"],
+                  "path": ["search"]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Search with description",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"context\": {\n        \"domain\": \"{{onest_learning_experiences}}\",\n        \"action\": \"search\",\n       \"version\": \"{{core_version}}\",\n        \"bap_id\": \"{{bap_id}}\",\n        \"bap_uri\": \"{{bap_uri}}\",\n        \"location\": {\n            \"city\": {\n                \"name\": \"Bangalore\",\n                \"code\": \"std:080\"\n            },\n            \"country\": {\n                \"name\": \"India\",\n                \"code\": \"IND\"\n            }\n        },\n        \"transaction_id\": \"a9aaecca-10b7-4d19-b640-b047a7c62196\",\n        \"message_id\": \"0d30bfbf-87b8-43d2-8f95-36ebb9a24fd6\",\n        \"ttl\": \"PT10M\",\n        \"timestamp\": \"2023-02-15T15:14:30.560Z\"\n    },\n    \"message\": {\n        \"intent\": {\n            \"descriptor\": {\n                \"name\":\"Courses for teacher\"\n            }\n        }\n    }\n}"
+                },
+                "url": {
+                  "raw": "{{base_url}}/search",
+                  "host": ["{{base_url}}"],
+                  "path": ["search"]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Search with provider",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"context\": {\n        \"domain\": \"{{onest_learning_experiences}}\",\n        \"action\": \"search\",\n       \"version\": \"{{core_version}}\",\n        \"bap_id\": \"{{bap_id}}\",\n        \"bap_uri\": \"{{bap_uri}}\",\n        \"location\": {\n            \"city\": {\n                \"name\": \"Bangalore\",\n                \"code\": \"std:080\"\n            },\n            \"country\": {\n                \"name\": \"India\",\n                \"code\": \"IND\"\n            }\n        },\n        \"transaction_id\": \"a9aaecca-10b7-4d19-b640-b047a7c62196\",\n        \"message_id\": \"0d30bfbf-87b8-43d2-8f95-36ebb9a24fd6\",\n        \"ttl\": \"PT10M\",\n        \"timestamp\": \"2023-02-15T15:14:30.560Z\"\n    },\n    \"message\": {\n        \"intent\": {\n            \"provider\": {\n                \"id\": \"unacademy\"\n            }\n        }\n    }\n}"
+                },
+                "url": {
+                  "raw": "{{base_url}}/search",
+                  "host": ["{{base_url}}"],
+                  "path": ["search"]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Search with combination",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"context\": {\n        \"domain\": \"{{onest_learning_experiences}}\",\n        \"action\": \"search\",\n        \"version\": \"{{core_version}}\",\n        \"bap_id\": \"{{bap_id}}\",\n        \"bap_uri\": \"{{bap_uri}}\",\n        \"location\": {\n            \"city\": {\n                \"name\": \"Bangalore\",\n                \"code\": \"std:080\"\n            },\n            \"country\": {\n                \"name\": \"India\",\n                \"code\": \"IND\"\n            }\n        },\n        \"transaction_id\": \"a9aaecca-10b7-4d19-b640-b047a7c62196\",\n        \"message_id\": \"0d30bfbf-87b8-43d2-8f95-36ebb9a24fd6\",\n        \"ttl\": \"PT10M\",\n        \"timestamp\": \"2023-02-15T15:14:30.560Z\"\n    },\n    \"message\": {\n        \"intent\": {\n            \"provider\": {\n                \"id\": \"unacademy\"\n            },\n            \"descriptor\": {\n                \"name\": \"Courses for teacher\"\n            },\n            \"location\": {\n                \"id\": \"1\",\n                \"city\": {\n                    \"name\": \"Delhi\"\n                }\n            }\n        }\n    }\n}"
+                },
+                "url": {
+                  "raw": "{{base_url}}/search",
+                  "host": ["{{base_url}}"],
+                  "path": ["search"]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Select",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"context\": {\n        \"domain\": \"{{onest_learning_experiences}}\",\n        \"action\": \"select\",\n        \"version\": \"{{core_version}}\",\n        \"bap_id\": \"{{bap_id}}\",\n        \"bap_uri\": \"{{bap_uri}}\",\n        \"bpp_id\": \"{{bpp_id}}\",\n        \"bpp_uri\": \"{{bpp_uri}}\",\n        \"location\": {\n            \"city\": {\n                \"name\": \"Bangalore\",\n                \"code\": \"std:080\"\n            },\n            \"country\": {\n                \"name\": \"India\",\n                \"code\": \"IND\"\n            }\n        },\n        \"transaction_id\": \"a9aaecca-10b7-4d19-b640-b047a7c62196\",\n        \"message_id\": \"$bb579fb8-cb82-4824-be12-fcbc405b6608\",\n        \"timestamp\": \"2022-12-12T09:55:41.161Z\",\n        \"ttl\": \"PT10M\"\n    },\n    \"message\": {\n        \"order\": {\n            \"items\": [\n                {\n                    \"id\": \"Q291cnNlTGlzdDovbmQyX2NlYzIzX2NzMDI=\"\n                }\n            ]\n        }\n    }\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/select",
+              "host": ["{{base_url}}"],
+              "path": ["select"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Init",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"context\": {\n        \"domain\": \"{{onest_learning_experiences}}\",\n        \"action\": \"init\",\n        \"version\": \"{{core_version}}\",\n        \"bap_id\": \"{{bap_id}}\",\n        \"bap_uri\": \"{{bap_uri}}\",\n        \"bpp_id\": \"{{bpp_id}}\",\n        \"bpp_uri\": \"{{bpp_uri}}\",\n        \"location\": {\n            \"city\": {\n                \"name\": \"Bangalore\",\n                \"code\": \"std:080\"\n            },\n            \"country\": {\n                \"name\": \"India\",\n                \"code\": \"IND\"\n            }\n        },\n        \"transaction_id\": \"a9aaecca-10b7-4d19-b640-b047a7c62196\",\n        \"message_id\": \"0d30bfbf-87b8-43d2-8f95-36ebb9a24fd6\",\n        \"ttl\": \"PT10M\",\n        \"timestamp\": \"2023-02-15T15:14:30.560Z\"\n    },\n    \"message\": {\n        \"order\": {\n            \"items\": [\n                {\n                    \"id\": \"Q291cnNlTGlzdDovbmQyX2NlYzIzX2NzMDI=\"\n                }\n            ],\n            \"fulfillments\": [\n                {\n                    \"customer\": {\n                        \"person\": {\n                            \"name\": \"John Doe\"\n                        }\n                    }\n                }\n            ]\n        }\n    }\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/init",
+              "host": ["{{base_url}}"],
+              "path": ["init"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Confirm",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"context\": {\n        \"domain\": \"{{onest_learning_experiences}}\",\n        \"action\": \"confirm\",\n        \"version\": \"{{core_version}}\",\n        \"bap_id\": \"{{bap_id}}\",\n        \"bap_uri\": \"{{bap_uri}}\",\n        \"bpp_id\": \"{{bpp_id}}\",\n        \"bpp_uri\": \"{{bpp_uri}}\",\n        \"location\": {\n            \"city\": {\n                \"name\": \"Bangalore\",\n                \"code\": \"std:080\"\n            },\n            \"country\": {\n                \"name\": \"India\",\n                \"code\": \"IND\"\n            }\n        },\n        \n        \"transaction_id\": \"a9aaecca-10b7-4d19-b640-b047a7c62196\",\n        \"message_id\": \"4dc0f577-89f7-4fdb-b7e6-8e08767473f0\",\n        \"ttl\": \"PT10M\",\n        \"timestamp\": \"2023-02-15T15:18:33.777Z\"\n    },\n    \"message\": {\n        \"order\": {\n            \"items\": [\n                {\n                    \"id\": \"Q291cnNlTGlzdDovbmQyX2NlYzIzX2NzMDI=\"\n                }\n            ],\n            \"fulfillments\": [\n                {\n                    \"customer\": {\n                        \"person\": {\n                            \"name\": \"John Doe\"\n                        }\n                    }\n                }\n            ]\n        }\n    }\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/confirm",
+              "host": ["{{base_url}}"],
+              "path": ["confirm"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Status",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"context\": {\n        \"domain\": \"{{onest_learning_experiences}}\",\n        \"action\": \"status\",\n         \"location\": {\n            \"city\": {\n                \"name\": \"Bangalore\",\n                \"code\": \"std:080\"\n            },\n            \"country\": {\n                \"name\": \"India\",\n                \"code\": \"IND\"\n            }\n        },\n        \"version\": \"{{core_version}}\",\n        \"bap_id\": \"{{bap_id}}\",\n        \"bap_uri\": \"{{bap_uri}}\",\n        \"bpp_id\": \"{{bpp_id}}\",\n        \"bpp_uri\": \"{{bpp_uri}}\",\n        \"transaction_id\": \"a9aaecca-10b7-4d19-b640-b047a7c62196\",\n        \"message_id\": \"0d30bfbf-87b8-43d2-8f95-36ebb9a24fd6\",\n        \"ttl\": \"PT10M\",\n        \"timestamp\": \"2023-02-15T15:14:30.560Z\"\n    },\n    \"message\": {\n        \"order_id\": \"a9aaecca-10b7-4d19-b640-b047a7c621961676906777032\"\n    }\n}\n"
+            },
+            "url": {
+              "raw": "{{base_url}}/status",
+              "host": ["{{base_url}}"],
+              "path": ["status"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"context\": {\n        \"domain\": \"{{onest_learning_experiences}}\",\n        \"action\": \"update\",\n        \"location\": {\n            \"city\": {\n                \"name\": \"Bangalore\",\n                \"code\": \"std:080\"\n            },\n            \"country\": {\n                \"name\": \"India\",\n                \"code\": \"IND\"\n            }\n        },\n        \"version\": \"{{core_version}}\",\n        \"bap_id\": \"{{bap_id}}\",\n        \"bap_uri\": \"{{bap_uri}}\",\n        \"bpp_id\": \"{{bpp_id}}\",\n        \"bpp_uri\": \"{{bpp_uri}}\",\n        \"transaction_id\": \"a9aaecca-10b7-4d19-b640-b047a7c62196\",\n        \"message_id\": \"0d30bfbf-87b8-43d2-8f95-36ebb9a24fd6\",\n        \"ttl\": \"PT10M\",\n        \"timestamp\": \"2023-02-15T15:14:30.560Z\"\n    },\n    \"message\": {\n        \"update_target\": \"order.fulfillments[0].customer.person.name\",\n        \"order\": {\n            \"fulfillments\": [\n                {\n                    \"customer\": {\n                        \"person\": {\n                            \"name\": \"James Smith\"\n                        }\n                    }\n                }\n            ],\n            \"id\": \"a9aaecca-10b7-4d19-b640-b047a7c621961676906777032\"\n        }\n    }\n}\n"
+            },
+            "url": {
+              "raw": "{{base_url}}/update",
+              "host": ["{{base_url}}"],
+              "path": ["update"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Track",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"context\": {\n        \"domain\": \"{{onest_learning_experiences}}\",\n        \"action\": \"track\",\n        \"location\": {\n            \"city\": {\n                \"name\": \"Bangalore\",\n                \"code\": \"std:080\"\n            },\n            \"country\": {\n                \"name\": \"India\",\n                \"code\": \"IND\"\n            }\n        },\n        \"version\": \"{{core_version}}\",\n        \"bap_id\": \"{{bap_id}}\",\n        \"bap_uri\": \"{{bap_uri}}\",\n        \"bpp_id\": \"{{bpp_id}}\",\n        \"bpp_uri\": \"{{bpp_uri}}\",\n        \"transaction_id\": \"a9aaecca-10b7-4d19-b640-b047a7c62195\",\n        \"message_id\": \"481a01fc-4b45-4d49-9558-c6a7dfad8b75\",\n        \"ttl\": \"PT10M\",\n        \"timestamp\": \"2023-02-23T08:09:02.172Z\"\n    },\n    \"message\": {\n        \"order_id\": \"1677140405881\"\n    }\n}\n"
+            },
+            "url": {
+              "raw": "{{base_url}}/track",
+              "host": ["{{base_url}}"],
+              "path": ["track"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Cancel",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"context\": {\n        \"domain\": \"{{onest_learning_experiences}}\",\n        \"action\": \"cancel\",\n        \"location\": {\n            \"country\": {\n                \"name\": \"India\",\n                \"code\": \"IND\"\n            }\n        },\n        \"version\": \"{{core_version}}\",\n        \"bap_id\": \"{{bap_id}}\",\n        \"bap_uri\": \"{{bap_uri}}\",\n        \"bpp_id\": \"{{bpp_id}}\",\n        \"bpp_uri\": \"{{bpp_uri}}\",\n        \"timestamp\": \"2022-12-15T15:38:16.226Z\",\n        \"message_id\": \"64109204-bdff-4af6-a76b-5a33f8aa8675\",\n        \"ttl\": \"PT10M\",\n        \"transaction_id\": \"bdb5ba09-2241-4f00-b434-73466cd06228\"\n    },\n    \"message\": {\n        \"order_id\": \"3c4f7ebf-4f77-4044-a8fe-63d690c0ecb1\",\n        \"cancellation_reason_id\": \"12\"\n    }\n}\n"
+            },
+            "url": {
+              "raw": "{{base_url}}/cancel",
+              "host": ["{{base_url}}"],
+              "path": ["cancel"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Support",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"context\": {\n        \"domain\": \"{{onest_learning_experiences}}\",\n        \"action\": \"support\",\n        \"version\": \"{{core_version}}\",\n        \"location\": {\n            \"city\": {\n                \"name\": \"Bangalore\",\n                \"code\": \"std:080\"\n            },\n            \"country\": {\n                \"name\": \"India\",\n                \"code\": \"IND\"\n            }\n        },\n        \"bap_id\": \"{{bap_id}}\",\n        \"bap_uri\": \"{{bap_uri}}\",\n        \"bpp_id\": \"{{bpp_id}}\",\n        \"bpp_uri\": \"{{bpp_uri}}\",\n        \"transaction_id\": \"a9aaecca-10b7-4d19-b640-b047a7c62196\",\n        \"message_id\": \"0d30bfbf-87b8-43d2-8f95-36ebb9a24fd6\",\n        \"ttl\": \"PT10M\",\n        \"timestamp\": \"2023-02-15T15:14:30.560Z\"\n    },\n    \"message\": {\n        \"ref_id\": \"a9aaecca-10b7-4d19-b640-b047a7c621961676906777032\"\n    }\n}\n"
+            },
+            "url": {
+              "raw": "{{base_url}}/support",
+              "host": ["{{base_url}}"],
+              "path": ["support"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Rating",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"context\": {\n        \"domain\": \"{{onest_learning_experiences}}\",\n        \"action\": \"rating\",\n        \"location\": {\n            \"city\": {\n                \"name\": \"Bangalore\",\n                \"code\": \"std:080\"\n            },\n            \"country\": {\n                \"name\": \"India\",\n                \"code\": \"IND\"\n            }\n        },\n        \"version\": \"{{core_version}}\",\n        \"bap_id\": \"{{bap_id}}\",\n        \"bap_uri\": \"{{bap_uri}}\",\n        \"bpp_id\": \"{{bpp_id}}\",\n        \"bpp_uri\": \"{{bpp_uri}}\",\n        \"transaction_id\": \"a9aaecca-10b7-4d19-b640-b047a7c62196\",\n        \"message_id\": \"0d30bfbf-87b8-43d2-8f95-36ebb9a24fd6\",\n        \"ttl\": \"PT10M\",\n        \"timestamp\": \"2023-02-15T15:14:30.560Z\"\n    },\n    \"message\": {\n        \"id\": \"a9aaecca-10b7-4d19-b640-b047a7c621961676906777032\",\n        \"rating_category\": \"COURSE\",\n        \"value\": \"4\"\n    }\n}\n"
+            },
+            "url": {
+              "raw": "{{base_url}}/rating",
+              "host": ["{{base_url}}"],
+              "path": ["rating"]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "exec": [""]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "exec": [""]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "bap_uri",
+      "value": "https://ps-bap-network.becknprotocol.io/",
+      "type": "string"
+    },
+    {
+      "key": "bap_id",
+      "value": "ps-bap-network.becknprotocol.io",
+      "type": "string"
+    },
+    {
+      "key": "base_url",
+      "value": "https://ps-bap-client.becknprotocol.io",
+      "type": "string"
+    },
+    {
+      "key": "bpp_id",
+      "value": "beckn-sandbox-bpp.becknprotocol.io",
+      "type": "string"
+    },
+    {
+      "key": "bpp_uri",
+      "value": "https://sandbox-bpp-network.becknprotocol.io",
+      "type": "string"
+    },
+    {
+      "key": "core_version",
+      "value": "1.1.0",
+      "type": "string"
+    },
+    {
+      "key": "onest_work_opportunities",
+      "value": "onest:work-opportunities",
+      "type": "string"
+    },
+    {
+      "key": "onest_financial_support",
+      "value": "onest:financial-support",
+      "type": "string"
+    },
+    {
+      "key": "onest_learning_experiences",
+      "value": "onest:learning-experiences",
+      "type": "string"
+    },
+    {
+      "key": "onest_expert_connect",
+      "value": "onest:expert-connect",
+      "type": "string"
+    }
+  ]
+}
