@@ -2,7 +2,7 @@
     "context": {
         "domain": "dsep:jobs",
         "version": "1.0.0",
-        "action": "confirm",
+        "action": "update",
         "bap_id": "dsep-protocol.becknprotocol.io",
         "bap_uri": "https://dsep-protocol-network.becknprotocol.io/",
         "location": {
@@ -20,18 +20,9 @@
     },
     "message": {
         "order": {
-              "provider":{
-                "id":"1"
-            },
-            "items": [
+            "id": "1677140405881",
+            "fulfillments": [
                 {
-                    "id": "a23f2fdfbbb8ac402bf259d75402eb0792f50c095f7d08a55475e7af1c2dadca",
-                    "fulfillment_ids":["1"]
-                }
-            ],
-             "fulfillments": [
-                {
-                    "id":"1",
                     "customer": {
                         "person": {
                             "name": "Sanjay",
@@ -68,12 +59,8 @@
                         }
                     }
                 }
-            ],
-               "xinput": {
-               "data": "",
-               "submission_id":""
-           }
-
-        }
+            ]
+        },
+        "update_target": "order.fulfillments[0].customer"
     }
 }
