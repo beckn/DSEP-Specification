@@ -8,8 +8,10 @@ The list is not exhaustive but tries to cover all the methods implemented in the
 - `/init` with the examples [here](./init/)
 - `/confirm` with the examples [here](./confirm/)
 - `/update` with the examples [here](./update/)
+- `/cancel` with the examples [here](./cancel/)
 - `/status` with the examples [here](./status/)
 - `/support` with the examples [here](./support/)
+- `/track` with the examples [here](./track/)
 - `/rating` with the examples [here](./rating/)
 
 
