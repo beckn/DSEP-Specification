@@ -1,7 +1,7 @@
 {
   "context": {
     "domain": "onest:courses",
-    "action": "on_support",
+    "action": "support",
     "version": "1.1.0",
     "bap_id": "onest.becknprotocol.io",
     "bap_uri": "https://onest-network.becknprotocol.io/",
@@ -14,10 +14,7 @@
   },
   "message": {
     "support": {
-      "ref_id": "d4975df5-b18c-4772-80ad-368669856d52",
-      "callback_phone": "+91 9988776543",
-      "phone": "+91 9988776543",
-      "email": "infosys.springboard@support.com"
+      "order_id" : "d4975df5"
     }
   }
 }
