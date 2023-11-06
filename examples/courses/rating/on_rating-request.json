@@ -15,7 +15,8 @@
   "message": {
     "feedback_form": {
       "form": {
-        "url": "https://infosys.springboard.io/rating?course=d4975df5-b18c-4772-80ad-368669856d52"
+        "url": "https://infosys.springboard.io/rating?course=d4975df5-b18c-4772-80ad-368669856d52",
+        "mime_type" :"text/html"
       },
       "required": "false"
     }

@@ -2,7 +2,7 @@
     "context": {
         "domain": "dsep:jobs",
         "version": "1.0.0",
-        "action": "status",
+        "action": "on_rating",
         "bap_id": "dsep-protocol.becknprotocol.io",
         "bap_uri": "https://dsep-protocol-network.becknprotocol.io/",
         "location": {
@@ -19,9 +19,12 @@
         "timestamp": "2023-02-23T08:09:02.172Z"
     },
     "message": {
-       
-            "order_id": "1677140405881"
-        
+        "feedback_form" : {
+            "form" : {
+                "url" : "url of the feedback form",
+                "mime_type" :"text/html"
+            },
+            "required" : true
+        } 
     }
 }
-    
