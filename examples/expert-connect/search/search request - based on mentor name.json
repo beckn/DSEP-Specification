@@ -12,9 +12,11 @@
     },
     "message": {
         "intent": {
-            "agent": {
-                "person": {
-                    "name": "joffin"
+            "fulfillment" : {
+                "agent": {
+                    "person": {
+                        "name": "joffin"
+                    }
                 }
             }
         }
