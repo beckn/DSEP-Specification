@@ -19,12 +19,14 @@
                 "locations": [
                     {
                         "city": {
-                            "name": "Pune"
+                            "name": "Pune",
+                            "code" : "std:020"
                         }
                     },
                     {
                         "city": {
-                            "name": "Bangalore"
+                            "name": "Bangalore",
+                            "code" : "std:080"
                         }
                     }
                 ]
