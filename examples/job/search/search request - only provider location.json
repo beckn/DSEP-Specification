@@ -16,12 +16,14 @@
                 "locations": [
                     {
                         "city": {
-                            "name": "Pune"
+                            "name": "Pune",
+                            "code" : "std:020"
                         }
                     },
                     {
                         "city": {
-                            "name": "Delhi"
+                            "name": "Delhi",
+                            "code" : "std:011"
                         }
                     }
                 ]
