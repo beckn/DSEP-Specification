@@ -1,0 +1,79 @@
+{
+    "context": {
+        "domain": "dsep:jobs",
+        "version": "1.0.0",
+        "action": "confirm",
+        "bap_id": "dsep-protocol.becknprotocol.io",
+        "bap_uri": "https://dsep-protocol-network.becknprotocol.io/",
+        "location": {
+            "country": {
+                "name": "India",
+                "code": "IND"
+            }
+        },
+        "bpp_id": "affinidi.com.bpp",
+        "bpp_uri": "https://6vs8xnx5i7.execute-api.ap-south-1.amazonaws.com/dsep",
+        "transaction_id": "a9aaecca-10b7-4d19-b640-b047a7c62195",
+        "message_id": "481a01fc-4b45-4d49-9558-c6a7dfad8b75",
+        "ttl": "PT10M",
+        "timestamp": "2023-02-23T08:09:02.172Z"
+    },
+    "message": {
+        "order": {
+              "provider":{
+                "id":"1"
+            },
+            "items": [
+                {
+                    "id": "a23f2fdfbbb8ac402bf259d75402eb0792f50c095f7d08a55475e7af1c2dadca",
+                    "fulfillment_ids":["1"]
+                }
+            ],
+             "fulfillments": [
+                {
+                    "id":"1",
+                    "customer": {
+                        "person": {
+                            "name": "Sanjay",
+                            "gender": "M",
+                            "creds": [
+                                {
+                                    "id": "claimId:af7e0b1b5c4858eb",
+                                    "type": "GenderData",
+                                    "url": "https://cloud-wallet-api.prod.affinity-project.org/api/v1/share/b8a2c0cbc5a02da03d2aecb59094672a8e0b16a1c845456bd18678529d6901df?key=beda347c431e02319bd31c63e5f5f5f5e14939efdb6697ce4d93c87eade27c47"
+                                },
+                                {
+                                    "id": "claimId:af7e0b1b5c4858eb",
+                                    "type": "ResumeVC",
+                                    "url": "https://cloud-wallet-api.prod.affinity-project.org/api/v1/share/b8a2c0cbc5a02da03d2aecb59094672a8e0b16a1c845456bd18678529d6901df?key=beda347c431e02319bd31c63e5f5f5f5e14939efdb6697ce4d93c87eade27c47"
+                                }
+                            ],
+                            "tags": [
+                                {
+                                    "code": "func_skills",
+                                    "list": [
+                                        {
+                                            "code": "Android"
+                                        },
+                                        {
+                                            "code": "AWS"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "contact": {
+                            "phone": "9999999999999",
+                            "email": "abc@abc.bc"
+                        }
+                    }
+                }
+            ],
+               "xinput": {
+               "data": "",
+               "submission_id":""
+           }
+
+        }
+    }
+}

@@ -1,0 +1,33 @@
+{
+    "context": {
+        "domain": "dsep:jobs",
+        "location": {
+            "country": {
+                "name": "India",
+                "code": "IND"
+            }
+        },
+        "action": "select",
+        "version": "1.0.0",
+        "bap_id": "dsep-protocol.becknprotocol.io",
+        "bap_uri": "https://dsep-protocol-network.becknprotocol.io/",
+        "bpp_id": "affinidi.com.bpp",
+        "bpp_uri": "https://6vs8xnx5i7.execute-api.ap-south-1.amazonaws.com/dsep",
+        "transaction_id": "a9aaecca-10b7-4d19-b640-b047a7c62195",
+        "message_id": "$89bdae17-9942-40c8-869a-5bd413356407",
+        "timestamp": "2023-02-14T12:11:46.1295616+00:00",
+        "ttl": "P1M"
+    },
+    "message": {
+        "order": {
+            "provider":{
+                "id":"1"
+            },
+            "items": [
+                {
+                    "id": "a23f2fdfbbb8ac402bf259d75402eb0792f50c095f7d08a55475e7af1c2dadca"
+                }
+            ]
+        }
+    }
+}

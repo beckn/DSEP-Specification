@@ -1,0 +1,12 @@
+{
+    "message": {
+      "ack": {
+        "status": "NACK"
+      }
+    },
+    "error": {
+      "code": "40001",
+      "paths": "",
+      "message": "API Endpoint is not implemented by the BPP"
+    }
+}

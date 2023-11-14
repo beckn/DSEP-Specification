@@ -1,0 +1,36 @@
+{
+    "context": {
+        "domain": "dsep:mentoring",
+        "action": "on_support",
+        "bap_id": "dsep-protocol.becknprotocol.io",
+        "bap_uri": "https://dsep-protocol-network.becknprotocol.io/",
+        "bpp_id": "dev.elevate-apis.shikshalokam.org/bpp",
+        "bpp_uri": "https://dev.elevate-apis.shikshalokam.org/bpp",
+        "timestamp": "2022-12-15T15:38:16.226Z",
+        "message_id": "64109204-bdff-4af6-a76b-5a33f8aa8675",
+        "version": "1.0.0",
+        "ttl": "PT10M",
+        "transaction_id": "bdb5ba09-2241-4f00-b434-73466cd06228"
+    },
+    "message": {
+        "support" : {
+            "ref_id" : "Abjhjh13773",
+            "order_id" : "3159f713-120e-4e7e-beae-6a638fb5df55",
+            "callback_phone" : "+91-8858150053",
+            "email" : "support@ekstep.com",
+            "phone" : "+91-965676879",
+            "url" : "chat-url-for-support",
+            "docs": [
+                {
+                    "descriptor":{
+                        "name" :"FAQs",
+                        "short_desc" : "Frequently asked questions and common issues"
+                    },
+                    "url" : "https://link-to-the-document.com",
+                    "mime_type" : "application/pdf"
+                }
+            ]
+
+        }  
+    }
+}
