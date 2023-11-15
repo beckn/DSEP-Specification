@@ -1,0 +1,31 @@
+{
+    "context": {
+        "domain": "dsep:student-connect",
+        "action": "search",
+        "location": {
+            "country": {
+              "name": "India",
+              "code": "IND"
+            },
+            "city": {
+              "name": "Bangalore",
+              "code": "std:080"
+            }
+          },
+        "version": "1.1.0",
+        "bap_id": "{{bap_id}}",
+        "bap_uri": "{{bap_uri}}",
+        "transaction_id": "6743e9e2-4fb5-487c-92b7-13ba8018f176",
+        "message_id": "6743e9e2-4fb5-487c-92b7-13ba8018f176",
+        "timestamp": "2023-07-16T04:41:16Z"
+    },
+    "message": {
+        "intent": {
+            "item": {
+                "descriptor": {
+                    "name": "Mayank"
+                }
+            }
+        }
+    }
+}

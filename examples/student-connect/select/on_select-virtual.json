@@ -1,0 +1,349 @@
+{
+  "context": {
+    "domain": "dsep:student-connect",
+    "action": "on_select",
+    "location": {
+      "country": {
+        "name": "India",
+        "code": "IND"
+      },
+      "city": {
+        "name": "Bangalore",
+        "code": "std:080"
+      }
+    },
+    "version": "1.1.0",
+    "bap_id": "ps-bap-network.becknprotocol.io",
+    "bap_url": "https://ps-bap-client.becknprotocol.io/",
+    "bpp_id": "beckn-sandbox-bpp.becknprotocol.io",
+    "bpp_uri": "https://sandbox-bpp-network.becknprotocol.io/",
+    "transaction_id": "6743e9e2-4fb5-487c-92b7-13ba8018f176",
+    "message_id": "6743e9e2-4fb5-487c-92b7-13ba8018f176",
+    "timestamp": "2023-07-16T04:41:16Z"
+  },
+  "message": {
+    "order": {
+      "provider": {
+        "id": "289edce4-d002-4962-b311-4c025e22b4f6",
+        "descriptor": {
+          "name": "MuLearn Talent pool app",
+          "short_desc": "MuLearn Talent pool App Pvt Ltd",
+          "images": [
+            {
+              "url": "https://mulearn.in/images/logo.png"
+            }
+          ]
+        }
+      },
+      "items": [
+        {
+          "id": "1224",
+          "descriptor": {
+            "name": "Mayank Bansal",
+            "short_desc": "Product Manager || Enabling Reconciliation & Settlement framework on ONDC || Financial Services || Retail ",
+            "long_desc": "Entrepreneurial journey from failed startup to thriving tech ventures. Expertise in software development, blockchain, and B2B solutions. Currently contributing to FIDE at Enterprise Minds.",
+            "media" : [
+              {
+                "mimetype": "application/pdf",
+                "url" : "https://www.resume-link.com"
+              },
+              {
+                "mimetype": "application/pdf",
+                "url" : "https://www.certificate-link.com/1"
+              },
+              {
+                "mimetype": "application/pdf",
+                "url" : "https://www.certificate-link.com/2"
+              }
+            ],
+            "images": [
+              {
+                "url" : "https://media.licdn.com/dms/image/C4E03AQEQLnpcjmWwGQ/profile-displayphoto-shrink_400_400/0/1638454324563?e=1705536000&v=beta&t=NBLbRWXya0YrMWsfWY8PCbfFW7msDBpiYzxpcbh9fA4"
+              }
+            ]
+          },
+          "fulfillment_ids": [
+            "ful-01",
+            "ful-02"
+          ],
+          "tags" : [
+            {
+              "display" : true,
+              "descriptor" : {
+                "name" : "academic-info"
+              },
+              "list" : [
+                {
+                  "descriptor": {
+                    "name" : "Course"
+                  },
+                  "value" : "X"
+                },
+                {
+                  "descriptor": {
+                    "name" : "Score"
+                  },
+                  "value" : "10 CGPA"
+                },
+                {
+                  "descriptor": {
+                    "name" : "Organization"
+                  },
+                  "value" : "DAV Public School, New Delhi"
+                },
+                {
+                  "descriptor": {
+                    "name" : "start-year"
+                  },
+                  "value" : "2012"
+                },
+                {
+                  "descriptor": {
+                    "name" : "end-year"
+                  },
+                  "value" : "2013"
+                }
+              ]
+            },
+            {
+              "display" : true,
+              "descriptor" : {
+                "name" : "academic-info"
+              },
+              "list" : [
+                {
+                  "descriptor": {
+                    "name" : "Course"
+                  },
+                  "value" : "XII-Science"
+                },
+                {
+                  "descriptor": {
+                    "name" : "Score"
+                  },
+                  "value" : "92%"
+                },
+                {
+                  "descriptor": {
+                    "name" : "Organization"
+                  },
+                  "value" : "DAV Public School, New Delhi"
+                },
+                {
+                  "descriptor": {
+                    "name" : "start-year"
+                  },
+                  "value" : "2014"
+                },
+                {
+                  "descriptor": {
+                    "name" : "end-year"
+                  },
+                  "value" : "2015"
+                }
+              ]
+            },
+            {
+              "display" : true,
+              "descriptor" : {
+                "name" : "academic-info"
+              },
+              "list" : [
+                {
+                  "descriptor": {
+                    "name" : "Course"
+                  },
+                  "value" : "BTECH-CSE"
+                },
+                {
+                  "descriptor": {
+                    "name" : "Score"
+                  },
+                  "value" : "92%"
+                },
+                {
+                  "descriptor": {
+                    "name" : "Organization"
+                  },
+                  "value" : "KIET Group of institution, Ghaziabad"
+                },
+                {
+                  "descriptor": {
+                    "name" : "start-year"
+                  },
+                  "value" : "2016"
+                },
+                {
+                  "descriptor": {
+                    "name" : "end-year"
+                  },
+                  "value" : "2020"
+                }
+              ]
+            },
+            {
+              "display" : true,
+              "descriptor" : {
+                "name" : "work-experience"
+              },
+              "list" : [
+                {
+                  "descriptor": {
+                    "name" : "Organization"
+                  },
+                  "value" : "Thoughtz.ai"
+                },
+                {
+                  "descriptor": {
+                    "name" : "employement-type"
+                  },
+                  "value" : "Freelance"
+                },
+                {
+                  "descriptor": {
+                    "name" : "location"
+                  },
+                  "value" : "Switzerland"
+                },
+                {
+                  "descriptor": {
+                    "name" : "roles-and-responsibilities"
+                  },
+                  "value" : "Led the development of the new B2C SaaS product to enable user to connect with other users with similar thoughts. completed the project in 16 weeks."
+                },
+                {
+                  "descriptor": {
+                    "name" : "start-year"
+                  },
+                  "value" : "2016"
+                },
+                {
+                  "descriptor": {
+                    "name" : "end-year"
+                  },
+                  "value" : "2020"
+                }
+              ]
+            },
+            {
+              "display" : true,
+              "descriptor" : {
+                "name" : "portfolio"
+              },
+              "list" : [
+                {
+                  "descriptor": {
+                    "name" : "resume"
+                  },
+                  "value" : "https://www.link-to-resume.com"
+                },
+                {
+                  "descriptor": {
+                    "name" : "github"
+                  },
+                  "value" : "https://www.github.com/emmayank"
+                },
+                {
+                  "descriptor": {
+                    "name" : "behance"
+                  },
+                  "value" : "https://www.behance.com/mrmayank"
+                },
+                {
+                  "descriptor": {
+                    "name" : "linkedin"
+                  },
+                  "value" : "https://www.linkedin.com/in/mrmayank"
+                },
+                {
+                  "descriptor": {
+                    "name" : "other"
+                  },
+                  "value" : "https://www.other.com/mrmayank"
+                }
+              ]
+            },
+            {
+              "display" : true,
+              "descriptor" : {
+                "name" : "skills"
+              },
+              "list" : [
+                {
+                  "value" : "Agile"
+                },
+                {
+                  "value" : "Figma"
+                },
+                {
+                  "value" : "Product Management"
+                },
+                {
+                  "value" : "Wireframing"
+                },
+                {
+                  "value" : "Product Roadmap"
+                },
+                {
+                  "value" : "JIRA"
+                }
+              ]
+            },
+            {
+              "display" : true,
+              "descriptor" : {
+                "name" : "profile-status"
+              },
+              "list" : [
+                {
+                  "value" : "Actively looking for switch"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "fulfillments": [
+        {
+          "id": "ful-01",
+          "type": "virtual-meet",
+          "stops": [
+            {
+              "location": {
+                "state": {
+                  "name": "Uttar Pradesh"
+                },
+                "city": {
+                  "name": "Kanpur"
+                }
+              },
+              "time": {
+                "label": "Available Timing",
+                "duration": "PT30M",
+                "range": {
+                  "start": "10:00",
+                  "end": "18:00"
+                },
+                "days": "1,2,3,4,5,6",
+                "schedule": {
+                  "holidays": [
+                    "2023-11-11",
+                    "2023-11-12",
+                    "2023-11-13"
+                  ]
+                }
+              },
+              "instructions" : {
+                "short_desc" : "Hello, I am available for the above given slots, please book a meeting for the above time."
+              },
+              "contact" : {
+                "phone" : "+91-8858150032",
+                "email" : "iammayankbansal@gmail.com"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

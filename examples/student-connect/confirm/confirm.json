@@ -1,0 +1,62 @@
+{
+  "context": {
+    "domain": "dsep:student-connect",
+    "action": "confirm",
+    "location": {
+      "country": {
+        "name": "India",
+        "code": "IND"
+      },
+      "city": {
+        "name": "Bangalore",
+        "code": "std:080"
+      }
+    },
+    "version": "1.1.0",
+    "bap_id": "ps-bap-network.becknprotocol.io",
+    "bap_url": "https://ps-bap-client.becknprotocol.io/",
+    "bpp_id": "beckn-sandbox-bpp.becknprotocol.io",
+    "bpp_uri": "https://sandbox-bpp-network.becknprotocol.io/",
+    "transaction_id": "6743e9e2-4fb5-487c-92b7-13ba8018f176",
+    "message_id": "6743e9e2-4fb5-487c-92b7-13ba8018f176",
+    "timestamp": "2023-07-16T04:41:16Z"
+  },
+  "message": {
+    "order": {
+      "provider": {
+        "id": "289edce4-d002-4962-b311-4c025e22b4f6"
+      },
+      "fulfillments": [
+        {
+          "id": "ful-01",
+          "customer": {
+            "person": {
+              "name": "Amkur Singh",
+              "gender": "Male"
+            },
+            "contact": {
+              "phone": "+91-9663088848",
+              "email": "ankur.singh@fide.com"
+            }
+          },
+          "stops": [
+            {
+              "time": {
+                "label": "Scheduled Time",
+                "range": {
+                  "start": "2023-12-04 14:00",
+                  "end": "2023-12-04 14:30"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "items": [
+        {
+          "id": "1224"
+        }
+      ]
+    }
+  }
+}
