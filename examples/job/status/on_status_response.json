@@ -70,18 +70,64 @@
                                     "descriptor": {
                                         "name": "Minimum Educational Qualifications"
                                     },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "name": "degree",
+                                                "code": "degree"
+                                            },
+                                            "value": "Bachelors"
+                                        },
+                                        {
+                                            "value": "Bachelors or Equivalent Practical Experience"
+                                        }
+                                    ],
                                     "display": true
                                 },
                                 {
                                     "descriptor": {
                                         "name": "Preferred Educational Qualifications"
                                     },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "name": "degree",
+                                                "code": "degree"
+                                            },
+                                            "value": "Masters"
+                                        },
+                                        {
+                                            "descriptor": {
+                                                "name": "degree",
+                                                "code": "degree"
+                                            },
+                                            "value": "PhD"
+                                        },
+                                        {
+                                            "value": "Master's degree or PhD in Computer Science or related technical field."
+                                        }
+                                    ],
                                     "display": true
                                 },
                                 {
                                     "descriptor": {
                                         "name": "Work Experience"
                                     },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "name": "Software Development Experienceegree",
+                                                "code": "Software Development Experienceegree"
+                                            },
+                                            "value": "3 years"
+                                        },
+                                        {
+                                            "value": "2 years of Technical Leadership Experience"
+                                        },
+                                        {
+                                            "value": "3 years of experience working in a complex, matrixed organization"
+                                        }
+                                    ],
                                     "display": true
                                 },
                                 {
@@ -89,6 +135,21 @@
                                         "name": "Responsibilities"
                                     },
                                     "list": [
+                                        {
+                                            "value": "Build frontend experiences for our tools (Web, PWA and React Native) "
+                                        },
+                                        {
+                                            "value": "Articulate a long term technical direction and vision for building, maintaining, and scaling our web and mobile platforms"
+                                        },
+                                        {
+                                            "value": "Create trustworthy user experiences by building interfaces that are simple, easy to comprehend, performant and reliable using modern tools like React, React Native, Typescript, Node.js, Jest and Webpack."
+                                        },
+                                        {
+                                            "value": "Mentor and train other team members on design techniques and coding standards. "
+                                        },
+                                        {
+                                            "value": "Own all aspects of our front-end architecture "
+                                        },
                                         {
                                             "value": "Contribute to process improvements and build a high-performance engineering culture "
                                         }
@@ -100,13 +161,57 @@
                                         "name": "Employment Information",
                                         "code": "employment-info"
                                     },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "name": "Employment Duration Type",
+                                                "code": "emp-duration-type"
+                                            },
+                                            "value": "FULL_TIME"
+                                        }
+                                    ],
                                     "display": true
                                 },
                                 {
                                     "descriptor": {
                                         "name": "skill requirement",
-                                        "code": "Skills"
+                                        "code": "req-skills"
                                     },
+                                    "list": [
+                                        {
+                                            "value" : "You have 8+ years of engineering experience, predominantly in shipping user-facing production features"
+                                        },
+                                        {
+                                            "value": "You are an expert in React.js and React Native, ideally using TypeScript language extensions"   
+                                        },
+                                        {
+                                            "value": "You have a good understanding of JavaScript Design Patterns"
+                                        },
+                                        {
+                                            "value": "You have good experience writing front end test cases"
+                                        },
+                                        {
+                                            "value": "You’re familiar with current trends and best practices in front-end architecture, including performance, security and usability. "
+                                        },
+                                        {
+                                            "value": "You’re familiar with product and design lifecycles, and collaborating closely with designers, engineers, and product managers "
+                                        },
+                                        {
+                                            "value": "You have experience with Test Driven Development and know when to apply it."
+                                        },
+                                        {
+                                                "value": "You have experience working on AWS or other cloud stacks and Docker.  "   
+                                        },
+                                        {
+                                                "value": "You have experience building systems with high data protection requirements, anonymous data and data encryption. "                                            
+                                        },
+                                        {
+                                                "value": "You have experience with IaaC. "
+                                        },
+                                        {
+                                                "code": "You have worked on building responsive UI using React Native."
+                                        }
+                                    ],
                                     "display": true
                                 },
                                 {
@@ -115,6 +220,30 @@
                                         "code": "salary-info"
                                     },
                                     "list": [
+                                        {
+                                            "descriptor": {
+                                                "name": "baseSalary"
+                                            },
+                                            "value": "60000"
+                                        },
+                                        {
+                                            "descriptor": {
+                                                "name": "variableSalary"
+                                            },
+                                            "value": "60000"
+                                        },
+                                        {
+                                            "descriptor": {
+                                                "name": "allowance"
+                                            },
+                                            "value": "60000"
+                                        },
+                                        {
+                                            "descriptor": {
+                                                "name": "commission"
+                                            },
+                                            "value": "60000"
+                                        },
                                         {
                                             "descriptor": {
                                                 "name": "overtime"
@@ -128,17 +257,6 @@
                         }
                     ],
                     "fulfillments": [
-                        {
-                            "id": "",
-                            "state": {
-                                "descriptor": {
-                                    "name": "Application Accepted",
-                                    "code": "application-accepted"
-                                }
-                            },
-                            "customer": {},
-                            "tracking": false
-                        },
                         {
                             "id": "1",
                             "state": {
@@ -161,15 +279,6 @@
                                             "id": "claimId:af7e0b1b5c4858eb",
                                             "type": "ResumeVC",
                                             "url": "https://cloud-wallet-api.prod.affinity-project.org/api/v1/share/b8a2c0cbc5a02da03d2aecb59094672a8e0b16a1c845456bd18678529d6901df?key=beda347c431e02319bd31c63e5f5f5f5e14939efdb6697ce4d93c87eade27c47"
-                                        }
-                                    ],
-                                    "tags": [
-                                        {
-                                            "display": true,
-                                            "list": [
-                                                {},
-                                                {}
-                                            ]
                                         }
                                     ]
                                 }

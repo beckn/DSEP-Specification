@@ -16,16 +16,18 @@
                 {
                     "tags": [
                         {
-                            "code": "req-skills",
+                            "descriptor": {
+                                "code": "req-skills"
+                            },
                             "list": [
                                 {
-                                    "code": "flutter"
+                                    "value": "flutter"
                                 },
                                 {
-                                    "code": "kotlin"
+                                    "value": "kotlin"
                                 },
                                 {
-                                    "code": "architecture"
+                                    "value": "architecture"
                                 }
                             ]
                         }

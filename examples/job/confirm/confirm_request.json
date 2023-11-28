@@ -50,13 +50,15 @@
                             ],
                             "tags": [
                                 {
-                                    "code": "func_skills",
+                                    "descriptor" : {
+                                        "code": "func_skills"
+                                    },
                                     "list": [
                                         {
-                                            "code": "Android"
+                                            "value": "Android"
                                         },
                                         {
-                                            "code": "AWS"
+                                            "value": "AWS"
                                         }
                                     ]
                                 }
@@ -69,10 +71,11 @@
                     }
                 }
             ],
-               "xinput": {
-               "data": "",
-               "submission_id":""
-           }
+            "xinput": {
+                "form" : {
+                    "submission_id": "24gg896186387242415131"
+                }
+            }
 
         }
     }

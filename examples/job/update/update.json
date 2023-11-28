@@ -41,13 +41,15 @@
                             ],
                             "tags": [
                                 {
-                                    "code": "func_skills",
+                                    "descriptor" : {
+                                        "code": "func_skills"
+                                    },
                                     "list": [
                                         {
-                                            "code": "Android"
+                                            "value": "Android"
                                         },
                                         {
-                                            "code": "AWS"
+                                            "value": "AWS"
                                         }
                                     ]
                                 }
