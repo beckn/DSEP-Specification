@@ -42,18 +42,36 @@
                     "locations" : [
                         {
                             "id" : "L1",
-                            "city" :"Pune",
-                            "state" : "Maharastra"
+                            "city" : {
+                                "name": "Pune",
+                                "code": "std:020"
+                            },
+                            "state" : {
+                                "name": "Maharastra",
+                                "code": "MH"
+                            }
                         },
                         {
                             "id" : "L2",
-                            "city" :"Thane",
-                            "state" : "Maharastra"
+                            "city" : {
+                                "name": "Thane",
+                                "code": "std:022"
+                            },
+                            "state" : {
+                                "name": "Maharastra",
+                                "code": "MH"
+                            }
                         },
                         {
                             "id" : "L3",
-                            "city" :"Lucknow",
-                            "state" : "Uttar Pradesh"
+                            "city" : {
+                                "name": "Lucknow",
+                                "code": "std:0522"
+                            },
+                            "state" : {
+                                "name": "Uttar Pradesh",
+                                "code": "UP"
+                            }
                         }
                     ],
                     "categories": [
