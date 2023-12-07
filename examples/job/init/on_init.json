@@ -7,20 +7,19 @@
                 "code": "IND"
             }
         },
-        "action": "on_update",
+        "action": "on_init",
         "version": "1.0.0",
         "bap_id": "dsep-protocol.becknprotocol.io",
         "bap_uri": "https://dsep-protocol-network.becknprotocol.io/",
         "bpp_id": "affinidi.com.bpp",
         "bpp_uri": "https://6vs8xnx5i7.execute-api.ap-south-1.amazonaws.com/dsep",
         "transaction_id": "a9aaecca-10b7-4d19-b640-b047a7c62195",
-        "message_id": "8cbb5e99-5d06-4855-81e9-a4fc8013dbff",
-        "timestamp": "2023-02-23T08:20:06.0674501+00:00",
+        "message_id": "af58aa7b-6745-47d0-9b0d-62dcb262ee87",
+        "timestamp": "2023-02-23T10:14:05.5579055+00:00",
         "ttl": "P1M"
     },
     "message": {
         "order": {
-            "id": "1677140405881",
             "provider": {
                 "descriptor": {
                     "name": "Affinidi"
@@ -58,6 +57,10 @@
                         "name": "Support manager",
                         "long_desc": "We’re on a search for a Staff Mobile Developer with the following attributes: Critical Thinking- You are able to skillfully conceptualise, apply, analyse and evaluate information gathered from observation, experience or communication and use it as a guide to action Data-Driven attitude — You often propose solutions or make a point in a logical and objective manner, substantiated with accurate data and evidence Dealing with Ambiguity — You can effectively cope with change and uncertainty, and are comfortable when things are up in the air Goal-oriented — You are driven and can be counted on to exceed goals. You steadfastly push yourself and others to achieve results all the time Problem Solving — You can easily identify and solve complex problems in a methodological manner "
                     },
+                    "category_ids": [
+                        "1",
+                        "2"
+                    ],
                     "fulfillment_ids": [
                         "1",
                         "2",
@@ -66,6 +69,11 @@
                     "location_ids": [
                         "1"
                     ],
+                    "xinput": {
+                        "form": {
+                            "url": "https://6vs8xnx5i7.execute-api.ap-south-1.amazonaws.com/dsep/xinput/formid/a23f2fdfbbb8ac402bf259d75402eb0792f50c095f7d08a55475e7af1c2dadca"
+                        }
+                    },
                     "time": {
                         "range": {
                             "start": "2023-01-03T13:23:01+00:00",
@@ -186,10 +194,10 @@
                             },
                             "list": [
                                 {
-                                    "value" : "You have 8+ years of engineering experience, predominantly in shipping user-facing production features"
+                                    "value": "You have 8+ years of engineering experience, predominantly in shipping user-facing production features"
                                 },
                                 {
-                                    "value": "You are an expert in React.js and React Native, ideally using TypeScript language extensions"   
+                                    "value": "You are an expert in React.js and React Native, ideally using TypeScript language extensions"
                                 },
                                 {
                                     "value": "You have a good understanding of JavaScript Design Patterns"
@@ -207,16 +215,16 @@
                                     "value": "You have experience with Test Driven Development and know when to apply it."
                                 },
                                 {
-                                        "value": "You have experience working on AWS or other cloud stacks and Docker.  "   
+                                    "value": "You have experience working on AWS or other cloud stacks and Docker.  "
                                 },
                                 {
-                                        "value": "You have experience building systems with high data protection requirements, anonymous data and data encryption. "                                            
+                                    "value": "You have experience building systems with high data protection requirements, anonymous data and data encryption. "
                                 },
                                 {
-                                        "value": "You have experience with IaaC. "
+                                    "value": "You have experience with IaaC. "
                                 },
                                 {
-                                        "code": "You have worked on building responsive UI using React Native."
+                                    "code": "You have worked on building responsive UI using React Native."
                                 }
                             ],
                             "display": true
@@ -266,12 +274,7 @@
             "fulfillments": [
                 {
                     "id": "1",
-                    "state": {
-                        "descriptor": {
-                            "name": "Application Updated",
-                            "code": "application-updated"
-                        }
-                    },
+                    "tracking": false,
                     "customer": {
                         "person": {
                             "name": "Sanjay",
@@ -288,9 +291,12 @@
                                     "url": "https://cloud-wallet-api.prod.affinity-project.org/api/v1/share/b8a2c0cbc5a02da03d2aecb59094672a8e0b16a1c845456bd18678529d6901df?key=beda347c431e02319bd31c63e5f5f5f5e14939efdb6697ce4d93c87eade27c47"
                                 }
                             ]
+                        },
+                        "contact": {
+                            "phone": "9999999999999",
+                            "email": "abc@abc.bc"
                         }
-                    },
-                    "tracking": false
+                    }
                 }
             ],
             "type": "DEFAULT"

@@ -7,41 +7,25 @@
                 "code": "IND"
             }
         },
-        "action": "on_update",
+        "action": "on_status",
         "version": "1.0.0",
         "bap_id": "dsep-protocol.becknprotocol.io",
         "bap_uri": "https://dsep-protocol-network.becknprotocol.io/",
         "bpp_id": "affinidi.com.bpp",
         "bpp_uri": "https://6vs8xnx5i7.execute-api.ap-south-1.amazonaws.com/dsep",
         "transaction_id": "a9aaecca-10b7-4d19-b640-b047a7c62195",
-        "message_id": "8cbb5e99-5d06-4855-81e9-a4fc8013dbff",
-        "timestamp": "2023-02-23T08:20:06.0674501+00:00",
+        "message_id": "a8ab8aa4-9ddc-496a-a01c-06107a4ad848",
+        "timestamp": "2023-02-23T08:20:51.1257317+00:00",
         "ttl": "P1M"
     },
     "message": {
         "order": {
             "id": "1677140405881",
             "provider": {
+                "id": "1",
                 "descriptor": {
                     "name": "Affinidi"
                 },
-                "fulfillments": [
-                    {
-                        "id": "1",
-                        "type": "remote",
-                        "tracking": false
-                    },
-                    {
-                        "id": "2",
-                        "type": "hybrid",
-                        "tracking": false
-                    },
-                    {
-                        "id": "3",
-                        "type": "Onsite",
-                        "tracking": false
-                    }
-                ],
                 "locations": [
                     {
                         "id": "1",
@@ -58,20 +42,8 @@
                         "name": "Support manager",
                         "long_desc": "We’re on a search for a Staff Mobile Developer with the following attributes: Critical Thinking- You are able to skillfully conceptualise, apply, analyse and evaluate information gathered from observation, experience or communication and use it as a guide to action Data-Driven attitude — You often propose solutions or make a point in a logical and objective manner, substantiated with accurate data and evidence Dealing with Ambiguity — You can effectively cope with change and uncertainty, and are comfortable when things are up in the air Goal-oriented — You are driven and can be counted on to exceed goals. You steadfastly push yourself and others to achieve results all the time Problem Solving — You can easily identify and solve complex problems in a methodological manner "
                     },
-                    "fulfillment_ids": [
-                        "1",
-                        "2",
-                        "3"
-                    ],
-                    "location_ids": [
-                        "1"
-                    ],
-                    "time": {
-                        "range": {
-                            "start": "2023-01-03T13:23:01+00:00",
-                            "end": "2023-02-03T13:23:01+00:00"
-                        }
-                    },
+                    "fulfillment_ids": [],
+                    "location_ids": [],
                     "tags": [
                         {
                             "descriptor": {
@@ -268,8 +240,8 @@
                     "id": "1",
                     "state": {
                         "descriptor": {
-                            "name": "Application Updated",
-                            "code": "application-updated"
+                            "name": "Screening",
+                            "code": "Screening"
                         }
                     },
                     "customer": {

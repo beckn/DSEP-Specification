@@ -7,7 +7,7 @@
                 "code": "IND"
             }
         },
-        "action": "on_update",
+        "action": "on_confirm",
         "version": "1.0.0",
         "bap_id": "dsep-protocol.becknprotocol.io",
         "bap_uri": "https://dsep-protocol-network.becknprotocol.io/",
@@ -268,8 +268,8 @@
                     "id": "1",
                     "state": {
                         "descriptor": {
-                            "name": "Application Updated",
-                            "code": "application-updated"
+                            "name": "Screening",
+                            "code": "Screening"
                         }
                     },
                     "customer": {

@@ -2,7 +2,7 @@
     "context": {
         "domain": "dsep:jobs",
         "version": "1.0.0",
-        "action": "track",
+        "action": "on_track",
         "bap_id": "dsep-protocol.becknprotocol.io",
         "bap_uri": "https://dsep-protocol-network.becknprotocol.io/",
         "location": {
