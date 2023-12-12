@@ -2,7 +2,7 @@
   "context": {
     "domain": "onest:courses",
     "version": "1.1.0",
-    "action": "on_init",
+    "action": "on_update",
     "bap_id": "onest.becknprotocol.io",
     "bap_uri": "https://onest-network.becknprotocol.io/",
     "bpp_id": "infosys.springboard.io",
@@ -14,6 +14,7 @@
   },
   "message": {
     "order": {
+      "id": "12424kh",
       "provider": {
         "id": "INFOSYS",
         "descriptor": {
@@ -100,6 +101,47 @@
           ],
           "rating": "4.5",
           "rateable": true,
+          "add-ons": [
+            {
+              "id": "0",
+              "descriptor": {
+                "name": "content-video-1",
+                "long_desc": "Description About the Content",
+                "media": [
+                  {
+                    "mimetype": "video/mp4",
+                    "url": "https://embedded-video-player-url/play"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "1",
+              "descriptor": {
+                "name": "content-video-2",
+                "long_desc": "Description About the Content",
+                "media": [
+                  {
+                    "mimetype": "video/mp4",
+                    "url": "https://embedded-video-player-url/play"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "2",
+              "descriptor": {
+                "name": "content-pdf",
+                "long_desc": "Description About the Content",
+                "media": [
+                  {
+                    "mimetype": "application/pdf",
+                    "url": "https://link-to-the-document/"
+                  }
+                ]
+              }
+            }
+          ],
           "tags": [
             {
               "descriptor": {
@@ -151,8 +193,34 @@
                 }
               ],
               "display": true
+            },
+            {
+              "descriptor": {
+                "code": "course-data",
+                "name": "Course Data"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "status",
+                    "name": "status"
+                  },
+                  "value": "completed"
+                }
+              ],
+              "display": true
             }
           ]
+        }
+      ],
+      "docs": [
+        {
+          "descriptor": {
+            "name": "Course Completion Certificate Details",
+            "short_desc": "To open this document, enter the password sent to your email jane****@***.com"
+          },
+          "url": "https://link-to-the-document.com",
+          "mime_type": "application/pdf"
         }
       ],
       "fulfillments": [
@@ -192,8 +260,12 @@
       },
       "payments": [
         {
-          "url": "https://examplepayments.com/pay",
-          "type": "PRE-FULFILLMENT"
+          "params": {
+            "amount": "150",
+            "currency": "INR"
+          },
+          "type": "PRE-FULFILLMENT",
+          "status": "PAID"
         }
       ]
     }

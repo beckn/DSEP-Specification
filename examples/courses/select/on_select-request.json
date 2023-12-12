@@ -1,6 +1,6 @@
 {
   "context": {
-    "domain": "onest:courses",
+    "domain": "onest:learning-experiences",
     "version": "1.1.0",
     "action": "on_select",
     "bap_id": "onest.becknprotocol.io",
@@ -47,6 +47,13 @@
               "code": "TECHNICAL-COURSES",
               "name": "Technical Courses"
             }
+          },
+          {
+            "id": "SELF-PACED-COURSES",
+            "descriptor": {
+              "code": "SELF-PACED-COURSES",
+              "name": "Self Paced Courses"
+            }
           }
         ]
       },
@@ -58,7 +65,8 @@
           },
           "descriptor": {
             "name": "Everyday Conversational English",
-            "long_desc": "Everyday Conversational English",
+            "short_desc": "Elevate your daily conversations with confidence through our 'Everyday Conversational English' course.",
+            "long_desc": "<p><strong>Course Overview:</strong><br>Welcome to 'Everyday Conversational English,' your key to mastering essential language skills for real-life communication. Tailored for all levels, this course offers:</p><ol><li><strong>Practical Vocabulary:</strong><br>Learn everyday expressions for seamless communication.</li><li><strong>Interactive Role-Playing:</strong><br>Apply knowledge through immersive exercises for real-world scenarios.</li><li><strong>Cultural Insights:</strong><br>Gain cultural nuances to connect authentically in conversations.</li><li><strong>Real-Life Scenarios:</strong><br>Navigate common situations with confidence-building tools.</li><li><strong>Quiz Assessments:</strong><br>Reinforce learning through quizzes for ongoing skill development.</li></ol><p><strong>Why Take This Course:</strong></p><ul><li><strong>Personal & Professional Growth:</strong><br>Enhance personal connections and gain a professional edge.</li><li><strong>Cultural Fluency:</strong><br>Understand and engage with diverse cultures confidently.</li><li><strong>Life-Long Skill:</strong><br>Develop a valuable skill applicable across various life stages.</li></ul><p>Join 'Everyday Conversational English' and elevate your communication for meaningful connections and success.</p>",
             "images": [
               {
                 "url": "https://infyspringboard.onwingspan.com/web/assets/images/infosysheadstart/everyday-conversational-english.png"
@@ -70,82 +78,101 @@
               }
             ]
           },
+          "creator": {
+            "descriptor": {
+              "name": "Prof. Emma Sullivan",
+              "short_desc": "Experienced language educator dedicated to fostering practical conversational skills and cultural fluency",
+              "long_desc": "Hello, I'm Prof. Emma Sullivan, your guide in 'Everyday Conversational English.' With over a decade of experience, I'm here to make language learning dynamic and culturally enriching. Let's explore practical communication skills together for personal and professional growth. Join me on this exciting journey!",
+              "images": [
+                {
+                  "url": "https://infyspringboard.onwingspan.com/web/assets/images/infosysheadstart/ins/1.png"
+                }
+              ]
+            }
+          },
           "price": {
             "currency": "INR",
-            "value": "0"
+            "value": "150"
           },
           "category_ids": [
-            "LANGUAGE-COURSES"
+            "LANGUAGE-COURSES",
+            "SELF-PACED-COURSES"
           ],
           "rating": "4.5",
+          "rateable": true,
           "tags": [
             {
               "descriptor": {
-                "code": "course-highlights",
-                "name": "Course Highlights"
+                "code": "content-metadata",
+                "name": "Content metadata"
               },
               "list": [
                 {
                   "descriptor": {
-                    "code": "highlight",
-                    "name": "highlight-1"
+                    "code": "learner-level",
+                    "name": "Learner level"
                   },
-                  "value": "Focusing on clear pronunciation and reducing any strong accents that may impede communication."
+                  "value": "Beginner"
                 },
                 {
                   "descriptor": {
-                    "code": "highlight",
-                    "name": "highlight-2"
+                    "code": "learning-objective",
+                    "name": "Learning objective"
                   },
-                  "value": "Expanding everyday vocabulary to facilitate common conversations."
-                }
-              ],
-              "display": true
-            },
-            {
-              "descriptor": {
-                "code": "course-prerequisites",
-                "name": "Course Prerequisites"
-              },
-              "list": [
+                  "value": "By the end of the course, learners will confidently navigate everyday conversations, demonstrating improved fluency, cultural awareness, and effective communication skills."
+                },
                 {
                   "descriptor": {
                     "code": "prerequisite",
-                    "name": "prerequisite-1"
+                    "name": "Prerequisite"
                   },
                   "value": "Should have a basic understanding of English"
                 },
                 {
                   "descriptor": {
                     "code": "prerequisite",
-                    "name": "prerequisite-2"
+                    "name": "Prerequisite"
                   },
                   "value": "Access to a computer or internet to access the course online"
+                },
+                {
+                  "descriptor": {
+                    "code": "lang-code",
+                    "name": "Language code"
+                  },
+                  "value": "en"
+                },
+                {
+                  "descriptor": {
+                    "code": "course-duration",
+                    "name": "Course duration"
+                  },
+                  "value": "P20H"
                 }
               ],
               "display": true
             }
-          ],
-          "rateable": true
+          ]
+        }
+      ],
+      "fulfillments": [
+        {
+          "agent": {
+            "person": {
+              "name": "Infosys Springboard"
+            },
+            "contact": {
+              "email": "support@infy.com"
+            }
+          }
         }
       ],
       "quote": {
         "price": {
           "currency": "INR",
-          "value": "0"
+          "value": "150"
         }
-      },
-      "fulfillments": [
-        {
-          "agent": {
-            "person": {
-              "id": "eng-01-prof",
-              "name": "Prof. Shipra Vaidya"
-            }
-          }
-        }
-      ],
-      "type": "DEFAULT"
+      }
     }
   }
 }

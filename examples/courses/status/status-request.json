@@ -1,6 +1,6 @@
 {
   "context": {
-    "domain": "onest:courses",
+    "domain": "onest:learning-experiences",
     "action": "status",
     "version": "1.1.0",
     "bap_id": "onest.becknprotocol.io",
@@ -13,6 +13,8 @@
     "bpp_uri": "https://infosys.springboard.io"
   },
   "message": {
-    "order_id": "d4975df5"
+    "order": {
+      "id": "12424kh"
+    }
   }
 }

@@ -1,6 +1,6 @@
 {
   "context": {
-    "domain": "onest:courses",
+    "domain": "onest:learning-experiences",
     "version": "1.1.0",
     "action": "on_status",
     "bap_id": "onest.becknprotocol.io",
@@ -14,7 +14,7 @@
   },
   "message": {
     "order": {
-      "id": "d4975df5",
+      "id": "12424kh",
       "provider": {
         "id": "INFOSYS",
         "descriptor": {
@@ -26,7 +26,37 @@
               "size_type": "sm"
             }
           ]
-        }
+        },
+        "categories": [
+          {
+            "id": "LANGUAGE-COURSES",
+            "descriptor": {
+              "code": "LANGUAGE-COURSES",
+              "name": "Language Courses"
+            }
+          },
+          {
+            "id": "SKILL-DEVELOPMENT-COURSES",
+            "descriptor": {
+              "code": "SKILL-DEVELOPMENT-COURSES",
+              "name": "Skill development Courses"
+            }
+          },
+          {
+            "id": "TECHNICAL-COURSES",
+            "descriptor": {
+              "code": "TECHNICAL-COURSES",
+              "name": "Technical Courses"
+            }
+          },
+          {
+            "id": "SELF-PACED-COURSES",
+            "descriptor": {
+              "code": "SELF-PACED-COURSES",
+              "name": "Self Paced Courses"
+            }
+          }
+        ]
       },
       "items": [
         {
@@ -36,7 +66,8 @@
           },
           "descriptor": {
             "name": "Everyday Conversational English",
-            "long_desc": "Everyday Conversational English",
+            "short_desc": "Elevate your daily conversations with confidence through our 'Everyday Conversational English' course.",
+            "long_desc": "<p><strong>Course Overview:</strong><br>Welcome to 'Everyday Conversational English,' your key to mastering essential language skills for real-life communication. Tailored for all levels, this course offers:</p><ol><li><strong>Practical Vocabulary:</strong><br>Learn everyday expressions for seamless communication.</li><li><strong>Interactive Role-Playing:</strong><br>Apply knowledge through immersive exercises for real-world scenarios.</li><li><strong>Cultural Insights:</strong><br>Gain cultural nuances to connect authentically in conversations.</li><li><strong>Real-Life Scenarios:</strong><br>Navigate common situations with confidence-building tools.</li><li><strong>Quiz Assessments:</strong><br>Reinforce learning through quizzes for ongoing skill development.</li></ol><p><strong>Why Take This Course:</strong></p><ul><li><strong>Personal & Professional Growth:</strong><br>Enhance personal connections and gain a professional edge.</li><li><strong>Cultural Fluency:</strong><br>Understand and engage with diverse cultures confidently.</li><li><strong>Life-Long Skill:</strong><br>Develop a valuable skill applicable across various life stages.</li></ul><p>Join 'Everyday Conversational English' and elevate your communication for meaningful connections and success.</p>",
             "images": [
               {
                 "url": "https://infyspringboard.onwingspan.com/web/assets/images/infosysheadstart/everyday-conversational-english.png"
@@ -48,173 +79,195 @@
               }
             ]
           },
+          "creator": {
+            "descriptor": {
+              "name": "Prof. Emma Sullivan",
+              "short_desc": "Experienced language educator dedicated to fostering practical conversational skills and cultural fluency",
+              "long_desc": "Hello, I'm Prof. Emma Sullivan, your guide in 'Everyday Conversational English.' With over a decade of experience, I'm here to make language learning dynamic and culturally enriching. Let's explore practical communication skills together for personal and professional growth. Join me on this exciting journey!",
+              "images": [
+                {
+                  "url": "https://infyspringboard.onwingspan.com/web/assets/images/infosysheadstart/ins/1.png"
+                }
+              ]
+            }
+          },
           "price": {
             "currency": "INR",
-            "value": "0"
+            "value": "150"
           },
           "category_ids": [
-            "LANGUAGE-COURSES"
+            "LANGUAGE-COURSES",
+            "SELF-PACED-COURSES"
           ],
           "rating": "4.5",
+          "rateable": true,
+          "add-ons": [
+            {
+              "id": "0",
+              "descriptor": {
+                "name": "content-video-1",
+                "long_desc": "Description About the Content",
+                "media": [
+                  {
+                    "mimetype": "video/mp4",
+                    "url": "https://embedded-video-player-url/play"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "1",
+              "descriptor": {
+                "name": "content-video-2",
+                "long_desc": "Description About the Content",
+                "media": [
+                  {
+                    "mimetype": "video/mp4",
+                    "url": "https://embedded-video-player-url/play"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "2",
+              "descriptor": {
+                "name": "content-pdf",
+                "long_desc": "Description About the Content",
+                "media": [
+                  {
+                    "mimetype": "application/pdf",
+                    "url": "https://link-to-the-document/"
+                  }
+                ]
+              }
+            }
+          ],
           "tags": [
             {
               "descriptor": {
-                "code": "course-highlights",
-                "name": "Course Highlights"
+                "code": "content-metadata",
+                "name": "Content metadata"
               },
               "list": [
                 {
                   "descriptor": {
-                    "code": "highlight",
-                    "name": "highlight-1"
+                    "code": "learner-level",
+                    "name": "Learner level"
                   },
-                  "value": "Focusing on clear pronunciation and reducing any strong accents that may impede communication."
+                  "value": "Beginner"
                 },
                 {
                   "descriptor": {
-                    "code": "highlight",
-                    "name": "highlight-2"
+                    "code": "learning-objective",
+                    "name": "Learning objective"
                   },
-                  "value": "Expanding everyday vocabulary to facilitate common conversations."
-                }
-              ],
-              "display": true
-            },
-            {
-              "descriptor": {
-                "code": "course-prerequisites",
-                "name": "Course Prerequisites"
-              },
-              "list": [
+                  "value": "By the end of the course, learners will confidently navigate everyday conversations, demonstrating improved fluency, cultural awareness, and effective communication skills."
+                },
                 {
                   "descriptor": {
                     "code": "prerequisite",
-                    "name": "prerequisite-1"
+                    "name": "Prerequisite"
                   },
                   "value": "Should have a basic understanding of English"
                 },
                 {
                   "descriptor": {
                     "code": "prerequisite",
-                    "name": "prerequisite-2"
+                    "name": "Prerequisite"
                   },
                   "value": "Access to a computer or internet to access the course online"
+                },
+                {
+                  "descriptor": {
+                    "code": "lang-code",
+                    "name": "Language code"
+                  },
+                  "value": "en"
+                },
+                {
+                  "descriptor": {
+                    "code": "course-duration",
+                    "name": "Course duration"
+                  },
+                  "value": "P20H"
+                }
+              ],
+              "display": true
+            },
+            {
+              "descriptor": {
+                "code": "course-data",
+                "name": "Course Data"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "status",
+                    "name": "status"
+                  },
+                  "value": "completed"
                 }
               ],
               "display": true
             }
-          ],
-          "rateable": true
-        },
+          ]
+        }
+      ],
+      "docs": [
         {
-          "id": "c9461edd-628d-46f3-820e-bab42b57d143",
-          "parent_item_id": "d4975df5-b18c-4772-80ad-368669856d52",
           "descriptor": {
-            "name": "Everyday Conversational English - Chapter 1",
-            "long_desc": "Everyday Conversational English - Chapter 1",
-            "images": [
-              {
-                "url": "https://infyspringboard.onwingspan.com/web/assets/images/infosysheadstart/everyday-conversational-english-ch1.png"
-              }
-            ],
-            "media": [
-              {
-                "url": "https://infyspringboard.onwingspan.com/web/courses/infosysheadstart/everyday-conversational-english-ch1/"
-              }
-            ]
-          }
-        },
+            "name": "Course Completion Certificate Details",
+            "short_desc": "To open this document, enter the password sent to your email jane****@***.com"
+          },
+          "url": "https://link-to-the-document.com",
+          "mime_type": "application/pdf"
+        }
+      ],
+      "fulfillments": [
         {
-          "id": "77223dc6-f6e4-48dd-bf0e-1e43841e651c",
-          "parent_item_id": "d4975df5-b18c-4772-80ad-368669856d52",
-          "descriptor": {
-            "name": "Everyday Conversational English - Chapter 2",
-            "long_desc": "Everyday Conversational English - Chapter 2",
-            "images": [
-              {
-                "url": "https://infyspringboard.onwingspan.com/web/assets/images/infosysheadstart/everyday-conversational-english-ch2.png"
-              }
-            ],
-            "media": [
-              {
-                "url": "https://infyspringboard.onwingspan.com/web/courses/infosysheadstart/everyday-conversational-english-ch2/"
-              }
-            ]
-          }
-        },
-        {
-          "id": "eae312ed-5a2a-4b95-bed8-407a832b11b8",
-          "parent_item_id": "d4975df5-b18c-4772-80ad-368669856d52",
-          "descriptor": {
-            "name": "Everyday Conversational English - Chapter 3",
-            "long_desc": "Everyday Conversational English - Chapter 3",
-            "images": [
-              {
-                "url": "https://infyspringboard.onwingspan.com/web/assets/images/infosysheadstart/everyday-conversational-english-ch3.png"
-              }
-            ],
-            "media": [
-              {
-                "url": "https://infyspringboard.onwingspan.com/web/courses/infosysheadstart/everyday-conversational-english-ch3/"
-              }
-            ]
+          "agent": {
+            "person": {
+              "name": "Infosys Springboard"
+            },
+            "contact": {
+              "email": "support@infy.com"
+            }
+          },
+          "customer": {
+            "person": {
+              "name": "Jane Doe",
+              "age": "13",
+              "gender": "female"
+            },
+            "contact": {
+              "phone": "+91-9663088848",
+              "email": "jane.doe@example.com"
+            }
           }
         }
       ],
-      "billing": {
-        "name": "Namma Yatri",
-        "organization": {
-          "address": "Girija Building, Number 817, Ganapathi Temple Rd",
-          "city": "Bengaluru",
-          "state": "Karnataka",
-          "contact": {
-            "email": "nammayatri.support@juspay.in",
-            "phone": "+91 80 68501060"
-          }
-        }
-      },
       "quote": {
         "price": {
           "currency": "INR",
-          "value": "0"
+          "value": "150"
         }
       },
-      "fulfillments": [
-        {
-          "customer": {
-            "person": {
-              "name": "Manjunath"
-            },
-            "contact": {
-              "phone": "+91 9988764321",
-              "email": "manjunath@gmail.com"
-            }
-          },
-          "agent": {
-            "person": {
-              "id": "eng-01-prof",
-              "name": "Prof. Shipra Vaidya"
-            }
-          },
-          "state": {
-            "descriptor": {
-              "code": "course-completed",
-              "name": "Course completed",
-              "short_desc": "The course Everyday Conversational English has been completed"
-            }
-          }
-        }
-      ],
+      "billing": {
+        "name": "Jane Doe",
+        "phone": "+91-9663088848",
+        "email": "jane.doe@example.com",
+        "address": "No 27, XYZ Lane, etc"
+      },
       "payments": [
         {
           "params": {
-            "amount": "0",
+            "amount": "150",
             "currency": "INR"
           },
+          "type": "PRE-FULFILLMENT",
           "status": "PAID"
         }
-      ],
-      "type": "DEFAULT"
+      ]
     }
   }
 }
