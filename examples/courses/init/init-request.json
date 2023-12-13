@@ -34,7 +34,25 @@
             "person": {
               "name": "Jane Doe",
               "age": "13",
-              "gender": "female"
+              "gender": "female",
+              "tags": [
+                {
+                  "descriptor": {
+                    "code": "professional-details",
+                    "name": "Professional Details"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "profession",
+                        "name": "profession"
+                      },
+                      "value": "student"
+                    }
+                  ],
+                  "display": true
+                }
+              ]
             },
             "contact": {
               "phone": "+91-9663088848",

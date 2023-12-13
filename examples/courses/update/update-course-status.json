@@ -18,27 +18,20 @@
           "items": [
             {
               "id": "d4975df5-b18c-4772-80ad-368669856d52",
-              "tags": [
+              "fulfillments": [
                 {
-                  "descriptor": {
-                    "code": "course-data",
-                    "name": "Course Data"
-                  },
-                  "list": [
-                    {
-                      "descriptor": {
-                        "code": "status",
-                        "name": "status"
-                      },
-                      "value": "completed"
-                    }
-                  ],
-                  "display": true
+                  "state" : {
+                    "descriptor" : {
+                        "code": "COMPLETED",
+                        "name" : "COMPLETED"
+                    },
+                    "updated_at" : "2023-02-06T09:55:41.161Z"
+                  }
                 }
-              ]
+            ]
             }
           ]
         },
-        "update_target": "order.items[0].tags[1].list[0].value"
+        "update_target": "order.items[0].fulfillments[0].state"
     }
 }

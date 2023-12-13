@@ -2,7 +2,7 @@
   "context": {
     "domain": "onest:courses",
     "version": "1.1.0",
-    "action": "on_update",
+    "action": "on_init",
     "bap_id": "onest.becknprotocol.io",
     "bap_uri": "https://onest-network.becknprotocol.io/",
     "bpp_id": "infosys.springboard.io",
@@ -14,7 +14,6 @@
   },
   "message": {
     "order": {
-      "id": "12424kh",
       "provider": {
         "id": "INFOSYS",
         "descriptor": {
@@ -101,34 +100,6 @@
           ],
           "rating": "4.5",
           "rateable": true,
-          "add-ons": [
-            {
-              "id": "course-outline",
-              "descriptor": {
-                "name": "Course Outline",
-                "long_desc": "Outline for the course",
-                "media": [
-                  {
-                    "mimetype": "application/pdf",
-                    "url": "https://infyspringboard.onwingspan.com/web/courses/infosysheadstart/everyday-conversational-english/outline.pdf"
-                  }
-                ]
-              }
-            },
-            {
-              "id": "prelim-quiz",
-              "descriptor": {
-                "name": "Preliminary Quiz",
-                "long_desc": "Take this preliminary quiz to see if you will benefit from the course!",
-                "media": [
-                  {
-                    "mimetype": "text/html",
-                    "url": "https://infyspringboard.onwingspan.com/web/courses/infosysheadstart/everyday-conversational-english/prelim-quiz"
-                  }
-                ]
-              }
-            }
-          ],
           "tags": [
             {
               "descriptor": {
@@ -185,14 +156,7 @@
         }
       ],
       "fulfillments": [
-        { 
-          "state" : {
-            "descriptor" : {
-                "code": "COMPLETED",
-                "name" : "Completed"
-            },
-            "updated_at" : "2023-02-06T09:55:41.161Z"
-          },
+        {
           "agent": {
             "person": {
               "name": "Infosys Springboard"
@@ -229,73 +193,7 @@
               "phone": "+91-9663088848",
               "email": "jane.doe@example.com"
             }
-          },
-          "stops": [
-            {
-              "id": "0",
-              "instructions": {
-                "name": "content-video-1",
-                "long_desc": "Description About the Content",
-                "media": [
-                  {
-                    "mimetype": "video/mp4",
-                    "url": "https://embedded-video-player-url/play"
-                  }
-                ]
-              }
-            },
-            {
-              "id": "1",
-              "instructions": {
-                "name": "content-video-2",
-                "long_desc": "Description About the Content",
-                "media": [
-                  {
-                    "mimetype": "video/mp4",
-                    "url": "https://embedded-video-player-url/play"
-                  }
-                ]
-              }
-            },
-            {
-              "id": "2",
-              "instructions": {
-                "name": "content-pdf",
-                "long_desc": "Description About the Content",
-                "media": [
-                  {
-                    "mimetype": "application/pdf",
-                    "url": "https://link-to-the-document/"
-                  }
-                ]
-              }
-            }
-          ],
-          "tags": [
-            {
-              "descriptor": {
-                "code": "course-completion-details",
-                "name": "Content Completion Details"
-              },
-              "list": [
-                {
-                  "descriptor": {
-                    "code": "course-certificate",
-                    "name": "Course certificate"
-                  },
-                  "value": "https://link-to-certificate"
-                },
-                {
-                  "descriptor": {
-                    "code": "course-badge",
-                    "name": "Course Badge"
-                  },
-                  "value": "https://link-to-badge"
-                }
-              ],
-              "display": true
-            }
-          ]
+          }
         }
       ],
       "quote": {
@@ -311,11 +209,12 @@
         "address": "No 27, XYZ Lane, etc"
       },
       "payments": [
-        {
+        { 
           "params": {
             "amount": "150",
             "currency": "INR"
           },
+          "url": "https://examplepayments.com/pay",
           "type": "PRE-ORDER",
           "status": "PAID",
           "collected_by": "bpp"

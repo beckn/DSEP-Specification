@@ -103,40 +103,27 @@
           "rateable": true,
           "add-ons": [
             {
-              "id": "0",
+              "id": "course-outline",
               "descriptor": {
-                "name": "content-video-1",
-                "long_desc": "Description About the Content",
-                "media": [
-                  {
-                    "mimetype": "video/mp4",
-                    "url": "https://embedded-video-player-url/play"
-                  }
-                ]
-              }
-            },
-            {
-              "id": "1",
-              "descriptor": {
-                "name": "content-video-2",
-                "long_desc": "Description About the Content",
-                "media": [
-                  {
-                    "mimetype": "video/mp4",
-                    "url": "https://embedded-video-player-url/play"
-                  }
-                ]
-              }
-            },
-            {
-              "id": "2",
-              "descriptor": {
-                "name": "content-pdf",
-                "long_desc": "Description About the Content",
+                "name": "Course Outline",
+                "long_desc": "Outline for the course",
                 "media": [
                   {
                     "mimetype": "application/pdf",
-                    "url": "https://link-to-the-document/"
+                    "url": "https://infyspringboard.onwingspan.com/web/courses/infosysheadstart/everyday-conversational-english/outline.pdf"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "prelim-quiz",
+              "descriptor": {
+                "name": "Preliminary Quiz",
+                "long_desc": "Take this preliminary quiz to see if you will benefit from the course!",
+                "media": [
+                  {
+                    "mimetype": "text/html",
+                    "url": "https://infyspringboard.onwingspan.com/web/courses/infosysheadstart/everyday-conversational-english/prelim-quiz"
                   }
                 ]
               }
@@ -193,38 +180,19 @@
                 }
               ],
               "display": true
-            },
-            {
-              "descriptor": {
-                "code": "course-data",
-                "name": "Course Data"
-              },
-              "list": [
-                {
-                  "descriptor": {
-                    "code": "status",
-                    "name": "status"
-                  },
-                  "value": "completed"
-                }
-              ],
-              "display": true
             }
           ]
         }
       ],
-      "docs": [
-        {
-          "descriptor": {
-            "name": "Course Completion Certificate Details",
-            "short_desc": "To open this document, enter the password sent to your email jane****@***.com"
-          },
-          "url": "https://link-to-the-document.com",
-          "mime_type": "application/pdf"
-        }
-      ],
       "fulfillments": [
-        {
+        { 
+          "state" : {
+            "descriptor" : {
+                "code": "COMPLETED",
+                "name" : "COMPLETED"
+            },
+            "updated_at" : "2023-02-06T09:55:41.161Z"
+          },
           "agent": {
             "person": {
               "name": "Infosys Springboard"
@@ -237,13 +205,97 @@
             "person": {
               "name": "Jane Doe",
               "age": "13",
-              "gender": "female"
+              "gender": "female",
+              "tags": [
+                {
+                  "descriptor": {
+                    "code": "professional-details",
+                    "name": "Professional Details"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "profession",
+                        "name": "profession"
+                      },
+                      "value": "student"
+                    }
+                  ],
+                  "display": true
+                }
+              ]
             },
             "contact": {
               "phone": "+91-9663088848",
               "email": "jane.doe@example.com"
             }
-          }
+          },
+          "stops": [
+            {
+              "id": "0",
+              "instructions": {
+                "name": "content-video-1",
+                "long_desc": "Description About the Content",
+                "media": [
+                  {
+                    "mimetype": "video/mp4",
+                    "url": "https://embedded-video-player-url/play"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "1",
+              "instructions": {
+                "name": "content-video-2",
+                "long_desc": "Description About the Content",
+                "media": [
+                  {
+                    "mimetype": "video/mp4",
+                    "url": "https://embedded-video-player-url/play"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "2",
+              "instructions": {
+                "name": "content-pdf",
+                "long_desc": "Description About the Content",
+                "media": [
+                  {
+                    "mimetype": "application/pdf",
+                    "url": "https://link-to-the-document/"
+                  }
+                ]
+              }
+            }
+          ],
+          "tags": [
+            {
+              "descriptor": {
+                "code": "course-completion-details",
+                "name": "Content Completion Details"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "course-certificate",
+                    "name": "Course certificate"
+                  },
+                  "value": "https://link-to-certificate"
+                },
+                {
+                  "descriptor": {
+                    "code": "course-badge",
+                    "name": "Course Badge"
+                  },
+                  "value": "https://link-to-badge"
+                }
+              ],
+              "display": true
+            }
+          ]
         }
       ],
       "quote": {
@@ -264,8 +316,9 @@
             "amount": "150",
             "currency": "INR"
           },
-          "type": "PRE-FULFILLMENT",
-          "status": "PAID"
+          "type": "PRE-ORDER",
+          "status": "PAID",
+          "collected_by": "bpp"
         }
       ]
     }

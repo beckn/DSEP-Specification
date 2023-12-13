@@ -169,7 +169,25 @@
             "person": {
               "name": "Jane Doe",
               "age": "13",
-              "gender": "female"
+              "gender": "female",
+              "tags": [
+                {
+                  "descriptor": {
+                    "code": "professional-details",
+                    "name": "Professional Details"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "profession",
+                        "name": "profession"
+                      },
+                      "value": "student"
+                    }
+                  ],
+                  "display": true
+                }
+              ]
             },
             "contact": {
               "phone": "+91-9663088848",
@@ -191,9 +209,25 @@
         "address": "No 27, XYZ Lane, etc"
       },
       "payments": [
-        {
-          "url": "https://examplepayments.com/pay",
-          "type": "PRE-FULFILLMENT"
+        { 
+          "params": {
+            "amount": "150",
+            "currency": "INR"
+          },
+          "url": "https://examplepayments.com/pay-previous-url",
+          "type": "PRE-ORDER",
+          "status": "NOT-PAID",
+          "collected_by": "bpp"
+        },
+        { 
+          "params": {
+            "amount": "150",
+            "currency": "INR"
+          },
+          "url": "https://examplepayments.com/pay-new-url",
+          "type": "PRE-ORDER",
+          "status": "NOT-PAID",
+          "collected_by": "bpp"
         }
       ]
     }
