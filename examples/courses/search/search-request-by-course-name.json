@@ -6,8 +6,8 @@
     "action": "search",
     "timestamp": "2022-12-15T05:23:03.443Z",
     "version": "1.1.0",
-    "bap_uri": "https://onest-network.becknprotocol.io/",
-    "bap_id": "onest.becknprotocol.io",
+    "bap_uri": "https://sample.bap.io/",
+    "bap_id": "sample.bap.io",
     "ttl": "PT10M"
   },
   "message": {
