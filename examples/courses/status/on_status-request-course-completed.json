@@ -62,7 +62,9 @@
         {
           "id": "d4975df5-b18c-4772-80ad-368669856d52",
           "quantity": {
-            "maximum": 1
+            "maximum": {
+              "count": 1
+            }
           },
           "descriptor": {
             "name": "Everyday Conversational English",
