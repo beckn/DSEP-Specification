@@ -1,10 +1,10 @@
 {
   "context": {
-    "domain": "onest:courses",
+    "domain": "onest:learning-experiences",
     "action": "init",
     "version": "1.1.0",
-    "bap_id": "onest.becknprotocol.io",
-    "bap_uri": "https://onest-network.becknprotocol.io/",
+    "bap_uri": "https://sample.bap.io/",
+    "bap_id": "sample.bap.io",
     "transaction_id": "a9aaecca-10b7-4d19-b640-b047a7c62196",
     "message_id": "$bb579fb8-cb82-4824-be12-fcbc405b6608",
     "timestamp": "2022-12-12T09:55:41.161Z",
@@ -23,26 +23,40 @@
         }
       ],
       "billing": {
-        "name": "Namma Yatri",
-        "organization": {
-          "address": "Girija Building, Number 817, Ganapathi Temple Rd",
-          "city": "Bengaluru",
-          "state": "Karnataka",
-          "contact": {
-            "email": "nammayatri.support@juspay.in",
-            "phone": "+91 80 68501060"
-          }
-        }
+        "name": "Jane Doe",
+        "phone": "+91-9663088848",
+        "email": "jane.doe@example.com",
+        "address": "No 27, XYZ Lane, etc"
       },
       "fulfillments": [
         {
           "customer": {
             "person": {
-              "name": "Manjunath"
+              "name": "Jane Doe",
+              "age": "13",
+              "gender": "female",
+              "tags": [
+                {
+                  "descriptor": {
+                    "code": "professional-details",
+                    "name": "Professional Details"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "profession",
+                        "name": "profession"
+                      },
+                      "value": "student"
+                    }
+                  ],
+                  "display": true
+                }
+              ]
             },
             "contact": {
-              "phone": "+91 9988764321",
-              "email": "manjunath@gmail.com"
+              "phone": "+91-9663088848",
+              "email": "jane.doe@example.com"
             }
           }
         }

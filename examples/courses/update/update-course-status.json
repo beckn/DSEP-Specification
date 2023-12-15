@@ -1,6 +1,6 @@
 {
     "context": {
-        "domain": "onest:courses",
+        "domain": "onest:learning-experiences",
         "version": "1.1.0",
         "action": "update",
         "bap_id": "onest.becknprotocol.io",
@@ -14,21 +14,24 @@
     },
     "message": {
         "order": {
-            "id": "d4975df5",
-            "fulfillments": [
+          "id": "12424kh",
+          "items": [
+            {
+              "id": "d4975df5-b18c-4772-80ad-368669856d52",
+              "fulfillments": [
                 {
-                  "customer": {
-                    "person": {
-                      "name": "Manjunath"
+                  "state" : {
+                    "descriptor" : {
+                        "code": "COMPLETED",
+                        "name" : "COMPLETED"
                     },
-                    "contact": {
-                      "phone": "+91 9988764321",
-                      "email": "manjunath@gmail.com"
-                    }
+                    "updated_at" : "2023-02-06T09:55:41.161Z"
                   }
                 }
-              ]
+            ]
+            }
+          ]
         },
-        "update_target": "order.fulfillments[0].customer"
+        "update_target": "order.items[0].fulfillments[0].state"
     }
 }

@@ -1,10 +1,10 @@
 {
   "context": {
-    "domain": "onest:learning-experiences",
+    "domain": "onest:courses",
     "version": "1.1.0",
-    "action": "on_status",
-    "bap_uri": "https://sample.bap.io/",
-    "bap_id": "sample.bap.io",
+    "action": "on_update",
+    "bap_id": "onest.becknprotocol.io",
+    "bap_uri": "https://onest-network.becknprotocol.io/",
     "bpp_id": "infosys.springboard.io",
     "bpp_uri": "https://infosys.springboard.io",
     "transaction_id": "a9aaecca-10b7-4d19-b640-b047a7c62196",
@@ -62,9 +62,7 @@
         {
           "id": "d4975df5-b18c-4772-80ad-368669856d52",
           "quantity": {
-            "maximum": {
-              "count": 1
-            }
+            "maximum": 1
           },
           "descriptor": {
             "name": "Everyday Conversational English",
@@ -191,7 +189,7 @@
           "state" : {
             "descriptor" : {
                 "code": "COMPLETED",
-                "name" : "COMPLETED"
+                "name" : "Completed"
             },
             "updated_at" : "2023-02-06T09:55:41.161Z"
           },
