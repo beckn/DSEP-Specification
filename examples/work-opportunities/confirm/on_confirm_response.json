@@ -1,0 +1,358 @@
+{
+    "context": {
+        "domain": "onest:work-opportunities",
+        "action": "on_confirm",
+        "version": "1.1.0",
+        "bap_id": "workerhub-bap.com",
+        "bap_uri": "https://workerhub-bap.com",
+        "bpp_id": "jobhub-bpp.com",
+        "bpp_uri": "https://jobhub-bpp.com",
+        "transaction_id": "a9aaecca-10b7-4d19-b640-b047a7c62195",
+        "message_id": "8cbb5e99-5d06-4855-81e9-a4fc8013dbff",
+        "timestamp": "2023-02-23T08:20:06.0674501+00:00",
+        "ttl": "P1M"
+    },
+    "message": {
+        "order": {
+            "id": "1677140405881",
+            "provider": {
+                "descriptor": {
+                    "name": "Affinidi"
+                },
+                "locations": [
+                    {
+                        "id": "L1",
+                        "city": {
+                            "name": "Pune",
+                            "code": "std:020"
+                        },
+                        "state": {
+                            "name": "Maharastra",
+                            "code": "MH"
+                        }
+                    }
+                ]
+            },
+            "items": [
+                {
+                    "id": "a23f2fdfbbb8ac402bf259d75402eb0792f50c095f7d08a55475e7af1c2dadca",
+                    "descriptor": {
+                        "name": "Fullstack Engineer",
+                        "long_desc": "We’re on a search for a Staff Mobile Developer with the following attributes: Critical Thinking- You are able to skillfully conceptualise, apply, analyse and evaluate information gathered from observation, experience or communication and use it as a guide to action Data-Driven attitude — You often propose solutions or make a point in a logical and objective manner, substantiated with accurate data and evidence Dealing with Ambiguity — You can effectively cope with change and uncertainty, and are comfortable when things are up in the air Goal-oriented — You are driven and can be counted on to exceed goals. You steadfastly push yourself and others to achieve results all the time Problem Solving — You can easily identify and solve complex problems in a methodological manner "
+                    },
+                    "fulfillment_ids": [
+                        "1"
+                    ],
+                    "location_ids": [
+                        "L1"
+                    ],
+                    "time": {
+                        "range": {
+                            "start": "2023-01-03T13:23:01+00:00",
+                            "end": "2023-02-03T13:23:01+00:00"
+                        }
+                    },
+                    "tags": [
+                        {
+                            "descriptor": {
+                                "name": "Minimum Educational Qualifications"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "name": "degree",
+                                        "code": "degree"
+                                    },
+                                    "value": "Bachelors"
+                                }
+                            ],
+                            "display": true
+                        },
+                        {
+                            "descriptor": {
+                                "name": "Preferred Educational Qualifications"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "name": "degree",
+                                        "code": "degree"
+                                    },
+                                    "value": "Masters"
+                                },
+                                {
+                                    "descriptor": {
+                                        "name": "degree",
+                                        "code": "degree"
+                                    },
+                                    "value": "PhD"
+                                }
+                            ],
+                            "display": true
+                        },
+                        {
+                            "descriptor": {
+                                "name": "Work Experience"
+                            },
+                            "list": [
+                                {
+                                    "value": "3 years of Software Development Experience"
+                                },
+                                {
+                                    "value": "2 years of Technical Leadership Experience"
+                                },
+                                {
+                                    "value": "3 years of experience working in a complex, matrixed organization"
+                                }
+                            ],
+                            "display": true
+                        },
+                        {
+                            "descriptor": {
+                                "name": "Responsibilities"
+                            },
+                            "list": [
+                                {
+                                    "value": "Build frontend experiences for our tools (Web, PWA and React Native) "
+                                },
+                                {
+                                    "value": "Articulate a long term technical direction and vision for building, maintaining, and scaling our web and mobile platforms"
+                                },
+                                {
+                                    "value": "Create trustworthy user experiences by building interfaces that are simple, easy to comprehend, performant and reliable using modern tools like React, React Native, Typescript, Node.js, Jest and Webpack."
+                                },
+                                {
+                                    "value": "Mentor and train other team members on design techniques and coding standards. "
+                                },
+                                {
+                                    "value": "Own all aspects of our front-end architecture "
+                                },
+                                {
+                                    "value": "Contribute to process improvements and build a high-performance engineering culture "
+                                }
+                            ],
+                            "display": true
+                        },
+                        {
+                            "descriptor": {
+                                "name": "Employment Information",
+                                "code": "employment-info"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "name": "Employment Duration Type",
+                                        "code": "emp-duration-type"
+                                    },
+                                    "value": "FULL_TIME"
+                                }
+                            ],
+                            "display": true
+                        },
+                        {
+                            "descriptor": {
+                                "name": "skill requirement",
+                                "code": "Skills"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "name": "You have 8+ years of engineering experience, predominantly in shipping user-facing production features"
+                                    }
+                                },
+                                {
+                                    "descriptor": {
+                                        "name": "You are an expert in React.js and React Native, ideally using TypeScript language extensions  "
+                                    }
+                                },
+                                {
+                                    "descriptor": {
+                                        "name": "You have a good understanding of JavaScript Design Patterns "
+                                    }
+                                },
+                                {
+                                    "descriptor": {
+                                        "name": "You have good experience writing front end test cases  "
+                                    }
+                                },
+                                {
+                                    "descriptor": {
+                                        "name": "You’re familiar with current trends and best practices in front-end architecture, including performance, security and usability.  "
+                                    }
+                                },
+                                {
+                                    "descriptor": {
+                                        "name": "You’re familiar with product and design lifecycles, and collaborating closely with designers, engineers, and product managers "
+                                    }
+                                },
+                                {
+                                    "descriptor": {
+                                        "name": "You have experience with Test Driven Development and know when to apply it."
+                                    }
+                                },
+                                {
+                                    "descriptor": {
+                                        "name": "You have experience working on AWS or other cloud stacks and Docker.  "
+                                    }
+                                },
+                                {
+                                    "descriptor": {
+                                        "name": "You have experience building systems with high data protection requirements, anonymous data and data encryption. "
+                                    }
+                                },
+                                {
+                                    "descriptor": {
+                                        "name": "You have experience with IaaC. "
+                                    }
+                                },
+                                {
+                                    "descriptor": {
+                                        "name": "You have worked on building responsive UI using React Native. "
+                                    }
+                                }
+                            ],
+                            "display": true
+                        },
+                        {
+                            "descriptor": {
+                                "name": "Salary Compensation",
+                                "code": "salary-info"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "name": "CTC Range"
+                                    },
+                                    "value": "50000-80000"
+                                },
+                                {
+                                    "descriptor": {
+                                        "name": "baseSalary"
+                                    },
+                                    "value": "60000"
+                                },
+                                {
+                                    "descriptor": {
+                                        "name": "variableSalary"
+                                    },
+                                    "value": "60000"
+                                },
+                                {
+                                    "descriptor": {
+                                        "name": "allowance"
+                                    },
+                                    "value": "60000"
+                                },
+                                {
+                                    "descriptor": {
+                                        "name": "commission"
+                                    },
+                                    "value": "60000"
+                                },
+                                {
+                                    "descriptor": {
+                                        "name": "overtime"
+                                    },
+                                    "value": "8"
+                                }
+                            ],
+                            "display": true
+                        }
+                    ]
+                }
+            ],
+            "fulfillments": [
+                {
+                    "id": "1",
+                    "customer": {
+                        "person": {
+                            "name": "Sanjay",
+                            "gender": "Male",
+                            "age": "35",
+                            "skills": [
+                                {
+                                    "code": "Android",
+                                    "name": "Android"
+                                },
+                                {
+                                    "code": "AWS",
+                                    "name": "AWS"
+                                }
+                            ],
+                            "languages": [
+                                {
+                                    "code": "en",
+                                    "name": "english"
+                                },
+                                {
+                                    "code": "ml",
+                                    "name": "Malayalam"
+                                },
+                                {
+                                    "code": "hi",
+                                    "name": "Hindi"
+                                }
+                            ],
+                            "tags": [
+                                {
+                                    "code": "current-experience",
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "exp-years",
+                                                "name": "Experience"
+                                            },
+                                            "value": "P4Y2M"
+                                        },
+                                        {
+                                            "descriptor": {
+                                                "code": "current-company",
+                                                "name": "Current Company"
+                                            },
+                                            "value": "ABC tech"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "code": "salary-details",
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "expected-salary",
+                                                "name": "Expected Salary"
+                                            },
+                                            "value": "80000"
+                                        },
+                                        {
+                                            "descriptor": {
+                                                "code": "current-salary",
+                                                "name": "Current Salary"
+                                            },
+                                            "value": "50000"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "code": "documents",
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "resume",
+                                                "name": "resume"
+                                            },
+                                            "value": "https://link-to-the-document.com"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "contact": {
+                            "phone": "9999999999999",
+                            "email": "abc@abc.bc"
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}

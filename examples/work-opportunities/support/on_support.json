@@ -1,0 +1,35 @@
+{
+    "context": {
+        "domain": "onest:work-opportunities",
+        "version": "1.1.0",
+        "action": "on_support",
+        "bap_id": "workerhub-bap.com",
+        "bap_uri": "https://workerhub-bap.com",
+        "bpp_id": "jobhub-bpp.com",
+        "bpp_uri": "https://jobhub-bpp.com",
+        "transaction_id": "a9aaecca-10b7-4d19-b640-b047a7c62195",
+        "message_id": "481a01fc-4b45-4d49-9558-c6a7dfad8b75",
+        "ttl": "PT10M",
+        "timestamp": "2023-02-23T08:09:02.172Z"
+    },
+    "message": {
+        "support": {
+            "ref_id": "Abjhjh13773",
+            "order_id": "1677140405881",
+            "callback_phone": "+91-8858150053",
+            "email": "support@ekstep.com",
+            "phone": "+91-965676879",
+            "url": "chat-url-for-support",
+            "docs": [
+                {
+                    "descriptor": {
+                        "name": "FAQs",
+                        "short_desc": "Frequently asked questions and common issues"
+                    },
+                    "url": "https://link-to-the-document.com",
+                    "mime_type": "application/pdf"
+                }
+            ]
+        }
+    }
+}

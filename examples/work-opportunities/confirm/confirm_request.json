@@ -1,0 +1,122 @@
+{
+    "context": {
+        "domain": "onest:work-opportunities",
+        "version": "1.1.0",
+        "action": "confirm",
+        "bap_id": "workerhub-bap.com",
+        "bap_uri": "https://workerhub-bap.com",
+        "bpp_id": "jobhub-bpp.com",
+        "bpp_uri": "https://jobhub-bpp.com",
+        "transaction_id": "a9aaecca-10b7-4d19-b640-b047a7c62195",
+        "message_id": "481a01fc-4b45-4d49-9558-c6a7dfad8b75",
+        "ttl": "PT10M",
+        "timestamp": "2023-02-23T08:09:02.172Z"
+    },
+    "message": {
+        "order": {
+            "provider": {
+                "id": "1"
+            },
+            "items": [
+                {
+                    "id": "a23f2fdfbbb8ac402bf259d75402eb0792f50c095f7d08a55475e7af1c2dadca",
+                    "fulfillment_ids": [
+                        "1"
+                    ]
+                }
+            ],
+            "fulfillments": [
+                {
+                    "id": "1",
+                    "customer": {
+                        "person": {
+                            "name": "Sanjay",
+                            "gender": "Male",
+                            "age": "35",
+                            "skills": [
+                                {
+                                    "code": "Android",
+                                    "name": "Android"
+                                },
+                                {
+                                    "code": "AWS",
+                                    "name": "AWS"
+                                }
+                            ],
+                            "languages": [
+                                {
+                                    "code": "en",
+                                    "name": "english"
+                                },
+                                {
+                                    "code": "ml",
+                                    "name": "Malayalam"
+                                },
+                                {
+                                    "code": "hi",
+                                    "name": "Hindi"
+                                }
+                            ],
+                            "tags": [
+                                {
+                                    "code": "current-experience",
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "exp-years",
+                                                "name": "Experience"
+                                            },
+                                            "value": "P4Y2M"
+                                        },
+                                        {
+                                            "descriptor": {
+                                                "code": "current-company",
+                                                "name": "Current Company"
+                                            },
+                                            "value": "ABC tech"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "code": "salary-details",
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "expected-salary",
+                                                "name": "Expected Salary"
+                                            },
+                                            "value": "80000"
+                                        },
+                                        {
+                                            "descriptor": {
+                                                "code": "current-salary",
+                                                "name": "Current Salary"
+                                            },
+                                            "value": "50000"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "code": "documents",
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "resume",
+                                                "name": "resume"
+                                            },
+                                            "value": "https://link-to-the-document.com"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "contact": {
+                            "phone": "9999999999999",
+                            "email": "abc@abc.bc"
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}
