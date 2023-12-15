@@ -1,0 +1,22 @@
+{
+    "context": {
+        "domain": "onest:work-opportunities",
+        "version": "1.1.0",
+        "action": "on_track",
+        "bap_id": "workerhub-bap.com",
+        "bap_uri": "https://workerhub-bap.com",
+        "bpp_id": "jobhub-bpp.com",
+        "bpp_uri": "https://jobhub-bpp.com",
+        "transaction_id": "a9aaecca-10b7-4d19-b640-b047a7c62195",
+        "message_id": "481a01fc-4b45-4d49-9558-c6a7dfad8b75",
+        "ttl": "PT10M",
+        "timestamp": "2023-02-23T08:09:02.172Z"
+    },
+    "message": {
+        "tracking" : {
+            "id" : "66666ahhf9u385",
+            "url" : "tracking-url-for-job-test",
+            "status" : "active"
+          }
+    }
+}

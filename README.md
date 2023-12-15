@@ -69,7 +69,7 @@ The Specification examples for each sub-domains are given in a detailed format. 
 1. [Courses](./examples/courses)
 2. [Expert Connect](./examples/expert-connect)
 3. [Financial Support](./examples/financial-support)
-4. [Jobs](./examples/job)
+4. [Jobs](./examples/work-opportunities)
 
 ## Test it yourself
 Import the postman collection containing all these requests [via](link-to-be-updated)
