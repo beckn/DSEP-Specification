@@ -24,15 +24,12 @@
                             "age": "35",
                             "skills": [
                                 {
-                                    "code": "Android",
                                     "name": "Android"
                                 },
                                 {
-                                    "code": "AWS",
                                     "name": "AWS"
                                 },
                                 {
-                                    "code": "JAVA",
                                     "name": "JAVA"
                                 }
                             ],

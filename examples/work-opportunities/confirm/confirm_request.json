@@ -35,11 +35,9 @@
                             "age": "35",
                             "skills": [
                                 {
-                                    "code": "Android",
                                     "name": "Android"
                                 },
                                 {
-                                    "code": "AWS",
                                     "name": "AWS"
                                 }
                             ],
