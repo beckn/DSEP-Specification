@@ -80,7 +80,6 @@
                                     "value": "Bachelors"
                                 },
                                 {
-                                    "descriptor": {},
                                     "value": "Bachelors or Equivalent Practical Experience"
                                 }
                             ],
@@ -106,7 +105,6 @@
                                     "value": "PhD"
                                 },
                                 {
-                                    "descriptor": {},
                                     "value": "Master's degree or PhD in Computer Science or related technical field."
                                 }
                             ],
@@ -119,17 +117,15 @@
                             "list": [
                                 {
                                     "descriptor": {
-                                        "name": "Software Development Experienceegree",
-                                        "code": "Software Development Experienceegree"
+                                        "name": "Software Development Experience",
+                                        "code": "Software Development Experience"
                                     },
                                     "value": "3 years"
                                 },
                                 {
-                                    "descriptor": {},
                                     "value": "2 years of Technical Leadership Experience"
                                 },
                                 {
-                                    "descriptor": {},
                                     "value": "3 years of experience working in a complex, matrixed organization"
                                 }
                             ],
@@ -173,13 +169,6 @@
                                         "code": "emp-duration-type"
                                     },
                                     "value": "FULL_TIME"
-                                },
-                                {
-                                    "descriptor": {
-                                        "name": "Employment Duration Type",
-                                        "code": "emp-duration-type"
-                                    },
-                                    "value": ""
                                 }
                             ],
                             "display": true
@@ -187,63 +176,41 @@
                         {
                             "descriptor": {
                                 "name": "skill requirement",
-                                "code": "Skills"
+                                "code": "req-skills"
                             },
                             "list": [
                                 {
-                                    "descriptor": {
-                                        "code": "You have 8+ years of engineering experience, predominantly in shipping user-facing production features"
-                                    }
+                                    "value": "You have 8+ years of engineering experience, predominantly in shipping user-facing production features"
                                 },
                                 {
-                                    "descriptor": {
-                                        "code": "You are an expert in React.js and React Native, ideally using TypeScript language extensions  "
-                                    }
+                                    "value": "You are an expert in React.js and React Native, ideally using TypeScript language extensions  "
                                 },
                                 {
-                                    "descriptor": {
-                                        "code": "You have a good understanding of JavaScript Design Patterns "
-                                    }
+                                    "value": "You have a good understanding of JavaScript Design Patterns "
                                 },
                                 {
-                                    "descriptor": {
-                                        "code": "You have good experience writing front end test cases  "
-                                    }
+                                    "value": "You have good experience writing front end test cases  "
                                 },
                                 {
-                                    "descriptor": {
-                                        "code": "You’re familiar with current trends and best practices in front-end architecture, including performance, security and usability.  "
-                                    }
+                                    "value": "You’re familiar with current trends and best practices in front-end architecture, including performance, security and usability.  "
                                 },
                                 {
-                                    "descriptor": {
-                                        "code": "You’re familiar with product and design lifecycles, and collaborating closely with designers, engineers, and product managers\u202f"
-                                    }
+                                    "value": "You’re familiar with product and design lifecycles, and collaborating closely with designers, engineers, and product managers\u202f" 
                                 },
                                 {
-                                    "descriptor": {
-                                        "code": "You have experience with Test Driven Development and know when to apply it."
-                                    }
+                                    "value": "You have experience with Test Driven Development and know when to apply it."
                                 },
                                 {
-                                    "descriptor": {
-                                        "code": "You have experience working on AWS or other cloud stacks and Docker.  "
-                                    }
+                                    "value": "You have experience working on AWS or other cloud stacks and Docker.  "
                                 },
                                 {
-                                    "descriptor": {
-                                        "code": "You have experience building systems with high data protection requirements, anonymous data and data encryption. "
-                                    }
+                                    "value": "You have experience building systems with high data protection requirements, anonymous data and data encryption. "
                                 },
                                 {
-                                    "descriptor": {
-                                        "code": "You have experience with IaaC. "
-                                    }
+                                    "value": "You have experience with IaaC. "
                                 },
                                 {
-                                    "descriptor": {
-                                        "code": "You have worked on building responsive UI using React Native. "
-                                    }
+                                    "value": "You have worked on building responsive UI using React Native."
                                 }
                             ],
                             "display": true
@@ -313,15 +280,6 @@
                                     "id": "claimId:af7e0b1b5c4858eb",
                                     "type": "ResumeVC",
                                     "url": "https://cloud-wallet-api.prod.affinity-project.org/api/v1/share/b8a2c0cbc5a02da03d2aecb59094672a8e0b16a1c845456bd18678529d6901df?key=beda347c431e02319bd31c63e5f5f5f5e14939efdb6697ce4d93c87eade27c47"
-                                }
-                            ],
-                            "tags": [
-                                {
-                                    "display": true,
-                                    "list": [
-                                        {},
-                                        {}
-                                    ]
                                 }
                             ]
                         }

@@ -1,16 +1,16 @@
 {
     "context": {
         "domain": "onest:work-opportunities",
-        "action": "on_confirm",
         "version": "1.1.0",
+        "action": "on_status",
         "bap_id": "workerhub-bap.com",
         "bap_uri": "https://workerhub-bap.com",
         "bpp_id": "jobhub-bpp.com",
         "bpp_uri": "https://jobhub-bpp.com",
         "transaction_id": "a9aaecca-10b7-4d19-b640-b047a7c62195",
-        "message_id": "8cbb5e99-5d06-4855-81e9-a4fc8013dbff",
-        "timestamp": "2023-02-23T08:20:06.0674501+00:00",
-        "ttl": "P1M"
+        "message_id": "a8ab8aa4-9ddc-496a-a01c-06107a4ad848",
+        "ttl": "PT10M",
+        "timestamp": "2023-02-23T08:20:51.064Z"
     },
     "message": {
         "order": {
@@ -64,6 +64,9 @@
                                         "code": "degree"
                                     },
                                     "value": "Bachelors"
+                                },
+                                {
+                                    "value": "Bachelors or Equivalent Practical Experience"
                                 }
                             ],
                             "display": true
@@ -86,6 +89,9 @@
                                         "code": "degree"
                                     },
                                     "value": "PhD"
+                                },
+                                {
+                                    "value": "Master's degree or PhD in Computer Science or related technical field."
                                 }
                             ],
                             "display": true
@@ -96,7 +102,11 @@
                             },
                             "list": [
                                 {
-                                    "value": "3 years of Software Development Experience"
+                                    "descriptor": {
+                                        "name": "Software Development Experience",
+                                        "code": "Software Development Experience"
+                                    },
+                                    "value": "3 years"
                                 },
                                 {
                                     "value": "2 years of Technical Leadership Experience"
@@ -152,63 +162,41 @@
                         {
                             "descriptor": {
                                 "name": "skill requirement",
-                                "code": "Skills"
+                                "code": "req-skills"
                             },
                             "list": [
                                 {
-                                    "descriptor": {
-                                        "name": "You have 8+ years of engineering experience, predominantly in shipping user-facing production features"
-                                    }
+                                    "value": "You have 8+ years of engineering experience, predominantly in shipping user-facing production features"
                                 },
                                 {
-                                    "descriptor": {
-                                        "name": "You are an expert in React.js and React Native, ideally using TypeScript language extensions  "
-                                    }
+                                    "value": "You are an expert in React.js and React Native, ideally using TypeScript language extensions  "
                                 },
                                 {
-                                    "descriptor": {
-                                        "name": "You have a good understanding of JavaScript Design Patterns "
-                                    }
+                                    "value": "You have a good understanding of JavaScript Design Patterns "
                                 },
                                 {
-                                    "descriptor": {
-                                        "name": "You have good experience writing front end test cases  "
-                                    }
+                                    "value": "You have good experience writing front end test cases  "
                                 },
                                 {
-                                    "descriptor": {
-                                        "name": "You’re familiar with current trends and best practices in front-end architecture, including performance, security and usability.  "
-                                    }
+                                    "value": "You’re familiar with current trends and best practices in front-end architecture, including performance, security and usability.  "
                                 },
                                 {
-                                    "descriptor": {
-                                        "name": "You’re familiar with product and design lifecycles, and collaborating closely with designers, engineers, and product managers "
-                                    }
+                                    "value": "You’re familiar with product and design lifecycles, and collaborating closely with designers, engineers, and product managers\u202f" 
                                 },
                                 {
-                                    "descriptor": {
-                                        "name": "You have experience with Test Driven Development and know when to apply it."
-                                    }
+                                    "value": "You have experience with Test Driven Development and know when to apply it."
                                 },
                                 {
-                                    "descriptor": {
-                                        "name": "You have experience working on AWS or other cloud stacks and Docker.  "
-                                    }
+                                    "value": "You have experience working on AWS or other cloud stacks and Docker.  "
                                 },
                                 {
-                                    "descriptor": {
-                                        "name": "You have experience building systems with high data protection requirements, anonymous data and data encryption. "
-                                    }
+                                    "value": "You have experience building systems with high data protection requirements, anonymous data and data encryption. "
                                 },
                                 {
-                                    "descriptor": {
-                                        "name": "You have experience with IaaC. "
-                                    }
+                                    "value": "You have experience with IaaC. "
                                 },
                                 {
-                                    "descriptor": {
-                                        "name": "You have worked on building responsive UI using React Native. "
-                                    }
+                                    "value": "You have worked on building responsive UI using React Native."
                                 }
                             ],
                             "display": true
@@ -219,12 +207,6 @@
                                 "code": "salary-info"
                             },
                             "list": [
-                                {
-                                    "descriptor": {
-                                        "name": "CTC Range"
-                                    },
-                                    "value": "50000-80000"
-                                },
                                 {
                                     "descriptor": {
                                         "name": "baseSalary"
@@ -271,11 +253,9 @@
                             "age": "35",
                             "skills": [
                                 {
-                                    "code": "Android",
                                     "name": "Android"
                                 },
                                 {
-                                    "code": "AWS",
                                     "name": "AWS"
                                 }
                             ],

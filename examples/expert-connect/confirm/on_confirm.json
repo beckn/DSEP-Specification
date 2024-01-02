@@ -1,7 +1,7 @@
 {
     "context": {
         "domain": "dsep:mentoring",
-        "action": "on_cancel",
+        "action": "on_confirm",
         "bap_id": "dsep-protocol.becknprotocol.io",
         "bap_uri": "https://dsep-protocol-network.becknprotocol.io/",
         "bpp_id": "dev.elevate-apis.shikshalokam.org/bpp",
