@@ -1,0 +1,27 @@
+{
+    "context": {
+        "domain": "onest:work-opportunities",
+        "action": "select",
+        "version": "1.1.0",
+        "bap_id": "workerhub-bap.com",
+        "bap_uri": "https://workerhub-bap.com",
+        "bpp_id": "jobhub-bpp.com",
+        "bpp_uri": "https://jobhub-bpp.com",
+        "transaction_id": "a9aaecca-10b7-4d19-b640-b047a7c62195",
+        "message_id": "$89bdae17-9942-40c8-869a-5bd413356407",
+        "timestamp": "2023-02-14T12:11:46.1295616+00:00",
+        "ttl": "P1M"
+    },
+    "message": {
+        "order": {
+            "provider":{
+                "id":"1"
+            },
+            "items": [
+                {
+                    "id": "a23f2fdfbbb8ac402bf259d75402eb0792f50c095f7d08a55475e7af1c2dadca"
+                }
+            ]
+        }
+    }
+}

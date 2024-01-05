@@ -1,0 +1,246 @@
+{
+    "context": {
+        "domain": "dsep:scholarships",
+        "location": {
+            "city": {
+                "name": "Bangalore",
+                "code": "std:080"
+            },
+            "country": {
+                "name": "India",
+                "code": "IND"
+            }
+        },
+        "action": "on_select",
+        "timestamp": "2023-08-02T09:12:12.680Z",
+        "ttl": "PT10M",
+        "version": "0.7.0",
+        "bap_id": "ps-bap-network.becknprotocol.io",
+        "bap_uri": "https://ps-bap-network.becknprotocol.io/",
+        "bpp_id": "beckn-sandbox-bpp.becknprotocol.io",
+        "bpp_uri": "https://sandbox-bpp-network.becknprotocol.io/",
+        "transaction_id": "a9aaecca-10b7-4d19-b640-022723112309",
+        "message_id": "6114a3e5-acb0-4c99-b017-0ead5e894bad"
+    },
+    "message": {
+        "order": {
+            "provider": {
+                "id": "BX213573733",
+                "descriptor": {
+                    "name": "XYZ Education Foundation",
+                    "short_desc" : "Short Description about the Foundation",
+                    "images": [
+                        {
+                            "url" : "url of the image of the provider"
+                        }
+                    ]
+                },
+                "locations" : [
+                    {
+                        "id" : "L1",
+                        "city" :"Pune",
+                        "state" : "Maharastra"
+                    },
+                    {
+                        "id" : "L2",
+                        "city" :"Thane",
+                        "state" : "Maharastra"
+                    },
+                    {
+                        "id" : "L3",
+                        "city" :"Lucknow",
+                        "state" : "Uttar Pradesh"
+                    }
+                ],
+                "rateable": false
+            },
+            "items": [
+                {
+                    "id": "SCM_63587501",
+                    "descriptor": {
+                        "name": "XYZ Education Scholarship for Undergraduate Students",
+                        "short_desc": "XYZ Education Scholarship for Undergraduate Students"
+                    },
+                    "price": {
+                        "currency": "INR",
+                        "value": "Upto RS.1000 per year"
+                    },
+                    "time" : {
+                        "label" : "Start  & End date of the Application",
+                        "range" : {
+                            "start" : "2022-09-01T00:00:00.000Z",
+                            "end" : "2022-10-31T00:00:00.000Z"
+                        }
+                    },
+                    "rateable": false,
+                    "tags": [
+                        {
+                            "display": true,
+                            "descriptor": {
+                                "code": "soc-elg",
+                                "name": "Social Eligibility"
+                            },
+                            "list": [
+                                {
+                                    "value" : "SC"
+                                },
+                                {
+                                    "value" : "ST"
+                                },
+                                {
+                                    "value" : "OBC"
+                                }]
+                        },
+                        {
+                            "display": true,
+                            "descriptor": {
+                                "code": "gen-elg",
+                                "name": "Gender Eligibility"
+                            },
+                            "list": [
+                                {
+                                    "value" : "Female"
+                                },
+                                {
+                                    "value" : "Transgender"
+                                }]
+                        },
+                        {
+                            "display": true,
+                            "descriptor": {
+                                "code": "fin-elg",
+                                "name": "Financial Eligibility"
+                            },
+                            "list": [
+                                {
+                                    "value" : "Max Family Income - Rs.500000.00"
+                                }] 
+                            
+                        },
+                        {
+                            "display": true,
+                            "descriptor": {
+                                "code": "acad-elg",
+                                "name": "Academic Eligibility"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "class",
+                                        "name": "Class"
+                                    },
+                                    "value": "12th"
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "percentage",
+                                        "name": "Percentage"
+                                    },
+                                    "value": ">= 50"
+                                }
+
+                            ] 
+                            
+                        },
+                        {
+                            "display": true,
+                            "descriptor": {
+                                "code": "docs-reqd",
+                                "name": "Documents Required"
+                            },
+                            "list": [
+                                {
+                                    "value" : "10th Marksheet"
+                                },
+                                {
+                                    "value" : "Aadhar Card of the Student"
+                                },
+                                {
+                                    "value" : "Aadhar Card of the Parent"
+                                },
+                                {
+                                    "value" : "Pan Card of the Parent"
+                                }
+                            ]
+                        },
+                        {
+                            "display": true,
+                            "descriptor": {
+                                "code": "add-info",
+                                "name": "Additional Information"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "faq-url",
+                                        "name": "Frequently Asked Questions's URL"
+                                    },
+                                    "value" : "https://www.xyz-scholarship.com/faq" 
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "tnc-url",
+                                        "name": "Terms and Conditions's URL"
+                                    },
+                                    "value": "https://www.xyz-scholarship.com/tnc"
+                                }
+                            ]
+                        }
+                    ],
+                    "location_ids": ["L1","L2"],
+                    "category_ids": ["DSEP_CAT_1"]
+                }
+            ],
+            "fulfillments": [
+                {
+                    "id": "DSEP_FUL_63587501",
+                    "type": "SCHOLARSHIP",
+                    "tracking": false,
+                    "agent" : {
+                        "person" : {
+                            "name" : "Ekstep Foundation SPoc"
+                        },
+                        "contact" : {
+                            "email" : "ekstepsupport@ekstep.com"
+                        }
+                    }
+                }
+            ],
+            "quote" :{
+                "price" : {
+                    "currency" : "INR",
+                    "value" : "250000"
+                },
+                "breakup":[
+                    {
+                        "title": "Tution fee",
+                        "price" : {
+                            "currency" : "INR",
+                            "value" : "150000"
+                        }
+                    },
+                    {
+                        "title": "Hostel fee",
+                        "price" : {
+                            "currency" : "INR",
+                            "value" : "50000"
+                        }
+                    },
+                    {
+                        "title": "Books",
+                        "price" : {
+                            "currency" : "INR",
+                            "value" : "50000"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}
+
+
+
+
+
+

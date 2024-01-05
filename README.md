@@ -14,14 +14,13 @@ draft
 |----------------------------------|---------------------------------------------------|
 | 0.5.0 (Genesis Version)          | 0.9.3-draft                                       |
 | 0.5.1-draft (Patch version)      | -                                     |
-| 0.6.0-draft (Next Minor Version) | -                                                 |
-| 1.0.0-draft (Next Major Version) | -                                                 |
+| 0.6.0-draft (Next Minor Version) | 1.1.0-draft                                                 |
+| 0.7.0-draft (Next Major Version) | 1.1.0-draft                                                 |
+| 0.8.0-draft (Next Major Version) | -                                                 |
 
 ## Introduction
 
-The community is currently working on Discovery of Jobs, Training, .. and Proof of Work, Training, ...
-
-The skill development, lifelong learning and employment landscape is large, heterogeneous, diversified,  fragmented and complex; which is high on friction and low on outcomes. It inherently has significant challenges such as information asymmetry, high cost of trust verification, lack of discoverability, and portability. A monolithic approach to this would not serve the purpose, rather we need to adopt an ecosystem approach which facilitates innovative solutions.
+The community is currently working on Discovery of Jobs, Training, mentors and courses etc. The skill development, lifelong learning and employment landscape is large, heterogeneous, diversified,  fragmented and complex; which is high on friction and low on outcomes. It inherently has significant challenges such as information asymmetry, high cost of trust verification, lack of discoverability, and portability. A monolithic approach to this would not serve the purpose, rather we need to adopt an ecosystem approach which facilitates innovative solutions.
 
 Hence the need of the hour is a unifying framework which will allow many platforms, applications, service providers, and business models to innovate with the underlying protocols and specifications using a set of configurable, extendable, modular open-source digital building blocks. In such a paradigm, the seamless discovery of opportunities along with trust in transactions would be a key to allowing a frictionless exchange for skill development, deployment & associated supply-chain and enabling services. 
 
@@ -38,4 +37,47 @@ Next steps:
 - Join the Discord channel of both the communities: INCOMS (Sunbird discord.gg/muHqfEkvSy) and DSEP (Beckn discord.gg/pcNc4aFn2x)
 
 You’re invited to Engage with the ecosystem to identify what can be leveraged/contributed, Experiment with the specs for your use cases, and Evolve the same into live implementation for your customers.
+
+## Working Group Members
+
+| Name             | Role                           | Github Username |
+|------------------|--------------------------------|-----------------|
+| Ravi Prakash     | Maintainer, Protocol Architect | @ravi-prakash-v |
+| Pramod Varma     | Maintainer, Reviewer           | @pramodkvarma   |
+| Sujith Nair      | Reviewer                       | @sjthnrk        |
+| Mayank Bansal    | Maintainer                     | @emmayank       |
+
+## Acknowledgements
+
+The author(s) of this specification would like to thank the following volunteers for their contribution to the development of this specification
+
+### Version 0.7.0
+- Ravi Prakash
+- Pramod Varma
+- Surendrasingh Sucharia
+- Faiz Mohammed
+- Sanjay
+
+
+## Implementing the specification
+
+To understanding how to implement the specification click [here](./docs)
+
+## Specification Examples
+
+The Specification examples for each sub-domains are given in a detailed format. you can find them as follows:
+1. [Courses](./examples/courses)
+2. [Expert Connect](./examples/expert-connect)
+3. [Financial Support](./examples/financial-support)
+4. [Jobs](./examples/work-opportunities)
+
+## Test it yourself
+Import the postman collection containing all these requests [via](link-to-be-updated)
+
+OR
+
+[![Run in Postman](https://run.pstmn.io/button.svg)](link to be updated)
+
+## Demo Link
+Here is the Demo Link for the BAP implemented for course, jobs and financial support domains, [click here](https://dsep-dev.becknprotocol.io/)
 

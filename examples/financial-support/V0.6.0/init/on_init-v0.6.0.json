@@ -1,0 +1,169 @@
+{
+    "context": {
+        "domain": "dsep:scholarships",
+        "location": {
+            "city": {
+                "name": "Bangalore",
+                "code": "std:080"
+            },
+            "country": {
+                "name": "India",
+                "code": "IND"
+            }
+        },
+        "action": "on_init",
+        "version": "0.6.0",
+        "bap_id": "ps-bap-network.becknprotocol.io",
+        "bap_uri": "https://ps-bap-network.becknprotocol.io/",
+        "bpp_id": "beckn-sandbox-bpp.becknprotocol.io",
+        "bpp_uri": "https://sandbox-bpp-network.becknprotocol.io/",
+        "transaction_id": "a9aaecca-10b7-4d19-b640-022723112309",
+        "message_id": "a9aaecca-10b7-4d19-b640-b047a7c60009",
+        "timestamp": "2023-02-06T09:55:41.161Z",
+        "ttl": "PT10M"
+    },
+    "message": {
+        "order": {
+            "type": "DEFAULT",
+            "provider": {
+                "id": "BX213573733",
+                "descriptor": {
+                    "name": "XYZ Education Foundation",
+                    "short_desc": "XYZ Education Foundation"
+                },
+                "rateable": false
+            },
+            "items": [
+                {
+                    "id": "SCM_63587501",
+                    "descriptor": {
+                        "name": "XYZ Undergraduation scholarship for Economically Backward Female Students",
+                        "short_desc": "XYZ Undergraduation scholarship for Economically Backward Female Students"
+                    },
+                    "price": {
+                        "currency": "INR",
+                        "value": "30000"
+                    },
+                    "xinput": {
+                        "required": true,
+                        "form": {
+                            "url": "http://localhost:8001/public/getForm/a9aaecca-10b7-4d19-b640-022723112309/da0052a822dc4cdf95ab136b5614d0c9",
+                            "data": {
+                                "name": "James",
+                                "phone": "498674",
+                                "address": "Mumbai",
+                                "needOfScholarship": "higher education",
+                                "docUrl": "http://abc.co/docs"
+                            },
+                            "mime_type": "text/html",
+                            "submission_id": "8203501c-8934-468c-b947-1d5317847e9a"
+                        }
+                    },
+                    "rateable": false,
+                    "tags": [
+                        {
+                            "display": true,
+                            "descriptor": {
+                                "code": "edu_qual",
+                                "name": "Academic Eligibility"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "gr",
+                                        "name": "Grade"
+                                    },
+                                    "value": "Grade 12",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "percentage_grade",
+                                        "name": "Percentage/Grade"
+                                    },
+                                    "value": ">= 50",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "passing_year",
+                                        "name": "Passing Year"
+                                    },
+                                    "value": "2021",
+                                    "display": false
+                                }
+                            ]
+                        },
+                        {
+                            "display": true,
+                            "descriptor": {
+                                "code": "fin_status",
+                                "name": "Financial Status"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "family_income",
+                                        "name": "Family Income"
+                                    },
+                                    "value": "<= 2000000",
+                                    "display": true
+                                }
+                            ]
+                        },
+                        {
+                            "display": true,
+                            "descriptor": {
+                                "code": "benefits",
+                                "name": "Benefits"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "scholarship-amount",
+                                        "name": "Scholarship Amount"
+                                    },
+                                    "value": "Upto Rs.30000 per year",
+                                    "display": true
+                                }
+                            ]
+                        }
+                    ],
+                    "category_ids": ["DSEP_CAT_1"]
+                }
+            ],
+            "fulfillments": [
+                {
+                    "id": "DSEP_FUL_63587501",
+                    "type": "SCHOLARSHIP",
+                    "tracking": false,
+                    "customer": {
+                        "person": {
+                            "name": "Test",
+                            "gender": "Male"
+                        }
+                    },
+                    "contact": {
+                        "phone": "111111111",
+                        "email": "abc@abc.com"
+                    },
+                    "stops": [
+                        {
+                            "type": "APPLICATION-START",
+                            "time": {
+                                "timestamp": "2023-01-01T00:00:00.000Z"
+                            }
+                        },
+                        {
+                            "type": "APPLICATION-END",
+                            "time": {
+                                "timestamp": "2023-03-31T00:00:00.000Z"
+                            }
+                        }
+                    ]
+                }
+            ]
+
+        }
+    }
+}

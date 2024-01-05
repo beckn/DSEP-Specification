@@ -1,0 +1,119 @@
+{
+  "context": {
+    "domain": "dsep:student-connect",
+    "action": "on_search",
+    "location": {
+      "country": {
+        "name": "India",
+        "code": "IND"
+      },
+      "city": {
+        "name": "Bangalore",
+        "code": "std:080"
+      }
+    },
+    "version": "1.1.0",
+    "bap_id": "ps-bap-network.becknprotocol.io",
+    "bap_url": "https://ps-bap-client.becknprotocol.io/",
+    "bpp_id": "beckn-sandbox-bpp.becknprotocol.io",
+    "bpp_uri": "https://sandbox-bpp-network.becknprotocol.io/",
+    "transaction_id": "6743e9e2-4fb5-487c-92b7-13ba8018f176",
+    "message_id": "6743e9e2-4fb5-487c-92b7-13ba8018f176",
+    "timestamp": "2023-07-16T04:41:16Z"
+  },
+  "message": {
+    "catalog": {
+      "descriptor": {
+        "name": "Student Profiles"
+      },
+      "providers": [
+        {
+          "id": "289edce4-d002-4962-b311-4c025e22b4f6",
+          "descriptor": {
+            "name": "MuLearn Talent pool app",
+            "short_desc": "MuLearn Talent pool App Pvt Ltd",
+            "images": [
+              {
+                "url": "https://mulearn.in/images/logo.png"
+              }
+            ]
+          },
+          "fulfillments": [
+            {
+              "id": "ful-01",
+              "type": "virtual-meet"
+            },
+            {
+              "id": "ful-02",
+              "type": "physical-meet"
+            }
+          ],
+          "items": [
+            {
+              "id": "1224",
+              "descriptor": {
+                "name": "Mayank Bansal",
+                "short_desc": "Product Manager || Enabling Reconciliation & Settlement framework on ONDC || Financial Services || Retail ",
+                "long_desc": "Entrepreneurial journey from failed startup to thriving tech ventures. Expertise in software development, blockchain, and B2B solutions. Currently contributing to FIDE at Enterprise Minds.",
+                "media" : [
+                  {
+                    "mimetype": "application/pdf",
+                    "url" : "https://www.resume-link.com"
+                  },
+                  {
+                    "mimetype": "application/pdf",
+                    "url" : "https://www.certificate-link.com/1"
+                  },
+                  {
+                    "mimetype": "application/pdf",
+                    "url" : "https://www.certificate-link.com/2"
+                  }
+                ],
+                "images": [
+                  {
+                    "url" : "https://media.licdn.com/dms/image/C4E03AQEQLnpcjmWwGQ/profile-displayphoto-shrink_400_400/0/1638454324563?e=1705536000&v=beta&t=NBLbRWXya0YrMWsfWY8PCbfFW7msDBpiYzxpcbh9fA4"
+                  }
+                ]
+              },
+              "fulfillment_ids": [
+                "ful-01",
+                "ful-02"
+              ]
+            },
+            {
+              "id": "1225",
+              "descriptor": {
+                "name": "Ravi Prakash",
+                "short_desc": "Head of Architecture and Technology Ecosystem at FIDE (Previously Beckn Foundation). Genesis author of beckn protocol specification.",
+                "long_desc": "Digital transformation leader, architect of beckn protocol. 9+ years' experience in hardware, middleware, and software. ME in Embedded Systems, BTech in Electronics.",
+                "media" : [
+                  {
+                    "mimetype": "application/pdf",
+                    "url" : "https://www.resume-link.com"
+                  },
+                  {
+                    "mimetype": "application/pdf",
+                    "url" : "https://www.certificate-link.com/1"
+                  },
+                  {
+                    "mimetype": "application/pdf",
+                    "url" : "https://www.certificate-link.com/2"
+                  }
+                ],
+                "images": [
+                  {
+                    "url" : "https://media.licdn.com/dms/image/C5103AQHUETtJK2ZqRw/profile-displayphoto-shrink_400_400/0/1558161034172?e=1705536000&v=beta&t=jxO7s1fvk8fcXPK7CmTcU_kVzkqY-SKriPzWGPgIETE"
+                  }
+                ]
+              },
+              "fulfillment_ids": [
+                "ful-01",
+                "ful-02"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

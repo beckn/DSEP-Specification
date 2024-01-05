@@ -1,0 +1,156 @@
+{
+    "context": {
+        "domain": "dsep:scholarships",
+        "location": {
+            "city": {
+                "name": "Bangalore",
+                "code": "std:080"
+            },
+            "country": {
+                "name": "India",
+                "code": "IND"
+            }
+        },
+        "action": "on_confirm",
+        "version": "0.6.0",
+        "bap_id": "ps-bap-network.becknprotocol.io",
+        "bap_uri": "https://ps-bap-network.becknprotocol.io/",
+        "bpp_id": "beckn-sandbox-bpp.becknprotocol.io",
+        "bpp_uri": "https://sandbox-bpp-network.becknprotocol.io/",
+        "transaction_id": "a9aaecca-10b7-4d19-b640-022723112309",
+        "message_id": "a9aaecca-10b7-4d19-b640-b047a7c60009",
+        "timestamp": "2023-02-06T09:55:41.161Z",
+        "ttl": "PT10M"
+    },
+    "message": {
+        "order": {
+            "id": "APP_58605054",
+            "status": "ACTIVE",
+            "provider": {
+                "id": "BX213573733",
+                "descriptor": {
+                    "name": "XYZ Education Foundation",
+                    "short_desc": "Education Foundation"
+                },
+                "rateable": false
+            },
+            "items": [
+                {
+                    "id": "SCM_63587501",
+                    "descriptor": {
+                        "name": "XYZ Education Scholarship for Undergraduate Students",
+                        "short_desc": "XYZ Education Scholarship for Undergraduate Students"
+                    },
+                    "price": {
+                        "currency": "INR",
+                        "value": "25000"
+                    },
+                    "xinput": {
+                        "required": true,
+                        "form": {
+                            "url": "http://localhost:8001/public/getForm/5007a4bd-f8c1-4859-877e-2bc4b7a4f554/da0052a822dc4cdf95ab136b5614d0c9",
+                            "data": {
+                                "name": "James",
+                                "phone": "498674",
+                                "address": "Mumbai",
+                                "needOfScholarship": "higher education",
+                                "docUrl": "http://abc.co/docs"
+                            },
+                            "mime_type": "text/html"
+                        }
+                    },
+                    "rateable": false,
+                    "tags": [
+                        {
+                            "display": true,
+                            "descriptor": {
+                                "code": "edu_qual",
+                                "name": "Academic Eligibility"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "gr",
+                                        "name": "Grade"
+                                    },
+                                    "value": "Grade 12",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "percentage_grade",
+                                        "name": "Percentage/Grade"
+                                    },
+                                    "value": ">= 50",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "passing_year",
+                                        "name": "Passing Year"
+                                    },
+                                    "value": "2021",
+                                    "display": false
+                                }
+                            ]
+                        },
+                        {
+                            "display": true,
+                            "descriptor": {
+                                "code": "benefits",
+                                "name": "Benefits"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "scholarship-amount",
+                                        "name": "Scholarship Amount"
+                                    },
+                                    "value": "Upto Rs.25000 per year",
+                                    "display": true
+                                }
+                            ]
+                        }
+                    ],
+                    "category_ids": ["DSEP_CAT_1"]
+                }
+            ],
+            "fulfillments": [
+                {
+                    "id": "DSEP_FUL_63587501",
+                    "type": "SCHOLARSHIP",
+                    "tracking": false,
+                    "contact": {
+                        "phone": "9876543210",
+                        "email": "maryg@xyz.com"
+                    },
+                    "stops": [
+                        {
+                            "type": "APPLICATION-START",
+                            "time": {
+                                "timestamp": "2022-09-01T00:00:00.000Z"
+                            }
+                        },
+                        {
+                            "type": "APPLICATION-END",
+                            "time": {
+                                "timestamp": "2022-10-31T00:00:00.000Z"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "type": "DEFAULT",
+            "docs": [
+                {
+                    "descriptor":{
+                        "name" :"Application Details",
+                        "short_desc" : "To open this document, enter the password sent to your email mayan****@***.com"
+                    },
+                    "url" : "https://link-to-the-document.com",
+                    "mime_type" : "application/pdf"
+                }
+            ]
+        }
+    }
+}

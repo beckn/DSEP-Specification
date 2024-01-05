@@ -1,0 +1,227 @@
+{
+  "context": {
+    "domain": "onest:learning-experiences",
+    "version": "1.1.0",
+    "action": "on_init",
+    "bap_uri": "https://sample.bap.io/",
+    "bap_id": "sample.bap.io",
+    "bpp_id": "infosys.springboard.io",
+    "bpp_uri": "https://infosys.springboard.io",
+    "transaction_id": "a9aaecca-10b7-4d19-b640-b047a7c62196",
+    "message_id": "d514a38f-e112-4bb8-a3d8-b8e5d8dea82d",
+    "ttl": "PT10M",
+    "timestamp": "2023-02-20T15:21:36.925Z"
+  },
+  "message": {
+    "order": {
+      "provider": {
+        "id": "INFOSYS",
+        "descriptor": {
+          "name": "Infosys Springboard",
+          "short_desc": "Infosys Springboard Digital literacy program",
+          "images": [
+            {
+              "url": "https://infyspringboard.onwingspan.com/web/assets/images/infosysheadstart/app_logos/landing-new.png",
+              "size_type": "sm"
+            }
+          ]
+        },
+        "categories": [
+          {
+            "id": "LANGUAGE-COURSES",
+            "descriptor": {
+              "code": "LANGUAGE-COURSES",
+              "name": "Language Courses"
+            }
+          },
+          {
+            "id": "SKILL-DEVELOPMENT-COURSES",
+            "descriptor": {
+              "code": "SKILL-DEVELOPMENT-COURSES",
+              "name": "Skill development Courses"
+            }
+          },
+          {
+            "id": "TECHNICAL-COURSES",
+            "descriptor": {
+              "code": "TECHNICAL-COURSES",
+              "name": "Technical Courses"
+            }
+          },
+          {
+            "id": "SELF-PACED-COURSES",
+            "descriptor": {
+              "code": "SELF-PACED-COURSES",
+              "name": "Self Paced Courses"
+            }
+          }
+        ]
+      },
+      "items": [
+        {
+          "id": "d4975df5-b18c-4772-80ad-368669856d52",
+          "quantity": {
+            "maximum": {
+              "count": 1
+            }
+          },
+          "descriptor": {
+            "name": "Everyday Conversational English",
+            "short_desc": "Elevate your daily conversations with confidence through our 'Everyday Conversational English' course.",
+            "long_desc": "<p><strong>Course Overview:</strong><br>Welcome to 'Everyday Conversational English,' your key to mastering essential language skills for real-life communication. Tailored for all levels, this course offers:</p><ol><li><strong>Practical Vocabulary:</strong><br>Learn everyday expressions for seamless communication.</li><li><strong>Interactive Role-Playing:</strong><br>Apply knowledge through immersive exercises for real-world scenarios.</li><li><strong>Cultural Insights:</strong><br>Gain cultural nuances to connect authentically in conversations.</li><li><strong>Real-Life Scenarios:</strong><br>Navigate common situations with confidence-building tools.</li><li><strong>Quiz Assessments:</strong><br>Reinforce learning through quizzes for ongoing skill development.</li></ol><p><strong>Why Take This Course:</strong></p><ul><li><strong>Personal & Professional Growth:</strong><br>Enhance personal connections and gain a professional edge.</li><li><strong>Cultural Fluency:</strong><br>Understand and engage with diverse cultures confidently.</li><li><strong>Life-Long Skill:</strong><br>Develop a valuable skill applicable across various life stages.</li></ul><p>Join 'Everyday Conversational English' and elevate your communication for meaningful connections and success.</p>",
+            "images": [
+              {
+                "url": "https://infyspringboard.onwingspan.com/web/assets/images/infosysheadstart/everyday-conversational-english.png"
+              }
+            ],
+            "media": [
+              {
+                "url": "https://infyspringboard.onwingspan.com/web/courses/infosysheadstart/everyday-conversational-english/preview/"
+              }
+            ]
+          },
+          "creator": {
+            "descriptor": {
+              "name": "Prof. Emma Sullivan",
+              "short_desc": "Experienced language educator dedicated to fostering practical conversational skills and cultural fluency",
+              "long_desc": "Hello, I'm Prof. Emma Sullivan, your guide in 'Everyday Conversational English.' With over a decade of experience, I'm here to make language learning dynamic and culturally enriching. Let's explore practical communication skills together for personal and professional growth. Join me on this exciting journey!",
+              "images": [
+                {
+                  "url": "https://infyspringboard.onwingspan.com/web/assets/images/infosysheadstart/ins/1.png"
+                }
+              ]
+            }
+          },
+          "price": {
+            "currency": "INR",
+            "value": "150"
+          },
+          "category_ids": [
+            "LANGUAGE-COURSES",
+            "SELF-PACED-COURSES"
+          ],
+          "rating": "4.5",
+          "rateable": true,
+          "tags": [
+            {
+              "descriptor": {
+                "code": "content-metadata",
+                "name": "Content metadata"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "learner-level",
+                    "name": "Learner level"
+                  },
+                  "value": "Beginner"
+                },
+                {
+                  "descriptor": {
+                    "code": "learning-objective",
+                    "name": "Learning objective"
+                  },
+                  "value": "By the end of the course, learners will confidently navigate everyday conversations, demonstrating improved fluency, cultural awareness, and effective communication skills."
+                },
+                {
+                  "descriptor": {
+                    "code": "prerequisite",
+                    "name": "Prerequisite"
+                  },
+                  "value": "Should have a basic understanding of English"
+                },
+                {
+                  "descriptor": {
+                    "code": "prerequisite",
+                    "name": "Prerequisite"
+                  },
+                  "value": "Access to a computer or internet to access the course online"
+                },
+                {
+                  "descriptor": {
+                    "code": "lang-code",
+                    "name": "Language code"
+                  },
+                  "value": "en"
+                },
+                {
+                  "descriptor": {
+                    "code": "course-duration",
+                    "name": "Course duration"
+                  },
+                  "value": "P20H"
+                }
+              ],
+              "display": true
+            }
+          ]
+        }
+      ],
+      "fulfillments": [
+        {
+          "agent": {
+            "person": {
+              "name": "Infosys Springboard"
+            },
+            "contact": {
+              "email": "support@infy.com"
+            }
+          },
+          "customer": {
+            "person": {
+              "name": "Jane Doe",
+              "age": "13",
+              "gender": "female",
+              "tags": [
+                {
+                  "descriptor": {
+                    "code": "professional-details",
+                    "name": "Professional Details"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "profession",
+                        "name": "profession"
+                      },
+                      "value": "student"
+                    }
+                  ],
+                  "display": true
+                }
+              ]
+            },
+            "contact": {
+              "phone": "+91-9663088848",
+              "email": "jane.doe@example.com"
+            }
+          }
+        }
+      ],
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "150"
+        }
+      },
+      "billing": {
+        "name": "Jane Doe",
+        "phone": "+91-9663088848",
+        "email": "jane.doe@example.com",
+        "address": "No 27, XYZ Lane, etc"
+      },
+      "payments": [
+        { 
+          "params": {
+            "amount": "150",
+            "currency": "INR"
+          },
+          "url": "https://examplepayments.com/pay",
+          "type": "PRE-ORDER",
+          "status": "PAID",
+          "collected_by": "bpp"
+        }
+      ]
+    }
+  }
+}

@@ -1,12 +1,11 @@
 openapi: 3.0.0
 info:
-  title: Beckn Core API
-  description: Beckn Core API specification
-  version: 1.0.0-dsep-draft
+  title: Decentralized Skilling and Education Protocol Specification
+  description: Adaptation of beckn protocol for the domain of skilling and education
+  version: 0.5.0
 
 security:
   - SubscriberAuth: []
-  - GatewaySubscriberAuth: []
   - GatewaySubscriberAuthNew: []
 paths:
   /search:
@@ -14,9 +13,8 @@ paths:
       tags:
         - Beckn Provider Platform (BPP)
         - Beckn Gateway (BG)
-      description: This allows a user to search for a) Jobs and Internships b) Trainings and Courses c)  
+      description: This allows a BAP to discover for catalogs offering <br/> a) Jobs and Internships <br/>b) Trainings and Courses <br/> c) Mentors and Coaches and, </br> d) Scholarships and Grants
       requestBody:
-        description: BAP searches for services
         content:
           application/json:
             schema:
@@ -32,6 +30,188 @@ paths:
               required:
                 - context
                 - message
+            examples:
+              Search for 'web design' jobs by category code in the region of Delhi:
+                value:
+                  context:
+                    domain: jobs
+                    country: IND
+                    city: std:011
+                    action: search
+                    core_version: 1.0.0-draft
+                    bap_id: https://exampleapp.io/
+                    bap_uri: https://api.exampleapp.io/v0/
+                    message_id: 5ac3dd78-829e-4c7d-9139-a15adbb582cc
+                    timestamp: '2021-03-23T10:00:40.065Z'
+                    ttl: P10S
+                  message:
+                    intent:
+                      category:
+                        descriptor:
+                          name: Web design jobs
+                          code: nic2008:62012
+              Search for jobs by skills like carpentry and painting:
+                value:
+                  context:
+                    domain: jobs
+                    country: IND
+                    city: std:011
+                    action: search
+                    core_version: 0.5.0
+                    bap_id: https://exampleapp.io/
+                    bap_uri: https://api.exampleapp.io/uhi/v0/
+                    message_id: 5ac3dd78-829e-4c7d-9139-a15adbb582cc
+                    timestamp: '2021-03-23T10:00:40.065Z'
+                  message:
+                    intent:
+                      fulfillment:
+                        customer:
+                          person:
+                            skills:
+                            - descriptor:
+                                name: Painting
+                            - descriptor:
+                                name: Carpentry
+                            experience: 12Y
+                            
+              Search for jobs along with expected salary:
+                value:
+                  context:
+                    domain: jobs
+                    country: IND
+                    city: std:011
+                    action: search
+                    core_version: 0.5.0
+                    bap_id: https://exampleapp.io/
+                    bap_uri: https://api.exampleapp.io/uhi/v0/
+                    message_id: 5ac3dd78-829e-4c7d-9139-a15adbb582cc
+                    timestamp: '2021-03-23T10:00:40.065Z'
+                  message:
+                    intent:
+                      fulfillment:
+                        customer:
+                          person:
+                            skills:
+                            - descriptor:
+                                name: Java Programming
+                            experience: 10Y
+                        item::
+                          domain_extn:
+                            expected_payment:
+                              amount:
+                                value: 250000
+                                unit: INR/month
+
+              Search for jobs offered by a specific provider:
+                value:
+                  context:
+                    domain: jobs
+                    country: IND
+                    city: std:011
+                    action: search
+                    core_version: 0.5.0
+                    bap_id: https://exampleapp.io/
+                    bap_uri: https://api.exampleapp.io/uhi/v0/
+                    message_id: 5ac3dd78-829e-4c7d-9139-a15adbb582cc
+                    timestamp: '2021-03-23T10:00:40.065Z'
+                  message:
+                    intent:
+                      provider:
+                        descriptor:
+                          name: Infosys         
+              Search for online courses matching a specific topic:
+                value:
+                  context:
+                    domain: trainings-and-courses
+                    country: IND
+                    city: std:011
+                    action: search
+                    core_version: 1.0.0-draft
+                    bap_id: https://exampleapp.io/
+                    bap_uri: https://api.exampleapp.io/v0/
+                    bpp_id: https://mymentor.com/
+                    bpp_uri: https://api.mymentor.com/v0/
+                    message_id: 5ac3dd78-829e-4c7d-9139-a15adbb582cc
+                    timestamp: '2021-03-23T10:00:40.065Z'
+                    ttl: P10S
+                  message:
+                    intent:
+                      item:
+                        descriptor:
+                          name: AI basics
+                        tags:
+                          seo: AI, ML, beginners, Artifical Intelligence, machine learning, neural networks
+                      fulfillment:
+                        type: ONLINE
+              Search for BTech courses offered by an engineering instituition like IIT Delhi:
+                value:
+                  context:
+                    domain: trainings-and-courses
+                    country: IND
+                    city: std:011
+                    action: search
+                    core_version: 1.0.0-draft
+                    bap_id: https://exampleapp.io/
+                    bap_uri: https://api.exampleapp.io/v0/
+                    bpp_id: https://mymentor.com/
+                    bpp_uri: https://api.mymentor.com/v0/
+                    message_id: 5ac3dd78-829e-4c7d-9139-a15adbb582cc
+                    timestamp: '2021-03-23T10:00:40.065Z'
+                    ttl: P10S
+                  message:
+                    intent:
+                      provider:
+                        descriptor:
+                          name: IIT Delhi
+                        tags:
+                          seo: AI, ML, beginners, Artifical Intelligence, machine learning, neural networks
+                      category:
+                        descriptor:
+                          name: B.Tech
+                          code: BTECH
+                      fulfillment:
+                        type: FULL-TIME
+              Searching for a mentor by name:
+                value:
+                  context:
+                    domain: mentorship-and-coaching
+                    country: IND
+                    city: std:011
+                    action: search
+                    core_version: 1.0.0-draft
+                    bap_id: https://exampleapp.io/
+                    bap_uri: https://api.exampleapp.io/v0/
+                    bpp_id: https://mymentor.com/
+                    bpp_uri: https://api.mymentor.com/v0/
+                    message_id: 5ac3dd78-829e-4c7d-9139-a15adbb582cc
+                    timestamp: '2021-03-23T10:00:40.065Z'
+                    ttl: P10S
+                  message:
+                    intent:
+                      fulfillment:
+                        agent:
+                          name: Dr Rajiv Manocha
+              Search for scholarships:
+                value:
+                  context:
+                    domain: mentorship
+                    country: IND
+                    city: std:011
+                    action: search
+                    core_version: 1.0.0-draft
+                    bap_id: https://exampleapp.io/
+                    bap_uri: https://api.exampleapp.io/v0/
+                    bpp_id: https://mymentor.com/
+                    bpp_uri: https://api.mymentor.com/v0/
+                    message_id: 5ac3dd78-829e-4c7d-9139-a15adbb582cc
+                    timestamp: '2021-03-23T10:00:40.065Z'
+                    ttl: P10S
+                  message:
+                    intent:
+                      category:
+                        id: '4'
+                        descriptor:
+                          name: Engineering and Technology
       responses:
         '200':
           description: Acknowledgement of message received
@@ -474,6 +654,123 @@ paths:
                   $ref: '#/components/schemas/Error'
               required:
                 - context
+            examples:
+              Publish a catalog of software jobs by a software agency:
+                value:
+                  context:
+                    domain: jobs:nic2008:62XXX
+                    country: IND
+                    city: '*'
+                    action: search
+                    core_version: 0.5.0
+                    bap_id: https://exampleapp.io/
+                    bap_uri: https://api.exampleapp.io/uhi/v0/
+                    bpp_id: https://naukri.com/
+                    bpp_uri: https://api.naukri.com/uhi/v0/
+                    message_id: 5ac3dd78-829e-4c7d-9139-a15adbb582cc
+                    timestamp: '2021-03-23T10:00:40.065Z'
+                  message:
+                    catalog:
+                      bpp/descriptor:
+                        name: Naukri Recruitment Platform
+                      providers:
+                        descriptor:
+                          name: Infosys
+                        categories:
+                        - id: '1'
+                          name: Frontend Jobs
+                        - id: '2'
+                          name: Backend Jobs
+                        items:
+                        - descriptor:
+                            name: Senior Software Developer
+                            code: SSFD
+                          fulfillment_id: '1'
+                          category_id: '1'
+                          matched: true
+                        - descriptor:
+                            name: Software Consultant - On site
+                            code: SWCO
+                          fulfillment_id: '1'
+                          category_id: '1'
+                          matched: 'false'
+                        - descriptor:
+                            name: Software Consultant - Remote
+                            code: SWCR
+                          fulfillment_id: '2'
+                          category_id: '2'
+                          matched: 'false'
+                      fulfillments:
+                      - id: ''
+                        descriptor:
+                          name: Full-time
+                        start:
+                          location:
+                            city: BLR
+                      - id: '2'
+                        descriptor:
+                          name: On-site
+                        start:
+                          location:
+                            city: BLR
+                          time:
+                            timestamp: '2022-08-10'
+                        end:
+                          location:
+                            city: BLR
+                          time:
+                            timestamp: '2022-08-10'
+                      - id: '3'
+                        descriptor:
+                          name: Remote
+                        start:
+                          time:
+                            timestamp: '2022-08-10'
+                        end:
+                          time:
+                            timestamp: '2022-08-10'
+              Publish a catalog of online courses:
+                value:
+                  context:
+                    domain: trainings-and-courses
+                    country: IND
+                    city: std:011
+                    action: search
+                    core_version: 0.5.0
+                    bap_id: https://exampleapp.io/
+                    bap_uri: https://api.exampleapp.io/uhi/v0/
+                    message_id: 5ac3dd78-829e-4c7d-9139-a15adbb582cc
+                    timestamp: '2021-03-23T10:00:40.065Z'
+                  message:
+                    catalog:
+                      bpp/descriptor:
+                        name: XAcademy
+                      providers:
+                        descriptor:
+                          name: XAcademy
+                        categories:
+                        - id: '1'
+                          name: Software
+                        - id: '2'
+                          name: Management
+                        items:
+                        - id: '1'
+                          descriptor:
+                            name: Basics of AI
+                          price:
+                            value: '6000'
+                          fulfillment_id: '1'
+                          category_id: '1'
+                        - id: '2'
+                          descriptor:
+                            name: AI for Data Analysis
+                          price:
+                            value: '7000'
+                          fulfillment_id: '1'
+                          category_id: '1'
+                      fulfillments:
+                      - id: ''
+                        type: ONLINE
       responses:
         '200':
           description: Acknowledgement of message received
@@ -2559,3 +2856,7 @@ components:
           type: string
         registration:
           type: string
+servers:
+  # Added by API Auto Mocking Plugin
+  - description: SwaggerHub API Auto Mocking
+    url: https://virtserver.swaggerhub.com/beckn/dsep/0.5.0

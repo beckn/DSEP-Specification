@@ -1,0 +1,66 @@
+{
+  "context": {
+    "domain": "onest:learning-experiences",
+    "action": "init",
+    "version": "1.1.0",
+    "bap_uri": "https://sample.bap.io/",
+    "bap_id": "sample.bap.io",
+    "transaction_id": "a9aaecca-10b7-4d19-b640-b047a7c62196",
+    "message_id": "$bb579fb8-cb82-4824-be12-fcbc405b6608",
+    "timestamp": "2022-12-12T09:55:41.161Z",
+    "ttl": "PT10M",
+    "bpp_id": "infosys.springboard.io",
+    "bpp_uri": "https://infosys.springboard.io"
+  },
+  "message": {
+    "order": {
+      "provider": {
+        "id": "INFOSYS"
+      },
+      "items": [
+        {
+          "id": "d4975df5-b18c-4772-80ad-368669856d52"
+        }
+      ],
+      "billing": {
+        "name": "Jane Doe",
+        "phone": "+91-9663088848",
+        "email": "jane.doe@example.com",
+        "address": "No 27, XYZ Lane, etc"
+      },
+      "fulfillments": [
+        {
+          "customer": {
+            "person": {
+              "name": "Jane Doe",
+              "age": "13",
+              "gender": "female",
+              "tags": [
+                {
+                  "descriptor": {
+                    "code": "professional-details",
+                    "name": "Professional Details"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "profession",
+                        "name": "profession"
+                      },
+                      "value": "student"
+                    }
+                  ],
+                  "display": true
+                }
+              ]
+            },
+            "contact": {
+              "phone": "+91-9663088848",
+              "email": "jane.doe@example.com"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

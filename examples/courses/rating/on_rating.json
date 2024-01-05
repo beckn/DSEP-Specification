@@ -1,0 +1,24 @@
+{
+  "context": {
+    "domain": "onest:learning-experiences",
+    "action": "on_rating",
+    "version": "1.1.0",
+    "bap_id": "onest.becknprotocol.io",
+    "bap_uri": "https://onest-network.becknprotocol.io/",
+    "transaction_id": "a9aaecca-10b7-4d19-b640-b047a7c62196",
+    "message_id": "$bb579fb8-cb82-4824-be12-fcbc405b6608",
+    "timestamp": "2022-12-12T09:55:41.161Z",
+    "ttl": "PT10M",
+    "bpp_id": "infosys.springboard.io",
+    "bpp_uri": "https://infosys.springboard.io"
+  },
+  "message": {
+    "feedback_form": {
+      "form": {
+        "url": "https://infosys.springboard.io/rating?course=d4975df5-b18c-4772-80ad-368669856d52",
+        "mime_type" :"text/html"
+      },
+      "required": "false"
+    }
+  }
+}

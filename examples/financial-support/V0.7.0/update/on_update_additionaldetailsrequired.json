@@ -1,0 +1,318 @@
+{
+    "context": {
+        "domain": "dsep:scholarships",
+        "location": {
+            "city": {
+                "name": "Bangalore",
+                "code": "std:080"
+            },
+            "country": {
+                "name": "India",
+                "code": "IND"
+            }
+        },
+        "action": "on_update",
+        "version": "0.7.0",
+        "bap_id": "ps-bap-network.becknprotocol.io",
+        "bap_uri": "https://ps-bap-network.becknprotocol.io/",
+        "bpp_id": "beckn-sandbox-bpp.becknprotocol.io",
+        "bpp_uri": "https://sandbox-bpp-network.becknprotocol.io/",
+        "transaction_id": "a9aaecca-10b7-4d19-b640-022723112309",
+        "message_id": "a9aaecca-10b7-4d19-b640-b047a7c60009",
+        "timestamp": "2023-02-06T09:55:41.161Z",
+        "ttl": "PT10M"
+    },
+    "message": {
+        "order": {
+            "id": "12424kh",
+            "provider": {
+                "id": "471",
+                "descriptor": {
+                    "name": "XYZ Education Foundation",
+                    "short_desc" : "Short Description about the Foundation",
+                    "images": [
+                        {
+                            "url" : "url of the image of the provider"
+                        }
+                    ]
+                },
+                "rateable": false
+            },
+            "items": [
+                {
+                    "id": "SCM_63587501",
+                    "descriptor": {
+                        "name": "XYZ Education Scholarship for Undergraduate Students",
+                        "long_desc": "XYZ Education Scholarship for Undergraduate Students"
+                    },
+                    "price": {
+                        "currency": "INR",
+                        "value": "Upto RS.1000 per year"
+                    },
+                    "time" : {
+                        "label" : "Start  & End date of the Application",
+                        "range" : {
+                            "start" : "2022-09-01T00:00:00.000Z",
+                            "end" : "2022-10-31T00:00:00.000Z"
+                        }
+                    },
+                    "rateable": false,
+                    "tags": [
+                        {
+                            "display": true,
+                            "descriptor": {
+                                "code": "soc-elg",
+                                "name": "Social Eligibility"
+                            },
+                            "list": [
+                                {
+                                    "value" : "SC"
+                                },
+                                {
+                                    "value" : "ST"
+                                },
+                                {
+                                    "value" : "OBC"
+                                }]
+                        },
+                        {
+                            "display": true,
+                            "descriptor": {
+                                "code": "gen-elg",
+                                "name": "Gender Eligibility"
+                            },
+                            "list": [
+                                {
+                                    "value" : "Female"
+                                },
+                                {
+                                    "value" : "Transgender"
+                                }]
+                        },
+                        {
+                            "display": true,
+                            "descriptor": {
+                                "code": "fin-elg",
+                                "name": "Financial Eligibility"
+                            },
+                            "list": [
+                                {
+                                    "value" : "Max Family Income - Rs.500000.00"
+                                }] 
+                            
+                        },
+                        {
+                            "display": true,
+                            "descriptor": {
+                                "code": "acad-elg",
+                                "name": "Academic Eligibility"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "class",
+                                        "name": "Class"
+                                    },
+                                    "value": "12th"
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "percentage",
+                                        "name": "Percentage"
+                                    },
+                                    "value": ">= 50"
+                                }
+
+                            ] 
+                            
+                        },
+                        {
+                            "display": true,
+                            "descriptor": {
+                                "code": "docs-reqd",
+                                "name": "Documents Required"
+                            },
+                            "list": [
+                                {
+                                    "value" : "10th Marksheet"
+                                },
+                                {
+                                    "value" : "Aadhar Card of the Student"
+                                },
+                                {
+                                    "value" : "Aadhar Card of the Parent"
+                                },
+                                {
+                                    "value" : "Pan Card of the Parent"
+                                }
+                            ]
+                        },
+                        {
+                            "display": true,
+                            "descriptor": {
+                                "code": "add-info",
+                                "name": "Additional Information"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "faq-url",
+                                        "name": "Frequently Asked Questions's URL"
+                                    },
+                                    "value" : "https://www.xyz-scholarship.com/faq" 
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "tnc-url",
+                                        "name": "Terms and Conditions's URL"
+                                    },
+                                    "value": "https://www.xyz-scholarship.com/tnc"
+                                }
+                            ]
+                        }
+                    ],
+                    "location_ids": ["L1","L2"],
+                    "fulfillment_ids": [
+                        "VSP_FUL_1113"
+                    ]
+                }
+            ],
+            "billing": {
+                "name": "Manjunath",
+                "organization": {
+                    "descriptor": {
+                        "name": "Namma Yatri",
+                        "code": "nammayatri.in"
+                    },
+                    "contact": {
+                        "phone": "+91-8888888888",
+                        "email": "scholarships@nammayatri.in"
+                    }
+                },
+                "address": "No 27, XYZ Lane, etc",
+                "phone": "+91-9999999999"
+            },
+            "fulfillments": [
+                {
+                    "state" : {
+                        "descriptor" : {
+                            "code": "ADDITIONAL-DETAILS-REQUIRED",
+                            "name" : "Additional details required"
+                        },
+                        "updated_at" : "2023-02-06T09:55:41.161Z"
+                    },
+                    "id": "VSP_FUL_1113",
+                    "type": "SCHOLARSHIP",
+                    "tracking": false,
+                    "agent" : {
+                        "person" : {
+                            "name" : "Ekstep Foundation SPoc"
+                        },
+                        "contact" : {
+                            "email" : "ekstepsupport@ekstep.com"
+                        }
+                    },
+                    "customer": {
+                        "id": "aadhaar:798677675565",
+                        "person": {
+                            "name": "Jane Doe",
+                            "age": "13",
+                            "gender": "female"
+                        },
+                        "contact": {
+                            "phone": "+91-9663088848",
+                            "email": "jane.doe@example.com"
+                        }
+                    }
+                }
+            ],
+            "xinput": {
+                "required": true,
+                "head": {
+                    "descriptor": {
+                        "name": "Additional Information Required"
+                    },
+                    "index": {
+                        "min": 0,
+                        "cur": 0,
+                        "max": 0
+                    },
+                    "headings": [
+                        "Additional Details"
+                    ]
+                },
+                "form": {
+                    "mime_type": "text/html",
+                    "url": "https://6vs8xnx5i7.vidyasaarathi.co.in/loans-kyc/xinput/formid/a23f2fdfbbb8ac402bfd54f",
+                    "resubmit": false,
+                    "auth": {
+                        "descriptor": {
+                            "code": "jwt"
+                        },
+                        "value": "eyJhbGciOiJIUzI.eyJzdWIiOiIxMjM0NTY3O.SflKxwRJSMeKKF2QT4"
+                    }
+                }
+            },
+            "cancellation_terms" : [
+                {
+                    "cancellation_fee" : {
+                        "amount" : {
+                            "currency" : "INR",
+                            "value" : "Penalty upto 5,00,000 INR"
+                        }
+                    }
+                }
+
+            ],
+            "docs": [
+                {
+                    "descriptor":{
+                        "name" :"Application Details",
+                        "short_desc" : "To open this document, enter the password sent to your email mayan****@***.com"
+                    },
+                    "url" : "https://link-to-the-document.com",
+                    "mime_type" : "application/pdf"
+                }
+            ],
+            "payments" : [
+                {
+                    "params" :{
+                        "bank_code": "IFSC_Code_Of_the_bank",
+                        "bank_account_number" :"121212121212",
+                        "bank_account_name" : "Account Holder Name"
+                    }
+                   
+                }
+            ],
+            "quote" :{
+                "price" : {
+                    "currency" : "INR",
+                    "value" : "250000"
+                },
+                "breakup":[
+                    {
+                        "title": "Tution fee",
+                        "price" : {
+                            "currency" : "INR",
+                            "value" : "150000"
+                        }
+                    },
+                    {
+                        "title": "Hostel fee",
+                        "price" : {
+                            "currency" : "INR",
+                            "value" : "50000"
+                        }
+                    },
+                    {
+                        "title": "Books",
+                        "price" : {
+                            "currency" : "INR",
+                            "value" : "50000"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}
