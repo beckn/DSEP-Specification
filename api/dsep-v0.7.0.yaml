@@ -591,7 +591,7 @@ paths:
         - Beckn Provider Platform (BPP)
       description: Contact support
       requestBody:
-        description: TODO
+        description: Contact support
         content:
           application/json:
             schema:
@@ -602,12 +602,8 @@ paths:
                 message:
                   type: object
                   properties:
-                    order_id:
-                      type: string
-                      description: ID of the Order for which support is needed
-                    callback_phone: 
-                      type: string
-                      description : "Phone number of the customer on which callback is needed"
+                    support:
+                      $ref: '#/components/schemas/Support'
               required:
                 - context
                 - message
@@ -1929,10 +1925,10 @@ components:
       properties:
         domain:
           $ref: '#/components/schemas/Domain'
-        country:
-          $ref: '#/components/schemas/Country/properties/code'
-        city:
-          $ref: '#/components/schemas/City/properties/code'
+        location:
+          description: The location where the transaction is intended to be fulfilled.
+          allOf:
+            - $ref: '#/components/schemas/Location'
         action:
           type: string
           description: Defines the Beckn API call. Any actions other than the enumerated actions are not supported by Beckn Protocol
@@ -1957,12 +1953,11 @@ components:
             - on_cancel
             - on_rating
             - on_support
-        core_version:
+        version:
           type: string
           description: Version of Beckn core API specification being used
         bap_id:
           type: string
-          format: uri
           description: Unique id of the BAP. By default it is the fully qualified domain name of the BAP
         bap_uri:
           type: string
@@ -1970,7 +1965,6 @@ components:
           description: URI of the BAP for accepting callbacks. Must have the same domain name as the bap_id
         bpp_id:
           type: string
-          format: uri
           description: Unique id of the BPP. By default it is the fully qualified domain name of the BPP
         bpp_uri:
           type: string
@@ -1978,9 +1972,11 @@ components:
           description: URI of the BPP. Must have the same domain name as the bap_id
         transaction_id:
           type: string
+          format: uuid
           description: This is a unique value which persists across all API calls from search through confirm
         message_id:
           type: string
+          format: uuid
           description: This is a unique value which persists during a request / callback cycle
         timestamp:
           type: string
@@ -1995,9 +1991,8 @@ components:
       required:
         - domain
         - action
-        - country
-        - city
-        - core_version
+        - location
+        - version
         - transaction_id
         - message_id
         - bap_id
@@ -2059,7 +2054,7 @@ components:
       type: object
       properties:
         descriptor:
-          $ref: '#/components/schemas/descriptor'
+          $ref: '#/components/schemas/Descriptor'
         url:
           type: string
           format: uri
@@ -2368,7 +2363,7 @@ components:
           type: object
           properties:
             descriptor:
-              $ref: '#/components/schemas/descriptor'
+              $ref: '#/components/schemas/Descriptor'
             index:
               type: object
               properties:
@@ -2416,13 +2411,6 @@ components:
             value: 
               type: string
 
-    
-    Language:
-      description: indicates language code. Beckn supports country codes as per ISO 639.2 standard
-      type: object
-      properties:
-        code:
-          type: string
     Location:
       description: Describes the location of a runtime object.
       type: object
@@ -2476,21 +2464,6 @@ components:
             $ref: '#/components/schemas/Item/properties/id'
         time:
           $ref: '#/components/schemas/Time'
-
-    Operator:
-      description: Describes the agent of a service
-      allOf:
-        - $ref: "#/components/schemas/Person"
-        - properties:
-            experience:
-              type: object
-              properties:
-                label:
-                  type: string
-                value:
-                  type: string
-                unit:
-                  type: string
 
     Option:
       description: Describes a selectable option
@@ -2917,10 +2890,6 @@ components:
           description: comma separated values representing days of the week
         schedule:
           $ref: '#/components/schemas/Schedule'
-
-    TrackingData:
-      description: Describes tracking data object during live tracking of an order
-      $ref: '#/components/schemas/Location/properties/gps'
 
     Tracking:
       description: Describes the tracking info of an object
