@@ -212,6 +212,37 @@ paths:
                         id: '4'
                         descriptor:
                           name: Engineering and Technology
+              Search for online courses in specific languages:
+                value:
+                  context:
+                    domain: trainings-and-courses
+                    country: IND
+                    city: std:011
+                    action: search
+                    core_version: 1.0.0-draft
+                    bap_id: https://exampleapp.io/
+                    bap_uri: https://api.exampleapp.io/v0/
+                    bpp_id: https://mymentor.com/
+                    bpp_uri: https://api.mymentor.com/v0/
+                    message_id: 5ac3dd78-829e-4c7d-9139-a15adbb582cc
+                    timestamp: '2021-03-23T10:00:40.065Z'
+                    ttl: P10S
+                  message:
+                    intent:
+                      item:
+                        descriptor:
+                          name: AI basics
+                        tags:
+                        - code: "lang"
+                          name: "Language"
+                          list:
+                          - code: ENG
+                            name: "English"
+                          - code: HIN
+                            name: "Hindi"
+                      fulfillment:
+                        type: ONLINE
+              
       responses:
         '200':
           description: Acknowledgement of message received
@@ -771,6 +802,65 @@ paths:
                       fulfillments:
                       - id: ''
                         type: ONLINE
+              Publish a catalog of online courses with languages:
+                value:
+                  context:
+                    domain: trainings-and-courses
+                    country: IND
+                    city: std:011
+                    action: search
+                    core_version: 0.5.0
+                    bap_id: https://exampleapp.io/
+                    bap_uri: https://api.exampleapp.io/uhi/v0/
+                    message_id: 5ac3dd78-829e-4c7d-9139-a15adbb582cc
+                    timestamp: '2021-03-23T10:00:40.065Z'
+                  message:
+                    catalog:
+                      bpp/descriptor:
+                        name: XAcademy
+                      providers:
+                        descriptor:
+                          name: XAcademy
+                        categories:
+                        - id: '1'
+                          name: Software
+                        - id: '2'
+                          name: Management
+                        items:
+                        - id: '1'
+                          descriptor:
+                            name: Basics of AI
+                          price:
+                            value: '6000'
+                          fulfillment_id: '1'
+                          category_id: '1'
+                          tags:
+                          - code: "lang"
+                            name: "Language"
+                            list:
+                              - code: "ENG"
+                                name: 'English'
+                              - code: "HIN"
+                                name: 'Hindi'
+                        - id: '2'
+                          descriptor:
+                            name: AI for Data Analysis
+                          price:
+                            value: '7000'
+                          fulfillment_id: '1'
+                          category_id: '1'
+                          tags:
+                          - code: "lang"
+                            name: "Language"
+                            list:
+                              - code: "ENG"
+                                name: 'English'
+                              - code: "MAL"
+                                name: 'Malayalam'
+                      fulfillments:
+                      - id: ''
+                        type: ONLINE
+      
       responses:
         '200':
           description: Acknowledgement of message received
