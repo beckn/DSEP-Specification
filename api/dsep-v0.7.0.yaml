@@ -40,10 +40,13 @@ paths:
                 value:
                   context:
                     domain: jobs
-                    country: IND
-                    city: std:011
+                    location:
+                      city:
+                        code: std:011
+                      country:
+                        code: IND
                     action: search
-                    core_version: 1.0.0-draft
+                    version: 1.0.0-draft
                     bap_id: https://exampleapp.io/
                     bap_uri: https://api.exampleapp.io/v0/
                     message_id: 5ac3dd78-829e-4c7d-9139-a15adbb582cc
@@ -59,10 +62,13 @@ paths:
                 value:
                   context:
                     domain: jobs
-                    country: IND
-                    city: std:011
+                    location:
+                      city:
+                        code: std:011
+                      country:
+                        code: IND
                     action: search
-                    core_version: 0.5.0
+                    version: 0.5.0
                     bap_id: https://exampleapp.io/
                     bap_uri: https://api.exampleapp.io/uhi/v0/
                     message_id: 5ac3dd78-829e-4c7d-9139-a15adbb582cc
@@ -73,20 +79,30 @@ paths:
                         customer:
                           person:
                             skills:
-                            - descriptor:
-                                name: Painting
-                            - descriptor:
-                                name: Carpentry
-                            experience: 12Y
+                            - name: Painting
+                            - name: Carpentry
+                            tags:
+                              - descriptor:
+                                  name:
+                                    Competence
+                                list:
+                                  - descriptor:
+                                      name:
+                                        Experience
+                                    value:
+                                      12Y
                             
               Search for jobs along with expected salary:
                 value:
                   context:
                     domain: jobs
-                    country: IND
-                    city: std:011
+                    location:
+                      city:
+                        code: std:011
+                      country:
+                        code: IND
                     action: search
-                    core_version: 0.5.0
+                    version: 0.5.0
                     bap_id: https://exampleapp.io/
                     bap_uri: https://api.exampleapp.io/uhi/v0/
                     message_id: 5ac3dd78-829e-4c7d-9139-a15adbb582cc
@@ -97,24 +113,39 @@ paths:
                         customer:
                           person:
                             skills:
-                            - descriptor:
-                                name: Java Programming
-                            experience: 10Y
-                        item::
-                          domain_extn:
-                            expected_payment:
-                              amount:
-                                value: 250000
-                                unit: INR/month
+                              - name: Java Programming
+                            tags:
+                              - descriptor:
+                                  name:
+                                    Competence
+                                list:
+                                  - descriptor:
+                                      name:
+                                        Experience
+                                    value:
+                                      12Y
+                        tags:
+                          - descriptor:
+                              name:
+                                Expectations
+                            list:
+                              - descriptor:
+                                  name:
+                                    expected_payment
+                                value:
+                                  250000INR/Month
 
               Search for jobs offered by a specific provider:
                 value:
                   context:
                     domain: jobs
-                    country: IND
-                    city: std:011
+                    location:
+                      city:
+                        code: std:011
+                      country:
+                        code: IND
                     action: search
-                    core_version: 0.5.0
+                    version: 0.5.0
                     bap_id: https://exampleapp.io/
                     bap_uri: https://api.exampleapp.io/uhi/v0/
                     message_id: 5ac3dd78-829e-4c7d-9139-a15adbb582cc
@@ -128,10 +159,13 @@ paths:
                 value:
                   context:
                     domain: trainings-and-courses
-                    country: IND
-                    city: std:011
+                    location:
+                      city:
+                        code: std:011
+                      country:
+                        code: IND
                     action: search
-                    core_version: 1.0.0-draft
+                    version: 1.0.0-draft
                     bap_id: https://exampleapp.io/
                     bap_uri: https://api.exampleapp.io/v0/
                     bpp_id: https://mymentor.com/
@@ -145,17 +179,40 @@ paths:
                         descriptor:
                           name: AI basics
                         tags:
-                          seo: AI, ML, beginners, Artifical Intelligence, machine learning, neural networks
+                          - descriptor:
+                              name: course_labels
+                            list:
+                              - descriptor:
+                                  name: label_1
+                                value: AI
+                              - descriptor:
+                                  name: label_2
+                                value: ML
+                              - descriptor:
+                                  name: label_3
+                                value: beginners
+                              - descriptor:
+                                  name: label_4
+                                value: Artifical Intelligence
+                              - descriptor:
+                                  name: label_5
+                                value:  machine learning
+                              - descriptor:
+                                  name: label_6
+                                value:  neural networks
                       fulfillment:
-                        type: ONLINE
+                        type: FULL-TIME
               Search for BTech courses offered by an engineering instituition like IIT Delhi:
                 value:
                   context:
                     domain: trainings-and-courses
-                    country: IND
-                    city: std:011
+                    location:
+                      city:
+                        code: std:011
+                      country:
+                        code: IND
                     action: search
-                    core_version: 1.0.0-draft
+                    version: 1.0.0-draft
                     bap_id: https://exampleapp.io/
                     bap_uri: https://api.exampleapp.io/v0/
                     bpp_id: https://mymentor.com/
@@ -168,8 +225,28 @@ paths:
                       provider:
                         descriptor:
                           name: IIT Delhi
-                        tags:
-                          seo: AI, ML, beginners, Artifical Intelligence, machine learning, neural networks
+                      tags:
+                        - descriptor:
+                            name: course_labels
+                          list:
+                            - descriptor:
+                                name: label_1
+                              value: AI
+                            - descriptor:
+                                name: label_2
+                              value: ML
+                            - descriptor:
+                                name: label_3
+                              value: beginners
+                            - descriptor:
+                                name: label_4
+                              value: Artifical Intelligence
+                            - descriptor:
+                                name: label_5
+                              value:  machine learning
+                            - descriptor:
+                                name: label_6
+                              value:  neural networks
                       category:
                         descriptor:
                           name: B.Tech
@@ -180,10 +257,13 @@ paths:
                 value:
                   context:
                     domain: mentorship-and-coaching
-                    country: IND
-                    city: std:011
+                    location:
+                      city:
+                        code: std:011
+                      country:
+                        code: IND
                     action: search
-                    core_version: 1.0.0-draft
+                    version: 1.0.0-draft
                     bap_id: https://exampleapp.io/
                     bap_uri: https://api.exampleapp.io/v0/
                     bpp_id: https://mymentor.com/
@@ -200,10 +280,13 @@ paths:
                 value:
                   context:
                     domain: mentorship
-                    country: IND
-                    city: std:011
+                    location:
+                      city:
+                        code: std:011
+                      country:
+                        code: IND
                     action: search
-                    core_version: 1.0.0-draft
+                    version: 1.0.0-draft
                     bap_id: https://exampleapp.io/
                     bap_uri: https://api.exampleapp.io/v0/
                     bpp_id: https://mymentor.com/
