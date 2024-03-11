@@ -976,32 +976,7 @@ paths:
                   type: object
                   properties:
                     order:
-                      type: object
-                      properties:
-                        provider:
-                          $ref: '#/components/schemas/Provider'
-                        provider_location:
-                          $ref: '#/components/schemas/Location'
-                        items:
-                          type: array
-                          items:
-                            allOf:
-                              - $ref: '#/components/schemas/Item'
-                              - properties:
-                                  quantity:
-                                    $ref: '#/components/schemas/ItemQuantity'
-                        add_ons:
-                          type: array
-                          items:
-                            $ref: '#/components/schemas/AddOn'
-                        offers:
-                          type: array
-                          items:
-                            $ref: '#/components/schemas/Offer'
-                        quote:
-                          $ref: '#/components/schemas/Quotation'
-                  required:
-                    - order
+                      $ref: '#/components/schemas/Order'
                 error:
                   $ref: '#/components/schemas/Error'
               required:
@@ -1049,50 +1024,7 @@ paths:
                   type: object
                   properties:
                     order:
-                      type: object
-                      properties:
-                        provider:
-                          type: object
-                          properties:
-                            id:
-                              $ref: '#/components/schemas/Provider/properties/id'
-                        provider_location:
-                          type: object
-                          properties:
-                            id:
-                              $ref: '#/components/schemas/Location/properties/id'
-                        items:
-                          type: array
-                          items:
-                            allOf:
-                              - $ref: '#/components/schemas/Item'
-                              - properties:
-                                  quantity:
-                                    $ref: '#/components/schemas/ItemQuantity/properties/selected'
-                        add_ons:
-                          type: array
-                          items:
-                            type: object
-                            properties:
-                              id:
-                                $ref: '#/components/schemas/AddOn/properties/id'
-                        offers:
-                          type: array
-                          items:
-                            type: object
-                            properties:
-                              id:
-                                $ref: '#/components/schemas/Offer/properties/id'
-                        billing:
-                          $ref: '#/components/schemas/Billing'
-                        fulfillment:
-                          $ref: '#/components/schemas/Fulfillment'
-                        quote:
-                          $ref: '#/components/schemas/Quotation'
-                        payment:
-                          $ref: '#/components/schemas/Payment'
-                  required:
-                    - order
+                      $ref: '#/components/schemas/Order'
                 error:
                   $ref: '#/components/schemas/Error'
               required:
@@ -1732,10 +1664,8 @@ components:
         price:
           $ref: '#/components/schemas/Price'
     Address:
-      description: Describes a postal address
-      oneOf:
-        - $ref: '#/components/schemas/FullAddress'
-        - $ref: '#/components/schemas/StructuredAddress'
+      description: Describes a postal address.
+      type: string
     Agent:
       description: 'Describes a person who fulfills this order.'
       properties:
@@ -1895,6 +1825,8 @@ components:
           $ref: '#/components/schemas/Descriptor'
         time:
           $ref: '#/components/schemas/Time'
+        ttl:
+          description: Time to live for an instance of this schema
         tags:
           type: array
           items:
