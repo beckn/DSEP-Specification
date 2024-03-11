@@ -21,7 +21,12 @@ paths:
               type: object
               properties:
                 context:
-                  $ref: '#/components/schemas/Context'
+                  allOf:
+                    - $ref: '#/components/schemas/Context'
+                    - properties:
+                        action:
+                          enum:
+                            - search
                 message:
                   type: object
                   properties:
@@ -235,16 +240,22 @@ paths:
     post:
       tags:
         - Beckn Provider Platform (BPP)
-      description: Select items from the catalog and build your order
+      description: API for Selecting items from the catalog.
       requestBody:
-        description: TODO
         content:
           application/json:
             schema:
               type: object
               properties:
                 context:
-                  $ref: '#/components/schemas/Context'
+                  allOf:
+                    - $ref: '#/components/schemas/Context'
+                    - properties:
+                        action:
+                          enum:
+                            - select
+                      required:
+                        - action
                 message:
                   type: object
                   properties:
@@ -255,9 +266,6 @@ paths:
               required:
                 - context
                 - message
-
-
-
       responses:
         '200':
           description: Acknowledgement of message received
@@ -283,14 +291,20 @@ paths:
         - Beckn Provider Platform (BPP)
       description: Initialize an order by providing billing and/or shipping details
       requestBody:
-        description: TODO
         content:
           application/json:
             schema:
               type: object
               properties:
                 context:
-                  $ref: '#/components/schemas/Context'
+                  allOf:
+                    - $ref: '#/components/schemas/Context'
+                    - properties:
+                        action:
+                          enum:
+                            - init
+                      required:
+                        - action
                 message:
                   type: object
                   properties:
@@ -326,14 +340,20 @@ paths:
         - Beckn Provider Platform (BPP)
       description: Initialize an order by providing billing and/or shipping details
       requestBody:
-        description: TODO
         content:
           application/json:
             schema:
               type: object
               properties:
                 context:
-                  $ref: '#/components/schemas/Context'
+                  allOf:
+                    - $ref: '#/components/schemas/Context'
+                    - properties:
+                        action:
+                          enum:
+                            - confirm
+                      required:
+                        - action
                 message:
                   type: object
                   properties:
@@ -369,14 +389,20 @@ paths:
         - Beckn Provider Platform (BPP)
       description: Fetch the latest order object
       requestBody:
-        description: TODO
         content:
           application/json:
             schema:
               type: object
               properties:
                 context:
-                  $ref: '#/components/schemas/Context'
+                  allOf:
+                    - $ref: '#/components/schemas/Context'
+                    - properties:
+                        action:
+                          enum:
+                            - status
+                      required:
+                        - action
                 message:
                   type: object
                   properties:
@@ -412,14 +438,20 @@ paths:
         - Beckn Provider Platform (BPP)
       description: Track an active order
       requestBody:
-        description: TODO
         content:
           application/json:
             schema:
               type: object
               properties:
                 context:
-                  $ref: '#/components/schemas/Context'
+                  allOf:
+                    - $ref: '#/components/schemas/Context'
+                    - properties:
+                        action:
+                          enum:
+                            - track
+                      required:
+                        - action
                 message:
                   type: object
                   properties:
@@ -458,14 +490,20 @@ paths:
         - Beckn Provider Platform (BPP)
       description: Cancel an order
       requestBody:
-        description: TODO
         content:
           application/json:
             schema:
               type: object
               properties:
                 context:
-                  $ref: '#/components/schemas/Context'
+                  allOf:
+                    - $ref: '#/components/schemas/Context'
+                    - properties:
+                        action:
+                          enum:
+                            - cancel
+                      required:
+                        - action
                 message:
                   type: object
                   properties:
@@ -505,14 +543,20 @@ paths:
         - Beckn Provider Platform (BPP)
       description: Remove object
       requestBody:
-        description: TODO
         content:
           application/json:
             schema:
               type: object
               properties:
                 context:
-                  $ref: '#/components/schemas/Context'
+                  allOf:
+                    - $ref: '#/components/schemas/Context'
+                    - properties:
+                        action:
+                          enum:
+                            - update
+                      required:
+                        - action
                 message:
                   type: object
                   properties:
@@ -552,16 +596,27 @@ paths:
         - Beckn Provider Platform (BPP)
       description: Provide feedback on a service
       requestBody:
-        description: TODO
         content:
           application/json:
             schema:
               type: object
               properties:
                 context:
-                  $ref: '#/components/schemas/Context'
+                  allOf:
+                    - $ref: '#/components/schemas/Context'
+                    - properties:
+                        action:
+                          enum:
+                            - rating
+                      required:
+                        - action
                 message:
-                  $ref: '#/components/schemas/Rating'
+                  type: object
+                  properties:
+                    ratings:
+                      type: array
+                      items:
+                        $ref: '#/components/schemas/Rating'
               required:
                 - context
                 - message
@@ -584,7 +639,6 @@ paths:
                     $ref: '#/components/schemas/Error'
                 required:
                   - message
-
   /support:
     post:
       tags:
@@ -598,7 +652,14 @@ paths:
               type: object
               properties:
                 context:
-                  $ref: '#/components/schemas/Context'
+                  allOf:
+                    - $ref: '#/components/schemas/Context'
+                    - properties:
+                        action:
+                          enum:
+                            - support
+                      required:
+                        - action
                 message:
                   type: object
                   properties:
@@ -634,14 +695,20 @@ paths:
         - Beckn Gateway (BG)
       description: Send catalog
       requestBody:
-        description: TODO
         content:
           application/json:
             schema:
               type: object
               properties:
                 context:
-                  $ref: '#/components/schemas/Context'
+                  allOf:
+                    - $ref: '#/components/schemas/Context'
+                    - properties:
+                        action:
+                          enum:
+                            - on_search
+                      required:
+                        - action
                 message:
                   type: object
                   properties:
@@ -795,7 +862,6 @@ paths:
         - Beckn App Platform (BAP)
       description: Send draft order object with quoted price for selected items
       requestBody:
-        description: TODO
         content:
           application/json:
             schema:
@@ -862,14 +928,20 @@ paths:
         - Beckn App Platform (BAP)
       description: Send order object with payment details updated
       requestBody:
-        description: TODO
         content:
           application/json:
             schema:
               type: object
               properties:
                 context:
-                  $ref: '#/components/schemas/Context'
+                  allOf:
+                    - $ref: '#/components/schemas/Context'
+                    - properties:
+                        action:
+                          enum:
+                            - on_init
+                      required:
+                        - action
                 message:
                   type: object
                   properties:
@@ -947,14 +1019,20 @@ paths:
         - Beckn App Platform (BAP)
       description: Send active order object
       requestBody:
-        description: TODO
         content:
           application/json:
             schema:
               type: object
               properties:
                 context:
-                  $ref: '#/components/schemas/Context'
+                  allOf:
+                    - $ref: '#/components/schemas/Context'
+                    - properties:
+                        action:
+                          enum:
+                            - on_confirm
+                      required:
+                        - action
                 message:
                   type: object
                   properties:
@@ -991,14 +1069,20 @@ paths:
         - Beckn App Platform (BAP)
       description: Send tracking details of an active order
       requestBody:
-        description: TODO
         content:
           application/json:
             schema:
               type: object
               properties:
                 context:
-                  $ref: '#/components/schemas/Context'
+                  allOf:
+                    - $ref: '#/components/schemas/Context'
+                    - properties:
+                        action:
+                          enum:
+                            - on_track
+                      required:
+                        - action
                 message:
                   type: object
                   properties:
@@ -1035,14 +1119,20 @@ paths:
         - Beckn App Platform (BAP)
       description: Send cancellation request_id with reasons list in case of cancellation request. Else send cancelled order object
       requestBody:
-        description: TODO
         content:
           application/json:
             schema:
               type: object
               properties:
                 context:
-                  $ref: '#/components/schemas/Context'
+                  allOf:
+                    - $ref: '#/components/schemas/Context'
+                    - properties:
+                        action:
+                          enum:
+                            - on_cancel
+                      required:
+                        - action
                 message:
                   type: object
                   properties:
@@ -1079,14 +1169,20 @@ paths:
         - Beckn App Platform (BAP)
       description: Returns updated service with updated runtime object
       requestBody:
-        description: TODO
         content:
           application/json:
             schema:
               type: object
               properties:
                 context:
-                  $ref: '#/components/schemas/Context'
+                  allOf:
+                    - $ref: '#/components/schemas/Context'
+                    - properties:
+                        action:
+                          enum:
+                            - on_update
+                      required:
+                        - action
                 message:
                   type: object
                   properties:
@@ -1123,14 +1219,20 @@ paths:
         - Beckn App Platform (BAP)
       description: Fetch the status of a Service
       requestBody:
-        description: TODO
         content:
           application/json:
             schema:
               type: object
               properties:
                 context:
-                  $ref: '#/components/schemas/Context'
+                  allOf:
+                    - $ref: '#/components/schemas/Context'
+                    - properties:
+                        action:
+                          enum:
+                            - on_status
+                      required:
+                        - action
                 message:
                   type: object
                   properties:
@@ -1167,16 +1269,27 @@ paths:
         - Beckn App Platform (BAP)
       description: Provide feedback on a service
       requestBody:
-        description: TODO
         content:
           application/json:
             schema:
               type: object
               properties:
                 context:
-                  $ref: '#/components/schemas/Context'
+                  allOf:
+                    - $ref: '#/components/schemas/Context'
+                    - properties:
+                        action:
+                          enum:
+                            - on_rating
+                      required:
+                        - action
                 message:
-                  $ref: '#/components/schemas/RatingAck'
+                  type: object
+                  properties:
+                    feedback_form:
+                      description: A feedback form to allow the user to provide additional information on the rating provided
+                      allOf:
+                        - $ref: '#/components/schemas/XInput'
                 error:
                   $ref: '#/components/schemas/Error'
               required:
@@ -1206,43 +1319,25 @@ paths:
         - Beckn App Platform (BAP)
       description: Contact Support
       requestBody:
-        description: TODO
         content:
           application/json:
             schema:
               type: object
               properties:
                 context:
-                  $ref: '#/components/schemas/Context'
+                  allOf:
+                    - $ref: '#/components/schemas/Context'
+                    - properties:
+                        action:
+                          enum:
+                            - on_support
+                      required:
+                        - action
                 message:
                   type: object
                   properties:
-                    ref_id:
-                      type: string
-                      description: "Ref Id of the Support Request"
-                    order_id:
-                      type: string
-                      description : "Order ID on which support was given"
-                    callback_phone: 
-                      type: string
-                      description : "Phone number of the customer on which callback is needed"
-                    phone:
-                      type: string
-                      format: phone
-                    email:
-                      type: string
-                      format: email
-                    url:
-                      type: string
-                      format: url
-                    docs:
-                      type: array
-                      items:
-                        $ref: '#/components/schemas/Document' 
-
-
-
-            
+                    support:
+                      $ref: '#/components/schemas/Support'
                 error:
                   $ref: '#/components/schemas/Error'
               required:
@@ -1849,7 +1944,9 @@ components:
         time:
           $ref: '#/components/schemas/Time'
         tags:
-          $ref: '#/components/schemas/TagGroup'
+          type: array
+          items:
+            $ref: '#/components/schemas/TagGroup'
     Circle:
       description: Describes a circular area on the map
       type: object
@@ -1884,7 +1981,8 @@ components:
       type: object
       properties:
         domain:
-          $ref: '#/components/schemas/Domain'
+          allOf:
+            - $ref: '#/components/schemas/Domain/properties/code'
         location:
           description: The location where the transaction is intended to be fulfilled.
           allOf:
@@ -2010,8 +2108,18 @@ components:
           enum:
             - application/pdf
     Domain:
-      description: Describes the domain of an object
-      type: string
+      description: 'Described the industry sector or sub-sector. The network policy should contain codes for all the industry sectors supported by the network. Domains can be created in varying levels of granularity. The granularity of a domain can be decided by the participants of the network. Too broad domains will result in irrelevant search broadcast calls to BPPs that don''t have services supporting the domain. Too narrow domains will result in a large number of registry entries for each BPP. It is recommended that network facilitators actively collaborate with various working groups and network participants to carefully choose domain codes keeping in mind relevance, performance, and opportunity cost. It is recommended that networks choose broad domains like mobility, logistics, healthcare etc, and progressively granularize them as and when the number of network participants for each domain grows large.'
+      type: object
+      properties:
+        name:
+          description: Name of the domain
+          type: string
+        code:
+          description: 'Standard code representing the domain. The standard is usually published as part of the network policy. Furthermore, the network facilitator should also provide a mechanism to provide the supported domains of a network.'
+        additional_info:
+          description: A url that contains addtional information about that domain.
+          allOf:
+            - $ref: '#/components/schemas/MediaFile'
     Duration:
       description: Describes duration as per ISO8601 format
       type: string
