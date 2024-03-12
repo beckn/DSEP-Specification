@@ -2110,13 +2110,6 @@ components:
         updated_by:
           type: string
           description: ID of entity which changed the state
-    FullAddress:
-      type: object
-      description: The full postal address.
-      properties:
-        full:
-          type: string
-          description: This is an unstructured string that describes the complete postal address in one line. If supported, the format of this field should be defined in the network policy. If this field is set, then the validator must ignore all the other fields. If this field is unavailable or null, then the validator must validate all the other fields of this object.
     Gps:
       description: Describes a GPS coordinate
       type: string
@@ -2941,43 +2934,6 @@ components:
             - $ref: '#/components/schemas/Person'
         authorization:
           $ref: '#/components/schemas/Authorization'
-    StructuredAddress:
-      type: object
-      description: Describes a structured address. This contains each component of a postal address as a single field. If supported, the network policy should specify which of these fields are required to be set. The network policy should also specify in what order these fields are to be presented on a user interface. 
-      properties:
-        door:
-          type: string
-          description: Door / Shop number of the address
-        name:
-          type: string
-          description: Name of address if applicable. Example, shop name
-        building:
-          type: string
-          description: Name of the building or block
-        street:
-          type: string
-          description: Street name or number
-        locality:
-          type: string
-          description: Name of the locality, apartments
-        district:
-          type: string
-          description: Name of the district this address is in
-        ward:
-          type: string
-          description: Name or number of the ward if applicable
-        city:
-          type: string
-          description: City name
-        state:
-          type: string
-          description: State name
-        country:
-          type: string
-          description: Country name
-        area_code:
-          type: string
-          description: 'Area code. This can be Pincode, ZIP code or any equivalent'
     Support:
       description: Details of customer support
       type: object
