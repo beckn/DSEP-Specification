@@ -46,7 +46,7 @@ paths:
                       country:
                         code: IND
                     action: search
-                    version: 1.0.0-draft
+                    version: 1.1.0
                     bap_id: https://exampleapp.io/
                     bap_uri: https://api.exampleapp.io/v0/
                     message_id: 5ac3dd78-829e-4c7d-9139-a15adbb582cc
@@ -68,7 +68,7 @@ paths:
                       country:
                         code: IND
                     action: search
-                    version: 0.5.0
+                    version: 1.1.0
                     bap_id: https://exampleapp.io/
                     bap_uri: https://api.exampleapp.io/uhi/v0/
                     message_id: 5ac3dd78-829e-4c7d-9139-a15adbb582cc
@@ -102,7 +102,7 @@ paths:
                       country:
                         code: IND
                     action: search
-                    version: 0.5.0
+                    version: 1.1.0
                     bap_id: https://exampleapp.io/
                     bap_uri: https://api.exampleapp.io/uhi/v0/
                     message_id: 5ac3dd78-829e-4c7d-9139-a15adbb582cc
@@ -145,7 +145,7 @@ paths:
                       country:
                         code: IND
                     action: search
-                    version: 0.5.0
+                    version: 1.1.0
                     bap_id: https://exampleapp.io/
                     bap_uri: https://api.exampleapp.io/uhi/v0/
                     message_id: 5ac3dd78-829e-4c7d-9139-a15adbb582cc
@@ -165,7 +165,7 @@ paths:
                       country:
                         code: IND
                     action: search
-                    version: 1.0.0-draft
+                    version: 1.1.0
                     bap_id: https://exampleapp.io/
                     bap_uri: https://api.exampleapp.io/v0/
                     bpp_id: https://mymentor.com/
@@ -212,7 +212,7 @@ paths:
                       country:
                         code: IND
                     action: search
-                    version: 1.0.0-draft
+                    version: 1.1.0
                     bap_id: https://exampleapp.io/
                     bap_uri: https://api.exampleapp.io/v0/
                     bpp_id: https://mymentor.com/
@@ -263,7 +263,7 @@ paths:
                       country:
                         code: IND
                     action: search
-                    version: 1.0.0-draft
+                    version: 1.1.0
                     bap_id: https://exampleapp.io/
                     bap_uri: https://api.exampleapp.io/v0/
                     bpp_id: https://mymentor.com/
@@ -286,7 +286,7 @@ paths:
                       country:
                         code: IND
                     action: search
-                    version: 1.0.0-draft
+                    version: 1.1.0
                     bap_id: https://exampleapp.io/
                     bap_uri: https://api.exampleapp.io/v0/
                     bpp_id: https://mymentor.com/
@@ -814,7 +814,7 @@ paths:
                       country:
                         code: IND
                     action: on_search
-                    version: 0.7.0
+                    version: 1.1.0
                     bap_id: https://exampleapp.io/
                     bap_uri: https://api.exampleapp.io/uhi/v0/
                     bpp_id: https://naukri.com/
@@ -901,7 +901,7 @@ paths:
                       country:
                         code: IND
                     action: on_search
-                    version: 0.7.0
+                    version: 1.1.0
                     bap_id: https://exampleapp.io/
                     bap_uri: https://api.exampleapp.io/uhi/v0/
                     message_id: 5ac3dd78-829e-4c7d-9139-a15adbb582cc
